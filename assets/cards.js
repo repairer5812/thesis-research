@@ -59,30 +59,10 @@ function renderRecCard(r, opts = {}) {
   if (m.recencyScore > 0) breakdownItems.push(`<span>+${m.recencyScore} recency</span>`);
   const breakdown = breakdownItems.join(' · ') || '점수 검증 안 됨';
 
-  // 액션 버튼
-  const cloudUrl = r.pdf ? buildCloudUrl(r.pdf) : null;
-  const cloudPending = !CLOUD_BASE_URL && r.pdf;
-  const cloudUnsupported = !r.pdf;
-
-  let cloudButton;
-  if (cloudUrl) {
-    cloudButton = `<a class="rec-btn rec-btn-cloud" href="${cloudUrl}" target="_blank" rel="noopener">
-      <span class="rec-btn-icon">☁</span><span>클라우드 다운로드</span>
-      ${CLOUD_REQUIRES_PASSWORD ? '<span class="rec-btn-meta">🔒</span>' : ''}
-    </a>`;
-  } else if (cloudPending) {
-    cloudButton = `<span class="rec-btn rec-btn-cloud-disabled" title="OpenClaw가 Nextcloud share link 만들면 활성화">
-      <span class="rec-btn-icon">☁</span><span>클라우드 (준비 중)</span>
-    </span>`;
-  } else {
-    cloudButton = `<span class="rec-btn rec-btn-cloud-disabled" title="외부 IP에서 PDF 자동수집 불가 — 원본에서 학내/RISS 인증 후 다운로드">
-      <span class="rec-btn-icon">☁</span><span>로컬 PDF 미수집</span>
-    </span>`;
-  }
-
+  // 액션 버튼 (원본 페이지로 이동 — 단일 버튼)
   const originalUrl = r.originalUrl || r.evidenceUrls?.[0] || '#';
   const originalBtn = `<a class="rec-btn rec-btn-original" href="${originalUrl}" target="_blank" rel="noopener">
-    <span class="rec-btn-icon">↗</span><span>원본/Evidence</span>
+    <span class="rec-btn-icon">↗</span><span>원본 보기 / 다운로드</span>
   </a>`;
 
   return `<article class="rec-card" data-score="${s}">
@@ -112,7 +92,6 @@ function renderRecCard(r, opts = {}) {
 
     <div class="rec-actions">
       ${originalBtn}
-      ${cloudButton}
     </div>
   </article>`;
 }

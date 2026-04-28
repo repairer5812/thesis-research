@@ -562,10 +562,10 @@ img { max-width: 100%; display: block; }
 .rec-summary { border-left: 3px solid var(--color-primary-light); }
 .rec-block.rec-reason { border-left: 3px solid var(--color-accent); }
 
-/* === Action buttons (원본 + 클라우드) === */
+/* === Action button (원본 단일) === */
 .rec-actions {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: var(--space-2);
   margin-top: auto;
   padding-top: var(--space-2);
