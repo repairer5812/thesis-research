@@ -66,23 +66,23 @@
     <div class="stats-grid">
       <div class="stat-card">
         <div class="stat-label">총 학위논문</div>
-        <div class="stat-value">1,473</div>
-        <div class="stat-trend">10개 학교 · AI 관련 학과</div>
+        <div class="stat-value">2,906</div>
+        <div class="stat-trend">16개 학교·대학원 · AI 관련 학과</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">객관 검증 추천</div>
+        <div class="stat-value">192</div>
+        <div class="stat-trend">학회 게재·인용·코드 매핑</div>
       </div>
       <div class="stat-card">
         <div class="stat-label">최대 규모</div>
-        <div class="stat-value">서울대</div>
-        <div class="stat-trend">302건 · 협동AI/GSDS/컴공</div>
+        <div class="stat-value">KAIST</div>
+        <div class="stat-trend">476건 · 김재철AI 153건 포함</div>
       </div>
       <div class="stat-card">
-        <div class="stat-label">PDF 다운로드</div>
-        <div class="stat-value">38</div>
-        <div class="stat-trend">436MB · 추천 논문 직접 보기</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-label">최다 카테고리</div>
-        <div class="stat-value">LLM</div>
-        <div class="stat-trend">전체 ~17–25% (학교별 Top 1–2)</div>
+        <div class="stat-label">학회 게재 (S-tier)</div>
+        <div class="stat-value">25+</div>
+        <div class="stat-trend">NeurIPS/ICML/ICLR/ACL/CVPR 등</div>
       </div>
     </div>
 
@@ -121,15 +121,30 @@
   </div>
 </section>
 
-<!-- Top 추천 -->
+<!-- Top 추천 (객관 점수 기준) -->
 <section class="section">
   <div class="container">
     <header class="section-head">
-      <div class="section-eyebrow">Top Picks</div>
-      <h2 class="section-title">전체 Top 9 추천</h2>
-      <p class="section-desc">사용자 관심분야(LLM · AI4Science · RL · 멀티모달)에 가장 매칭되는 논문 9편. 더 많은 추천은 <a href="recommendations.html">추천 페이지</a>에서.</p>
+      <div class="section-eyebrow">Top Picks (Objective Score)</div>
+      <h2 class="section-title">객관 지표 Top 12</h2>
+      <p class="section-desc">Top-tier 학회 게재(NeurIPS/ICML/ICLR/ACL/CVPR 등) + 인용수 + 코드 공개 + 수상을 점수화한 결과 상위 12편. 전체 192편은 <a href="recommendations.html">추천 페이지</a>에서.</p>
     </header>
     <div class="rec-grid" id="rec-top9"></div>
+  </div>
+</section>
+
+<!-- 일반 vs 특수 분리 추천 -->
+<section class="section">
+  <div class="container">
+    <header class="section-head">
+      <div class="section-eyebrow">By Graduate School Type</div>
+      <h2 class="section-title">대학원 유형별 Top 추천</h2>
+      <p class="section-desc">🎓 일반대학원 (학술 연구 중심) vs 🏛️ 특수대학원 (재직자·실무) 별도 정렬.</p>
+    </header>
+    <h3 style="margin: var(--space-6) 0 var(--space-3); color: var(--color-primary); font-weight:700;">🎓 일반·독립대학원 Top 8</h3>
+    <div class="rec-grid" id="rec-top-general"></div>
+    <h3 style="margin: var(--space-8) 0 var(--space-3); color: var(--color-accent); font-weight:700;">🏛️ 특수대학원 Top 6</h3>
+    <div class="rec-grid" id="rec-top-special"></div>
   </div>
 </section>
 
@@ -215,7 +230,7 @@ function renderSchoolCards() {
           <div class="school-name">${s.name}</div>
           <div class="school-type">${s.type}</div>
         </div>
-        <span class="school-count">${s.count}<em>건</em></span>
+        <span class="school-count">${s.totalCount}<em>건</em></span>
       </div>
       <div class="school-depts">${s.departments.join(' · ')}</div>
       <div class="school-tags">
@@ -226,23 +241,30 @@ function renderSchoolCards() {
   `).join('');
 }
 
-// === Top 9: LLM/AI4Sci/RL/멀티모달 균형 ===
-function pickTop9() {
+// === Top 12: 객관 점수 내림차순 ===
+function pickTopByScore(n) {
   const picks = [];
   const seenAuthors = new Set();
-  const want = ['llm', 'ai4sci', 'rl', 'mm'];
-  // 카테고리별 균형 (각 2-3편)
-  for (const cat of want) {
-    const ofCat = RECOMMENDATIONS.filter(r => r.category.includes(cat) && !seenAuthors.has(r.author));
-    for (let i = 0; i < 3 && i < ofCat.length; i++) {
-      if (!seenAuthors.has(ofCat[i].author)) {
-        picks.push(ofCat[i]);
-        seenAuthors.add(ofCat[i].author);
-        if (picks.length === 9) return picks;
-      }
-    }
+  for (const r of RECOMMENDATIONS) {
+    if (seenAuthors.has(r.author)) continue;
+    seenAuthors.add(r.author);
+    picks.push(r);
+    if (picks.length === n) break;
   }
-  return picks.slice(0, 9);
+  return picks;
+}
+
+function pickTopByScoreFiltered(n, filter) {
+  const picks = [];
+  const seenAuthors = new Set();
+  for (const r of RECOMMENDATIONS) {
+    if (!filter(r)) continue;
+    if (seenAuthors.has(r.author)) continue;
+    seenAuthors.add(r.author);
+    picks.push(r);
+    if (picks.length === n) break;
+  }
+  return picks;
 }
 
 // === Charts ===
@@ -253,7 +275,7 @@ function renderCharts() {
 
   // 학교별 막대
   const schoolLabels = SCHOOLS.map(s => s.name.replace('고려대 ', '고대\n').replace('서울', '서울').replace('학교', '').replace(/대$/, '대'));
-  const schoolCounts = SCHOOLS.map(s => s.count);
+  const schoolCounts = SCHOOLS.map(s => s.totalCount);
   const schoolColors = SCHOOLS.map(s => s.color);
 
   new Chart(document.getElementById('chart-schools'), {
@@ -314,7 +336,9 @@ function renderCharts() {
 // === Init ===
 document.addEventListener('DOMContentLoaded', () => {
   renderSchoolCards();
-  renderRecGrid(pickTop9(), 'rec-top9');
+  renderRecGrid(pickTopByScore(12), 'rec-top9');
+  renderRecGrid(pickTopByScoreFiltered(8, r => r.deptType === '일반'), 'rec-top-general');
+  renderRecGrid(pickTopByScoreFiltered(6, r => r.deptType === '특수'), 'rec-top-special');
   renderCharts();
 });
 </script>

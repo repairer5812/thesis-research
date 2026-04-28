@@ -44,14 +44,26 @@
 
     <div class="filter-bar">
       <div class="filter-group">
+        <span class="filter-label">유형</span>
+        <button class="chip active" data-filter-dept="all">전체</button>
+        <button class="chip" data-filter-dept="일반">🎓 일반</button>
+        <button class="chip" data-filter-dept="특수">🏛️ 특수</button>
+      </div>
+      <div class="filter-group">
         <span class="filter-label">분야</span>
         <button class="chip active" data-filter-cat="all">전체 <span class="chip-count" id="count-all">·</span></button>
         <button class="chip" data-filter-cat="llm">LLM/NLP <span class="chip-count" id="count-llm">·</span></button>
-        <button class="chip" data-filter-cat="ai4sci">AI4Science <span class="chip-count" id="count-ai4sci">·</span></button>
+        <button class="chip" data-filter-cat="ai4sci">AI4Sci <span class="chip-count" id="count-ai4sci">·</span></button>
         <button class="chip" data-filter-cat="rl">RL <span class="chip-count" id="count-rl">·</span></button>
         <button class="chip" data-filter-cat="mm">멀티모달 <span class="chip-count" id="count-mm">·</span></button>
       </div>
-      <input type="search" class="search-input" id="search-input" placeholder="제목·저자·이유 검색…" />
+      <div class="filter-group">
+        <span class="filter-label">정렬</span>
+        <button class="chip active" data-sort="score">점수↓</button>
+        <button class="chip" data-sort="year">최신↓</button>
+        <button class="chip" data-sort="citations">인용↓</button>
+      </div>
+      <input type="search" class="search-input" id="search-input" placeholder="제목·저자·학교 검색…" />
     </div>
 
     <div class="rec-grid" id="rec-list"></div>
@@ -80,20 +92,24 @@
 <script src="assets/cards.js"></script>
 <script>
 let currentCat = 'all';
+let currentDept = 'all';
+let currentSort = 'score';
 let currentSearch = '';
 
 function getFiltered() {
   const search = currentSearch.toLowerCase().trim();
-  return RECOMMENDATIONS.filter(r => {
-    const matchCat = currentCat === 'all' || r.category.includes(currentCat);
-    const matchSearch = !search ||
-      r.title.toLowerCase().includes(search) ||
-      r.author.toLowerCase().includes(search) ||
-      (r.reason || '').toLowerCase().includes(search) ||
-      (r.summary || '').toLowerCase().includes(search) ||
-      r.school.toLowerCase().includes(search);
-    return matchCat && matchSearch;
+  let list = RECOMMENDATIONS.filter(r => {
+    const matchCat = currentCat === 'all' || (r.category || []).includes(currentCat);
+    const matchDept = currentDept === 'all' || r.deptType === currentDept;
+    const hay = [r.title, r.author, r.school, r.notes || '', (r.metrics?.venue || '')].join(' ').toLowerCase();
+    const matchSearch = !search || hay.includes(search);
+    return matchCat && matchDept && matchSearch;
   });
+  // 정렬
+  if (currentSort === 'score') list.sort((a,b) => (b.metrics?.score||0) - (a.metrics?.score||0));
+  else if (currentSort === 'year') list.sort((a,b) => (b.year||0) - (a.year||0));
+  else if (currentSort === 'citations') list.sort((a,b) => (b.metrics?.citations||0) - (a.metrics?.citations||0));
+  return list;
 }
 
 function render() {
@@ -111,7 +127,7 @@ function render() {
 function updateCounts() {
   document.getElementById('count-all').textContent = RECOMMENDATIONS.length;
   ['llm', 'ai4sci', 'rl', 'mm'].forEach(c => {
-    document.getElementById('count-' + c).textContent = RECOMMENDATIONS.filter(r => r.category.includes(c)).length;
+    document.getElementById('count-' + c).textContent = RECOMMENDATIONS.filter(r => (r.category||[]).includes(c)).length;
   });
 }
 
@@ -123,6 +139,22 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.addEventListener('click', () => {
       currentCat = btn.dataset.filterCat;
       document.querySelectorAll('[data-filter-cat]').forEach(b => b.classList.toggle('active', b === btn));
+      render();
+    });
+  });
+
+  document.querySelectorAll('[data-filter-dept]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      currentDept = btn.dataset.filterDept;
+      document.querySelectorAll('[data-filter-dept]').forEach(b => b.classList.toggle('active', b === btn));
+      render();
+    });
+  });
+
+  document.querySelectorAll('[data-sort]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      currentSort = btn.dataset.sort;
+      document.querySelectorAll('[data-sort]').forEach(b => b.classList.toggle('active', b === btn));
       render();
     });
   });

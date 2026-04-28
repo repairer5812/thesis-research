@@ -66,7 +66,7 @@ document.getElementById('school-grid').innerHTML = SCHOOLS.map(s => `
         <div class="school-name">${s.name}</div>
         <div class="school-type">${s.type}</div>
       </div>
-      <span class="school-count">${s.count}<em>건</em></span>
+      <span class="school-count">${s.totalCount}<em>건</em></span>
     </div>
     <div class="school-depts">${s.departments.join(' · ')}</div>
     <div class="school-tags">${s.tags.map(t => `<span class="school-tag">${t}</span>`).join('')}</div>

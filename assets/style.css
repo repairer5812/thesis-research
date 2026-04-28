@@ -629,6 +629,129 @@ img { max-width: 100%; display: block; }
   .rec-btn-meta { display: none; }
 }
 
+/* === 객관 점수 배지 === */
+.rec-head-left {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.rec-score-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 56px;
+  padding: 4px var(--space-2);
+  border-radius: var(--radius-sm);
+  background: var(--score-color, var(--color-primary));
+  color: white;
+  line-height: 1;
+}
+.rec-score-tier {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  opacity: 0.85;
+  margin-bottom: 2px;
+}
+.rec-score-value {
+  font-size: 1.3rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+/* === DeptType 배지 === */
+.dept-badge {
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 3px var(--space-2);
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+  white-space: nowrap;
+}
+.dept-general {
+  background: rgba(30, 42, 74, 0.08);
+  color: var(--color-primary);
+  border-color: rgba(30, 42, 74, 0.2);
+}
+.dept-special {
+  background: rgba(139, 21, 56, 0.08);
+  color: var(--color-accent);
+  border-color: rgba(139, 21, 56, 0.2);
+}
+
+/* === 객관 지표 pill === */
+.rec-metrics-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: var(--space-2) 0;
+}
+.rec-metrics-empty {
+  font-size: 0.78rem;
+  color: var(--color-text-soft);
+  font-style: italic;
+  padding: var(--space-2) 0;
+}
+.metric-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.75rem;
+  padding: 3px 8px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface-2);
+  color: var(--color-text);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: all var(--tx-fast);
+}
+.metric-pill:hover { background: var(--color-bg); }
+.metric-pill b { font-weight: 800; padding: 0 3px; border-radius: 3px; }
+.metric-venue { background: #fff7e6; border-color: #ffd591; color: #874d00; }
+.metric-venue.tier-s b { background: #d4380d; color: white; }
+.metric-venue.tier-a b { background: #fa8c16; color: white; }
+.metric-venue.tier-b b { background: #fadb14; color: #614700; }
+.metric-cite { background: #e6f4ff; border-color: #91caff; color: #002c8c; }
+.metric-code { background: #f0f5ff; border-color: #adc6ff; color: #061178; }
+.metric-award { background: #fff0f6; border-color: #ffadd2; color: #780650; font-weight: 600; }
+.metric-arxiv { background: #f6ffed; border-color: #b7eb8f; color: #1f5408; font-family: var(--font-mono); font-size: 0.7rem; }
+
+/* === 점수 분해 === */
+.rec-breakdown {
+  font-size: 0.72rem;
+  color: var(--color-text-soft);
+  background: var(--color-surface-2);
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+  text-align: center;
+  margin-top: 4px;
+}
+.rec-breakdown span { padding: 0 3px; }
+
+/* === 검증 노트 (접힘 가능) === */
+.rec-notes {
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 6px var(--space-2);
+}
+.rec-notes summary {
+  cursor: pointer;
+  font-weight: 500;
+  user-select: none;
+}
+.rec-notes-body {
+  margin-top: var(--space-2);
+  padding-top: var(--space-2);
+  border-top: 1px solid var(--color-border);
+  line-height: 1.5;
+}
+
 .rec-foot {
   display: flex;
   align-items: center;
