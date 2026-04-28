@@ -79,7 +79,7 @@ const school = SCHOOLS.find(s => s.id === id) || SCHOOLS[0];
 document.getElementById('school-name').textContent = school.name;
 document.getElementById('school-type').textContent = school.type.toUpperCase();
 document.getElementById('school-note').textContent = school.note;
-document.getElementById('school-depts').textContent = school.departments.join(' · ');
+document.getElementById('school-depts').innerHTML = renderSchoolDepts(school);
 document.getElementById('school-count').textContent = school.totalCount;
 document.title = school.name + ' · AI 석사논문 인텔리전스';
 

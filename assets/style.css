@@ -1124,3 +1124,25 @@ img { max-width: 100%; display: block; }
 .text-muted { color: var(--color-text-muted); }
 .text-accent { color: var(--color-accent); }
 .center { text-align: center; }
+
+/* === 코어 / 도메인 학과 라벨 === */
+.dept-core-label {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: rgba(30, 42, 74, 0.1);
+  color: var(--color-primary);
+  margin-right: 4px;
+}
+.dept-domain-label {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: rgba(139, 21, 56, 0.1);
+  color: var(--color-accent);
+  margin-right: 4px;
+}

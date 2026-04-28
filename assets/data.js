@@ -2,140 +2,157 @@
 // 생성: gen_data_js.py — unified_metrics.json 기반
 
 const SCHOOLS = [
-  {
+{
     id: "03-snu", name: "서울대", type: "협동AI/GSDS/컴공", color: "#003a70",
     totalCount: 397, deptTypes: ["일반"],
-    departments: ["협동과정 인공지능전공", "데이터사이언스대학원 (GSDS)", "컴퓨터공학부"],
+    departmentsCore: ["협동과정 인공지능전공", "데이터사이언스대학원 (GSDS)", "컴퓨터공학부", "통계학과 (22)", "수리과학부 (9)"],
+    departmentsDomain: ["산업공학과 (33)", "전기·정보공학부 (31)", "생명과학부 (0)"],
     tags: ["학술 중심", "RL 강세", "AI4Science"],
-    note: "GSDS 일반대학원 분류 확인됨. 가장 큰 데이터셋 (302건)",
+    note: "보강 후 397건. 자연대 통계·수학 31건 보강",
     reports: ["02_서울대_논문조사.md"]
   },
-  {
+{
     id: "04a-yonsei-general", name: "연세대 일반대학원", type: "일반대학원", color: "#00205b",
     totalCount: 441, deptTypes: ["일반"],
-    departments: ["인공지능학과 (59)", "컴퓨터과학과 (62)", "산업공학과 (29+)", "전기전자공학과 (56)", "기계공학과 (30)", "신소재·화학·자동차 등 (28)", "의과대학 의학·의공·약학 등 (50)", "통계·수학·시스템생물 (18)", "협동과정·기타 (20)"],
+    departmentsCore: ["인공지능학과 (59)", "컴퓨터과학과 (62)", "통계·수학·시스템생물 (18)", "협동과정·기타 (20)"],
+    departmentsDomain: ["산업공학과 (29+)", "전기전자공학과 (56)", "기계공학과 (30)", "신소재·화학·자동차·디지털융합 (28)", "의과대학 의학·의공·약학 등 (50)"],
     tags: ["NLP/LLM", "의료AI", "전기전자/통신지능", "AI4Sci"],
-    note: "보강 후 441건. 인공지능학과+컴공 외에도 EE·기계·의료·통계 등 광범위",
+    note: "보강 후 441건. 코어 159 + 도메인 282",
     reports: ["03_연세대_논문조사.md", "03c_공과대학_전기전자공학과.md", "03d_공과대학_기계공학과.md", "03e_공과대학_신소재·화학·자동차·디지털융합·기타.md", "03f_의과대학_의학·의공학·의과학·융합의학·의료기기·치의학·약학·임상병리·체육·작업치료.md", "03g_자연과학대학_통계학·수학·시스템생물·응용통계.md", "03k_협동과정·기타_디지털애널리틱스·언어정보학·인지과학·혁신학과.md"]
   },
-  {
+{
     id: "04b-yonsei-special", name: "연세대 특수대학원", type: "특수대학원", color: "#1f5db8",
     totalCount: 109, deptTypes: ["특수"],
-    departments: ["정보대학원 (68, UX/IoT/정보보호/AI)", "교육대학원 (12, AI융합교육)", "보건대학원 (7+5)", "공학대학원 (5)", "커뮤니케이션대학원 (3)", "언론홍보대학원 (3)", "기타 (정경·사회복지·국제학)"],
-    tags: ["재직자 중심", "응용 트랙", "AI×교육·보건"],
-    note: "보강 후 109건. 정보대학원 외 교육·보건·언론·공학 등 광범위 특수대학원 망",
+    departmentsCore: ["정보대학원 (68, UX/IoT/정보보호/AI)"],
+    departmentsDomain: ["교육대학원 (12, AI융합교육)", "보건대학원 (12)", "공학대학원 (5)", "커뮤니케이션·언론홍보·사회과학 (12)"],
+    tags: ["재직자 중심", "정보보호·UX", "AI×교육·보건"],
+    note: "보강 후 109건. 정보대학원이 코어 68 + 응용 41",
     reports: ["03b_연세대_특수대학원_보충.md", "03h_보건대학원_보건정보통계·역학·환경보건·국제보건.md", "03i_교육대학원_AI융합교육·교육공학·음악·영어·유아교육.md", "03j_언론·홍보·문화매개·사회과학.md"]
   },
-  {
+{
     id: "02-korea-general", name: "고려대 일반대학원", type: "일반대학원", color: "#8b1538",
     totalCount: 945, deptTypes: ["일반"],
-    departments: ["정보대학 인공지능학과 (118)", "정보대학 컴퓨터학과 (201)", "정보대학 뇌공학과 (59)", "공과대학 전기전자공학과 (227)", "공과대학 산업경영공학과 (146)", "정보대학 빅데이터사이언스+의과대학 의료정보 (9)"],
+    departmentsCore: ["정보대학 인공지능학과 (118)", "정보대학 컴퓨터학과 (201)", "정보대학 뇌공학과 (59)", "정보대학 빅데이터사이언스 (2)"],
+    departmentsDomain: ["공과대학 산업경영공학과 (146)", "공과대학 전기전자공학과 (227)", "의과대학 의료정보학과 (7)"],
     tags: ["Speech/Voice", "CV/3D", "Medical AI", "Robotics", "Materials/AI4Sci"],
-    note: "보강 후 945건. 학술 paper급 모델 자체 연구가 정보대학·공과대학 전반에 분포",
+    note: "보강 후 945건. 정보대학 코어 380 + 공과대학 도메인 380 비슷한 비중",
     reports: ["01d_일반대학원_인공지능학과_논문목록.md", "01e_정보대학_컴퓨터학과.md", "01f_정보대학_뇌공학과.md", "01g_공과대학_산업경영공학과.md", "01h_공과대학_전기전자공학과.md", "01i_정보대학_빅데이터사이언스학과·의과대학_의료정보학과.md"]
   },
-  {
+{
     id: "01-korea-special", name: "고려대 SW·AI 융합대학원", type: "특수대학원 (사용자 본교)", color: "#8b1538",
     totalCount: 91, deptTypes: ["특수"],
-    departments: ["빅데이터융합학과", "인공지능융합학과", "소프트웨어보안학과"],
+    departmentsCore: ["빅데이터융합학과", "인공지능융합학과", "소프트웨어보안학과"],
+    departmentsDomain: [],
     tags: ["LLM 응용", "AI Security", "금융/제조 도메인"],
-    note: "사용자 본교 — LLM/NLP 30%, AI Security 19% (91건)",
+    note: "사용자 본교 — 모두 코어 학과로 분류 (LLM/NLP 30%, AI Security 19%)",
     reports: ["01a_SW_AI융합대학원_특수_논문목록.md", "01b_SW_AI융합대학원_주제분류_통계.md"]
   },
-  {
+{
     id: "11-kaist", name: "KAIST", type: "일반대학원", color: "#004ea2",
     totalCount: 493, deptTypes: ["일반"],
-    departments: ["김재철AI대학원 (독립대학원·일반)", "전산학부", "EE", "산공", "BiS", "수리과학과"],
+    departmentsCore: ["김재철AI대학원 (153, 독립·일반)", "전산학부 (79)", "수리과학과 (21)"],
+    departmentsDomain: ["EE (85)", "산업및시스템공학과 (80)", "바이오및뇌공학과 (58)", "생명화학공학 (11)", "미래자동차학제 (5)", "생명과학과 (1)"],
     tags: ["NeurIPS/ICML", "학회 게재율 최상위", "LLM·CV"],
-    note: "김재철AI 153건 등 총 476건. 한국 최상위 학회 게재율",
+    note: "보강 후 493건. 코어 253 + 도메인 240 비슷한 비중",
     reports: ["10_KAIST_논문조사.md"]
   },
-  {
+{
     id: "12-postech", name: "POSTECH", type: "일반대학원", color: "#7a0019",
     totalCount: 268, deptTypes: ["일반"],
-    departments: ["AI대학원", "컴퓨터공학과", "산업경영공학과", "EE AI", "수학과"],
-    tags: ["ML 이론", "ICML/NeurIPS", "이종환·곽수하 라인"],
-    note: "AI대학원 113건 등 총 267건. ML 이론 강세",
+    departmentsCore: ["AI대학원 (113)", "컴퓨터공학과 (48)", "수학과 (11)"],
+    departmentsDomain: ["산업경영공학과 (49)", "EE AI (46)", "생명과학과 (1)"],
+    tags: ["ML 이론", "ICML/NeurIPS"],
+    note: "보강 후 268건. 코어 172 + 도메인 96",
     reports: ["15_POSTECH_논문조사.md"]
   },
-  {
+{
     id: "13-unist", name: "UNIST", type: "일반대학원", color: "#3a78c2",
-    totalCount: 185, deptTypes: ["일반"],
-    departments: ["AIGS (인공지능대학원)", "컴공", "EE", "산공", "산디"],
+    totalCount: 245, deptTypes: ["일반"],
+    departmentsCore: ["AIGS 인공지능대학원 (113)", "컴퓨터공학 (23)", "수리과학 (5)"],
+    departmentsDomain: ["전기전자 (15)", "산업공학 (27)", "산업디자인 (7)", "기계공학 (27)", "도시환경 (9)", "바이오메디컬 (4)", "의과학HST (4)", "원자력 (3)", "경영과학 (4)", "탄소중립·반도체·에너지화학 (3)"],
     tags: ["CV 강세", "RL", "효율 DL"],
-    note: "AIGS 113건 등 총 185건. CVPR/AAAI/NeurIPS 게재 검증",
+    note: "보강 후 245건. AIGS 외 기계공학 27건이 큰 누락이었음",
     reports: ["11_UNIST_논문조사.md"]
   },
-  {
+{
     id: "14-gist", name: "GIST", type: "일반대학원", color: "#00854f",
-    totalCount: 160, deptTypes: ["일반"],
-    departments: ["AI융합학과", "EECS", "기계·로봇", "의생명"],
-    tags: ["Vision/Generation", "RL/Robotics", "Medical AI"],
-    note: "AI융합 89건 등 총 160건",
+    totalCount: 179, deptTypes: ["일반"],
+    departmentsCore: ["AI융합학과 (89)", "EECS (34)"],
+    departmentsDomain: ["기계·로봇 (32)", "의생명 (5)", "신소재 (4)", "물리·광과학 (5)", "화학 (5)", "지구환경 (5)"],
+    tags: ["Vision/Generation", "AI4Chemistry", "Climate AI"],
+    note: "보강 후 179건. 화학·환경·물리에서 AI4Science 라인 발견",
     reports: ["12_GIST_논문조사.md"]
   },
-  {
+{
     id: "15-dgist", name: "DGIST", type: "일반대학원", color: "#00308f",
-    totalCount: 57, deptTypes: ["일반"],
-    departments: ["EECS", "Robotics", "Brain Sciences", "Interdisciplinary"],
-    tags: ["CV+Systems+RL", "자율주행/V2X", "AI4Sci"],
-    note: "AI 관련 57건 (특수대학원 없음)",
+    totalCount: 78, deptTypes: ["일반"],
+    departmentsCore: ["EECS", "AI Major 학제전공 (26)", "Brain Sciences (뇌과학)"],
+    departmentsDomain: ["Robotics & Mechatronics", "Interdisciplinary Engineering"],
+    tags: ["CV+Systems+RL", "의료 AI", "Systems for AI"],
+    note: "보강 후 78건. AI Major 26건은 1차 누락분",
     reports: ["13_DGIST_논문조사.md"]
   },
-  {
+{
     id: "05-hanyang", name: "한양대", type: "일반+특수", color: "#0e4d92",
     totalCount: 214, deptTypes: ["일반", "특수"],
-    departments: ["인공지능학과", "인공지능융합학과", "컴퓨터·소프트웨어학과", "GSAI 인공지능시스템 (특수)"],
-    tags: ["Vision-heavy", "시스템 효율화", "의료AI"],
-    note: "김상욱 KDD 2025 Best Paper Mention. Vision 22.6% (155건)",
+    departmentsCore: ["인공지능학과", "인공지능융합학과", "컴퓨터·소프트웨어학과", "응용통계·응용수학·인텔리전스컴퓨팅 (7)", "GSAI 인공지능시스템 (특수)"],
+    departmentsDomain: ["산업공학·산업데이터엔지니어링 (11)", "전자공학·전기공학·융합전자 (17)", "미래자동차·메카트로닉스·융합기계 (14)", "스마트시티·HCI·HYU-KITECH (6)", "화학·생체의공학 전문대학원 (4)"],
+    tags: ["Vision-heavy", "자동차/모빌리티 AI", "의료AI"],
+    note: "보강 후 214건. 자동차 도메인 라인 강세",
     reports: ["04_한양대_논문조사.md"]
   },
-  {
+{
     id: "06-skku", name: "성균관대", type: "일반+특수", color: "#00563f",
     totalCount: 143, deptTypes: ["일반", "특수"],
-    departments: ["인공지능학과", "데이터사이언스융합", "정보통신대학원 (특수)"],
-    tags: ["추천시스템", "NLP", "딥페이크 탐지"],
-    note: "DIAL Lab(SIGIR 정기게재). 일반 52 + 특수 23 = 75건",
+    departmentsCore: ["인공지능학과", "데이터사이언스융합", "인공지능융합학과 (xAI, 34)", "소프트웨어학과 (8)", "전자전기컴퓨터 (1)", "정보통신대학원 특수 (23)"],
+    departmentsDomain: ["산업공학·시스템경영공학 e-Manufacturing (25)"],
+    tags: ["추천시스템", "NLP", "RL+디지털트윈"],
+    note: "보강 후 143건. xAI 학과 34건 + e-Manufacturing 25건이 큰 사각지대",
     reports: ["05_성균관대_논문조사.md", "05b_성균관대_특수대학원_보충.md"]
   },
-  {
+{
     id: "07-sogang", name: "서강대", type: "일반+다수 특수", color: "#6a1b9a",
-    totalCount: 133, deptTypes: ["일반", "특수"],
-    departments: ["일반대학원 컴공/AI학과 (13건)", "AI·SW대학원 특수 (70건, 2022 신설)", "정보통신대학원 특수 (47건)", "메타버스전문대학원 특수 (4건)", "기술경영(MOT)·가상융합 특수 (3건)"],
+    totalCount: 179, deptTypes: ["일반", "특수"],
+    departmentsCore: ["일반대학원 컴공/AI학과 (8)", "AI·SW대학원 특수 (70)", "정보통신대학원 데이터사이언스 특수 (47)", "자연과학대 수학·물리·통계 (10)"],
+    departmentsDomain: ["전자공학과 (12)", "기계공학과 (12)", "경제·경영·사회·신방 (8)", "교육대학원 특수 (3)", "화공생명·시스템반도체 (3)", "메타버스/MOT/가상융합 (7)"],
     tags: ["LLM Agent", "RAG", "Self-Improving"],
-    note: "특수대학원이 데이터의 90%+. AI·SW대학원이 핵심 (Speculative RAG, Self-Improving Agent 등)",
+    note: "보강 후 179건. AI·SW대학원이 핵심 + 자연과학대 LLM 응용 등장",
     reports: ["06_서강대_논문조사.md"]
   },
-  {
+{
     id: "16-ewha", name: "이화여대", type: "일반대학원 위주", color: "#00a651",
-    totalCount: 191, deptTypes: ["일반", "특수"],
-    departments: ["인공지능·소프트웨어학부 (인공지능 등 5전공 통합)", "빅데이터분석학협동", "휴먼기계바이오공학부"],
-    tags: ["LLM/RAG", "AI4Sci", "디자인AI(특수 응용)"],
-    note: "인공지능융합대학원 미운영. 일반 172 + 디자인/교육대학원(특수) 19 = 191건",
+    totalCount: 253, deptTypes: ["일반", "특수"],
+    departmentsCore: ["인공지능·SW학부 (인공지능 등 5전공)", "빅데이터분석학협동", "컴퓨터의학협동 (4)", "바이오정보학협동 (2)", "수학·약학·과학교육 (3)"],
+    departmentsDomain: ["휴먼기계바이오공학", "전자전기 (13)", "화공신소재 (7)", "식품생명공학 (5)", "기후·에너지시스템 (4)", "간호과학 (5)", "사회복지 (4)", "커뮤니케이션·미디어 (3)", "사회과교육 (2)", "디자인·교육대학원 특수 (19)"],
+    tags: ["LLM/RAG", "AI4Sci 협동과정", "특수 응용"],
+    note: "보강 후 253건. 자연대 본진(화학·생명·물리) 0건 — 협동과정으로 우회",
     reports: ["14_이화여대_논문조사.md"]
   },
-  {
+{
     id: "08-cau", name: "중앙대", type: "일반대학원", color: "#002855",
     totalCount: 373, deptTypes: ["일반"],
-    departments: ["AI학과", "컴퓨터공학과", "첨단영상대학원"],
-    tags: ["CV/이미지", "XAI", "연합학습"],
-    note: "CV 32.4% (영상대학원 영향). RL은 1.8%로 약함 (272건)",
+    departmentsCore: ["AI학과 (120)", "컴퓨터공학과 (105)", "통계학과 (38)", "통계데이터사이언스 (13)", "지능형반도체 (13)"],
+    departmentsDomain: ["첨단영상대학원 영상학과 (46)", "전자전기 (24)", "융합보안 (7)", "의학·약학·수학 (3)", "융합공학 (1)"],
+    tags: ["CV/이미지 영상", "통계 ML 이론", "지능형반도체"],
+    note: "보강 후 373건. 통계학과 38건 큰 누락 발견",
     reports: ["07_중앙대_논문조사.md"]
   },
-  {
+{
     id: "09-khu", name: "경희대", type: "일반+특수", color: "#8b0000",
     totalCount: 114, deptTypes: ["일반", "특수"],
-    departments: ["컴퓨터공학과", "소프트웨어융합학과", "GSAI (특수)"],
+    departmentsCore: ["컴퓨터공학과", "소프트웨어융합학과", "수학과 (3)", "GSAI (특수)"],
+    departmentsDomain: ["빅데이터응용학과 (18)", "산업경영공학 (8)", "의공학 (6)", "환경공학 (5)", "의학·정보디스플레이·우주탐사 (7)"],
     tags: ["로보틱스", "EEG", "6G 통신지능"],
-    note: "양팔 로봇 long-horizon 시리즈 4편. (67건)",
+    note: "보강 후 114건. 빅데이터응용학과 18건 + 우주탐사 LLM 등 신규",
     reports: ["08_경희대_논문조사.md"]
   },
-  {
+{
     id: "10-uos", name: "서울시립대", type: "일반대학원", color: "#1d3557",
-    totalCount: 50, deptTypes: ["일반"],
-    departments: ["인공지능학과", "도시빅데이터융합", "컴퓨터과학과"],
-    tags: ["도시·교통 AI", "환경 AI4Sci", "LLM 응용"],
-    note: "서울시 빅데이터 + LLM 조합 강세 (50건)",
+    totalCount: 98, deptTypes: ["일반"],
+    departmentsCore: ["인공지능학과", "도시빅데이터융합", "컴퓨터과학과", "통계학과 (4)", "물리학과 (5, LHC·우주론 ML)"],
+    departmentsDomain: ["전자전기컴퓨터 (5)", "기계정보 (3-5)", "교통공학 (8, RL 신호제어)", "환경·도시공학 (12)", "특수대학원 정보기술·도시과학·국제도시 (10)"],
+    tags: ["도시·교통 AI", "환경 AI4Sci", "교통 RL"],
+    note: "보강 후 98건. 교통공학 RL 신호제어 + 입자물리 ML 의외 발견",
     reports: ["09_시립대_논문조사.md"]
   }
 ];

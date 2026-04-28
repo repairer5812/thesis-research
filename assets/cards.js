@@ -105,3 +105,16 @@ function renderRecGrid(items, containerId, opts = {}) {
   }
   grid.innerHTML = items.map(r => renderRecCard(r, opts)).join('');
 }
+
+// 학교 departments 헬퍼 — 코어/도메인 두 그룹 표시 또는 폴백 처리
+function renderSchoolDepts(s) {
+  if (s.departmentsCore || s.departmentsDomain) {
+    const core = s.departmentsCore || [];
+    const domain = s.departmentsDomain || [];
+    const parts = [];
+    if (core.length) parts.push(`<span class="dept-core-label">🎯 AI 코어</span> ${core.join(' · ')}`);
+    if (domain.length) parts.push(`<span class="dept-domain-label">📚 AI 도메인</span> ${domain.join(' · ')}`);
+    return parts.join('<br>');
+  }
+  return (s.departments || []).join(' · ');
+}
