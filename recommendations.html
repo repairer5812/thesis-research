@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>추천 논문 · AI 석사논문 인텔리전스</title>
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable-dynamic-subset.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">AI</span>
+      <span class="brand-text">
+        <span class="brand-title">석사논문 인텔리전스</span>
+        <span class="brand-sub">10 SCHOOLS · 1,473 THESES</span>
+      </span>
+    </a>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">개요</a></li>
+        <li><a href="schools.html">학교별</a></li>
+        <li><a href="recommendations.html" class="active">추천 논문</a></li>
+        <li><a href="pdfs.html">PDF</a></li>
+        <li><a href="report.html?file=00_최종_종합보고서.md">최종 보고서</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" style="padding: 4rem 0 2rem;">
+  <div class="hero-inner">
+    <div class="hero-eyebrow">Curated Recommendations</div>
+    <h1 class="hero-title">관심분야별 <span class="accent">추천 논문</span></h1>
+    <p class="hero-subtitle">10개 학교에서 사용자 관심분야(LLM·AI4Sci·RL·멀티모달)에 매칭되는 논문을 선별. 카테고리·학교 필터로 좁혀보세요.</p>
+  </div>
+</section>
+
+<main>
+<section class="section">
+  <div class="container">
+
+    <div class="filter-bar">
+      <div class="filter-group">
+        <span class="filter-label">분야</span>
+        <button class="chip active" data-filter-cat="all">전체 <span class="chip-count" id="count-all">·</span></button>
+        <button class="chip" data-filter-cat="llm">LLM/NLP <span class="chip-count" id="count-llm">·</span></button>
+        <button class="chip" data-filter-cat="ai4sci">AI4Science <span class="chip-count" id="count-ai4sci">·</span></button>
+        <button class="chip" data-filter-cat="rl">RL <span class="chip-count" id="count-rl">·</span></button>
+        <button class="chip" data-filter-cat="mm">멀티모달 <span class="chip-count" id="count-mm">·</span></button>
+      </div>
+      <input type="search" class="search-input" id="search-input" placeholder="제목·저자·이유 검색…" />
+    </div>
+
+    <div class="rec-grid" id="rec-list"></div>
+
+    <div id="empty" style="display:none; text-align:center; padding:3rem; color:var(--color-text-muted);">
+      필터 조건에 맞는 논문이 없습니다. 필터를 조정해보세요.
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-meta">
+      <strong>AI Thesis Intelligence Dashboard</strong><br>
+      자료: 각 대학 dCollection · S-Space · RISS<br>
+      수집일: 2026-04-28
+    </div>
+    <div class="footer-credit">Built with Claude Code · 학술 비영리 용도</div>
+  </div>
+</footer>
+
+<script src="assets/data.js"></script>
+<script>
+let currentCat = 'all';
+let currentSearch = '';
+
+function getFiltered() {
+  const search = currentSearch.toLowerCase().trim();
+  return RECOMMENDATIONS.filter(r => {
+    const matchCat = currentCat === 'all' || r.category.includes(currentCat);
+    const matchSearch = !search ||
+      r.title.toLowerCase().includes(search) ||
+      r.author.toLowerCase().includes(search) ||
+      r.reason.toLowerCase().includes(search) ||
+      r.school.toLowerCase().includes(search);
+    return matchCat && matchSearch;
+  });
+}
+
+function render() {
+  const list = getFiltered();
+  const grid = document.getElementById('rec-list');
+  const empty = document.getElementById('empty');
+
+  if (list.length === 0) {
+    grid.innerHTML = '';
+    empty.style.display = 'block';
+    return;
+  }
+  empty.style.display = 'none';
+
+  grid.innerHTML = list.map(r => `
+    <article class="rec-card">
+      <div class="rec-card-head">
+        <span class="rec-school">${r.school}</span>
+        <span class="rec-year">${r.year}</span>
+      </div>
+      <div class="rec-title">${r.title}</div>
+      <div class="rec-author">${r.author}</div>
+      <div class="rec-reason">${r.reason}</div>
+      <div class="rec-foot">
+        <div class="rec-cats">
+          ${r.category.map(c => `<span class="cat-badge cat-${c}">${CATEGORY_LABELS[c] || c}</span>`).join('')}
+        </div>
+        ${r.pdf ? `<a class="rec-pdf" href="../PDF/${r.pdf}" target="_blank">PDF</a>` : ''}
+      </div>
+    </article>
+  `).join('');
+}
+
+function updateCounts() {
+  document.getElementById('count-all').textContent = RECOMMENDATIONS.length;
+  ['llm', 'ai4sci', 'rl', 'mm'].forEach(c => {
+    document.getElementById('count-' + c).textContent = RECOMMENDATIONS.filter(r => r.category.includes(c)).length;
+  });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  updateCounts();
+  render();
+
+  document.querySelectorAll('[data-filter-cat]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      currentCat = btn.dataset.filterCat;
+      document.querySelectorAll('[data-filter-cat]').forEach(b => b.classList.toggle('active', b === btn));
+      render();
+    });
+  });
+
+  document.getElementById('search-input').addEventListener('input', e => {
+    currentSearch = e.target.value;
+    render();
+  });
+});
+</script>
+
+</body>
+</html>

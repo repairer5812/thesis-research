@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>학교 상세 · AI 석사논문 인텔리전스</title>
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable-dynamic-subset.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">AI</span>
+      <span class="brand-text">
+        <span class="brand-title">석사논문 인텔리전스</span>
+        <span class="brand-sub">10 SCHOOLS · 1,473 THESES</span>
+      </span>
+    </a>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">개요</a></li>
+        <li><a href="schools.html" class="active">학교별</a></li>
+        <li><a href="recommendations.html">추천 논문</a></li>
+        <li><a href="pdfs.html">PDF</a></li>
+        <li><a href="report.html?file=00_최종_종합보고서.md">최종 보고서</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" style="padding: 3rem 0 2rem;">
+  <div class="hero-inner">
+    <div class="hero-eyebrow" id="school-type">School Profile</div>
+    <h1 class="hero-title" id="school-name">…</h1>
+    <p class="hero-subtitle" id="school-note">…</p>
+    <div class="hero-meta">
+      <span>학과: <strong id="school-depts">·</strong></span>
+      <span>·</span>
+      <span>총 <strong id="school-count">·</strong>건</span>
+    </div>
+  </div>
+</section>
+
+<main>
+<section class="section">
+  <div class="container">
+    <div id="school-tags-row" style="margin-bottom: 2rem;"></div>
+    <div id="school-reports">
+      <header class="section-head">
+        <div class="section-eyebrow">Reports</div>
+        <h2 class="section-title">상세 보고서</h2>
+        <p class="section-desc">아래 보고서를 클릭하면 학교별 전수 논문 목록과 분석을 볼 수 있습니다.</p>
+      </header>
+      <div class="rec-grid" id="reports-list"></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-meta"><strong>AI Thesis Intelligence Dashboard</strong></div>
+    <div class="footer-credit">Built with Claude Code</div>
+  </div>
+</footer>
+
+<script src="assets/data.js"></script>
+<script>
+const params = new URLSearchParams(location.search);
+const id = params.get('id');
+const school = SCHOOLS.find(s => s.id === id) || SCHOOLS[0];
+
+document.getElementById('school-name').textContent = school.name;
+document.getElementById('school-type').textContent = school.type.toUpperCase();
+document.getElementById('school-note').textContent = school.note;
+document.getElementById('school-depts').textContent = school.departments.join(' · ');
+document.getElementById('school-count').textContent = school.count;
+document.title = school.name + ' · AI 석사논문 인텔리전스';
+
+document.getElementById('school-tags-row').innerHTML = `
+  <div class="school-tags" style="display:flex; gap:0.4rem; flex-wrap:wrap;">
+    ${school.tags.map(t => `<span class="school-tag" style="font-size:0.85rem; padding:0.4rem 0.8rem;">${t}</span>`).join('')}
+  </div>
+`;
+
+const reportTitles = {
+  '01a_SW_AI융합대학원_특수_논문목록.md': '🗂️ SW·AI 융합대학원 91건 전수 목록',
+  '01b_SW_AI융합대학원_주제분류_통계.md': '📊 주제 분류·카테고리 통계',
+  '01c_일반대학원_인공지능학과_조사메모.md': '📝 일반대학원 인공지능학과 조사 메모',
+  '01d_일반대학원_인공지능학과_논문목록.md': '🗂️ 일반대학원 인공지능학과 118건 전수',
+  '02_서울대_논문조사.md': '🗂️ 서울대 302건 + 카테고리·Top 10',
+  '03_연세대_논문조사.md': '🗂️ 연세대 233건 + 카테고리·Top 추천',
+  '04_한양대_논문조사.md': '🗂️ 한양대 155건 + Top 10 추천',
+  '05_성균관대_논문조사.md': '🗂️ 성균관대 52건 + 연구실별 분석',
+  '06_서강대_논문조사.md': '🗂️ 서강대 133건 + 트렌드 분석',
+  '07_중앙대_논문조사.md': '🗂️ 중앙대 272건 + Top 10 추천',
+  '08_경희대_논문조사.md': '🗂️ 경희대 67건 + 연구실 라인 분석',
+  '09_시립대_논문조사.md': '🗂️ 시립대 50건 + Top 8 추천'
+};
+
+const list = document.getElementById('reports-list');
+list.innerHTML = school.reports.map(file => `
+  <a class="rec-card" href="report.html?file=${encodeURIComponent(file)}" style="text-decoration:none; color:inherit;">
+    <div class="rec-title">${reportTitles[file] || file}</div>
+    <div class="rec-author">${file}</div>
+    <div class="rec-foot">
+      <span class="rec-school" style="background:${school.color}">${school.name}</span>
+      <span class="rec-pdf">읽기</span>
+    </div>
+  </a>
+`).join('');
+
+// 추천 논문 (이 학교 것만)
+const recsHere = RECOMMENDATIONS.filter(r => r.schoolId === school.id);
+if (recsHere.length > 0) {
+  const main = document.querySelector('main .container');
+  main.insertAdjacentHTML('beforeend', `
+    <section style="margin-top:3rem;">
+      <header class="section-head">
+        <div class="section-eyebrow">Top Picks</div>
+        <h2 class="section-title">${school.name} 추천 논문 ${recsHere.length}편</h2>
+      </header>
+      <div class="rec-grid">
+        ${recsHere.map(r => `
+          <article class="rec-card">
+            <div class="rec-card-head">
+              <span class="rec-school" style="background:${school.color}">${r.school}</span>
+              <span class="rec-year">${r.year}</span>
+            </div>
+            <div class="rec-title">${r.title}</div>
+            <div class="rec-author">${r.author}</div>
+            <div class="rec-reason">${r.reason}</div>
+            <div class="rec-foot">
+              <div class="rec-cats">
+                ${r.category.map(c => `<span class="cat-badge cat-${c}">${CATEGORY_LABELS[c] || c}</span>`).join('')}
+              </div>
+              ${r.pdf ? `<a class="rec-pdf" href="../PDF/${r.pdf}" target="_blank">PDF</a>` : ''}
+            </div>
+          </article>
+        `).join('')}
+      </div>
+    </section>
+  `);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+# PDFs are not tracked in repo (use Nextcloud or original sources)
+*.pdf
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/
+
+# Local dev
+node_modules/
+.cache/
+*.log

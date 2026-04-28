@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>보고서 · AI 석사논문 인텔리전스</title>
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable-dynamic-subset.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">AI</span>
+      <span class="brand-text">
+        <span class="brand-title">석사논문 인텔리전스</span>
+        <span class="brand-sub">10 SCHOOLS · 1,473 THESES</span>
+      </span>
+    </a>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">개요</a></li>
+        <li><a href="schools.html">학교별</a></li>
+        <li><a href="recommendations.html">추천 논문</a></li>
+        <li><a href="pdfs.html">PDF</a></li>
+        <li><a href="report.html?file=00_최종_종합보고서.md" class="active">최종 보고서</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="section">
+  <div class="container">
+    <div id="content" class="markdown-body">
+      <p style="text-align:center; color:var(--color-text-muted);">로딩 중…</p>
+    </div>
+    <div style="text-align:center; margin-top:2rem;">
+      <a href="javascript:history.back()" class="btn btn-secondary">← 뒤로</a>
+      <a id="raw-link" class="btn btn-secondary" target="_blank" rel="noopener">원본 마크다운 보기</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-meta"><strong>AI Thesis Intelligence Dashboard</strong></div>
+    <div class="footer-credit">Built with Claude Code</div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dompurify@3.0.11/dist/purify.min.js"></script>
+<script>
+const params = new URLSearchParams(location.search);
+const file = params.get('file') || '00_최종_종합보고서.md';
+const url = 'reports/' + file;
+
+document.getElementById('raw-link').href = url;
+
+fetch(url)
+  .then(r => {
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    return r.text();
+  })
+  .then(md => {
+    marked.setOptions({ breaks: false, gfm: true });
+    const html = marked.parse(md);
+    document.getElementById('content').innerHTML = DOMPurify.sanitize(html, { ADD_ATTR: ['target'] });
+    // Title from first H1
+    const h1 = document.querySelector('#content h1');
+    if (h1) document.title = h1.textContent + ' · AI 석사논문 인텔리전스';
+  })
+  .catch(err => {
+    document.getElementById('content').innerHTML = `
+      <h1>로드 실패</h1>
+      <p>${file} 파일을 불러올 수 없습니다.</p>
+      <pre>${err}</pre>
+      <p>로컬 환경에서는 file:// 프로토콜로 fetch가 막혀 있어서 발생할 수 있습니다. <strong>GitHub Pages 또는 로컬 서버(<code>python -m http.server</code>)에서 실행하세요.</strong></p>
+    `;
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="description" content="국내 10개 AI 대학원 석사논문 1,473건 통합 분석 — 2023~2026 트렌드, 카테고리 분포, 추천 논문 PDF" />
+<title>AI 대학원 석사논문 인텔리전스 · 2023~2026 통합 리포트</title>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable-dynamic-subset.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">AI</span>
+      <span class="brand-text">
+        <span class="brand-title">석사논문 인텔리전스</span>
+        <span class="brand-sub">10 SCHOOLS · 1,473 THESES · 2023–2026</span>
+      </span>
+    </a>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html" class="active">개요</a></li>
+        <li><a href="schools.html">학교별</a></li>
+        <li><a href="recommendations.html">추천 논문</a></li>
+        <li><a href="pdfs.html">PDF</a></li>
+        <li><a href="report.html?file=00_최종_종합보고서.md">최종 보고서</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-eyebrow">Graduate Thesis Intelligence Report</div>
+    <h1 class="hero-title">
+      국내 AI 대학원 석사논문<br>
+      <span class="accent">트렌드·추천·다운로드</span> 한 곳에
+    </h1>
+    <p class="hero-subtitle">
+      고려대·서울대·연세대·한양대·성균관대·서강대·중앙대·경희대·시립대 —
+      10개 학교 석사논문 1,473건을 학과별·연도별·카테고리별로 분석했습니다.
+      RL·AI4Science·LLM·멀티모달 분야의 흐름을 한눈에 보고, 추천 논문 38편 PDF를 직접 다운로드 받으세요.
+    </p>
+    <div class="hero-meta">
+      <span>📅 <strong>2026-04-28</strong></span>
+      <span>·</span>
+      <span>🎓 최경찬 (고려대 SW·AI 융합대학원 석사)</span>
+    </div>
+  </div>
+</section>
+
+<main>
+
+<!-- 핵심 통계 -->
+<section class="section">
+  <div class="container">
+    <header class="section-head">
+      <div class="section-eyebrow">At a glance</div>
+      <h2 class="section-title">핵심 통계</h2>
+      <p class="section-desc">2023~2026 발행 학위논문 기준. 학교마다 데이터 등재 시점이 달라 일부 시간차 있을 수 있음.</p>
+    </header>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-label">총 학위논문</div>
+        <div class="stat-value">1,473</div>
+        <div class="stat-trend">10개 학교 · AI 관련 학과</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">최대 규모</div>
+        <div class="stat-value">서울대</div>
+        <div class="stat-trend">302건 · 협동AI/GSDS/컴공</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">PDF 다운로드</div>
+        <div class="stat-value">38</div>
+        <div class="stat-trend">436MB · 추천 논문 직접 보기</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">최다 카테고리</div>
+        <div class="stat-value">LLM</div>
+        <div class="stat-trend">전체 ~17–25% (학교별 Top 1–2)</div>
+      </div>
+    </div>
+
+    <div class="chart-grid">
+      <div class="chart-box">
+        <div class="chart-box-head">
+          <h3>학교별 학위논문 수</h3>
+          <span class="chart-box-sub">2023–2026 발행</span>
+        </div>
+        <div class="chart-canvas-wrap">
+          <canvas id="chart-schools"></canvas>
+        </div>
+      </div>
+      <div class="chart-box">
+        <div class="chart-box-head">
+          <h3>카테고리 분포 (전체 합산)</h3>
+          <span class="chart-box-sub">중복 카운트 포함, 추정치</span>
+        </div>
+        <div class="chart-canvas-wrap">
+          <canvas id="chart-categories"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 학교 카드 -->
+<section class="section" id="schools">
+  <div class="container">
+    <header class="section-head">
+      <div class="section-eyebrow">School Profiles</div>
+      <h2 class="section-title">학교별 프로파일</h2>
+      <p class="section-desc">각 카드를 클릭하면 해당 학교의 전수 논문 목록·카테고리 분포·추천 Top 논문을 볼 수 있습니다.</p>
+    </header>
+    <div class="school-grid" id="school-grid"></div>
+  </div>
+</section>
+
+<!-- Top 추천 -->
+<section class="section">
+  <div class="container">
+    <header class="section-head">
+      <div class="section-eyebrow">Top Picks</div>
+      <h2 class="section-title">전체 Top 9 추천</h2>
+      <p class="section-desc">사용자 관심분야(LLM · AI4Science · RL · 멀티모달)에 가장 매칭되는 논문 9편. 더 많은 추천은 <a href="recommendations.html">추천 페이지</a>에서.</p>
+    </header>
+    <div class="rec-grid" id="rec-top9"></div>
+  </div>
+</section>
+
+<!-- Action Plan -->
+<section class="section">
+  <div class="container">
+    <header class="section-head">
+      <div class="section-eyebrow">Next Steps</div>
+      <h2 class="section-title">권장 액션 플랜</h2>
+      <p class="section-desc">본 보고서를 들고 단계적으로 졸업논문 주제를 좁혀나가는 방법.</p>
+    </header>
+    <div class="action-list">
+      <div class="action-item">
+        <div class="action-num">1</div>
+        <div class="action-body">
+          <strong>이번 주: 추천 PDF 5~8편 정독</strong>
+          <p>관심 분야 매칭 논문 우선 — LLM Reasoning, AI4Science (Materials), RL (GFlowNets/Bandits), VLM (Robot Grasping)</p>
+        </div>
+      </div>
+      <div class="action-item">
+        <div class="action-num">2</div>
+        <div class="action-body">
+          <strong>2주차: 본교 교수님 면담</strong>
+          <p>임희석(NLP/LLM), 강재우(인공지능융합), 유헌창(보안), 강필성 등에게 본 보고서 가져가서 "이 트렌드 보고 뭘 추천하시냐" 질문</p>
+        </div>
+      </div>
+      <div class="action-item">
+        <div class="action-num">3</div>
+        <div class="action-body">
+          <strong>3-4주차: Top 3 후보 좁히기</strong>
+          <p>각 후보당 핵심 paper 1-2편 정독, 데이터셋·코드 가용성 확인</p>
+        </div>
+      </div>
+      <div class="action-item">
+        <div class="action-num">4</div>
+        <div class="action-body">
+          <strong>5-8주차: Toy Reproduction</strong>
+          <p>후보 1개로 좁히고, 작은 규모 실험 (toy reproduction) 진행</p>
+        </div>
+      </div>
+      <div class="action-item">
+        <div class="action-num">5</div>
+        <div class="action-body">
+          <strong>학기 말: 정식 제안서 + 지도교수 매칭</strong>
+          <p>주제·연구 가설·실험 계획 명시한 제안서 작성 → 지도교수 컨펌</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-meta">
+      <strong>AI Thesis Intelligence Dashboard</strong><br>
+      대상자: 최경찬 (고려대 SW·AI 융합대학원 석사과정)<br>
+      자료 출처: 각 대학 dCollection · S-Space · RISS · 학과 홈페이지<br>
+      수집일: 2026-04-28
+    </div>
+    <div class="footer-credit">
+      Built with Claude Code<br>
+      Design: 7-step hierarchical (Trust × Academic)<br>
+      Open data · 학술 비영리 용도
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script src="assets/data.js"></script>
+<script>
+// === School cards 렌더링 ===
+function renderSchoolCards() {
+  const grid = document.getElementById('school-grid');
+  grid.innerHTML = SCHOOLS.map(s => `
+    <a class="school-card" href="school.html?id=${s.id}" style="--brand-color: ${s.color}">
+      <div class="school-card-head">
+        <div>
+          <div class="school-name">${s.name}</div>
+          <div class="school-type">${s.type}</div>
+        </div>
+        <span class="school-count">${s.count}<em>건</em></span>
+      </div>
+      <div class="school-depts">${s.departments.join(' · ')}</div>
+      <div class="school-tags">
+        ${s.tags.map(t => `<span class="school-tag">${t}</span>`).join('')}
+      </div>
+      <div class="school-note">${s.note}</div>
+    </a>
+  `).join('');
+}
+
+// === 추천 논문 카드 렌더링 ===
+function renderRecCards(items, containerId) {
+  const grid = document.getElementById(containerId);
+  grid.innerHTML = items.map(r => `
+    <article class="rec-card">
+      <div class="rec-card-head">
+        <span class="rec-school">${r.school}</span>
+        <span class="rec-year">${r.year}</span>
+      </div>
+      <div class="rec-title">${r.title}</div>
+      <div class="rec-author">${r.author}</div>
+      <div class="rec-reason">${r.reason}</div>
+      <div class="rec-foot">
+        <div class="rec-cats">
+          ${r.category.map(c => `<span class="cat-badge cat-${c}">${CATEGORY_LABELS[c] || c}</span>`).join('')}
+        </div>
+        ${r.pdf ? `<a class="rec-pdf" href="../PDF/${r.pdf}" target="_blank">PDF</a>` : ''}
+      </div>
+    </article>
+  `).join('');
+}
+
+// === Top 9: LLM/AI4Sci/RL/멀티모달 균형 ===
+function pickTop9() {
+  const picks = [];
+  const seenAuthors = new Set();
+  const want = ['llm', 'ai4sci', 'rl', 'mm'];
+  // 카테고리별 균형 (각 2-3편)
+  for (const cat of want) {
+    const ofCat = RECOMMENDATIONS.filter(r => r.category.includes(cat) && !seenAuthors.has(r.author));
+    for (let i = 0; i < 3 && i < ofCat.length; i++) {
+      if (!seenAuthors.has(ofCat[i].author)) {
+        picks.push(ofCat[i]);
+        seenAuthors.add(ofCat[i].author);
+        if (picks.length === 9) return picks;
+      }
+    }
+  }
+  return picks.slice(0, 9);
+}
+
+// === Charts ===
+function renderCharts() {
+  const isDark = false;
+  const baseColor = '#1e2a4a';
+  const accentColor = '#8b1538';
+
+  // 학교별 막대
+  const schoolLabels = SCHOOLS.map(s => s.name.replace('고려대 ', '고대\n').replace('서울', '서울').replace('학교', '').replace(/대$/, '대'));
+  const schoolCounts = SCHOOLS.map(s => s.count);
+  const schoolColors = SCHOOLS.map(s => s.color);
+
+  new Chart(document.getElementById('chart-schools'), {
+    type: 'bar',
+    data: {
+      labels: SCHOOLS.map(s => s.name.length > 14 ? s.name.slice(0, 12) + '…' : s.name),
+      datasets: [{
+        label: '학위논문 건수',
+        data: schoolCounts,
+        backgroundColor: schoolColors,
+        borderRadius: 6,
+        borderSkipped: false
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      indexAxis: 'y',
+      plugins: {
+        legend: { display: false },
+        tooltip: { callbacks: { label: ctx => `${ctx.parsed.x}건` } }
+      },
+      scales: {
+        x: { grid: { color: '#e8e4dc' }, ticks: { color: '#6b6356' } },
+        y: { grid: { display: false }, ticks: { color: '#1a1a1a', font: { size: 11 } } }
+      }
+    }
+  });
+
+  // 카테고리 도넛
+  const catLabels = Object.keys(CATEGORIES);
+  const catTotals = catLabels.map(k => Object.values(CATEGORIES[k]).reduce((a, b) => a + b, 0));
+  const catPalette = ['#1e2a4a', '#3b4d7a', '#8b1538', '#2d6a4f', '#b8860b', '#6a1b9a', '#003a70'];
+
+  new Chart(document.getElementById('chart-categories'), {
+    type: 'doughnut',
+    data: {
+      labels: catLabels,
+      datasets: [{
+        data: catTotals,
+        backgroundColor: catPalette,
+        borderColor: '#fff',
+        borderWidth: 2
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      cutout: '55%',
+      plugins: {
+        legend: { position: 'right', labels: { boxWidth: 12, padding: 10, font: { size: 11 } } },
+        tooltip: { callbacks: { label: ctx => `${ctx.label}: ${ctx.parsed}건 (${(ctx.parsed/catTotals.reduce((a,b)=>a+b,0)*100).toFixed(1)}%)` } }
+      }
+    }
+  });
+}
+
+// === Init ===
+document.addEventListener('DOMContentLoaded', () => {
+  renderSchoolCards();
+  renderRecCards(pickTop9(), 'rec-top9');
+  renderCharts();
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>학교별 프로파일 · AI 석사논문 인텔리전스</title>
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable-dynamic-subset.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">AI</span>
+      <span class="brand-text">
+        <span class="brand-title">석사논문 인텔리전스</span>
+        <span class="brand-sub">10 SCHOOLS · 1,473 THESES</span>
+      </span>
+    </a>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">개요</a></li>
+        <li><a href="schools.html" class="active">학교별</a></li>
+        <li><a href="recommendations.html">추천 논문</a></li>
+        <li><a href="pdfs.html">PDF</a></li>
+        <li><a href="report.html?file=00_최종_종합보고서.md">최종 보고서</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" style="padding: 4rem 0 2rem;">
+  <div class="hero-inner">
+    <div class="hero-eyebrow">By School</div>
+    <h1 class="hero-title">학교별 <span class="accent">프로파일</span></h1>
+    <p class="hero-subtitle">10개 학교의 데이터·강세 분야·특성을 비교하세요. 카드 클릭 시 해당 학교의 전수 논문 목록·통계 보고서 페이지로 이동.</p>
+  </div>
+</section>
+
+<main>
+<section class="section">
+  <div class="container">
+    <div class="school-grid" id="school-grid"></div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-meta"><strong>AI Thesis Intelligence Dashboard</strong><br>자료: 각 대학 dCollection · S-Space · RISS</div>
+    <div class="footer-credit">Built with Claude Code · 학술 비영리 용도</div>
+  </div>
+</footer>
+
+<script src="assets/data.js"></script>
+<script>
+document.getElementById('school-grid').innerHTML = SCHOOLS.map(s => `
+  <a class="school-card" href="school.html?id=${s.id}" style="--brand-color: ${s.color}">
+    <div class="school-card-head">
+      <div>
+        <div class="school-name">${s.name}</div>
+        <div class="school-type">${s.type}</div>
+      </div>
+      <span class="school-count">${s.count}<em>건</em></span>
+    </div>
+    <div class="school-depts">${s.departments.join(' · ')}</div>
+    <div class="school-tags">${s.tags.map(t => `<span class="school-tag">${t}</span>`).join('')}</div>
+    <div class="school-note">${s.note}</div>
+  </a>
+`).join('');
+</script>
+</body>
+</html>
