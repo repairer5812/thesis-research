@@ -542,6 +542,93 @@ img { max-width: 100%; display: block; }
   line-height: 1.5;
 }
 
+/* === Block (summary / reason 통합 스타일) === */
+.rec-block {
+  font-size: 0.85rem;
+  background: var(--color-surface-2);
+  padding: var(--space-3);
+  border-radius: var(--radius-sm);
+  line-height: 1.55;
+}
+.rec-block-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--color-text-muted);
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+.rec-block-text { color: var(--color-text); }
+.rec-summary { border-left: 3px solid var(--color-primary-light); }
+.rec-block.rec-reason { border-left: 3px solid var(--color-accent); }
+
+/* === Action buttons (원본 + 클라우드) === */
+.rec-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2);
+  margin-top: auto;
+  padding-top: var(--space-2);
+}
+.rec-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-sm);
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all var(--tx-fast);
+  text-align: center;
+  white-space: nowrap;
+}
+.rec-btn-icon { font-size: 0.95rem; line-height: 1; }
+.rec-btn-meta {
+  font-size: 0.65rem;
+  font-weight: 500;
+  opacity: 0.85;
+  margin-left: 4px;
+}
+.rec-btn-original {
+  background: var(--color-primary);
+  color: white;
+}
+.rec-btn-original:hover {
+  background: var(--color-primary-dark);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow);
+}
+.rec-btn-cloud {
+  background: var(--color-accent);
+  color: white;
+}
+.rec-btn-cloud:hover {
+  background: var(--color-accent-light);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow);
+}
+.rec-btn-cloud-disabled {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-sm);
+  font-size: 0.82rem;
+  font-weight: 600;
+  background: var(--color-border);
+  color: var(--color-text-muted);
+  cursor: not-allowed;
+  text-align: center;
+  white-space: nowrap;
+}
+@media (max-width: 480px) {
+  .rec-actions { grid-template-columns: 1fr; }
+  .rec-btn-meta { display: none; }
+}
+
 .rec-foot {
   display: flex;
   align-items: center;

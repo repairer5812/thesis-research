@@ -97,28 +97,13 @@
 </footer>
 
 <script src="assets/data.js"></script>
+<script src="assets/cards.js"></script>
 <script>
 let currentSchool = 'all';
 
 function renderPdfs() {
   const list = RECOMMENDATIONS.filter(r => r.pdf && (currentSchool === 'all' || r.school.includes(currentSchool.replace('고려대 일반대', '고려대'))));
-  document.getElementById('pdf-list').innerHTML = list.map(r => `
-    <article class="rec-card">
-      <div class="rec-card-head">
-        <span class="rec-school">${r.school}</span>
-        <span class="rec-year">${r.year}</span>
-      </div>
-      <div class="rec-title">${r.title}</div>
-      <div class="rec-author">${r.author}</div>
-      <div class="rec-reason">${r.reason}</div>
-      <div class="rec-foot">
-        <div class="rec-cats">
-          ${r.category.map(c => `<span class="cat-badge cat-${c}">${CATEGORY_LABELS[c] || c}</span>`).join('')}
-        </div>
-        <a class="rec-pdf" href="pdfs/${r.pdf}" target="_blank">PDF 열기</a>
-      </div>
-    </article>
-  `).join('');
+  renderRecGrid(list, 'pdf-list');
 }
 
 document.addEventListener('DOMContentLoaded', () => {

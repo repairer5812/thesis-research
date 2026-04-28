@@ -203,6 +203,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <script src="assets/data.js"></script>
+<script src="assets/cards.js"></script>
 <script>
 // === School cards 렌더링 ===
 function renderSchoolCards() {
@@ -222,28 +223,6 @@ function renderSchoolCards() {
       </div>
       <div class="school-note">${s.note}</div>
     </a>
-  `).join('');
-}
-
-// === 추천 논문 카드 렌더링 ===
-function renderRecCards(items, containerId) {
-  const grid = document.getElementById(containerId);
-  grid.innerHTML = items.map(r => `
-    <article class="rec-card">
-      <div class="rec-card-head">
-        <span class="rec-school">${r.school}</span>
-        <span class="rec-year">${r.year}</span>
-      </div>
-      <div class="rec-title">${r.title}</div>
-      <div class="rec-author">${r.author}</div>
-      <div class="rec-reason">${r.reason}</div>
-      <div class="rec-foot">
-        <div class="rec-cats">
-          ${r.category.map(c => `<span class="cat-badge cat-${c}">${CATEGORY_LABELS[c] || c}</span>`).join('')}
-        </div>
-        ${r.pdf ? `<a class="rec-pdf" href="../PDF/${r.pdf}" target="_blank">PDF</a>` : ''}
-      </div>
-    </article>
   `).join('');
 }
 
@@ -335,7 +314,7 @@ function renderCharts() {
 // === Init ===
 document.addEventListener('DOMContentLoaded', () => {
   renderSchoolCards();
-  renderRecCards(pickTop9(), 'rec-top9');
+  renderRecGrid(pickTop9(), 'rec-top9');
   renderCharts();
 });
 </script>

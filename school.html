@@ -70,6 +70,7 @@
 </footer>
 
 <script src="assets/data.js"></script>
+<script src="assets/cards.js"></script>
 <script>
 const params = new URLSearchParams(location.search);
 const id = params.get('id');
@@ -125,27 +126,10 @@ if (recsHere.length > 0) {
         <div class="section-eyebrow">Top Picks</div>
         <h2 class="section-title">${school.name} 추천 논문 ${recsHere.length}편</h2>
       </header>
-      <div class="rec-grid">
-        ${recsHere.map(r => `
-          <article class="rec-card">
-            <div class="rec-card-head">
-              <span class="rec-school" style="background:${school.color}">${r.school}</span>
-              <span class="rec-year">${r.year}</span>
-            </div>
-            <div class="rec-title">${r.title}</div>
-            <div class="rec-author">${r.author}</div>
-            <div class="rec-reason">${r.reason}</div>
-            <div class="rec-foot">
-              <div class="rec-cats">
-                ${r.category.map(c => `<span class="cat-badge cat-${c}">${CATEGORY_LABELS[c] || c}</span>`).join('')}
-              </div>
-              ${r.pdf ? `<a class="rec-pdf" href="../PDF/${r.pdf}" target="_blank">PDF</a>` : ''}
-            </div>
-          </article>
-        `).join('')}
-      </div>
+      <div class="rec-grid" id="school-recs"></div>
     </section>
   `);
+  renderRecGrid(recsHere, 'school-recs', { schoolColor: school.color });
 }
 </script>
 </body>

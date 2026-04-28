@@ -77,6 +77,7 @@
 </footer>
 
 <script src="assets/data.js"></script>
+<script src="assets/cards.js"></script>
 <script>
 let currentCat = 'all';
 let currentSearch = '';
@@ -88,7 +89,8 @@ function getFiltered() {
     const matchSearch = !search ||
       r.title.toLowerCase().includes(search) ||
       r.author.toLowerCase().includes(search) ||
-      r.reason.toLowerCase().includes(search) ||
+      (r.reason || '').toLowerCase().includes(search) ||
+      (r.summary || '').toLowerCase().includes(search) ||
       r.school.toLowerCase().includes(search);
     return matchCat && matchSearch;
   });
@@ -96,33 +98,14 @@ function getFiltered() {
 
 function render() {
   const list = getFiltered();
-  const grid = document.getElementById('rec-list');
   const empty = document.getElementById('empty');
-
   if (list.length === 0) {
-    grid.innerHTML = '';
+    document.getElementById('rec-list').innerHTML = '';
     empty.style.display = 'block';
     return;
   }
   empty.style.display = 'none';
-
-  grid.innerHTML = list.map(r => `
-    <article class="rec-card">
-      <div class="rec-card-head">
-        <span class="rec-school">${r.school}</span>
-        <span class="rec-year">${r.year}</span>
-      </div>
-      <div class="rec-title">${r.title}</div>
-      <div class="rec-author">${r.author}</div>
-      <div class="rec-reason">${r.reason}</div>
-      <div class="rec-foot">
-        <div class="rec-cats">
-          ${r.category.map(c => `<span class="cat-badge cat-${c}">${CATEGORY_LABELS[c] || c}</span>`).join('')}
-        </div>
-        ${r.pdf ? `<a class="rec-pdf" href="../PDF/${r.pdf}" target="_blank">PDF</a>` : ''}
-      </div>
-    </article>
-  `).join('');
+  renderRecGrid(list, 'rec-list');
 }
 
 function updateCounts() {
