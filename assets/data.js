@@ -91,11 +91,11 @@ const SCHOOLS = [
     reports: ["05_성균관대_논문조사.md", "05b_성균관대_특수대학원_보충.md"]
   },
   {
-    id: "07-sogang", name: "서강대", type: "일반+특수", color: "#6a1b9a",
+    id: "07-sogang", name: "서강대", type: "일반+다수 특수", color: "#6a1b9a",
     totalCount: 133, deptTypes: ["일반", "특수"],
-    departments: ["일반대학원 컴공/AI학과", "AI·SW대학원 (특수)", "정보통신대학원 (특수)"],
+    departments: ["일반대학원 컴공/AI학과 (13건)", "AI·SW대학원 특수 (70건, 2022 신설)", "정보통신대학원 특수 (47건)", "메타버스전문대학원 특수 (4건)", "기술경영(MOT)·가상융합 특수 (3건)"],
     tags: ["LLM Agent", "RAG", "Self-Improving"],
-    note: "2026: Speculative RAG, Self-Improving Agent (133건)",
+    note: "특수대학원이 데이터의 90%+. AI·SW대학원이 핵심 (Speculative RAG, Self-Improving Agent 등)",
     reports: ["06_서강대_논문조사.md"]
   },
   {
