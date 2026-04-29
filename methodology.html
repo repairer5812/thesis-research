@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>객관 점수 기준 · AI 석사논문 인텔리전스</title>
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable-dynamic-subset.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="assets/style.css" />
+<style>
+  .method-table { width:100%; border-collapse:collapse; margin: var(--space-4) 0; font-size:0.95rem; }
+  .method-table th, .method-table td { padding: var(--space-3) var(--space-4); text-align:left; border-bottom: 1px solid var(--color-border); vertical-align: top; }
+  .method-table th { background: var(--color-surface); font-weight:700; color: var(--color-primary); }
+  .method-table td:first-child { font-weight:600; white-space:nowrap; }
+  .method-table .score-cell { font-family: "JetBrains Mono", "SF Mono", Monaco, monospace; color: var(--color-accent); font-weight:700; }
+  .grade-pill { display:inline-block; padding:2px 10px; border-radius:999px; font-weight:700; color:white; font-size:0.85rem; margin-right:0.5rem; }
+  .grade-S { background:#7a0019; }
+  .grade-A { background:#b91c52; }
+  .grade-B { background:#1e2a4a; }
+  .grade-C { background:#948b7c; }
+  .callout { background: #fff7e6; border-left: 4px solid #b8860b; padding: var(--space-4) var(--space-5); border-radius: 8px; margin: var(--space-5) 0; }
+  .callout strong { color: #b8860b; }
+  .limitation { background: #f9f6f1; border-left: 4px solid var(--color-accent); padding: var(--space-4) var(--space-5); border-radius: 8px; margin: var(--space-4) 0; }
+  .limitation strong { color: var(--color-accent); }
+  .method-list li { margin-bottom: var(--space-3); line-height: 1.7; }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">AI</span>
+      <span class="brand-text">
+        <span class="brand-title">석사논문 인텔리전스</span>
+        <span class="brand-sub">17 SCHOOLS · 4,620 THESES</span>
+      </span>
+    </a>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">개요</a></li>
+        <li><a href="schools.html">학교별</a></li>
+        <li><a href="recommendations.html">추천 논문</a></li>
+        <li><a href="methodology.html" class="active">검증 기준</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" style="padding: 4rem 0 2rem;">
+  <div class="hero-inner">
+    <div class="hero-eyebrow">Methodology</div>
+    <h1 class="hero-title">객관 검증 <span class="accent">점수 기준</span></h1>
+    <p class="hero-subtitle">192편의 추천 논문에 대해 5개 객관 지표를 합산해 0~100점으로 점수화하고 S/A/B/C 등급으로 분류했습니다. 평가 기준·등급 분포·한계를 투명하게 공개합니다.</p>
+  </div>
+</section>
+
+<main>
+<section class="section">
+  <div class="container" style="max-width: 880px;">
+
+    <h2 class="section-title" style="margin-bottom: var(--space-4);">📊 5개 객관 지표</h2>
+    <p style="color: var(--color-text-muted); margin-bottom: var(--space-5);">
+      각 논문에 다음 5개 지표를 합산해 총점(0~100)을 부여합니다. 점수는 추천 카드의 작은 줄에 분해되어 표시됩니다 (예: <code>+30 venue · +30 cites · +5 code · +5 recency</code>).
+    </p>
+
+    <table class="method-table">
+      <thead>
+        <tr><th style="width: 18%;">지표</th><th style="width: 22%;">배점</th><th>부여 기준</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>학회 게재<br><span style="font-weight:400; color:var(--color-text-muted); font-size:0.85rem;">venue</span></td>
+          <td><span class="score-cell">0 / 10 / 20 / 30</span></td>
+          <td>
+            <strong>S 30점</strong> — NeurIPS · ICML · ICLR · ACL · EMNLP · CVPR · ICCV · NAACL · KDD · SIGIR<br>
+            <strong>A 20점</strong> — AAAI · IJCAI · INTERSPEECH · WWW · CIKM · SIGGRAPH · WACV · BMVC · ACMMM · MICCAI<br>
+            <strong>B 10점</strong> — Workshop · IEEE Access · PAKDD · 도메인 전문 저널<br>
+            <strong>0점</strong> — 미게재 또는 미확인
+          </td>
+        </tr>
+        <tr>
+          <td>피인용수<br><span style="font-weight:400; color:var(--color-text-muted); font-size:0.85rem;">citations</span></td>
+          <td><span class="score-cell">0 ~ 30 (cap)</span></td>
+          <td>Google Scholar / Semantic Scholar 기준 인용 1건당 1점, <strong>30점 상한</strong>. 수집 시점의 누적 인용수 기준 (시간이 지나면 변동)</td>
+        </tr>
+        <tr>
+          <td>코드 공개<br><span style="font-weight:400; color:var(--color-text-muted); font-size:0.85rem;">github</span></td>
+          <td><span class="score-cell">0 / 5 ~ 10</span></td>
+          <td>
+            <strong>0점</strong> — 코드 미공개<br>
+            <strong>5점</strong> — GitHub 공개 확인<br>
+            <strong>+1</strong> — 50+ stars<br>
+            <strong>+2</strong> — 100+ stars<br>
+            <strong>+5</strong> — 1,000+ stars (총 10점 상한)
+          </td>
+        </tr>
+        <tr>
+          <td>수상<br><span style="font-weight:400; color:var(--color-text-muted); font-size:0.85rem;">award</span></td>
+          <td><span class="score-cell">가산점</span></td>
+          <td>Best Paper · Outstanding · Spotlight · Oral 등 학회 인정 시 추가 점수</td>
+        </tr>
+        <tr>
+          <td>최신성<br><span style="font-weight:400; color:var(--color-text-muted); font-size:0.85rem;">recency</span></td>
+          <td><span class="score-cell">0 / 1 / 3 / 5</span></td>
+          <td>
+            <strong>0점</strong> — 2022년 이전<br>
+            <strong>1점</strong> — 2023년<br>
+            <strong>3점</strong> — 2024년<br>
+            <strong>5점</strong> — 2025–2026년
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2 class="section-title" style="margin-top: var(--space-10); margin-bottom: var(--space-4);">🏅 등급 분류</h2>
+    <p style="color: var(--color-text-muted); margin-bottom: var(--space-4);">총점 구간별로 4개 등급을 부여합니다.</p>
+
+    <table class="method-table">
+      <thead>
+        <tr><th>등급</th><th>점수 구간</th><th>의미</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><span class="grade-pill grade-S">S</span></td><td><strong>≥ 70</strong></td><td>S-tier 학회 게재 + 인용·코드 모두 강함. 학습·재현 가치 최상</td></tr>
+        <tr><td><span class="grade-pill grade-A">A</span></td><td><strong>40 ~ 69</strong></td><td>학회 게재 또는 인용·코드 중 1~2개 강함. 분야 대표 라인</td></tr>
+        <tr><td><span class="grade-pill grade-B">B</span></td><td><strong>20 ~ 39</strong></td><td>최신성 또는 단일 지표가 강함. 출발점·트렌드 파악용</td></tr>
+        <tr><td><span class="grade-pill grade-C">C</span></td><td><strong>&lt; 20</strong></td><td>학위논문만 등재 또는 검증 정보 부족. 절대 평가 부적절</td></tr>
+      </tbody>
+    </table>
+
+    <h2 class="section-title" style="margin-top: var(--space-10); margin-bottom: var(--space-4);">📈 현재 분포 (192편 기준)</h2>
+    <ul class="method-list" style="margin-left: 1.5rem;">
+      <li><strong>학회 게재</strong>: S-tier 34편 · A-tier 13편 · B-tier 7편 · 미게재/미확인 138편</li>
+      <li><strong>코드 공개</strong>: 42편 (22%)</li>
+      <li><strong>인용 30점 cap 도달</strong>: 13편</li>
+      <li><strong>등급</strong>: S 4편 · A 21편 · B 26편 · C 141편</li>
+    </ul>
+
+    <h2 class="section-title" style="margin-top: var(--space-10); margin-bottom: var(--space-4);">⚠️ 한계 — 정직하게</h2>
+
+    <div class="callout">
+      <strong>특수대학원 점수 비교 부적절</strong><br>
+      특수대학원 30편은 모두 C 등급(평균 3.3점)이며, 점수 차이는 사실상 최신성(recency)뿐입니다. 이는 모델의 한계입니다 —
+      <ul style="margin: 0.75rem 0 0 1.5rem;">
+        <li>재직자 중심 운영 특성상 학회 게재 동기·여건이 약함</li>
+        <li>학위논문이 dCollection에만 등재되고 외부 학회로 연결되지 않는 경우 다수</li>
+        <li>인용·코드 공개도 트래킹 안 됨</li>
+      </ul>
+      <p style="margin-top: 0.75rem;">특수대학원 논문은 <strong>점수가 아닌 학교 페이지·분야 키워드·파인만식 해석</strong>으로 평가하길 권장합니다. 일반대학원과의 직접 비교는 의미 없습니다.</p>
+    </div>
+
+    <div class="limitation">
+      <strong>인용수의 시간 의존성</strong><br>
+      인용수는 수집 시점(2026-04 기준)의 누적치입니다. 최근 발표 논문은 인용 기회가 적어 점수가 낮게 측정될 수 있고, 1년 후 재집계 시 분포가 크게 변할 수 있습니다.
+    </div>
+
+    <div class="limitation">
+      <strong>학회 매칭 실패 138편</strong><br>
+      138편은 venueScore가 0인데, 이는 "학회 게재가 안 됐다"가 아니라 <strong>"학회 매칭을 자동으로 확인하지 못했다"</strong>는 뜻입니다. 학위논문만 dCollection에 등재된 경우, 학회 게재가 있어도 자동 검색에서 누락된 경우가 섞여 있습니다. 점수가 낮아도 좋은 연구일 수 있으니 절대 판단 기준으로 쓰지 마세요.
+    </div>
+
+    <div class="limitation">
+      <strong>학회 티어 분류는 통념 기반</strong><br>
+      S/A/B 분류는 CSRankings, BK21 학회 분류, KCI 등 학계 일반 통념을 참고했지만 절대 기준은 아닙니다. 분야별로 핵심 학회가 다르며(예: HCI 분야의 CHI는 컴퓨터공학에서 A로 보지만 HCI에서는 S), 본인 분야의 평가 관습을 우선 참고하세요.
+    </div>
+
+    <div class="limitation">
+      <strong>자동 검색의 한계</strong><br>
+      인용수·GitHub stars·학회 게재는 모두 외부 검색 API·웹 페이지 자동 파싱으로 수집했습니다. RISS 인증 차단, Google Scholar rate limit, dCollection 외부 IP 차단 등으로 일부 학교(특히 성균관대·시립대·경희대)는 데이터 sparse가 더 심합니다. 점수가 낮은 학교는 채점이 어려운 학교일 가능성도 있습니다.
+    </div>
+
+    <h2 class="section-title" style="margin-top: var(--space-10); margin-bottom: var(--space-4);">💡 권장 사용법</h2>
+    <ul class="method-list" style="margin-left: 1.5rem;">
+      <li><strong>S/A 등급</strong>: 학회 게재가 검증된 논문이라 데이터·실험 설계의 정합성을 그대로 배울 수 있는 출발점</li>
+      <li><strong>B 등급</strong>: 최신성 또는 단일 지표가 강한 라인. 본인 학교의 라인 파악 또는 트렌드 따라가기 용도</li>
+      <li><strong>C 등급</strong>: 점수만 보지 말고 <a href="recommendations.html">추천 페이지</a>에서 카드를 펼쳐 파인만식 해석을 읽고 판단하세요. 학위논문 자체의 가치는 등급과 별개일 수 있습니다</li>
+      <li><strong>특수대학원 진학생</strong>: 점수 정렬 대신 <a href="schools.html">학교별 페이지</a>에서 학과 구성·연구 라인을 보고 결정하세요</li>
+    </ul>
+
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-meta">
+      <strong>AI Thesis Intelligence Dashboard</strong><br>
+      작성자: 최경찬 (고려대 SW·AI 융합대학원 석사과정생)<br>
+      📧 <a href="mailto:repairer5812@gmail.com">repairer5812@gmail.com</a> &nbsp;|&nbsp;
+      📱 <a href="tel:+821028753705">010-2875-3705</a><br>
+      자료 출처: 각 대학 dCollection · S-Space · RISS · arXiv · OpenReview · Google Scholar
+    </div>
+    <div class="footer-credit">Built with Claude Code · 학술 비영리 용도</div>
+  </div>
+</footer>
+
+</body>
+</html>
