@@ -32,7 +32,7 @@
   <div class="hero-inner">
     <div class="hero-eyebrow">Curated Recommendations</div>
     <h1 class="hero-title">관심분야별 <span class="accent">추천 논문</span></h1>
-    <p class="hero-subtitle">10개 학교에서 사용자 관심분야(LLM·AI4Sci·RL·멀티모달)에 매칭되는 논문을 선별. 카테고리·학교 필터로 좁혀보세요.</p>
+    <p class="hero-subtitle">17개 학교에서 LLM·AI4Sci·RL·멀티모달 분야로 매칭된 논문을 학회 게재·인용수·코드 공개로 검증. 분야·학회 티어·정렬 필터로 좁혀보세요.</p>
   </div>
 </section>
 
@@ -54,6 +54,13 @@
         <button class="chip" data-filter-cat="ai4sci">AI4Sci <span class="chip-count" id="count-ai4sci">·</span></button>
         <button class="chip" data-filter-cat="rl">RL <span class="chip-count" id="count-rl">·</span></button>
         <button class="chip" data-filter-cat="mm">멀티모달 <span class="chip-count" id="count-mm">·</span></button>
+      </div>
+      <div class="filter-group">
+        <span class="filter-label">학회 티어</span>
+        <button class="chip active" data-filter-tier="all">전체 <span class="chip-count" id="count-tier-all">·</span></button>
+        <button class="chip" data-filter-tier="S">🥇 S <span class="chip-count" id="count-tier-S">·</span></button>
+        <button class="chip" data-filter-tier="A">🥈 A <span class="chip-count" id="count-tier-A">·</span></button>
+        <button class="chip" data-filter-tier="B">🥉 B <span class="chip-count" id="count-tier-B">·</span></button>
       </div>
       <div class="filter-group">
         <span class="filter-label">정렬</span>
@@ -91,6 +98,7 @@
 <script>
 let currentCat = 'all';
 let currentDept = 'all';
+let currentTier = 'all';
 let currentSort = 'score';
 let currentSearch = '';
 
@@ -99,9 +107,10 @@ function getFiltered() {
   let list = RECOMMENDATIONS.filter(r => {
     const matchCat = currentCat === 'all' || (r.category || []).includes(currentCat);
     const matchDept = currentDept === 'all' || r.deptType === currentDept;
+    const matchTier = currentTier === 'all' || (r.metrics?.venueTier || '') === currentTier;
     const hay = [r.title, r.author, r.school, r.notes || '', (r.metrics?.venue || '')].join(' ').toLowerCase();
     const matchSearch = !search || hay.includes(search);
-    return matchCat && matchDept && matchSearch;
+    return matchCat && matchDept && matchTier && matchSearch;
   });
   // 정렬
   if (currentSort === 'score') list.sort((a,b) => (b.metrics?.score||0) - (a.metrics?.score||0));
@@ -127,6 +136,10 @@ function updateCounts() {
   ['llm', 'ai4sci', 'rl', 'mm'].forEach(c => {
     document.getElementById('count-' + c).textContent = RECOMMENDATIONS.filter(r => (r.category||[]).includes(c)).length;
   });
+  document.getElementById('count-tier-all').textContent = RECOMMENDATIONS.length;
+  ['S', 'A', 'B'].forEach(t => {
+    document.getElementById('count-tier-' + t).textContent = RECOMMENDATIONS.filter(r => (r.metrics?.venueTier || '') === t).length;
+  });
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -145,6 +158,14 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.addEventListener('click', () => {
       currentDept = btn.dataset.filterDept;
       document.querySelectorAll('[data-filter-dept]').forEach(b => b.classList.toggle('active', b === btn));
+      render();
+    });
+  });
+
+  document.querySelectorAll('[data-filter-tier]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      currentTier = btn.dataset.filterTier;
+      document.querySelectorAll('[data-filter-tier]').forEach(b => b.classList.toggle('active', b === btn));
       render();
     });
   });

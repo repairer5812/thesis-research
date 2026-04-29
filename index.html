@@ -38,12 +38,11 @@
       <span class="accent">트렌드·추천·다운로드</span> 한 곳에
     </h1>
     <p class="hero-subtitle">
-      고려대·서울대·연세대·한양대·성균관대·서강대·중앙대·경희대·시립대 —
-      10개 학교 석사논문 1,473건을 학과별·연도별·카테고리별로 분석했습니다.
-      RL·AI4Science·LLM·멀티모달 분야의 흐름을 한눈에 보고, 추천 논문 38편 PDF를 직접 다운로드 받으세요.
+      국내 17개 AI 대학원의 석사논문 4,620건을 학과별·연도별·카테고리별로 분석.
+      LLM·멀티모달·AI4Sci·RL 흐름을 한눈에 보고, 학회 게재·인용수·코드 공개로 검증된 추천 논문 192편을 골라 보여줍니다.
     </p>
     <div class="hero-meta">
-      <span>📅 <strong>2026-04-28</strong></span>
+      <span>📅 <strong>2026-04-29 갱신</strong></span>
       <span>·</span>
       <span>🎓 최경찬 (고려대 SW·AI 융합대학원 석사과정생)</span>
     </div>
@@ -64,8 +63,8 @@
     <div class="stats-grid">
       <div class="stat-card">
         <div class="stat-label">총 학위논문</div>
-        <div class="stat-value">2,906</div>
-        <div class="stat-trend">16개 학교·대학원 · AI 관련 학과</div>
+        <div class="stat-value">4,620</div>
+        <div class="stat-trend">17개 학교·대학원 · AI 관련 학과</div>
       </div>
       <div class="stat-card">
         <div class="stat-label">객관 검증 추천</div>
@@ -74,12 +73,12 @@
       </div>
       <div class="stat-card">
         <div class="stat-label">최대 규모</div>
-        <div class="stat-value">KAIST</div>
-        <div class="stat-trend">476건 · 김재철AI 153건 포함</div>
+        <div class="stat-value">고려대</div>
+        <div class="stat-trend">일반대학원 945건 (정보+공과대학 균형)</div>
       </div>
       <div class="stat-card">
         <div class="stat-label">학회 게재 (S-tier)</div>
-        <div class="stat-value">25+</div>
+        <div class="stat-value">34</div>
         <div class="stat-trend">NeurIPS/ICML/ICLR/ACL/CVPR 등</div>
       </div>
     </div>
@@ -101,6 +100,15 @@
         </div>
         <div class="chart-canvas-wrap">
           <canvas id="chart-categories"></canvas>
+        </div>
+      </div>
+      <div class="chart-box" style="grid-column: 1 / -1;">
+        <div class="chart-box-head">
+          <h3>연도별 학회 트렌드</h3>
+          <span class="chart-box-sub">추천 논문 192편 기준, 학회별 누적</span>
+        </div>
+        <div class="chart-canvas-wrap" style="height: 320px;">
+          <canvas id="chart-trends"></canvas>
         </div>
       </div>
     </div>
@@ -326,6 +334,42 @@ function renderCharts() {
       plugins: {
         legend: { position: 'right', labels: { boxWidth: 12, padding: 10, font: { size: 13, family: '"Pretendard Variable", Pretendard, -apple-system, sans-serif' } } },
         tooltip: { callbacks: { label: ctx => `${ctx.label}: ${ctx.parsed}건 (${(ctx.parsed/catTotals.reduce((a,b)=>a+b,0)*100).toFixed(1)}%)` } }
+      }
+    }
+  });
+
+  // === 연도별 학회 트렌드 (누적 막대) ===
+  const TARGET_VENUES = ['NeurIPS', 'ICLR', 'ICML', 'ACL', 'CVPR', 'EMNLP'];
+  const VENUE_COLORS = { NeurIPS:'#1e2a4a', ICLR:'#3b4d7a', ICML:'#8b1538', ACL:'#2d6a4f', CVPR:'#b8860b', EMNLP:'#6a1b9a', '기타 학회':'#948b7c', '학회 미확정':'#d4cdc0' };
+  const years = [2022, 2023, 2024, 2025, 2026];
+
+  function venueGroup(v) {
+    if (!v) return '학회 미확정';
+    for (const t of TARGET_VENUES) if (v.includes(t)) return t;
+    return '기타 학회';
+  }
+
+  const groupNames = [...TARGET_VENUES, '기타 학회', '학회 미확정'];
+  const datasets = groupNames.map(g => ({
+    label: g,
+    data: years.map(y => RECOMMENDATIONS.filter(r => r.year === y && venueGroup(r.metrics?.venue) === g).length),
+    backgroundColor: VENUE_COLORS[g],
+    borderRadius: 4
+  }));
+
+  new Chart(document.getElementById('chart-trends'), {
+    type: 'bar',
+    data: { labels: years.map(y => y + '년'), datasets },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { position: 'right', labels: { boxWidth: 12, padding: 8, font: { size: 12, family: '"Pretendard Variable", Pretendard, sans-serif' } } },
+        tooltip: { callbacks: { label: ctx => `${ctx.dataset.label}: ${ctx.parsed.y}편` } }
+      },
+      scales: {
+        x: { stacked: true, grid: { display: false }, ticks: { color: '#1a1a1a', font: { size: 13 } } },
+        y: { stacked: true, beginAtZero: true, grid: { color: '#e8e4dc' }, ticks: { color: '#6b6356', font: { size: 12 }, stepSize: 10 }, title: { display: true, text: '추천 논문 편수', color: '#6b6356' } }
       }
     }
   });
