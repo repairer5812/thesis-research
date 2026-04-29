@@ -15,7 +15,7 @@
       <span class="brand-mark">AI</span>
       <span class="brand-text">
         <span class="brand-title">석사논문 인텔리전스</span>
-        <span class="brand-sub">10 SCHOOLS · 1,473 THESES</span>
+        <span class="brand-sub">17 SCHOOLS · 4,620 THESES</span>
       </span>
     </a>
     <nav>
@@ -24,7 +24,6 @@
         <li><a href="schools.html" class="active">학교별</a></li>
         <li><a href="recommendations.html">추천 논문</a></li>
         <li><a href="pdfs.html">PDF</a></li>
-        <li><a href="report.html?file=00_최종_종합보고서.md">최종 보고서</a></li>
       </ul>
     </nav>
   </div>
@@ -47,14 +46,6 @@
 <section class="section">
   <div class="container">
     <div id="school-tags-row" style="margin-bottom: 2rem;"></div>
-    <div id="school-reports">
-      <header class="section-head">
-        <div class="section-eyebrow">Reports</div>
-        <h2 class="section-title">상세 보고서</h2>
-        <p class="section-desc">아래 보고서를 클릭하면 학교별 전수 논문 목록과 분석을 볼 수 있습니다.</p>
-      </header>
-      <div class="rec-grid" id="reports-list"></div>
-    </div>
   </div>
 </section>
 </main>
@@ -89,47 +80,12 @@ document.getElementById('school-tags-row').innerHTML = `
   </div>
 `;
 
-const reportTitles = {
-  '01a_SW_AI융합대학원_특수_논문목록.md': '🗂️ SW·AI 융합대학원 91건 전수 목록',
-  '01b_SW_AI융합대학원_주제분류_통계.md': '📊 주제 분류·카테고리 통계',
-  '01c_일반대학원_인공지능학과_조사메모.md': '📝 일반대학원 인공지능학과 조사 메모',
-  '01d_일반대학원_인공지능학과_논문목록.md': '🗂️ 일반대학원 인공지능학과 118건 전수',
-  '02_서울대_논문조사.md': '🗂️ 서울대 302건 + 카테고리·Top 10',
-  '03_연세대_논문조사.md': '🗂️ 연세대 일반 233건 + 카테고리·Top 추천',
-  '03b_연세대_특수대학원_보충.md': '🏛️ 연세대 특수대학원(정보대학원 등) 74건',
-  '04_한양대_논문조사.md': '🗂️ 한양대 155건 + Top 10 추천',
-  '05_성균관대_논문조사.md': '🗂️ 성균관대 일반 52건 + 연구실별 분석',
-  '05b_성균관대_특수대학원_보충.md': '🏛️ 성균관대 특수대학원(정보통신) 23건',
-  '06_서강대_논문조사.md': '🗂️ 서강대 133건 + 트렌드 분석',
-  '07_중앙대_논문조사.md': '🗂️ 중앙대 272건 + Top 10 추천',
-  '08_경희대_논문조사.md': '🗂️ 경희대 67건 + 연구실 라인 분석',
-  '09_시립대_논문조사.md': '🗂️ 시립대 50건 + Top 8 추천',
-  '10_KAIST_논문조사.md': '🗂️ KAIST 476건 (김재철AI 153 + 5개 학과)',
-  '11_UNIST_논문조사.md': '🗂️ UNIST 185건 (AIGS 113건)',
-  '12_GIST_논문조사.md': '🗂️ GIST 160건 (AI융합 89건)',
-  '13_DGIST_논문조사.md': '🗂️ DGIST 57건',
-  '14_이화여대_논문조사.md': '🗂️ 이화여대 191건 (일반 172 + 특수 19)',
-  '15_POSTECH_논문조사.md': '🗂️ POSTECH 267건 (AI대학원 113건)'
-};
-
-const list = document.getElementById('reports-list');
-list.innerHTML = school.reports.map(file => `
-  <a class="rec-card" href="report.html?file=${encodeURIComponent(file)}" style="text-decoration:none; color:inherit;">
-    <div class="rec-title">${reportTitles[file] || file}</div>
-    <div class="rec-author">${file}</div>
-    <div class="rec-foot">
-      <span class="rec-school" style="background:${school.color}">${school.name}</span>
-      <span class="rec-pdf">읽기</span>
-    </div>
-  </a>
-`).join('');
-
 // 추천 논문 (이 학교 것만)
 const recsHere = RECOMMENDATIONS.filter(r => r.schoolId === school.id);
 if (recsHere.length > 0) {
   const main = document.querySelector('main .container');
   main.insertAdjacentHTML('beforeend', `
-    <section style="margin-top:3rem;">
+    <section style="margin-top:1rem;">
       <header class="section-head">
         <div class="section-eyebrow">Top Picks</div>
         <h2 class="section-title">${school.name} 추천 논문 ${recsHere.length}편</h2>
