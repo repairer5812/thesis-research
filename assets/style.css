@@ -1146,3 +1146,55 @@ img { max-width: 100%; display: block; }
   color: var(--color-accent);
   margin-right: 4px;
 }
+
+/* === 파인만식 해석 === */
+.rec-feynman {
+  background: linear-gradient(135deg, #fff7e6 0%, #fefae0 100%);
+  border: 1px solid #ffd591;
+  border-left: 4px solid #fa8c16;
+  padding: var(--space-3);
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+.rec-feynman-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #874d00;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+.rec-feynman-short {
+  color: #1a1a1a;
+  white-space: pre-line;
+}
+.rec-feynman-more {
+  margin-top: 8px;
+  border-top: 1px dashed #ffd591;
+  padding-top: 8px;
+}
+.rec-feynman-more summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.78rem;
+  color: #d4380d;
+  user-select: none;
+}
+.rec-feynman-more summary:hover { color: #ad2102; }
+.rec-feynman-long {
+  margin-top: 8px;
+  color: #1a1a1a;
+  font-size: 0.85rem;
+  line-height: 1.7;
+  white-space: pre-line;
+}
+.rec-feynman-long h4 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin: 8px 0 4px;
+  color: #874d00;
+}
+.rec-feynman-long ul, .rec-feynman-long ol {
+  margin: 4px 0 4px 20px;
+}

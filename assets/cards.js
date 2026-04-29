@@ -90,6 +90,12 @@ function renderRecCard(r, opts = {}) {
 
     ${r.notes ? `<details class="rec-notes"><summary>📝 검증 노트</summary><div class="rec-notes-body">${r.notes}</div></details>` : ''}
 
+    ${r.feynmanShort ? `<div class="rec-feynman">
+      <div class="rec-feynman-label">💡 파인만식 해석</div>
+      <div class="rec-feynman-short">${r.feynmanShort}</div>
+      ${r.feynmanLong ? `<details class="rec-feynman-more"><summary>더보기 — 자세한 해석</summary><div class="rec-feynman-long">${r.feynmanLong}</div></details>` : ''}
+    </div>` : ''}
+
     <div class="rec-actions">
       ${originalBtn}
     </div>
