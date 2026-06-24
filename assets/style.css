@@ -3,19 +3,19 @@
 /* === Design tokens === */
 :root {
   /* Color: Academic Navy + Crimson accent (트러스트 + 학술적 진중함) */
-  --color-bg: #f7f6f3;           /* Warm off-white */
+  --color-bg: oklch(0.985 0.004 250);           /* Warm off-white */
   --color-surface: #ffffff;
-  --color-surface-2: #fbfaf7;
-  --color-border: #e8e4dc;
-  --color-border-strong: #d4cdc0;
+  --color-surface-2: oklch(0.975 0.004 250);
+  --color-border: oklch(0.91 0.008 255);
+  --color-border-strong: oklch(0.84 0.01 255);
 
-  --color-text: #1a1a1a;
-  --color-text-muted: #6b6356;
-  --color-text-soft: #948b7c;
+  --color-text: oklch(0.23 0.022 265);
+  --color-text-muted: oklch(0.45 0.018 265);
+  --color-text-soft: oklch(0.56 0.015 265);
 
-  --color-primary: #1e2a4a;       /* Deep navy */
-  --color-primary-dark: #131a2e;
-  --color-primary-light: #3b4d7a;
+  --color-primary: oklch(0.23 0.022 265);       /* Deep navy */
+  --color-primary-dark: oklch(0.17 0.02 265);
+  --color-primary-light: oklch(0.40 0.02 265);
 
   --color-accent: #8b1538;        /* Crimson (KU 색) */
   --color-accent-light: #b91c52;
