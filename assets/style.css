@@ -76,7 +76,7 @@ html { scroll-behavior: smooth; }
 
 body {
   font-family: var(--font-sans);
-  font-weight: 480;
+  font-weight: 600;
   background: var(--color-bg);
   color: var(--color-text);
   line-height: 1.6;
