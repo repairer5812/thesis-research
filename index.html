@@ -32,52 +32,48 @@
 </header>
 
 <section class="hero">
-  <div class="hero-inner">
-    <div class="hero-eyebrow">Graduate Thesis Intelligence Report</div>
-    <h1 class="hero-title">
-      국내 AI 대학원 석사논문<br>
-      <span class="accent">트렌드·추천·검증</span> 한 곳에
-    </h1>
-    <p class="hero-subtitle">
-      국내 17개 AI 대학원의 석사논문 4,620건을 학과별·연도별·카테고리별로 분석.
-      LLM·멀티모달·AI4Sci·RL 흐름을 한눈에 보고, 학회 게재·인용수·코드 공개로 검증된 추천 논문 192편을 골라 보여줍니다.
-    </p>
-    <div class="hero-meta">
-      <span>📅 <strong>2026-04-29 갱신</strong></span>
-      <span>·</span>
-      <span>🎓 최경찬 (고려대 SW·AI 융합대학원 석사과정생)</span>
+  <div class="container hero-grid">
+    <div class="hero-lead">
+      <h1 class="hero-title">
+        국내 AI 대학원 석사논문<br>
+        <span class="accent">트렌드·추천·검증</span>을 한 곳에
+      </h1>
+      <p class="hero-subtitle">
+        17개 AI 대학원의 석사논문 4,620건을 학과별·연도별·카테고리별로 분석했습니다.
+        LLM·멀티모달·AI4Sci·RL의 흐름을 한눈에 보고, 학회 게재·인용수·코드 공개로 검증한 추천 논문 192편을 추렸습니다.
+      </p>
+      <div class="hero-meta">
+        <span class="hero-meta-item">갱신 <strong>2026-04-29</strong></span>
+        <span class="hero-meta-item">최경찬 · 고려대 SW·AI 융합대학원</span>
+      </div>
     </div>
+    <dl class="hero-figures">
+      <div class="hero-figure hero-figure--lead">
+        <dt>분석한 학위논문</dt>
+        <dd><span class="hero-figure-num">4,620</span><span class="hero-figure-unit">건</span></dd>
+        <p>17개 학교·대학원의 AI 관련 학과 전수</p>
+      </div>
+      <div class="hero-figure">
+        <dt>검증된 추천</dt>
+        <dd><span class="hero-figure-num">192</span><span class="hero-figure-unit">편</span></dd>
+      </div>
+      <div class="hero-figure">
+        <dt>S-tier 학회 게재</dt>
+        <dd><span class="hero-figure-num">34</span><span class="hero-figure-unit">편</span></dd>
+      </div>
+    </dl>
   </div>
 </section>
 
 <main>
 
-<!-- 핵심 통계 -->
+<!-- 데이터 개관 -->
 <section class="section">
   <div class="container">
     <header class="section-head">
-      <div class="section-eyebrow">At a glance</div>
-      <h2 class="section-title">핵심 통계</h2>
-      <p class="section-desc">2023~2026 발행 학위논문 기준. 학교마다 데이터 등재 시점이 달라 일부 시간차 있을 수 있음.</p>
+      <h2 class="section-title">데이터로 본 분포</h2>
+      <p class="section-desc">2023~2026 발행 학위논문 기준입니다. 학교마다 데이터 등재 시점이 달라 일부 시간차가 있을 수 있습니다.</p>
     </header>
-
-    <div class="stats-grid">
-      <div class="stat-card">
-        <div class="stat-label">총 학위논문</div>
-        <div class="stat-value">4,620</div>
-        <div class="stat-trend">17개 학교·대학원 · AI 관련 학과</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-label">객관 검증 추천</div>
-        <div class="stat-value">192</div>
-        <div class="stat-trend">학회 게재·인용·코드 매핑</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-label">추천 중 S-tier 게재</div>
-        <div class="stat-value">34</div>
-        <div class="stat-trend">192편 중 NeurIPS/ICML/ICLR/ACL/EMNLP/CVPR 등 게재</div>
-      </div>
-    </div>
 
     <div class="chart-grid">
       <div class="chart-box">
@@ -115,7 +111,6 @@
 <section class="section" id="schools">
   <div class="container">
     <header class="section-head">
-      <div class="section-eyebrow">School Profiles</div>
       <h2 class="section-title">학교별 프로파일</h2>
       <p class="section-desc">각 카드를 클릭하면 해당 학교의 전수 논문 목록·카테고리 분포·추천 Top 논문을 볼 수 있습니다.</p>
     </header>
@@ -127,9 +122,8 @@
 <section class="section">
   <div class="container">
     <header class="section-head">
-      <div class="section-eyebrow">Top Picks (Objective Score)</div>
       <h2 class="section-title">객관 지표 Top 12</h2>
-      <p class="section-desc">Top-tier 학회 게재(NeurIPS/ICML/ICLR/ACL/CVPR 등) + 인용수 + 코드 공개 + 수상을 점수화한 결과 상위 12편. 전체 192편은 <a href="recommendations.html">추천 페이지</a>에서.</p>
+      <p class="section-desc">학회 게재(NeurIPS·ICML·ICLR·ACL·CVPR 등), 인용수, 코드 공개, 수상을 점수화한 상위 12편입니다. 전체 192편은 <a href="recommendations.html">추천 페이지</a>에서 볼 수 있습니다.</p>
     </header>
     <div class="rec-grid" id="rec-top9"></div>
   </div>
@@ -139,13 +133,12 @@
 <section class="section">
   <div class="container">
     <header class="section-head">
-      <div class="section-eyebrow">By Graduate School Type</div>
       <h2 class="section-title">대학원 유형별 Top 추천</h2>
-      <p class="section-desc">🎓 일반대학원 (학술 연구 중심) vs 🏛️ 특수대학원 (재직자·실무) 별도 정렬.</p>
+      <p class="section-desc">학술 연구 중심의 일반대학원과 재직자·실무 중심의 특수대학원을 별도로 정렬했습니다. 운영 목적이 달라 같은 척도로 비교하지 않습니다.</p>
     </header>
-    <h3 style="margin: var(--space-6) 0 var(--space-3); color: var(--color-primary); font-weight:700;">🎓 일반·독립대학원 Top 8</h3>
+    <h3 class="rec-subhead rec-subhead--general">🎓 일반·독립대학원 Top 8</h3>
     <div class="rec-grid" id="rec-top-general"></div>
-    <h3 style="margin: var(--space-8) 0 var(--space-3); color: var(--color-accent); font-weight:700;">🏛️ 특수대학원 Top 6</h3>
+    <h3 class="rec-subhead rec-subhead--special">🏛️ 특수대학원 Top 6</h3>
     <div class="rec-grid" id="rec-top-special"></div>
   </div>
 </section>
@@ -154,47 +147,46 @@
 <section class="section">
   <div class="container">
     <header class="section-head">
-      <div class="section-eyebrow">Next Steps</div>
       <h2 class="section-title">권장 액션 플랜</h2>
-      <p class="section-desc">AI 분야 석사과정생이 졸업논문 주제를 단계적으로 좁혀가는 일반 절차. 어느 학교든 적용 가능.</p>
+      <p class="section-desc">AI 분야 석사과정생이 졸업논문 주제를 한 학기에 걸쳐 단계적으로 좁혀가는 절차입니다. 어느 학교에도 적용할 수 있습니다.</p>
     </header>
-    <div class="action-list">
-      <div class="action-item">
-        <div class="action-num">1</div>
-        <div class="action-body">
-          <strong>1주: 객관 점수 Top 10편 정독</strong>
-          <p>본인 관심 분야 필터 적용 후 점수 70+ 논문부터. 학회 게재가 검증된 논문은 데이터·실험 설계의 정합성을 그대로 배울 수 있음</p>
+    <ol class="timeline">
+      <li class="timeline-step">
+        <span class="timeline-when">1주</span>
+        <div class="timeline-body">
+          <strong>객관 점수 Top 10편 정독</strong>
+          <p>관심 분야 필터를 적용한 뒤 점수 70+ 논문부터 봅니다. 학회 게재가 검증된 논문은 데이터·실험 설계의 정합성을 그대로 배울 수 있습니다.</p>
         </div>
-      </div>
-      <div class="action-item">
-        <div class="action-num">2</div>
-        <div class="action-body">
-          <strong>2주: 본교 지도교수 후보 면담</strong>
-          <p>본 사이트의 본인 학교 페이지를 출발점으로, 자기 학교 코어 학과의 교수님 3-5명에게 "이 추천 트렌드 보고 어떤 주제 추천하시는지" 질의. 학교별 지도교수 정보는 학과 홈페이지·dCollection의 advisor 필드 참조</p>
+      </li>
+      <li class="timeline-step">
+        <span class="timeline-when">2주</span>
+        <div class="timeline-body">
+          <strong>본교 지도교수 후보 면담</strong>
+          <p>본인 학교 페이지를 출발점으로, 코어 학과 교수 3~5명에게 추천 트렌드를 보여주며 주제를 묻습니다. 지도교수 정보는 학과 홈페이지와 dCollection의 advisor 필드를 참조합니다.</p>
         </div>
-      </div>
-      <div class="action-item">
-        <div class="action-num">3</div>
-        <div class="action-body">
-          <strong>3-4주: Top 3 후보 주제로 좁히기</strong>
-          <p>각 후보당 핵심 paper 1-2편 정독 + 코드/데이터셋 가용성 확인 + 본인 환경(GPU, 시간)에서 실험 가능성 점검</p>
+      </li>
+      <li class="timeline-step">
+        <span class="timeline-when">3–4주</span>
+        <div class="timeline-body">
+          <strong>Top 3 후보 주제로 좁히기</strong>
+          <p>각 후보당 핵심 paper 1~2편을 정독하고, 코드·데이터셋 가용성과 본인 환경(GPU·시간)에서의 실험 가능성을 점검합니다.</p>
         </div>
-      </div>
-      <div class="action-item">
-        <div class="action-num">4</div>
-        <div class="action-body">
-          <strong>5-8주: Toy Reproduction</strong>
-          <p>후보 1개로 좁힌 뒤 작은 규모 실험(toy reproduction). 원논문 결과의 1/10 규모로도 trend가 잡히는지 검증</p>
+      </li>
+      <li class="timeline-step">
+        <span class="timeline-when">5–8주</span>
+        <div class="timeline-body">
+          <strong>Toy Reproduction</strong>
+          <p>후보 1개로 좁힌 뒤 작은 규모 실험을 돌립니다. 원논문 결과의 1/10 규모로도 트렌드가 잡히는지 검증합니다.</p>
         </div>
-      </div>
-      <div class="action-item">
-        <div class="action-num">5</div>
-        <div class="action-body">
-          <strong>학기 말: 정식 제안서 + 지도교수 매칭</strong>
-          <p>주제·연구 가설·실험 계획 명시한 제안서 작성 → 지도교수 컨펌. 자기 자산(직장·인맥·접근성)을 부풀려 표현하지 말 것 — 실측 가능한 규모로만 명시</p>
+      </li>
+      <li class="timeline-step">
+        <span class="timeline-when">학기 말</span>
+        <div class="timeline-body">
+          <strong>정식 제안서 + 지도교수 매칭</strong>
+          <p>주제·연구 가설·실험 계획을 명시한 제안서를 작성해 지도교수의 컨펌을 받습니다. 직장·인맥·접근성 같은 자기 자산은 부풀리지 말고 실측 가능한 규모로만 적습니다.</p>
         </div>
-      </div>
-    </div>
+      </li>
+    </ol>
   </div>
 </section>
 
@@ -212,7 +204,6 @@
     </div>
     <div class="footer-credit">
       Built with Claude Code<br>
-      Design: 7-step hierarchical (Trust × Academic)<br>
       Open data · 학술 비영리 용도
     </div>
   </div>

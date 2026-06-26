@@ -29,15 +29,14 @@
   </div>
 </header>
 
-<section class="hero" style="padding: 3rem 0 2rem;">
-  <div class="hero-inner">
-    <div class="hero-eyebrow" id="school-type">School Profile</div>
+<section class="hero hero--sub">
+  <div class="container hero-sub-inner">
+    <div class="school-kind" id="school-type">School Profile</div>
     <h1 class="hero-title" id="school-name">…</h1>
     <p class="hero-subtitle" id="school-note">…</p>
     <div class="hero-meta">
-      <span>학과: <strong id="school-depts">·</strong></span>
-      <span>·</span>
-      <span>총 <strong id="school-count">·</strong>건</span>
+      <span class="hero-meta-item">학과 <strong id="school-depts">·</strong></span>
+      <span class="hero-meta-item">총 <strong id="school-count">·</strong>건</span>
     </div>
   </div>
 </section>
@@ -87,7 +86,6 @@ if (recsHere.length > 0) {
   main.insertAdjacentHTML('beforeend', `
     <section style="margin-top:1rem;">
       <header class="section-head">
-        <div class="section-eyebrow">Top Picks</div>
         <h2 class="section-title">${school.name} 추천 논문 ${recsHere.length}편</h2>
       </header>
       <div class="rec-grid" id="school-recs"></div>
