@@ -60,10 +60,11 @@ function renderRecCard(r, opts = {}) {
   const breakdown = breakdownItems.join(' · ') || '점수 검증 안 됨';
 
   // 액션 버튼 (원본 페이지로 이동 — 단일 버튼)
-  const originalUrl = r.originalUrl || r.evidenceUrls?.[0] || '#';
-  const originalBtn = `<a class="rec-btn rec-btn-original" href="${originalUrl}" target="_blank" rel="noopener">
+  // 주소가 없으면 버튼을 그리지 않는다 (빈 링크 '#' 방지)
+  const originalUrl = r.originalUrl || r.evidenceUrls?.[0] || '';
+  const originalBtn = originalUrl ? `<a class="rec-btn rec-btn-original" href="${originalUrl}" target="_blank" rel="noopener">
     <span class="rec-btn-icon">↗</span><span>원본 보기 / 다운로드</span>
-  </a>`;
+  </a>` : '';
 
   return `<article class="rec-card" data-score="${s}">
     <div class="rec-card-head">
