@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<meta name="description" content="국내 17개 AI 대학원 석사논문 4,620건 통합 분석 — 2023~2026 트렌드, 카테고리 분포, 학회 게재·인용·코드 검증된 추천 논문 192편" />
+<meta name="description" content="국내 17개 AI 대학원 석사논문 5,408건 통합 분석. 2023~2026 트렌드, 카테고리 분포, 학회 게재·인용·코드로 검증한 추천 논문 253편. 2026-11-05 갱신" />
 <title>AI 대학원 석사논문 인텔리전스 · 2023~2026 통합 리포트</title>
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="assets/favicon.ico" sizes="any">
@@ -20,7 +20,7 @@
       <span class="brand-mark">AI</span>
       <span class="brand-text">
         <span class="brand-title">석사논문 인텔리전스</span>
-        <span class="brand-sub">17 SCHOOLS · 4,620 THESES · 2023–2026</span>
+        <span class="brand-sub">17 SCHOOLS · 5,408 THESES · 2023–2026</span>
       </span>
     </a>
     <nav>
@@ -42,33 +42,45 @@
         <span class="accent">트렌드·추천·검증</span>을 한 곳에
       </h1>
       <p class="hero-subtitle">
-        17개 AI 대학원의 석사논문 4,620건을 학과별·연도별·카테고리별로 분석했습니다.
-        LLM·멀티모달·AI4Sci·RL의 흐름을 한눈에 보고, 학회 게재·인용수·코드 공개로 검증한 추천 논문 192편을 추렸습니다.
+        17개 AI 대학원의 석사논문 5,408건을 학과별·연도별·카테고리별로 분석했습니다.
+        LLM·멀티모달·AI4Sci·RL의 흐름을 한눈에 보고, 학회 게재·인용수·코드 공개로 검증한 추천 논문 253편을 추렸습니다.
       </p>
       <div class="hero-meta">
-        <span class="hero-meta-item">갱신 <strong>2026-04-29</strong></span>
+        <span class="hero-meta-item">갱신 <strong>2026-11-05</strong></span>
         <span class="hero-meta-item">최경찬 · 고려대 SW·AI 융합대학원</span>
       </div>
     </div>
     <dl class="hero-figures">
       <div class="hero-figure hero-figure--lead">
         <dt>분석한 학위논문</dt>
-        <dd><span class="hero-figure-num">4,620</span><span class="hero-figure-unit">건</span></dd>
+        <dd><span class="hero-figure-num">5,408</span><span class="hero-figure-unit">건</span></dd>
         <p>17개 학교·대학원의 AI 관련 학과 전수</p>
       </div>
       <div class="hero-figure">
         <dt>검증된 추천</dt>
-        <dd><span class="hero-figure-num">192</span><span class="hero-figure-unit">편</span></dd>
+        <dd><span class="hero-figure-num">253</span><span class="hero-figure-unit">편</span></dd>
       </div>
       <div class="hero-figure">
         <dt>S-tier 학회 게재</dt>
-        <dd><span class="hero-figure-num">34</span><span class="hero-figure-unit">편</span></dd>
+        <dd><span class="hero-figure-num">76</span><span class="hero-figure-unit">편</span></dd>
       </div>
     </dl>
   </div>
 </section>
 
 <main>
+
+<!-- 2026-11 갱신 -->
+<section class="section" id="update">
+  <div class="container">
+    <header class="section-head">
+      <h2 class="section-title">2026년 11월 갱신</h2>
+      <p class="section-desc" id="update-desc">4월 수집 뒤 학교 논문 시스템에 새로 등록된 석사논문을 더하고, 추천 논문의 인용수와 GitHub 별점을 11월 5일 기준으로 다시 모았습니다.</p>
+    </header>
+    <ul class="update-schools" id="update-schools"></ul>
+    <p class="update-note">새 논문은 학교 논문 시스템의 등록일이 4월 28일 뒤로 확인된 것과 2026년 8월 졸업 석사논문만 셌습니다. 등록일을 알 수 없는 2025년, 2026년 2월 논문은 4월 집계와 겹칠 수 있어 더하지 않았습니다. 연세대, 한양대, 경희대는 학교 시스템에 접속되지 않아 RISS에서 2026년 8월 졸업분만 찾았습니다. 새 논문 중 학회 논문으로 이어진 61편은 추천 논문에 더했습니다.</p>
+  </div>
+</section>
 
 <!-- 데이터 개관 -->
 <section class="section">
@@ -100,7 +112,7 @@
       <div class="chart-box" style="grid-column: 1 / -1;">
         <div class="chart-box-head">
           <h3>연도별 학회 트렌드</h3>
-          <span class="chart-box-sub">추천 논문 192편 기준, 학회별 누적</span>
+          <span class="chart-box-sub">추천 논문 253편 기준, 학회별 누적</span>
         </div>
         <div class="chart-canvas-wrap" style="height: 320px;">
           <canvas id="chart-trends"></canvas>
@@ -126,7 +138,7 @@
   <div class="container">
     <header class="section-head">
       <h2 class="section-title">객관 지표 Top 12</h2>
-      <p class="section-desc">학회 게재(NeurIPS·ICML·ICLR·ACL·CVPR 등), 인용수, 코드 공개, 수상을 점수화한 상위 12편입니다. 전체 192편은 <a href="recommendations.html">추천 페이지</a>에서 볼 수 있습니다.</p>
+      <p class="section-desc">학회 게재(NeurIPS·ICML·ICLR·ACL·CVPR 등), 인용수, 코드 공개, 수상을 점수화한 상위 12편입니다. 전체 253편은 <a href="recommendations.html">추천 페이지</a>에서 볼 수 있습니다.</p>
     </header>
     <div class="rec-grid" id="rec-top9"></div>
   </div>
@@ -203,7 +215,7 @@
       📧 <a href="mailto:repairer5812@gmail.com">repairer5812@gmail.com</a> &nbsp;|&nbsp;
       📱 <a href="tel:+821028753705">010-2875-3705</a><br>
       자료 출처: 각 대학 dCollection · S-Space · RISS · 학과 홈페이지<br>
-      수집일: 2026-04-28
+      수집일: 2026-04-28, 갱신: 2026-11-05
     </div>
     <div class="footer-credit">
       Built with Claude Code<br>
@@ -214,6 +226,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <script src="assets/data.js"></script>
+<script src="assets/recent.js"></script>
 <script src="assets/cards.js"></script>
 <script>
 // === School cards 렌더링 ===
@@ -365,8 +378,21 @@ function renderCharts() {
   });
 }
 
+// === 2026-11 갱신 학교별 건수 ===
+function renderUpdate() {
+  const box = document.getElementById('update-schools');
+  if (!box || typeof RECENT_THESES === 'undefined') return;
+  const counts = {};
+  RECENT_THESES.forEach(t => { counts[t.schoolId] = (counts[t.schoolId] || 0) + 1; });
+  const rows = SCHOOLS.filter(s => counts[s.id]).sort((a, b) => counts[b.id] - counts[a.id]);
+  box.innerHTML = rows.map(s => `<li><a href="school.html?id=${s.id}#recent">${s.name} <b>+${counts[s.id]}</b></a></li>`).join('');
+  document.getElementById('update-desc').textContent =
+    `4월 수집 뒤 학교 논문 시스템에 새로 등록된 석사논문 ${RECENT_THESES.length.toLocaleString()}건을 더하고, 추천 논문의 인용수와 GitHub 별점을 11월 5일 기준으로 다시 모았습니다.`;
+}
+
 // === Init ===
 document.addEventListener('DOMContentLoaded', () => {
+  renderUpdate();
   renderSchoolCards();
   renderRecGrid(pickTopByScore(12), 'rec-top9');
   renderRecGrid(pickTopByScoreFiltered(8, r => r.deptType === '일반'), 'rec-top-general');

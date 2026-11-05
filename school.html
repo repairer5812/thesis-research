@@ -18,7 +18,7 @@
       <span class="brand-mark">AI</span>
       <span class="brand-text">
         <span class="brand-title">석사논문 인텔리전스</span>
-        <span class="brand-sub">17 SCHOOLS · 4,620 THESES</span>
+        <span class="brand-sub">17 SCHOOLS · 5,408 THESES</span>
       </span>
     </a>
     <nav>
@@ -38,7 +38,7 @@
     <h1 class="hero-title" id="school-name">…</h1>
     <p class="hero-subtitle" id="school-note">…</p>
     <div class="hero-meta">
-      <span class="hero-meta-item">학과 <strong id="school-depts">·</strong></span>
+      <span class="hero-meta-item hero-meta-item--wrap">학과 <strong id="school-depts">·</strong></span>
       <span class="hero-meta-item">총 <strong id="school-count">·</strong>건</span>
     </div>
   </div>
@@ -64,6 +64,7 @@
 
 <script src="assets/data.js"></script>
 <script src="assets/cards.js"></script>
+<script src="assets/recent.js"></script>
 <script>
 const params = new URLSearchParams(location.search);
 const id = params.get('id');
@@ -95,6 +96,29 @@ if (recsHere.length > 0) {
     </section>
   `);
   renderRecGrid(recsHere, 'school-recs', { schoolColor: school.color });
+}
+// 2026-11 갱신으로 더한 논문 (이 학교 것만)
+const recentHere = (typeof RECENT_THESES !== 'undefined') ? RECENT_THESES.filter(t => t.schoolId === school.id) : [];
+if (recentHere.length > 0) {
+  const esc = v => String(v ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const when = t => t.year + '년' + (t.month ? ' ' + t.month + '월' : '');
+  const item = t => `<li class="recent-item">
+      <a class="recent-title" href="${esc(t.url)}" target="_blank" rel="noopener">${esc(t.title)}</a>
+      ${t.titleAlt && t.titleAlt !== t.title ? `<span class="recent-alt">${esc(t.titleAlt)}</span>` : ''}
+      <span class="recent-meta">${[t.author, t.dept, when(t)].filter(Boolean).map(esc).join(', ')}</span>
+    </li>`;
+  const shown = 15;
+  const rest = recentHere.slice(shown);
+  document.querySelector('main .container').insertAdjacentHTML('beforeend', `
+    <section id="recent" style="margin-top:2.5rem;">
+      <header class="section-head">
+        <h2 class="section-title">${RECENT_UPDATED.slice(0, 4)}년 ${Number(RECENT_UPDATED.slice(5, 7))}월 갱신으로 더한 논문 ${recentHere.length}건</h2>
+        <p class="section-desc">4월 수집 뒤 학교 논문 시스템에 새로 등록된 석사논문입니다. 제목을 누르면 원문 페이지가 열립니다.</p>
+      </header>
+      <ul class="recent-list">${recentHere.slice(0, shown).map(item).join('')}</ul>
+      ${rest.length ? `<details class="recent-more"><summary>나머지 ${rest.length}건 보기</summary><ul class="recent-list">${rest.map(item).join('')}</ul></details>` : ''}
+    </section>
+  `);
 }
 </script>
 </body>

@@ -232,6 +232,7 @@ img { max-width: 100%; display: block; }
 }
 
 .hero-meta-item { white-space: nowrap; }
+.hero-meta-item--wrap { white-space: normal; min-width: 0; overflow-wrap: anywhere; }
 .hero-meta strong {
   color: var(--color-text);
   font-weight: 700;
@@ -1307,3 +1308,60 @@ img { max-width: 100%; display: block; }
 .rec-feynman-long ul, .rec-feynman-long ol {
   margin: 4px 0 4px 20px;
 }
+
+/* === 2026-11 갱신: 새로 등록된 논문 === */
+.update-schools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.update-schools a {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-size: 0.9rem;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: border-color var(--tx-fast), color var(--tx-fast);
+}
+.update-schools a:hover { border-color: var(--color-accent); color: var(--color-accent); }
+.update-schools a:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
+.update-schools b { font-variant-numeric: tabular-nums; font-weight: 700; }
+.update-note { margin-top: var(--space-4); color: var(--color-text-muted); font-size: 0.9rem; max-width: 70ch; }
+
+.recent-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--color-border);
+}
+.recent-item {
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+.recent-title {
+  color: var(--color-text);
+  font-weight: 600;
+  line-height: 1.5;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+.recent-title:hover { color: var(--color-accent); text-decoration: underline; text-underline-offset: 3px; }
+.recent-alt { display: block; color: var(--color-text-muted); font-size: 0.88rem; margin-top: 2px; overflow-wrap: anywhere; }
+.recent-meta { display: block; color: var(--color-text-soft); font-size: 0.85rem; margin-top: 4px; font-variant-numeric: tabular-nums; }
+.recent-more summary {
+  cursor: pointer;
+  padding: var(--space-3) 0;
+  font-weight: 600;
+  color: var(--color-accent);
+  user-select: none;
+}
+.recent-more summary:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
