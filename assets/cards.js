@@ -29,6 +29,9 @@ function renderRecCard(r, opts = {}) {
   const deptBadge = r.deptType === '특수'
     ? `<span class="dept-badge dept-special">🏛️ 특수</span>`
     : `<span class="dept-badge dept-general">🎓 일반</span>`;
+  // 학교 시스템에서 박사논문으로 확인된 카드 (2026-11 확인)
+  const degreeBadge = r.degree === '박사'
+    ? `<span class="dept-badge dept-phd" title="학교 학위논문 시스템에서 박사논문으로 확인됨">박사논문</span>` : '';
 
   // 객관 지표 행
   const metricsRow = [];
@@ -71,6 +74,7 @@ function renderRecCard(r, opts = {}) {
       <div class="rec-head-left">
         <span class="rec-school" ${schoolBadgeStyle}>${r.school}</span>
         ${deptBadge}
+        ${degreeBadge}
       </div>
       <div class="rec-score-wrap" style="--score-color:${sColor}">
         <span class="rec-score-tier">${sLabel}</span>

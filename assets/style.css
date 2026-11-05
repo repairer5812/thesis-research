@@ -735,6 +735,11 @@ img { max-width: 100%; display: block; }
   color: var(--color-accent);
   border-color: rgba(139, 21, 56, 0.2);
 }
+.dept-phd {
+  background: rgba(184, 134, 11, 0.12);
+  color: #6b4e00;
+  border-color: rgba(184, 134, 11, 0.35);
+}
 
 /* === 객관 지표 pill === */
 .rec-metrics-row {
