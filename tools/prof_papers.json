@@ -1,0 +1,1533 @@
+{
+ "made": "2026-11-10",
+ "source": "OpenAlex",
+ "rule": "2023년 이후, 인용 상위 5편",
+ "profs": [
+  {
+   "name": "감태의",
+   "dept": "인공지능학과",
+   "email": "kamte@korea.ac.kr",
+   "lab": "",
+   "lab_url": "http://mailab.korea.ac.kr/",
+   "name_en": "Tae-Eui Kam",
+   "openalex": [
+    "A5075267855"
+   ],
+   "confidence": "high",
+   "check": "OpenAlex 저자 1개, 고려대 소속, 주제(EEG, 뇌 네트워크) 일관. 연구실 논문 목록 대조는 안 함",
+   "papers": [
+    {
+     "title": "DeepHealthNet: Adolescent Obesity Prediction System Based on a Deep Learning Framework",
+     "year": 2024,
+     "venue": "IEEE Journal of Biomedical and Health Informatics",
+     "cites": 60,
+     "url": "https://doi.org/10.1109/jbhi.2024.3356580",
+     "openalex": "W4391547627",
+     "abstract": ""
+    },
+    {
+     "title": "Spectral Graph Neural Network-Based Multi-Atlas Brain Network Fusion for Major Depressive Disorder Diagnosis",
+     "year": 2024,
+     "venue": "IEEE Journal of Biomedical and Health Informatics",
+     "cites": 42,
+     "url": "https://doi.org/10.1109/jbhi.2024.3366662",
+     "openalex": "W4391892457",
+     "abstract": ""
+    },
+    {
+     "title": "Autonomous System for EEG-Based Multiple Abnormal Mental States Classification Using Hybrid Deep Neural Networks Under Flight Environment",
+     "year": 2023,
+     "venue": "IEEE Transactions on Systems Man and Cybernetics Systems",
+     "cites": 39,
+     "url": "https://doi.org/10.1109/tsmc.2023.3282635",
+     "openalex": "W4381733655",
+     "abstract": ""
+    },
+    {
+     "title": "Graph-Based Conditional Generative Adversarial Networks for Major Depressive Disorder Diagnosis With Synthetic Functional Brain Network Generation",
+     "year": 2023,
+     "venue": "IEEE Journal of Biomedical and Health Informatics",
+     "cites": 38,
+     "url": "https://doi.org/10.1109/jbhi.2023.3340325",
+     "openalex": "W4389494956",
+     "abstract": ""
+    },
+    {
+     "title": "META-EEG: Meta-learning-based class-relevant EEG representation learning for zero-calibration brain–computer interfaces",
+     "year": 2023,
+     "venue": "Expert Systems with Applications",
+     "cites": 36,
+     "url": "https://doi.org/10.1016/j.eswa.2023.121986",
+     "openalex": "W4387492882",
+     "abstract": ""
+    }
+   ]
+  },
+  {
+   "name": "김동현",
+   "dept": "인공지능학과",
+   "email": "d_kim@korea.ac.kr",
+   "lab": "Universal Transfer Learning Lab",
+   "lab_url": "https://utl.korea.ac.kr/",
+   "name_en": "Donghyun Kim",
+   "openalex": [
+    "A5100454683"
+   ],
+   "confidence": "high",
+   "check": "UTL 연구실 Publications 전체 목록과 5편 제목 대조(모두 있음). ORCID 0000-0002-7132-4454, Boston Univ, MIT-IBM 이력. 목록에 없는 'Visual Representation Alignment for MLLMs'(41회)는 동명이인 가능성으로 뺌",
+   "papers": [
+    {
+     "title": "CODA-Prompt: COntinual Decomposed Attention-Based Prompting for Rehearsal-Free Continual Learning",
+     "year": 2023,
+     "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+     "cites": 409,
+     "url": "https://doi.org/10.1109/cvpr52729.2023.01146",
+     "openalex": "W4386076680",
+     "abstract": ""
+    },
+    {
+     "title": "Deep learning for precipitation nowcasting: A survey from the perspective of time series forecasting",
+     "year": 2024,
+     "venue": "Expert Systems with Applications",
+     "cites": 60,
+     "url": "https://doi.org/10.1016/j.eswa.2024.126301",
+     "openalex": "W4405931325",
+     "abstract": ""
+    },
+    {
+     "title": "Too Many Frames, Not All Useful: Efficient Strategies for Long-Form Video QA",
+     "year": 2026,
+     "venue": "Conference of the European Chapter of the Association for Computational Linguistics",
+     "cites": 56,
+     "url": "https://doi.org/10.18653/v1/2026.eacl-long.164",
+     "openalex": "W7140114028",
+     "abstract": ""
+    },
+    {
+     "title": "Going Beyond Nouns With Vision & Language Models Using Synthetic Data",
+     "year": 2023,
+     "venue": "IEEE/CVF International Conference on Computer Vision (ICCV)",
+     "cites": 41,
+     "url": "https://doi.org/10.1109/iccv51070.2023.01844",
+     "openalex": "W4390872526",
+     "abstract": ""
+    },
+    {
+     "title": "LLM4SGG: Large Language Models for Weakly Supervised Scene Graph Generation",
+     "year": 2024,
+     "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+     "cites": 39,
+     "url": "https://doi.org/10.1109/cvpr52733.2024.02674",
+     "openalex": "W4402754270",
+     "abstract": ""
+    }
+   ]
+  },
+  {
+   "name": "김상필",
+   "dept": "인공지능학과",
+   "email": "spk7@korea.ac.kr",
+   "lab": "",
+   "lab_url": "https://kuaicv.com/",
+   "name_en": "Sangpil Kim",
+   "openalex": [
+    "A5077788107"
+   ],
+   "confidence": "high",
+   "check": "고려대 소속 주 저자 ID, 주제(3D, 생성, 궤적 예측) 일관. 같은 ID에 섞인 JACS 펩타이드 화학 논문 2편은 다른 사람으로 보고 뺌",
+   "papers": [
+    {
+     "title": "HapMotion: motion-to-tactile framework with wearable haptic devices for immersive VR performance experience",
+     "year": 2024,
+     "venue": "Virtual Reality",
+     "cites": 43,
+     "url": "https://doi.org/10.1007/s10055-023-00910-z",
+     "openalex": "W4390772381",
+     "abstract": ""
+    },
+    {
+     "title": "VisionTrap: Vision-Augmented Trajectory Prediction Guided by Textual Descriptions",
+     "year": 2024,
+     "venue": "Lecture notes in computer science",
+     "cites": 39,
+     "url": "https://doi.org/10.1007/978-3-031-72658-3_21",
+     "openalex": "W4403081604",
+     "abstract": ""
+    },
+    {
+     "title": "Higher-order Relational Reasoning for Pedestrian Trajectory Prediction",
+     "year": 2024,
+     "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+     "cites": 39,
+     "url": "https://doi.org/10.1109/cvpr52733.2024.01444",
+     "openalex": "W4402754052",
+     "abstract": ""
+    },
+    {
+     "title": "SelfSplat: Pose-Free and 3D Prior-Free Generalizable 3D Gaussian Splatting",
+     "year": 2025,
+     "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+     "cites": 34,
+     "url": "https://doi.org/10.1109/cvpr52734.2025.02050",
+     "openalex": "W4413155849",
+     "abstract": ""
+    },
+    {
+     "title": "3D-GSW: 3D Gaussian Splatting for Robust Watermarking",
+     "year": 2025,
+     "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+     "cites": 33,
+     "url": "https://doi.org/10.1109/cvpr52734.2025.00557",
+     "openalex": "W4413146660",
+     "abstract": ""
+    }
+   ]
+  },
+  {
+   "name": "김성웅",
+   "dept": "인공지능학과",
+   "email": "swkim01@korea.ac.kr",
+   "lab": "",
+   "lab_url": "https://agi.korea.ac.kr/",
+   "name_en": "Sungwoong Kim",
+   "openalex": [
+    "A5087294413"
+   ],
+   "confidence": "medium",
+   "check": "ORCID 0000-0002-2676-9454 저자 ID. 같은 ID에 다른 사람 논문(Nature Nanotechnology 나노와이어, 단일세포 유전자망)이 섞여 있어 빼고, 카카오브레인, 고려대 시기 비전언어, LLM 논문만 남김. 연구실 논문 목록 대조는 안 함",
+   "papers": [
+    {
+     "title": "MEVG: Multi-event Video Generation with Text-to-Video Models",
+     "year": 2024,
+     "venue": "Lecture notes in computer science",
+     "cites": 24,
+     "url": "https://doi.org/10.1007/978-3-031-72775-7_23",
+     "openalex": "W4402961796",
+     "abstract": ""
+    },
+    {
+     "title": "TLCR: Token-Level Continuous Reward for Fine-grained Reinforcement Learning from Human Feedback",
+     "year": 2024,
+     "venue": "Findings of the Association for Computational Linguistics: ACL (Findings of ACL)",
+     "cites": 19,
+     "url": "https://doi.org/10.18653/v1/2024.findings-acl.889",
+     "openalex": "W4402684005,W4406074039",
+     "abstract": ""
+    },
+    {
+     "title": "Mol-LLM: Multimodal Generalist Molecular LLM with Improved Graph Utilization",
+     "year": 2025,
+     "venue": "arXiv (Cornell University)",
+     "cites": 17,
+     "url": "https://doi.org/10.48550/arxiv.2502.02810",
+     "openalex": "W4407212396",
+     "abstract": ""
+    },
+    {
+     "title": "MAGVLT: Masked Generative Vision-and-Language Transformer",
+     "year": 2023,
+     "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+     "cites": 12,
+     "url": "https://doi.org/10.1109/cvpr52729.2023.02235",
+     "openalex": "W4386065765",
+     "abstract": ""
+    },
+    {
+     "title": "Slot-MLLM: Object-Centric Visual Tokenization for Multimodal LLM",
+     "year": 2025,
+     "venue": "arXiv (Cornell University)",
+     "cites": 7,
+     "url": "https://doi.org/10.48550/arxiv.2505.17726",
+     "openalex": "W4414580774",
+     "abstract": ""
+    }
+   ]
+  },
+  {
+   "name": "김찬우",
+   "dept": "인공지능학과",
+   "email": "chanwcom@korea.ac.kr",
+   "lab": "",
+   "lab_url": "https://slpl.korea.ac.kr/",
+   "name_en": "Chanwoo Kim",
+   "openalex": [
+    "A5100684422",
+    "A5100684423"
+   ],
+   "confidence": "medium",
+   "check": "SLPL 연구실 목록과 3편(TNSRE, Interspeech CoT, AdaMER-CTC 계열) 대조. A5100684423은 Microsoft, Google, Samsung 이력(ORCID 0000-0003-2526-4371)으로 본인. A5100684422에는 볼츠만 방정식 수학자, UW의 다른 Chanwoo Kim(Stochastic Amortization)이 섞여 있어 뺌. Physics Informed Distillation, VCMR 논문은 삼성 동료와 KAIST 공저라 본인으로 판단했지만 연구실 목록에는 없음",
+   "papers": [
+    {
+     "title": "A Novel Chain-of-Thought Reasoning Approach for Alzheimer’s Disease Detection Using Large Language and Vision-Language Models",
+     "year": 2025,
+     "venue": "IEEE Transactions on Neural Systems and Rehabilitation Engineering",
+     "cites": 12,
+     "url": "https://doi.org/10.1109/tnsre.2025.3624762",
+     "openalex": "W4415482344",
+     "abstract": ""
+    },
+    {
+     "title": "Physics Informed Distillation for Diffusion Models",
+     "year": 2024,
+     "venue": "arXiv (Cornell University)",
+     "cites": 12,
+     "url": "https://doi.org/10.48550/arxiv.2411.08378",
+     "openalex": "W4404407548",
+     "abstract": ""
+    },
+    {
+     "title": "Counterfactual Two-Stage Debiasing For Video Corpus Moment Retrieval",
+     "year": 2023,
+     "venue": "IEEE International Conference on Acoustics Speech and Signal Processing",
+     "cites": 12,
+     "url": "https://doi.org/10.1109/icassp49357.2023.10095182",
+     "openalex": "W4375868956",
+     "abstract": ""
+    },
+    {
+     "title": "AdaMER-CTC: Connectionist Temporal Classification with Adaptive Maximum Entropy Regularization for Automatic Speech Recognition",
+     "year": 2024,
+     "venue": "IEEE International Conference on Acoustics Speech and Signal Processing",
+     "cites": 11,
+     "url": "https://doi.org/10.1109/icassp48485.2024.10446721",
+     "openalex": "W4392904386",
+     "abstract": ""
+    },
+    {
+     "title": "Reasoning-Based Approach with Chain-of-Thought for Alzheimer’s Detection Using Speech and Large Language Models",
+     "year": 2025,
+     "venue": "Interspeech (USB)",
+     "cites": 10,
+     "url": "https://doi.org/10.21437/interspeech.2025-1226",
+     "openalex": "W4415433323",
+     "abstract": ""
+    }
+   ]
+  },
+  {
+   "name": "박경문",
+   "dept": "인공지능학과",
+   "email": "gm-park@korea.ac.kr",
+   "lab": "",
+   "lab_url": "https://vgi.korea.ac.kr/",
+   "name_en": "Gyeong-Moon Park",
+   "openalex": [
+    "A5031148632"
+   ],
+   "confidence": "high",
+   "check": "ORCID 0000-0003-4011-9981, KAIST, 경희대, 고려대 이력. 주제(지속학습, 도메인 적응, 생성) 일관. 연구실 목록 대조는 안 함",
+   "papers": [
+    {
+     "title": "Pre-trained Vision and Language Transformers are Few-Shot Incremental Learners",
+     "year": 2024,
+     "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+     "cites": 49,
+     "url": "https://doi.org/10.1109/cvpr52733.2024.02254",
+     "openalex": "W4402727689",
+     "abstract": ""
+    },
+    {
+     "title": "Open-Set Domain Adaptation for Semantic Segmentation",
+     "year": 2024,
+     "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+     "cites": 39,
+     "url": "https://doi.org/10.1109/cvpr52733.2024.02260",
+     "openalex": "W4402816908",
+     "abstract": ""
+    },
+    {
+     "title": "LINe: Out-of-Distribution Detection by Leveraging Important Neurons",
+     "year": 2023,
+     "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+     "cites": 36,
+     "url": "https://doi.org/10.1109/cvpr52729.2023.01901",
+     "openalex": "W4386076566",
+     "abstract": ""
+    },
+    {
+     "title": "Time Series Anomaly Detection Using Transformer-Based GAN With Two-Step Masking",
+     "year": 2023,
+     "venue": "IEEE Access",
+     "cites": 34,
+     "url": "https://doi.org/10.1109/access.2023.3289921",
+     "openalex": "W4382203122",
+     "abstract": ""
+    },
+    {
+     "title": "Online Class Incremental Learning on Stochastic Blurry Task Boundary via Mask and Visual Prompt Tuning",
+     "year": 2023,
+     "venue": "IEEE/CVF International Conference on Computer Vision (ICCV)",
+     "cites": 30,
+     "url": "https://doi.org/10.1109/iccv51070.2023.01077",
+     "openalex": "W4390873164",
+     "abstract": ""
+    }
+   ]
+  },
+  {
+   "name": "박세준",
+   "dept": "인공지능학과",
+   "email": "sejunpark@korea.ac.kr",
+   "lab": "Efficient Inference and Learning Lab",
+   "lab_url": "https://eil-research.github.io/",
+   "name_en": "Sejun Park",
+   "openalex": [
+    "A5100693836",
+    "A5100693833"
+   ],
+   "confidence": "medium",
+   "check": "연구실 소개(유한 정밀도 연산과 신경망 표현력)와 주제가 맞는 논문만 골랐다. 두 저자 ID 모두 태양광 리뷰, 흡수식 히트펌프, 응집물질 물리 등 다른 사람 논문이 섞여 있어 뺌. 연구실 사이트에 논문 목록 페이지가 없어 제목 대조는 못 함",
+   "papers": [
+    {
+     "title": "Expressive power of ReLU and step networks under floating-point operations",
+     "year": 2024,
+     "venue": "Neural Networks",
+     "cites": 9,
+     "url": "https://doi.org/10.1016/j.neunet.2024.106297",
+     "openalex": "W4394603097",
+     "abstract": ""
+    },
+    {
+     "title": "Minimum width for universal approximation using ReLU networks on compact domain",
+     "year": 2023,
+     "venue": "arXiv (Cornell University)",
+     "cites": 9,
+     "url": "https://doi.org/10.48550/arxiv.2309.10402",
+     "openalex": "W4386942885",
+     "abstract": ""
+    },
+    {
+     "title": "On Expressive Power of Quantized Neural Networks under Fixed-Point Arithmetic",
+     "year": 2024,
+     "venue": "arXiv (Cornell University)",
+     "cites": 4,
+     "url": "https://doi.org/10.48550/arxiv.2409.00297",
+     "openalex": "W4402953324",
+     "abstract": ""
+    },
+    {
+     "title": "On the Correctness of Automatic Differentiation for Neural Networks with Machine-Representable Parameters",
+     "year": 2023,
+     "venue": "arXiv (Cornell University)",
+     "cites": 3,
+     "url": "https://doi.org/10.48550/arxiv.2301.13370",
+     "openalex": "W4318903784",
+     "abstract": ""
+    },
+    {
+     "title": "Floating-Point Neural Networks are Provably Robust Universal Approximators",
+     "year": 2025,
+     "venue": "Lecture notes in computer science",
+     "cites": 2,
+     "url": "https://doi.org/10.1007/978-3-031-98679-6_14",
+     "openalex": "W4412514800",
+     "abstract": ""
+    }
+   ]
+  },
+  {
+   "name": "서승호",
+   "dept": "인공지능학과",
+   "email": "sungho_suh@korea.ac.kr",
+   "lab": "",
+   "lab_url": "https://sites.google.com/view/sunghosuh/home",
+   "name_en": "Sungho Suh",
+   "openalex": [
+    "A5057986515"
+   ],
+   "confidence": "high",
+   "check": "ORCID 0000-0003-3723-1980, 삼성, Kaiserslautern(DFKI), 고려대 이력. 주제(웨어러블 행동인식) 일관",
+   "papers": [
+    {
+     "title": "Past, Present, and Future of Sensor-based Human Activity Recognition Using Wearables: A Surveying Tutorial on a Still Challenging Task",
+     "year": 2025,
+     "venue": "Proceedings of the ACM on Interactive Mobile Wearable and Ubiquitous Technologies",
+     "cites": 51,
+     "url": "https://doi.org/10.1145/3729467",
+     "openalex": "W4411403377",
+     "abstract": ""
+    },
+    {
+     "title": "InMyFace: Inertial and mechanomyography-based sensor fusion for wearable facial activity recognition",
+     "year": 2023,
+     "venue": "Information Fusion",
+     "cites": 43,
+     "url": "https://doi.org/10.1016/j.inffus.2023.101886",
+     "openalex": "W4380758367",
+     "abstract": ""
+    },
+    {
+     "title": "MoCaPose",
+     "year": 2023,
+     "venue": "Proceedings of the ACM on Interactive Mobile Wearable and Ubiquitous Technologies",
+     "cites": 34,
+     "url": "https://doi.org/10.1145/3580883",
+     "openalex": "W4361769890",
+     "abstract": ""
+    },
+    {
+     "title": "Remaining useful life prediction of Lithium-ion batteries using spatio-temporal multimodal attention networks",
+     "year": 2024,
+     "venue": "Heliyon",
+     "cites": 30,
+     "url": "https://doi.org/10.1016/j.heliyon.2024.e36236",
+     "openalex": "W4401822774",
+     "abstract": ""
+    },
+    {
+     "title": "RAD: Region-Aware Diffusion Models for Image Inpainting",
+     "year": 2025,
+     "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+     "cites": 29,
+     "url": "https://doi.org/10.1109/cvpr52734.2025.00233",
+     "openalex": "W4413147517",
+     "abstract": ""
+    }
+   ]
+  },
+  {
+   "name": "서현석",
+   "dept": "인공지능학과",
+   "email": "seoh@korea.ac.kr",
+   "lab": "",
+   "lab_url": "https://sites.google.com/view/i2pl/",
+   "name_en": "Hyunseok Seo",
+   "openalex": [
+    "A5090816728"
+   ],
+   "confidence": "high",
+   "check": "ORCID 0000-0003-0224-8942, KAIST, Stanford, KIST, 고려대 이력. 주제(의료영상, MRI) 일관",
+   "papers": [
+    {
+     "title": "Attention Guided CAM: Visual Explanations of Vision Transformer Guided by Self-Attention",
+     "year": 2024,
+     "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+     "cites": 49,
+     "url": "https://doi.org/10.1609/aaai.v38i4.28077",
+     "openalex": "W4393156092",
+     "abstract": ""
+    },
+    {
+     "title": "An Endodontic Forecasting Model Based on the Analysis of Preoperative Dental Radiographs: A Pilot Study on an Endodontic Predictive Deep Neural Network",
+     "year": 2023,
+     "venue": "Journal of Endodontics",
+     "cites": 34,
+     "url": "https://doi.org/10.1016/j.joen.2023.03.015",
+     "openalex": "W4362527000",
+     "abstract": ""
+    },
+    {
+     "title": "Self‐supervised learning for denoising of multidimensional MRI data",
+     "year": 2024,
+     "venue": "Magnetic Resonance in Medicine",
+     "cites": 15,
+     "url": "https://doi.org/10.1002/mrm.30197",
+     "openalex": "W4400089520",
+     "abstract": ""
+    },
+    {
+     "title": "Spectrum Translation for Refinement of Image Generation (STIG) Based on Contrastive Learning and Spectral Filter Profile",
+     "year": 2024,
+     "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+     "cites": 8,
+     "url": "https://doi.org/10.1609/aaai.v38i4.28074",
+     "openalex": "W4393159251",
+     "abstract": ""
+    },
+    {
+     "title": "Artificial Intelligence Model for Detection of Colorectal Cancer on Routine Abdominopelvic CT Examinations: A Training and External-Testing Study",
+     "year": 2025,
+     "venue": "American Journal of Roentgenology",
+     "cites": 8,
+     "url": "https://doi.org/10.2214/ajr.24.32396",
+     "openalex": "W4407408515",
+     "abstract": ""
+    }
+   ]
+  },
+  {
+   "name": "석흥일",
+   "dept": "인공지능학과",
+   "email": "hisuk@korea.ac.kr",
+   "lab": "",
+   "lab_url": "https://milab.korea.ac.kr/",
+   "name_en": "Heung-Il Suk",
+   "openalex": [
+    "A5033720496"
+   ],
+   "confidence": "high",
+   "check": "OpenAlex 저자 1개, 고려대 소속, 주제(뇌영상, 의료 AI) 일관",
+   "papers": [
+    {
+     "title": "Domain Generalization for Medical Image Analysis: A Review",
+     "year": 2024,
+     "venue": "Proceedings of the IEEE",
+     "cites": 153,
+     "url": "https://doi.org/10.1109/jproc.2024.3507831",
+     "openalex": "W4405092793",
+     "abstract": ""
+    },
+    {
+     "title": "Medical Transformer: Universal Encoder for 3-D Brain MRI Analysis",
+     "year": 2023,
+     "venue": "IEEE Transactions on Neural Networks and Learning Systems",
+     "cites": 82,
+     "url": "https://doi.org/10.1109/tnnls.2023.3308712",
+     "openalex": "W4386918813",
+     "abstract": ""
+    },
+    {
+     "title": "SADM: Sequence-Aware Diffusion Model for Longitudinal Medical Image Generation",
+     "year": 2023,
+     "venue": "Lecture notes in computer science",
+     "cites": 74,
+     "url": "https://doi.org/10.1007/978-3-031-34048-2_30",
+     "openalex": "W4379660313",
+     "abstract": ""
+    },
+    {
+     "title": "Estimating explainable Alzheimer’s disease likelihood map via clinically-guided prototype learning",
+     "year": 2023,
+     "venue": "NeuroImage",
+     "cites": 41,
+     "url": "https://doi.org/10.1016/j.neuroimage.2023.120073",
+     "openalex": "W4362722668",
+     "abstract": ""
+    },
+    {
+     "title": "EAG-RS: A Novel Explainability-Guided ROI-Selection Framework for ASD Diagnosis via Inter-Regional Relation Learning",
+     "year": 2023,
+     "venue": "IEEE Transactions on Medical Imaging",
+     "cites": 36,
+     "url": "https://doi.org/10.1109/tmi.2023.3337362",
+     "openalex": "W4389104822",
+     "abstract": ""
+    }
+   ]
+  },
+  {
+   "name": "성준경",
+   "dept": "인공지능학과",
+   "email": "jkseong@korea.ac.kr",
+   "lab": "",
+   "lab_url": "http://brein.korea.ac.kr/lab/",
+   "name_en": "Joon-Kyung Seong",
+   "openalex": [
+    "A5101496440"
+   ],
+   "confidence": "medium",
+   "check": "고려대 소속 저자 ID, 뇌영상, 알츠하이머 논문만 남김. 같은 ID의 PROTAC, SMAC 펩타이드 화학 논문(91회 등)은 주제가 달라 뺐고, ADNI 그룹 저자로만 걸린 JAMA 논문 2편도 본인 참여를 확인 못 해 뺌",
+   "papers": [
+    {
+     "title": "Differentiation between multiple sclerosis and neuromyelitis optica spectrum disorder using a deep learning model",
+     "year": 2023,
+     "venue": "Scientific Reports",
+     "cites": 42,
+     "url": "https://doi.org/10.1038/s41598-023-38271-x",
+     "openalex": "W4384818991",
+     "abstract": ""
+    },
+    {
+     "title": "Real-world prediction of preclinical Alzheimer’s disease with a deep generative model",
+     "year": 2023,
+     "venue": "Artificial Intelligence in Medicine",
+     "cites": 33,
+     "url": "https://doi.org/10.1016/j.artmed.2023.102654",
+     "openalex": "W4386408396",
+     "abstract": ""
+    },
+    {
+     "title": "Gait impairment associated with neuroimaging biomarkers in Alzheimer’s disease",
+     "year": 2025,
+     "venue": "Scientific Reports",
+     "cites": 13,
+     "url": "https://doi.org/10.1038/s41598-025-90020-4",
+     "openalex": "W4407566531",
+     "abstract": ""
+    },
+    {
+     "title": "Disentangling brain atrophy heterogeneity in Alzheimer's disease: A deep self-supervised approach with interpretable latent space",
+     "year": 2024,
+     "venue": "NeuroImage",
+     "cites": 10,
+     "url": "https://doi.org/10.1016/j.neuroimage.2024.120737",
+     "openalex": "W4400614810",
+     "abstract": ""
+    },
+    {
+     "title": "Amyloid deposition and its association with depressive symptoms and cognitive functions in late-life depression: a longitudinal study using amyloid-β PET images and neuropsychological measurements",
+     "year": 2024,
+     "venue": "Alzheimer s Research & Therapy",
+     "cites": 9,
+     "url": "https://doi.org/10.1186/s13195-024-01562-0",
+     "openalex": "W4403557059",
+     "abstract": ""
+    }
+   ]
+  },
+  {
+   "name": "이병준",
+   "dept": "인공지능학과",
+   "email": "byungjunlee@korea.ac.kr",
+   "lab": "",
+   "lab_url": "https://dmlab.korea.ac.kr/",
+   "name_en": "Byung-Jun Lee",
+   "openalex": [
+    "A5087120983",
+    "A5145875765",
+    "A5038505640"
+   ],
+   "confidence": "high",
+   "check": "고려대 소속 주 ID와 쪼개진 ID 2개(강화학습, 선호최적화 주제)를 합침. 플라즈마 분야 Byung Jun Lee(A5110644349)는 다른 사람",
+   "papers": [
+    {
+     "title": "MARS: Multiagent Reinforcement Learning for Spatial—Spectral and Temporal Feature Selection in EEG-Based BCI",
+     "year": 2024,
+     "venue": "IEEE Transactions on Systems Man and Cybernetics Systems",
+     "cites": 30,
+     "url": "https://doi.org/10.1109/tsmc.2024.3355101",
+     "openalex": "W4391661550",
+     "abstract": ""
+    },
+    {
+     "title": "Adaptive Non-uniform Timestep Sampling for Accelerating Diffusion Model Training",
+     "year": 2025,
+     "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+     "cites": 16,
+     "url": "https://doi.org/10.1109/cvpr52734.2025.00240",
+     "openalex": "W4413145657",
+     "abstract": ""
+    },
+    {
+     "title": "Prior-Guided Diffusion Planning for Offline Reinforcement Learning",
+     "year": 2025,
+     "venue": "neural information processing systems",
+     "cites": 10,
+     "url": "https://doi.org/10.52202/085713-2000",
+     "openalex": "W7196939957",
+     "abstract": ""
+    },
+    {
+     "title": "Adaptive Online Time-Series Prediction for Virtual Metrology in Semiconductor Manufacturing",
+     "year": 2023,
+     "venue": "ASMC proceedings",
+     "cites": 10,
+     "url": "https://doi.org/10.1109/asmc57536.2023.10121099",
+     "openalex": "W4376272052",
+     "abstract": ""
+    },
+    {
+     "title": "Rethinking DPO: The Role of Rejected Responses in Preference Misalignment",
+     "year": 2025,
+     "venue": "Findings of the Association for Computational Linguistics: EMNLP (Findings of EMNLP)",
+     "cites": 8,
+     "url": "https://doi.org/10.18653/v1/2025.findings-emnlp.433",
+     "openalex": "W4416034971",
+     "abstract": ""
+    }
+   ]
+  },
+  {
+   "name": "이상근",
+   "dept": "인공지능학과",
+   "email": "yalphy@korea.ac.kr",
+   "lab": "",
+   "lab_url": "http://dilab.korea.ac.kr",
+   "name_en": "SangKeun Lee",
+   "openalex": [
+    "A5101595608",
+    "A5109497589"
+   ],
+   "confidence": "high",
+   "check": "고려대 소속 주 ID와 화학 언어모델 ID 하나를 합침. ORNL의 Sangkeun Matthew Lee 논문(Brick 메타데이터)이 섞여 있어 뺌",
+   "papers": [
+    {
+     "title": "Dynamic Structure Pruning for Compressing CNNs",
+     "year": 2023,
+     "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+     "cites": 25,
+     "url": "https://doi.org/10.1609/aaai.v37i8.26127",
+     "openalex": "W4382203143",
+     "abstract": ""
+    },
+    {
+     "title": "Client-Customized Adaptation for Parameter-Efficient Federated Learning",
+     "year": 2023,
+     "venue": "Findings of the Association for Computational Linguistics: ACL (Findings of ACL)",
+     "cites": 20,
+     "url": "https://doi.org/10.18653/v1/2023.findings-acl.75",
+     "openalex": "W4385570587",
+     "abstract": ""
+    },
+    {
+     "title": "Mentor-KD: Making Small Language Models Better Multi-step Reasoners",
+     "year": 2024,
+     "venue": "Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+     "cites": 17,
+     "url": "https://doi.org/10.18653/v1/2024.emnlp-main.977",
+     "openalex": "W4404782217",
+     "abstract": ""
+    },
+    {
+     "title": "SMoP: Towards Efficient and Effective Prompt Tuning with Sparse Mixture-of-Prompts",
+     "year": 2023,
+     "venue": "Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+     "cites": 12,
+     "url": "https://doi.org/10.18653/v1/2023.emnlp-main.884",
+     "openalex": "W4389523703",
+     "abstract": ""
+    },
+    {
+     "title": "MolTRES: Improving Chemical Language Representation Learning for Molecular Property Prediction",
+     "year": 2024,
+     "venue": "Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+     "cites": 6,
+     "url": "https://doi.org/10.18653/v1/2024.emnlp-main.788",
+     "openalex": "W4404783107",
+     "abstract": ""
+    }
+   ]
+  },
+  {
+   "name": "이성환",
+   "dept": "인공지능학과",
+   "email": "sw.lee@korea.ac.kr",
+   "lab": "",
+   "lab_url": "http://pr.korea.ac.kr/",
+   "name_en": "Seong-Whan Lee",
+   "openalex": [
+    "A5011014617"
+   ],
+   "confidence": "high",
+   "check": "고려대 소속 주 ID, 주제(BCI, 음성합성) 일관. 쪼개진 고려대 ID 여러 개도 이름으로 검색해 포함",
+   "papers": [
+    {
+     "title": "Towards Voice Reconstruction from EEG during Imagined Speech",
+     "year": 2023,
+     "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+     "cites": 62,
+     "url": "https://doi.org/10.1609/aaai.v37i5.25745",
+     "openalex": "W4382239589",
+     "abstract": ""
+    },
+    {
+     "title": "DeepHealthNet: Adolescent Obesity Prediction System Based on a Deep Learning Framework",
+     "year": 2024,
+     "venue": "IEEE Journal of Biomedical and Health Informatics",
+     "cites": 60,
+     "url": "https://doi.org/10.1109/jbhi.2024.3356580",
+     "openalex": "W4391547627",
+     "abstract": ""
+    },
+    {
+     "title": "HierSpeech++: Bridging the Gap Between Semantic and Acoustic Representation of Speech by Hierarchical Variational Inference for Zero-Shot Speech Synthesis",
+     "year": 2025,
+     "venue": "IEEE Transactions on Neural Networks and Learning Systems",
+     "cites": 57,
+     "url": "https://doi.org/10.1109/tnnls.2025.3584944",
+     "openalex": "W4412353446",
+     "abstract": ""
+    },
+    {
+     "title": "Diff-HierVC: Diffusion-based Hierarchical Voice Conversion with Robust Pitch Generation and Masked Prior for Zero-shot Speaker Adaptation",
+     "year": 2023,
+     "venue": "Interspeech (USB)",
+     "cites": 54,
+     "url": "https://doi.org/10.21437/interspeech.2023-817",
+     "openalex": "W4385823264",
+     "abstract": ""
+    },
+    {
+     "title": "EmoSphere-TTS: Emotional Style and Intensity Modeling via Spherical Emotion Vector for Controllable Emotional Text-to-Speech",
+     "year": 2024,
+     "venue": "Interspeech (USB)",
+     "cites": 45,
+     "url": "https://doi.org/10.21437/interspeech.2024-398",
+     "openalex": "W4402115961",
+     "abstract": ""
+    }
+   ]
+  },
+  {
+   "name": "이승규",
+   "dept": "인공지능학과",
+   "email": "dltmdrbekt@korea.ac.kr",
+   "lab": "Distributed Robot Intelligence Lab (로봇 분산지능)",
+   "lab_url": "https://sites.google.com/view/drilab/home",
+   "name_en": "Seoung Kyou Lee",
+   "openalex": [
+    "A5059052248"
+   ],
+   "confidence": "medium",
+   "check": "DRI 연구실 논문 목록의 'SK Lee' 논문(차량형 로봇 경로계획 2025)과 OpenAlex 'Seoung Kyou Lee' 고려대 ID가 일치. 영문 표기는 이 대조로 추정",
+   "papers": [
+    {
+     "title": "Local path planning scheme for car-like robots’ shortest turning motion using geometric analysis",
+     "year": 2025,
+     "venue": "Intelligent Service Robotics",
+     "cites": 0,
+     "url": "https://doi.org/10.1007/s11370-025-00588-z",
+     "openalex": "W4408962266",
+     "abstract": ""
+    },
+    {
+     "title": "Distributed concurrent triangulation for a group of low-cost robots with bearing-only sensing",
+     "year": 2026,
+     "venue": "Autonomous Agents and Multi-Agent Systems",
+     "cites": 0,
+     "url": "https://doi.org/10.1007/s10458-025-09728-2",
+     "openalex": "W7125016806",
+     "abstract": ""
+    }
+   ]
+  },
+  {
+   "name": "이창희",
+   "dept": "인공지능학과",
+   "email": "changheelee@korea.ac.kr",
+   "lab": "Actionable Intelligence Lab",
+   "lab_url": "http://aix.korea.ac.kr",
+   "name_en": "Changhee Lee",
+   "openalex": [
+    "A5100406187",
+    "A5100406176"
+   ],
+   "confidence": "high",
+   "check": "AIX 연구실 Publications 목록에 있는 논문만 골랐다. A5100406187에는 심장이식 등 다른 Changhee Lee 논문이 섞여 있음",
+   "papers": [
+    {
+     "title": "Mobility Management Paradigm Shift: From Reactive to Proactive Handover Using AI/ML",
+     "year": 2024,
+     "venue": "IEEE Network",
+     "cites": 27,
+     "url": "https://doi.org/10.1109/mnet.2024.3357108",
+     "openalex": "W4391097198",
+     "abstract": ""
+    },
+    {
+     "title": "A pediatric emergency prediction model using natural language process in the pediatric emergency department",
+     "year": 2025,
+     "venue": "Scientific Reports",
+     "cites": 10,
+     "url": "https://doi.org/10.1038/s41598-025-87161-x",
+     "openalex": "W4406964147",
+     "abstract": ""
+    },
+    {
+     "title": "Enhancing Anomaly Detection via Generating Diversified and Hard-to-distinguish Synthetic Anomalies",
+     "year": 2024,
+     "venue": "ACM International Conference on Information and Knowledge Management (CIKM)",
+     "cites": 8,
+     "url": "https://doi.org/10.1145/3627673.3679623",
+     "openalex": "W4403582571",
+     "abstract": ""
+    },
+    {
+     "title": "A predictive algorithm for perioperative complications and readmission after ankle arthrodesis",
+     "year": 2024,
+     "venue": "European Journal of Orthopaedic Surgery & Traumatology",
+     "cites": 6,
+     "url": "https://doi.org/10.1007/s00590-023-03805-6",
+     "openalex": "W4390585500",
+     "abstract": ""
+    },
+    {
+     "title": "DSG-KD: Knowledge Distillation From Domain-Specific to General Language Models",
+     "year": 2024,
+     "venue": "IEEE Access",
+     "cites": 6,
+     "url": "https://doi.org/10.1109/access.2024.3457850",
+     "openalex": "W4402435299",
+     "abstract": ""
+    }
+   ]
+  },
+  {
+   "name": "정우환",
+   "dept": "인공지능학과",
+   "email": "woohwan@korea.ac.kr",
+   "lab": "",
+   "lab_url": "https://aai.korea.ac.kr/",
+   "name_en": "Woohwan Jung",
+   "openalex": [
+    "A5041272419"
+   ],
+   "confidence": "high",
+   "check": "ORCID 0000-0003-4561-2214, 서울대, 한양대, 고려대 이력. 주제(NLP, 금융 QA) 일관",
+   "papers": [
+    {
+     "title": "Data Augmentation for Neural Machine Translation using Generative Language Model",
+     "year": 2023,
+     "venue": "arXiv (Cornell University)",
+     "cites": 28,
+     "url": "https://doi.org/10.48550/arxiv.2307.16833",
+     "openalex": "W4385474580",
+     "abstract": ""
+    },
+    {
+     "title": "Improving Domain-Specific ASR with LLM-Generated Contextual Descriptions",
+     "year": 2024,
+     "venue": "Interspeech (USB)",
+     "cites": 16,
+     "url": "https://doi.org/10.21437/interspeech.2024-377",
+     "openalex": "W4402112288",
+     "abstract": ""
+    },
+    {
+     "title": "Hierarchical Retrieval with Evidence Curation for Open-Domain Financial Question Answering on Standardized Documents",
+     "year": 2025,
+     "venue": "Findings of the Association for Computational Linguistics: ACL (Findings of ACL)",
+     "cites": 10,
+     "url": "https://doi.org/10.18653/v1/2025.findings-acl.855",
+     "openalex": "W4412888134",
+     "abstract": ""
+    },
+    {
+     "title": "Exploring the Impact of Corpus Diversity on Financial Pretrained Language Models",
+     "year": 2023,
+     "venue": "Findings of the Association for Computational Linguistics: EMNLP (Findings of EMNLP)",
+     "cites": 8,
+     "url": "https://doi.org/10.18653/v1/2023.findings-emnlp.138",
+     "openalex": "W4389519999",
+     "abstract": ""
+    },
+    {
+     "title": "Improving Detail in Pluralistic Image Inpainting with Feature Dequantization",
+     "year": 2025,
+     "venue": "IEEE Winter Conference on Applications of Computer Vision",
+     "cites": 6,
+     "url": "https://doi.org/10.1109/wacv61041.2025.00076",
+     "openalex": "W4409262949",
+     "abstract": ""
+    }
+   ]
+  },
+  {
+   "name": "정원주",
+   "dept": "인공지능학과",
+   "email": "wchung@korea.ac.kr",
+   "lab": "Statistical Intelligence Lab (통계지능)",
+   "lab_url": "http://spl.korea.ac.kr",
+   "name_en": "Wonzoo Chung",
+   "openalex": [
+    "A5023585249"
+   ],
+   "confidence": "high",
+   "check": "고려대 소속 저자 ID, 주제(EEG 운동상상, 수면단계, 신호처리)가 연구실 소개와 맞음",
+   "papers": [
+    {
+     "title": "Multi-Band CNN With Band-Dependent Kernels and Amalgamated Cross Entropy Loss for Motor Imagery Classification",
+     "year": 2023,
+     "venue": "IEEE Journal of Biomedical and Health Informatics",
+     "cites": 30,
+     "url": "https://doi.org/10.1109/jbhi.2023.3292909",
+     "openalex": "W4383427998",
+     "abstract": ""
+    },
+    {
+     "title": "A novel geometric-based bistatic range grouping algorithm for multi-target localization in distributed MIMO radar systems",
+     "year": 2024,
+     "venue": "Expert Systems with Applications",
+     "cites": 8,
+     "url": "https://doi.org/10.1016/j.eswa.2024.124269",
+     "openalex": "W4399116736",
+     "abstract": ""
+    },
+    {
+     "title": "Automatic Sleep Stage Classification Method based on Transformer-in-Transformer",
+     "year": 2023,
+     "venue": "International Winter Conference on Brain-Computer Interface (BCI)",
+     "cites": 7,
+     "url": "https://doi.org/10.1109/bci57258.2023.10078607",
+     "openalex": "W4361185878",
+     "abstract": ""
+    },
+    {
+     "title": "Multi-class Motor Imagery Classification using Multi-class SVM with Multi-band Riemannian Tangent Space Mapping",
+     "year": 2023,
+     "venue": "International Winter Conference on Brain-Computer Interface (BCI)",
+     "cites": 7,
+     "url": "https://doi.org/10.1109/bci57258.2023.10078711",
+     "openalex": "W4361185960",
+     "abstract": ""
+    },
+    {
+     "title": "Multiband Convolutional Riemannian Network With Band-Wise Riemannian Triplet Loss for Motor Imagery Classification",
+     "year": 2024,
+     "venue": "IEEE Journal of Biomedical and Health Informatics",
+     "cites": 5,
+     "url": "https://doi.org/10.1109/jbhi.2024.3438167",
+     "openalex": "W4401328253",
+     "abstract": ""
+    }
+   ]
+  },
+  {
+   "name": "정종헌",
+   "dept": "인공지능학과",
+   "email": "jonghj@korea.ac.kr",
+   "lab": "",
+   "lab_url": "https://tail.korea.ac.kr/",
+   "name_en": "Jongheon Jeong",
+   "openalex": [
+    "A5045815823"
+   ],
+   "confidence": "high",
+   "check": "ORCID 0000-0002-4058-5774, KAIST, 고려대 이력. 주제(강건성, 확산모델) 일관",
+   "papers": [
+    {
+     "title": "WinCLIP: Zero-/Few-Shot Anomaly Classification and Segmentation",
+     "year": 2023,
+     "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+     "cites": 660,
+     "url": "https://doi.org/10.1109/cvpr52729.2023.01878",
+     "openalex": "W4386065385",
+     "abstract": ""
+    },
+    {
+     "title": "Representation Alignment for Generation: Training Diffusion Transformers Is Easier Than You Think",
+     "year": 2024,
+     "venue": "arXiv (Cornell University)",
+     "cites": 426,
+     "url": "https://doi.org/10.48550/arxiv.2410.06940",
+     "openalex": "W4403345601",
+     "abstract": ""
+    },
+    {
+     "title": "OpenCoS: Contrastive Semi-supervised Learning for Handling Open-Set Unlabeled Data",
+     "year": 2023,
+     "venue": "Lecture notes in computer science",
+     "cites": 32,
+     "url": "https://doi.org/10.1007/978-3-031-25063-7_9",
+     "openalex": "W4320893548",
+     "abstract": ""
+    },
+    {
+     "title": "Margin-Aware Preference Optimization for Aligning Diffusion Models Without Reference",
+     "year": 2026,
+     "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+     "cites": 18,
+     "url": "https://doi.org/10.1609/aaai.v40i6.42476",
+     "openalex": "W7138064046,W4399554383",
+     "abstract": ""
+    },
+    {
+     "title": "DiffusionGuard: A Robust Defense Against Malicious Diffusion-based Image Editing",
+     "year": 2024,
+     "venue": "arXiv (Cornell University)",
+     "cites": 15,
+     "url": "https://doi.org/10.48550/arxiv.2410.05694",
+     "openalex": "W4403347193",
+     "abstract": ""
+    }
+   ]
+  },
+  {
+   "name": "최성준(A)",
+   "dept": "인공지능학과",
+   "email": "sungjoon-choi@korea.ac.kr",
+   "lab": "Robot Intelligence Lab (Robot Learning)",
+   "lab_url": "https://sites.google.com/view/sungjoon-choi/home",
+   "name_en": "Sungjoon Choi",
+   "openalex": [
+    "A5047885515"
+   ],
+   "confidence": "high",
+   "check": "고려대 소속 주 ID, 주제(로봇 학습, 모션 생성, HRI)가 RILAB 소개와 맞음. 같은 이름의 AI Imaging Lab 최성준(B), IBS 신경과학 Sungjoon Choi와 구분",
+   "papers": [
+    {
+     "title": "FLAME: Free-Form Language-Based Motion Synthesis & Editing",
+     "year": 2023,
+     "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+     "cites": 191,
+     "url": "https://doi.org/10.1609/aaai.v37i7.25996",
+     "openalex": "W4382457661",
+     "abstract": ""
+    },
+    {
+     "title": "CLARA: Classifying and Disambiguating User Commands for Reliable Interactive Robotic Agents",
+     "year": 2023,
+     "venue": "IEEE Robotics and Automation Letters",
+     "cites": 44,
+     "url": "https://doi.org/10.1109/lra.2023.3338514",
+     "openalex": "W4389252904",
+     "abstract": ""
+    },
+    {
+     "title": "Zero-shot Active Visual Search (ZAVIS): Intelligent Object Search for Robotic Assistants",
+     "year": 2023,
+     "venue": "Proceedings - IEEE International Conference on Robotics and Automation/Proceedings",
+     "cites": 19,
+     "url": "https://doi.org/10.1109/icra48891.2023.10161345",
+     "openalex": "W4383108714",
+     "abstract": ""
+    },
+    {
+     "title": "Kinematics-Informed Neural Networks: Enhancing Generalization Performance of Soft Robot Model Identification",
+     "year": 2024,
+     "venue": "IEEE Robotics and Automation Letters",
+     "cites": 14,
+     "url": "https://doi.org/10.1109/lra.2024.3362644",
+     "openalex": "W4391582619",
+     "abstract": ""
+    },
+    {
+     "title": "Spatio-Temporal Motion Retargeting for Quadruped Robots",
+     "year": 2025,
+     "venue": "IEEE Transactions on Robotics",
+     "cites": 10,
+     "url": "https://doi.org/10.1109/tro.2025.3600123",
+     "openalex": "W4413318774",
+     "abstract": ""
+    }
+   ]
+  },
+  {
+   "name": "최성준(B)",
+   "dept": "인공지능학과",
+   "email": "sungjoonc@korea.ac.kr",
+   "lab": "AI Imaging Lab",
+   "lab_url": "https://aii.korea.ac.kr",
+   "name_en": "Sungjoon Choi",
+   "openalex": [],
+   "confidence": "low",
+   "check": "2025년 Google Research에서 옮겨 옴(연구실 People 페이지). OpenAlex에서 Google 소속 Sungjoon Choi 저자 ID를 찾지 못함. 연구실 목록의 2026 논문 2편(ECCV 2026, 프리프린트)을 제목으로 찾는 단계가 남음",
+   "papers": []
+  },
+  {
+   "name": "Christian Wallraven",
+   "dept": "인공지능학과",
+   "email": "wallraven@korea.ac.kr",
+   "lab": "",
+   "lab_url": "https://cogsys.korea.ac.kr/",
+   "name_en": "Christian Wallraven",
+   "openalex": [
+    "A5073529866"
+   ],
+   "confidence": "high",
+   "check": "고려대 소속 저자 ID, 주제(인지, EEG, 지각) 일관. 편집자로 걸린 학회 논문집(LNCS) 1건은 뺌",
+   "papers": [
+    {
+     "title": "An EEG Dataset of Neural Signatures in a Competitive Two-Player Game Encouraging Deceptive Behavior",
+     "year": 2024,
+     "venue": "Scientific Data",
+     "cites": 15,
+     "url": "https://doi.org/10.1038/s41597-024-03234-y",
+     "openalex": "W4394844527",
+     "abstract": ""
+    },
+    {
+     "title": "Decoding visual fatigue in a visual search task selectively manipulated via myopia-correcting lenses",
+     "year": 2024,
+     "venue": "Frontiers in Neuroscience",
+     "cites": 10,
+     "url": "https://doi.org/10.3389/fnins.2024.1307688",
+     "openalex": "W4394681418",
+     "abstract": ""
+    },
+    {
+     "title": "I see artifacts: ICA-based EEG artifact removal does not improve deep network decoding across three BCI tasks",
+     "year": 2024,
+     "venue": "Journal of Neural Engineering",
+     "cites": 9,
+     "url": "https://doi.org/10.1088/1741-2552/ad788e",
+     "openalex": "W4402347462",
+     "abstract": ""
+    },
+    {
+     "title": "Dynamic measurements of speed and risk perception during driving: Evidence of speed misestimation from continuous ratings and video analysis",
+     "year": 2023,
+     "venue": "PLoS ONE",
+     "cites": 9,
+     "url": "https://doi.org/10.1371/journal.pone.0291043",
+     "openalex": "W4386362121",
+     "abstract": ""
+    },
+    {
+     "title": "Relationship between virtual reality balloon analogue risk task and risky decision-making",
+     "year": 2023,
+     "venue": "PLoS ONE",
+     "cites": 8,
+     "url": "https://doi.org/10.1371/journal.pone.0282097",
+     "openalex": "W4321487989",
+     "abstract": ""
+    }
+   ]
+  },
+  {
+   "name": "Anh Tong",
+   "dept": "인공지능학과",
+   "email": "anhtong12@korea.ac.kr",
+   "lab": "Stochastic Dynamics and Machine Learning Lab",
+   "lab_url": "https://sdml-ku.github.io/",
+   "name_en": "Anh Tong",
+   "openalex": [
+    "A5064825850",
+    "A5134408568"
+   ],
+   "confidence": "high",
+   "check": "SDML 연구실 Publications 목록과 5편 대조(모두 있음). 3D 프린팅 분야 Anh Tong(A5038745824)은 다른 사람",
+   "papers": [
+    {
+     "title": "SigFormer: Signature Transformers for Deep Hedging",
+     "year": 2023,
+     "venue": "ACM International Conference on AI in Finance (ICAIF)",
+     "cites": 10,
+     "url": "https://doi.org/10.1145/3604237.3626841",
+     "openalex": "W4387891862",
+     "abstract": ""
+    },
+    {
+     "title": "Roles of ambient temperature and relative humidity on the relationship between fine particulate matter and gaseous pollutants in the largest industrial city of Ulsan, South Korea",
+     "year": 2023,
+     "venue": "Environmental Science and Pollution Research",
+     "cites": 7,
+     "url": "https://doi.org/10.1007/s11356-023-29036-0",
+     "openalex": "W4385851598",
+     "abstract": ""
+    },
+    {
+     "title": "Towards Transparent Time Series Analysis: Exploring Methods and Enhancing Interpretability",
+     "year": 2026,
+     "venue": "ACM Computing Surveys",
+     "cites": 4,
+     "url": "https://doi.org/10.1145/3794839",
+     "openalex": "W7126021189",
+     "abstract": ""
+    },
+    {
+     "title": "CASUAL: Conditional Support Alignment for Domain Adaptation with Label Shift",
+     "year": 2025,
+     "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+     "cites": 2,
+     "url": "https://doi.org/10.1609/aaai.v39i18.34166",
+     "openalex": "W4409347647",
+     "abstract": ""
+    },
+    {
+     "title": "LoCo: Low-Rank Compositional Rotation Fine-Tuning",
+     "year": 2026,
+     "venue": "International Joint Conference on Artificial Intelligence",
+     "cites": 1,
+     "url": "https://doi.org/10.24963/ijcai.2026/521",
+     "openalex": "W7161543301",
+     "abstract": ""
+    }
+   ]
+  },
+  {
+   "name": "강재우",
+   "dept": "컴퓨터학과",
+   "email": "kangj@korea.ac.kr",
+   "lab": "",
+   "lab_url": "http://dmis.korea.ac.kr",
+   "name_en": "Jaewoo Kang",
+   "openalex": [
+    "A5076917278"
+   ],
+   "confidence": "high",
+   "check": "고려대 소속 주 ID, 주제(바이오의료 NLP, RAG) 일관",
+   "papers": [
+    {
+     "title": "Improving medical reasoning through retrieval and self-reflection with retrieval-augmented large language models",
+     "year": 2024,
+     "venue": "Bioinformatics",
+     "cites": 168,
+     "url": "https://doi.org/10.1093/bioinformatics/btae238",
+     "openalex": "W4400128031",
+     "abstract": ""
+    },
+    {
+     "title": "Small language models learn enhanced reasoning skills from medical textbooks",
+     "year": 2025,
+     "venue": "npj Digital Medicine",
+     "cites": 98,
+     "url": "https://doi.org/10.1038/s41746-025-01653-8",
+     "openalex": "W4410028173",
+     "abstract": ""
+    },
+    {
+     "title": "Tree of Clarifications: Answering Ambiguous Questions with Retrieval-Augmented Large Language Models",
+     "year": 2023,
+     "venue": "Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+     "cites": 83,
+     "url": "https://doi.org/10.18653/v1/2023.emnlp-main.63",
+     "openalex": "W4389524398",
+     "abstract": ""
+    },
+    {
+     "title": "Rationale-Guided Retrieval Augmented Generation for Medical Question Answering",
+     "year": 2025,
+     "venue": "Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL-HLT)",
+     "cites": 72,
+     "url": "https://doi.org/10.18653/v1/2025.naacl-long.635",
+     "openalex": "W4411120331",
+     "abstract": ""
+    },
+    {
+     "title": "CompAct: Compressing Retrieved Documents Actively for Question Answering",
+     "year": 2024,
+     "venue": "Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+     "cites": 46,
+     "url": "https://doi.org/10.18653/v1/2024.emnlp-main.1194",
+     "openalex": "W4404781906",
+     "abstract": ""
+    }
+   ]
+  },
+  {
+   "name": "임희석",
+   "dept": "컴퓨터학과",
+   "email": "limhseok@korea.ac.kr",
+   "lab": "NLP&AI Lab",
+   "lab_url": "",
+   "name_en": "Heuiseok Lim",
+   "openalex": [
+    "A5033580486"
+   ],
+   "confidence": "high",
+   "check": "고려대 소속 주 ID, 주제(NLP, LLM) 일관. 3위 BIM 설계기준 자동검토 논문은 분야가 다르지만 고려대 소속, 같은 ID라 포함",
+   "papers": [
+    {
+     "title": "A Survey on Evaluation Metrics for Machine Translation",
+     "year": 2023,
+     "venue": "Mathematics",
+     "cites": 145,
+     "url": "https://doi.org/10.3390/math11041006",
+     "openalex": "W4321094913",
+     "abstract": ""
+    },
+    {
+     "title": "Debate Only When Necessary: Adaptive Multiagent Collaboration for Efficient LLM Reasoning",
+     "year": 2025,
+     "venue": "arXiv (Cornell University)",
+     "cites": 36,
+     "url": "https://doi.org/10.48550/arxiv.2504.05047",
+     "openalex": "W4416118450",
+     "abstract": ""
+    },
+    {
+     "title": "Automated Compliance Checking System for Structural Design Codes in a BIM Environment",
+     "year": 2024,
+     "venue": "KSCE Journal of Civil Engineering",
+     "cites": 20,
+     "url": "https://doi.org/10.1007/s12205-024-1121-5",
+     "openalex": "W4401590037",
+     "abstract": ""
+    },
+    {
+     "title": "MIRAGE: A Metric-Intensive Benchmark for Retrieval-Augmented Generation Evaluation",
+     "year": 2025,
+     "venue": "Findings of the Association for Computational Linguistics: NAACL",
+     "cites": 19,
+     "url": "https://doi.org/10.18653/v1/2025.findings-naacl.157",
+     "openalex": "W4411113072",
+     "abstract": ""
+    },
+    {
+     "title": "Towards Reliable and Fluent Large Language Models: Incorporating Feedback Learning Loops in QA Systems",
+     "year": 2023,
+     "venue": "arXiv (Cornell University)",
+     "cites": 17,
+     "url": "https://doi.org/10.48550/arxiv.2309.06384",
+     "openalex": "W4386722107",
+     "abstract": ""
+    }
+   ]
+  },
+  {
+   "name": "장부루",
+   "dept": "컴퓨터학과",
+   "email": "buru_chang@korea.ac.kr",
+   "lab": "Language and Intelligence Lab",
+   "lab_url": "",
+   "name_en": "Buru Chang",
+   "openalex": [
+    "A5068698319"
+   ],
+   "confidence": "high",
+   "check": "ORCID 0000-0002-7595-9035, 고려대, 서강대 이력. 주제(LLM, 추천, 환각) 일관. 4위 RAG Paradox는 저자 ID가 비어 있지만 고려대 소속 이름 일치로 포함",
+   "papers": [
+    {
+     "title": "Review-driven Personalized Preference Reasoning with Large Language Models for Recommendation",
+     "year": 2025,
+     "venue": "International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR)",
+     "cites": 46,
+     "url": "https://doi.org/10.1145/3726302.3730055",
+     "openalex": "W4412377003",
+     "abstract": ""
+    },
+    {
+     "title": "TiDAL: Learning Training Dynamics for Active Learning",
+     "year": 2023,
+     "venue": "IEEE/CVF International Conference on Computer Vision (ICCV)",
+     "cites": 23,
+     "url": "https://doi.org/10.1109/iccv51070.2023.02041",
+     "openalex": "W4390873143",
+     "abstract": ""
+    },
+    {
+     "title": "ConVis: Contrastive Decoding with Hallucination Visualization for Mitigating Hallucinations in Multimodal Large Language Models",
+     "year": 2025,
+     "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+     "cites": 16,
+     "url": "https://doi.org/10.1609/aaai.v39i6.32689",
+     "openalex": "W4409367274",
+     "abstract": ""
+    },
+    {
+     "title": "The RAG Paradox: A Black-Box Attack Exploiting Unintentional Vulnerabilities in Retrieval-Augmented Generation Systems",
+     "year": 2025,
+     "venue": "Findings of the Association for Computational Linguistics: EMNLP (Findings of EMNLP)",
+     "cites": 15,
+     "url": "https://doi.org/10.18653/v1/2025.findings-emnlp.1291",
+     "openalex": "W7104363030",
+     "abstract": ""
+    },
+    {
+     "title": "Reliable Decision from Multiple Subtasks through Threshold Optimization: Content Moderation in the Wild",
+     "year": 2023,
+     "venue": "ACM International Conference on Web Search and Data Mining (WSDM)",
+     "cites": 13,
+     "url": "https://doi.org/10.1145/3539597.3570439",
+     "openalex": "W4321485142",
+     "abstract": ""
+    }
+   ]
+  },
+  {
+   "name": "박성우",
+   "dept": "컴퓨터학과",
+   "email": "sungwoo_park@korea.ac.kr",
+   "lab": "Generative Intelligence Lab (생성형 지능시스템)",
+   "lab_url": "https://www.gi.korea.ac.kr/",
+   "name_en": "Sungwoo Park",
+   "openalex": [
+    "A5100324396"
+   ],
+   "confidence": "medium",
+   "check": "연구실 Publication 목록(2025년 3월 부임, 중앙대 권준석 교수 지도, UC Berkeley 박사후)의 2023년 이후 제목으로만 골랐다. OpenAlex A5100324396에는 에너지 예측, 감염병 예측을 하는 다른 Sungwoo Park 논문이 섞여 있어 쓰지 않음",
+   "papers": [
+    {
+     "title": "InstructCV: Instruction-Tuned Text-to-Image Diffusion Models as Vision Generalists",
+     "year": 2023,
+     "venue": "arXiv (Cornell University)",
+     "cites": 16,
+     "url": "https://doi.org/10.48550/arxiv.2310.00390",
+     "openalex": "W4387348567",
+     "abstract": ""
+    },
+    {
+     "title": "Mean-field Chaos Diffusion Models",
+     "year": 2024,
+     "venue": "arXiv (Cornell University)",
+     "cites": 2,
+     "url": "https://doi.org/10.48550/arxiv.2406.05396",
+     "openalex": "W4399554773",
+     "abstract": ""
+    }
+   ]
+  }
+ ],
+ "pending": "OpenAlex 무키 일일 한도 소진으로 미완료: 제목 조회 이승규, 이창희, 최성준B, Anh Tong, 박성우 / 초록"
+}

@@ -1,0 +1,744 @@
+{
+ "made": "2026-11-10",
+ "how": "논문 제목과 학회를 읽고 가장 가까운 노선 하나와 가장 가까운 역을 골랐다(Claude). near가 비면 역을 정하지 않았다.",
+ "papers": {
+  "W4391547627": {
+   "line": "other",
+   "near": "",
+   "why": "청소년 비만 예측, 의료 응용",
+   "title": "DeepHealthNet: Adolescent Obesity Prediction System Based on a Deep Learning Fra"
+  },
+  "W4391892457": {
+   "line": "other",
+   "near": "",
+   "why": "뇌 연결망 그래프 신경망, 우울증 진단",
+   "title": "Spectral Graph Neural Network-Based Multi-Atlas Brain Network Fusion for Major D"
+  },
+  "W4381733655": {
+   "line": "other",
+   "near": "",
+   "why": "뇌파 정신 상태 분류",
+   "title": "Autonomous System for EEG-Based Multiple Abnormal Mental States Classification U"
+  },
+  "W4389494956": {
+   "line": "gen",
+   "near": "gan",
+   "why": "조건부 GAN으로 뇌 연결망 합성",
+   "title": "Graph-Based Conditional Generative Adversarial Networks for Major Depressive Dis"
+  },
+  "W4387492882": {
+   "line": "other",
+   "near": "",
+   "why": "뇌파 메타 학습",
+   "title": "META-EEG: Meta-learning-based class-relevant EEG representation learning for zer"
+  },
+  "W4386076680": {
+   "line": "adapt",
+   "near": "lora",
+   "why": "사전학습 ViT에 프롬프트만 붙여 이어 배우기",
+   "title": "CODA-Prompt: COntinual Decomposed Attention-Based Prompting for Rehearsal-Free C"
+  },
+  "W4405931325": {
+   "line": "other",
+   "near": "",
+   "why": "강수 예측 시계열 개관",
+   "title": "Deep learning for precipitation nowcasting: A survey from the perspective of tim"
+  },
+  "W7140114028": {
+   "line": "vision",
+   "near": "flamingo",
+   "why": "긴 영상 질의응답, 영상 언어 모델",
+   "title": "Too Many Frames, Not All Useful: Efficient Strategies for Long-Form Video QA"
+  },
+  "W4390872526": {
+   "line": "vision",
+   "near": "clip",
+   "why": "합성 데이터로 영상 언어 모델 보강",
+   "title": "Going Beyond Nouns With Vision & Language Models Using Synthetic Data"
+  },
+  "W4402754270": {
+   "line": "vision",
+   "near": "clip",
+   "why": "언어 모델로 장면 그래프 만들기",
+   "title": "LLM4SGG: Large Language Models for Weakly Supervised Scene Graph Generation"
+  },
+  "W4390772381": {
+   "line": "other",
+   "near": "",
+   "why": "가상현실 촉각 장치",
+   "title": "HapMotion: motion-to-tactile framework with wearable haptic devices for immersiv"
+  },
+  "W4403081604": {
+   "line": "vision",
+   "near": "clip",
+   "why": "글 설명을 곁들인 궤적 예측",
+   "title": "VisionTrap: Vision-Augmented Trajectory Prediction Guided by Textual Description"
+  },
+  "W4402754052": {
+   "line": "other",
+   "near": "",
+   "why": "보행자 궤적 예측",
+   "title": "Higher-order Relational Reasoning for Pedestrian Trajectory Prediction"
+  },
+  "W4413155849": {
+   "line": "other",
+   "near": "",
+   "why": "3D 가우시안 복원",
+   "title": "SelfSplat: Pose-Free and 3D Prior-Free Generalizable 3D Gaussian Splatting"
+  },
+  "W4413146660": {
+   "line": "other",
+   "near": "",
+   "why": "3D 가우시안 워터마크",
+   "title": "3D-GSW: 3D Gaussian Splatting for Robust Watermarking"
+  },
+  "W4402961796": {
+   "line": "gen",
+   "near": "ldm",
+   "why": "글에서 영상 생성",
+   "title": "MEVG: Multi-event Video Generation with Text-to-Video Models"
+  },
+  "W4402684005,W4406074039": {
+   "line": "align",
+   "near": "instructgpt",
+   "why": "사람 피드백 강화학습의 토큰 단위 보상",
+   "title": "TLCR: Token-Level Continuous Reward for Fine-grained Reinforcement Learning from"
+  },
+  "W4407212396": {
+   "line": "vision",
+   "near": "flamingo",
+   "why": "분자 그래프를 읽는 멀티모달 언어 모델",
+   "title": "Mol-LLM: Multimodal Generalist Molecular LLM with Improved Graph Utilization"
+  },
+  "W4386065765": {
+   "line": "vision",
+   "near": "clip",
+   "why": "그림과 글 생성 트랜스포머",
+   "title": "MAGVLT: Masked Generative Vision-and-Language Transformer"
+  },
+  "W4414580774": {
+   "line": "vision",
+   "near": "flamingo",
+   "why": "멀티모달 언어 모델의 그림 토큰",
+   "title": "Slot-MLLM: Object-Centric Visual Tokenization for Multimodal LLM"
+  },
+  "W4415482344": {
+   "line": "align",
+   "near": "cot",
+   "why": "단계별 추론으로 치매 진단",
+   "title": "A Novel Chain-of-Thought Reasoning Approach for Alzheimer’s Disease Detection Us"
+  },
+  "W4404407548": {
+   "line": "gen",
+   "near": "ddpm",
+   "why": "확산 모델 증류",
+   "title": "Physics Informed Distillation for Diffusion Models"
+  },
+  "W4375868956": {
+   "line": "vision",
+   "near": "clip",
+   "why": "영상 구간 검색",
+   "title": "Counterfactual Two-Stage Debiasing For Video Corpus Moment Retrieval"
+  },
+  "W4392904386": {
+   "line": "other",
+   "near": "",
+   "why": "음성 인식",
+   "title": "AdaMER-CTC: Connectionist Temporal Classification with Adaptive Maximum Entropy "
+  },
+  "W4415433323": {
+   "line": "align",
+   "near": "cot",
+   "why": "음성과 언어 모델의 단계별 추론으로 치매 진단",
+   "title": "Reasoning-Based Approach with Chain-of-Thought for Alzheimer’s Detection Using S"
+  },
+  "W4402727689": {
+   "line": "vision",
+   "near": "clip",
+   "why": "사전학습 그림 언어 트랜스포머로 이어 배우기",
+   "title": "Pre-trained Vision and Language Transformers are Few-Shot Incremental Learners"
+  },
+  "W4402816908": {
+   "line": "vision",
+   "near": "vit",
+   "why": "의미 분할 도메인 적응",
+   "title": "Open-Set Domain Adaptation for Semantic Segmentation"
+  },
+  "W4386076566": {
+   "line": "basics",
+   "near": "resnet",
+   "why": "신경망 뉴런으로 분포 밖 입력 찾기",
+   "title": "LINe: Out-of-Distribution Detection by Leveraging Important Neurons"
+  },
+  "W4382203122": {
+   "line": "gen",
+   "near": "gan",
+   "why": "트랜스포머 GAN으로 시계열 이상 탐지",
+   "title": "Time Series Anomaly Detection Using Transformer-Based GAN With Two-Step Masking"
+  },
+  "W4390873164": {
+   "line": "adapt",
+   "near": "lora",
+   "why": "시각 프롬프트 조정으로 이어 배우기",
+   "title": "Online Class Incremental Learning on Stochastic Blurry Task Boundary via Mask an"
+  },
+  "W4394603097": {
+   "line": "basics",
+   "near": "",
+   "why": "부동소수점 신경망의 표현력 이론",
+   "title": "Expressive power of ReLU and step networks under floating-point operations"
+  },
+  "W4386942885": {
+   "line": "basics",
+   "near": "",
+   "why": "ReLU 신경망 최소 폭 이론",
+   "title": "Minimum width for universal approximation using ReLU networks on compact domain"
+  },
+  "W4402953324": {
+   "line": "basics",
+   "near": "",
+   "why": "양자화 신경망 표현력 이론",
+   "title": "On Expressive Power of Quantized Neural Networks under Fixed-Point Arithmetic"
+  },
+  "W4318903784": {
+   "line": "basics",
+   "near": "adam",
+   "why": "자동 미분의 정확성",
+   "title": "On the Correctness of Automatic Differentiation for Neural Networks with Machine"
+  },
+  "W4412514800": {
+   "line": "basics",
+   "near": "",
+   "why": "부동소수점 신경망 근사 이론",
+   "title": "Floating-Point Neural Networks are Provably Robust Universal Approximators"
+  },
+  "W4411403377": {
+   "line": "other",
+   "near": "",
+   "why": "착용 센서 행동 인식 개관",
+   "title": "Past, Present, and Future of Sensor-based Human Activity Recognition Using Weara"
+  },
+  "W4380758367": {
+   "line": "other",
+   "near": "",
+   "why": "얼굴 움직임 센서 융합",
+   "title": "InMyFace: Inertial and mechanomyography-based sensor fusion for wearable facial "
+  },
+  "W4361769890": {
+   "line": "other",
+   "near": "",
+   "why": "동작 측정 착용 기기",
+   "title": "MoCaPose"
+  },
+  "W4401822774": {
+   "line": "other",
+   "near": "",
+   "why": "배터리 수명 예측",
+   "title": "Remaining useful life prediction of Lithium-ion batteries using spatio-temporal "
+  },
+  "W4413147517": {
+   "line": "gen",
+   "near": "ldm",
+   "why": "확산 모델 그림 채우기",
+   "title": "RAD: Region-Aware Diffusion Models for Image Inpainting"
+  },
+  "W4393156092": {
+   "line": "vision",
+   "near": "vit",
+   "why": "ViT 주의 지도로 판단 근거 보기",
+   "title": "Attention Guided CAM: Visual Explanations of Vision Transformer Guided by Self-A"
+  },
+  "W4362527000": {
+   "line": "other",
+   "near": "",
+   "why": "치과 영상 예측",
+   "title": "An Endodontic Forecasting Model Based on the Analysis of Preoperative Dental Rad"
+  },
+  "W4400089520": {
+   "line": "other",
+   "near": "",
+   "why": "MRI 잡음 제거",
+   "title": "Self‐supervised learning for denoising of multidimensional MRI data"
+  },
+  "W4393159251": {
+   "line": "gen",
+   "near": "gan",
+   "why": "생성 그림 주파수 보정",
+   "title": "Spectrum Translation for Refinement of Image Generation (STIG) Based on Contrast"
+  },
+  "W4407408515": {
+   "line": "other",
+   "near": "",
+   "why": "CT 대장암 진단",
+   "title": "Artificial Intelligence Model for Detection of Colorectal Cancer on Routine Abdo"
+  },
+  "W4405092793": {
+   "line": "other",
+   "near": "",
+   "why": "의료 영상 도메인 일반화 개관",
+   "title": "Domain Generalization for Medical Image Analysis: A Review"
+  },
+  "W4386918813": {
+   "line": "vision",
+   "near": "vit",
+   "why": "3D 뇌 MRI 트랜스포머 인코더",
+   "title": "Medical Transformer: Universal Encoder for 3-D Brain MRI Analysis"
+  },
+  "W4379660313": {
+   "line": "gen",
+   "near": "ddpm",
+   "why": "확산 모델로 의료 영상 생성",
+   "title": "SADM: Sequence-Aware Diffusion Model for Longitudinal Medical Image Generation"
+  },
+  "W4362722668": {
+   "line": "other",
+   "near": "",
+   "why": "치매 설명 가능 진단",
+   "title": "Estimating explainable Alzheimer’s disease likelihood map via clinically-guided "
+  },
+  "W4389104822": {
+   "line": "other",
+   "near": "",
+   "why": "자폐 진단 설명 가능성",
+   "title": "EAG-RS: A Novel Explainability-Guided ROI-Selection Framework for ASD Diagnosis "
+  },
+  "W4384818991": {
+   "line": "other",
+   "near": "",
+   "why": "다발경화증 감별 딥러닝",
+   "title": "Differentiation between multiple sclerosis and neuromyelitis optica spectrum dis"
+  },
+  "W4386408396": {
+   "line": "gen",
+   "near": "vae",
+   "why": "심층 생성 모델로 치매 전단계 예측",
+   "title": "Real-world prediction of preclinical Alzheimer’s disease with a deep generative "
+  },
+  "W4407566531": {
+   "line": "other",
+   "near": "",
+   "why": "치매 보행 영상 지표",
+   "title": "Gait impairment associated with neuroimaging biomarkers in Alzheimer’s disease"
+  },
+  "W4400614810": {
+   "line": "other",
+   "near": "",
+   "why": "뇌 위축 자기지도 학습",
+   "title": "Disentangling brain atrophy heterogeneity in Alzheimer's disease: A deep self-su"
+  },
+  "W4403557059": {
+   "line": "other",
+   "near": "",
+   "why": "노년 우울증 아밀로이드",
+   "title": "Amyloid deposition and its association with depressive symptoms and cognitive fu"
+  },
+  "W4391661550": {
+   "line": "other",
+   "near": "",
+   "why": "다중 에이전트 강화학습, 뇌파 특징 선택",
+   "title": "MARS: Multiagent Reinforcement Learning for Spatial—Spectral and Temporal Featur"
+  },
+  "W4413145657": {
+   "line": "gen",
+   "near": "ddpm",
+   "why": "확산 모델 학습 가속",
+   "title": "Adaptive Non-uniform Timestep Sampling for Accelerating Diffusion Model Training"
+  },
+  "W7196939957": {
+   "line": "gen",
+   "near": "ddpm",
+   "why": "확산 모델로 오프라인 강화학습 계획",
+   "title": "Prior-Guided Diffusion Planning for Offline Reinforcement Learning"
+  },
+  "W4376272052": {
+   "line": "other",
+   "near": "",
+   "why": "반도체 공정 시계열 예측",
+   "title": "Adaptive Online Time-Series Prediction for Virtual Metrology in Semiconductor Ma"
+  },
+  "W4416034971": {
+   "line": "align",
+   "near": "dpo",
+   "why": "DPO의 거절 응답 역할 분석",
+   "title": "Rethinking DPO: The Role of Rejected Responses in Preference Misalignment"
+  },
+  "W4382203143": {
+   "line": "adapt",
+   "near": "",
+   "why": "CNN 가지치기 압축",
+   "title": "Dynamic Structure Pruning for Compressing CNNs"
+  },
+  "W4385570587": {
+   "line": "adapt",
+   "near": "lora",
+   "why": "파라미터 효율 연합 학습",
+   "title": "Client-Customized Adaptation for Parameter-Efficient Federated Learning"
+  },
+  "W4404782217": {
+   "line": "align",
+   "near": "cot",
+   "why": "작은 언어 모델에 다단계 추론 가르치기",
+   "title": "Mentor-KD: Making Small Language Models Better Multi-step Reasoners"
+  },
+  "W4389523703": {
+   "line": "adapt",
+   "near": "lora",
+   "why": "희소 프롬프트 조정",
+   "title": "SMoP: Towards Efficient and Effective Prompt Tuning with Sparse Mixture-of-Promp"
+  },
+  "W4404783107": {
+   "line": "lm",
+   "near": "bert",
+   "why": "화학 언어 표현 사전학습",
+   "title": "MolTRES: Improving Chemical Language Representation Learning for Molecular Prope"
+  },
+  "W4382239589": {
+   "line": "other",
+   "near": "",
+   "why": "뇌파로 상상 발화 음성 복원",
+   "title": "Towards Voice Reconstruction from EEG during Imagined Speech"
+  },
+  "W4412353446": {
+   "line": "gen",
+   "near": "vae",
+   "why": "계층 변분 추론 음성 합성",
+   "title": "HierSpeech++: Bridging the Gap Between Semantic and Acoustic Representation of S"
+  },
+  "W4385823264": {
+   "line": "gen",
+   "near": "ddpm",
+   "why": "확산 모델 음성 변환",
+   "title": "Diff-HierVC: Diffusion-based Hierarchical Voice Conversion with Robust Pitch Gen"
+  },
+  "W4402115961": {
+   "line": "other",
+   "near": "",
+   "why": "감정 음성 합성",
+   "title": "EmoSphere-TTS: Emotional Style and Intensity Modeling via Spherical Emotion Vect"
+  },
+  "W4408962266": {
+   "line": "other",
+   "near": "",
+   "why": "차량형 로봇 경로 계획",
+   "title": "Local path planning scheme for car-like robots’ shortest turning motion using ge"
+  },
+  "W7125016806": {
+   "line": "other",
+   "near": "",
+   "why": "저가 로봇 무리 위치 추정",
+   "title": "Distributed concurrent triangulation for a group of low-cost robots with bearing"
+  },
+  "W4391097198": {
+   "line": "other",
+   "near": "",
+   "why": "통신 핸드오버 예측",
+   "title": "Mobility Management Paradigm Shift: From Reactive to Proactive Handover Using AI"
+  },
+  "W4406964147": {
+   "line": "other",
+   "near": "",
+   "why": "소아 응급 예측, 의료 자연어 처리",
+   "title": "A pediatric emergency prediction model using natural language process in the ped"
+  },
+  "W4403582571": {
+   "line": "other",
+   "near": "",
+   "why": "이상 탐지용 합성 이상 데이터",
+   "title": "Enhancing Anomaly Detection via Generating Diversified and Hard-to-distinguish S"
+  },
+  "W4390585500": {
+   "line": "other",
+   "near": "",
+   "why": "수술 합병증 예측",
+   "title": "A predictive algorithm for perioperative complications and readmission after ank"
+  },
+  "W4402435299": {
+   "line": "lm",
+   "near": "bert",
+   "why": "분야 언어 모델에서 일반 언어 모델로 증류",
+   "title": "DSG-KD: Knowledge Distillation From Domain-Specific to General Language Models"
+  },
+  "W4385474580": {
+   "line": "lm",
+   "near": "gpt3",
+   "why": "생성 언어 모델로 번역 데이터 늘리기",
+   "title": "Data Augmentation for Neural Machine Translation using Generative Language Model"
+  },
+  "W4402112288": {
+   "line": "lm",
+   "near": "gpt3",
+   "why": "언어 모델이 쓴 설명으로 음성 인식 보강",
+   "title": "Improving Domain-Specific ASR with LLM-Generated Contextual Descriptions"
+  },
+  "W4412888134": {
+   "line": "retr",
+   "near": "rag",
+   "why": "금융 문서 질의응답 계층 검색",
+   "title": "Hierarchical Retrieval with Evidence Curation for Open-Domain Financial Question"
+  },
+  "W4389519999": {
+   "line": "lm",
+   "near": "bert",
+   "why": "금융 사전학습 언어 모델",
+   "title": "Exploring the Impact of Corpus Diversity on Financial Pretrained Language Models"
+  },
+  "W4409262949": {
+   "line": "gen",
+   "near": "ldm",
+   "why": "그림 채우기 세부 보강",
+   "title": "Improving Detail in Pluralistic Image Inpainting with Feature Dequantization"
+  },
+  "W4383427998": {
+   "line": "other",
+   "near": "",
+   "why": "운동 상상 뇌파 분류",
+   "title": "Multi-Band CNN With Band-Dependent Kernels and Amalgamated Cross Entropy Loss fo"
+  },
+  "W4399116736": {
+   "line": "other",
+   "near": "",
+   "why": "레이더 다중 표적 위치",
+   "title": "A novel geometric-based bistatic range grouping algorithm for multi-target local"
+  },
+  "W4361185878": {
+   "line": "other",
+   "near": "",
+   "why": "수면 단계 분류",
+   "title": "Automatic Sleep Stage Classification Method based on Transformer-in-Transformer"
+  },
+  "W4361185960": {
+   "line": "other",
+   "near": "",
+   "why": "운동 상상 뇌파 분류",
+   "title": "Multi-class Motor Imagery Classification using Multi-class SVM with Multi-band R"
+  },
+  "W4401328253": {
+   "line": "other",
+   "near": "",
+   "why": "운동 상상 뇌파 분류",
+   "title": "Multiband Convolutional Riemannian Network With Band-Wise Riemannian Triplet Los"
+  },
+  "W4386065385": {
+   "line": "vision",
+   "near": "clip",
+   "why": "CLIP으로 영점 이상 탐지",
+   "title": "WinCLIP: Zero-/Few-Shot Anomaly Classification and Segmentation"
+  },
+  "W4403345601": {
+   "line": "gen",
+   "near": "ldm",
+   "why": "확산 트랜스포머 표현 정렬(REPA)",
+   "title": "Representation Alignment for Generation: Training Diffusion Transformers Is Easi"
+  },
+  "W4320893548": {
+   "line": "basics",
+   "near": "resnet",
+   "why": "대조 준지도 학습",
+   "title": "OpenCoS: Contrastive Semi-supervised Learning for Handling Open-Set Unlabeled Da"
+  },
+  "W7138064046,W4399554383": {
+   "line": "align",
+   "near": "dpo",
+   "why": "확산 모델 선호 최적화",
+   "title": "Margin-Aware Preference Optimization for Aligning Diffusion Models Without Refer"
+  },
+  "W4403347193": {
+   "line": "gen",
+   "near": "ldm",
+   "why": "확산 기반 그림 편집 방어",
+   "title": "DiffusionGuard: A Robust Defense Against Malicious Diffusion-based Image Editing"
+  },
+  "W4382457661": {
+   "line": "gen",
+   "near": "ddpm",
+   "why": "글로 동작 생성, 확산 모델",
+   "title": "FLAME: Free-Form Language-Based Motion Synthesis & Editing"
+  },
+  "W4389252904": {
+   "line": "agent",
+   "near": "toolformer",
+   "why": "로봇 에이전트의 사용자 명령 판별",
+   "title": "CLARA: Classifying and Disambiguating User Commands for Reliable Interactive Rob"
+  },
+  "W4383108714": {
+   "line": "agent",
+   "near": "toolformer",
+   "why": "언어 모델로 로봇 물체 찾기",
+   "title": "Zero-shot Active Visual Search (ZAVIS): Intelligent Object Search for Robotic As"
+  },
+  "W4391582619": {
+   "line": "other",
+   "near": "",
+   "why": "소프트 로봇 모델",
+   "title": "Kinematics-Informed Neural Networks: Enhancing Generalization Performance of Sof"
+  },
+  "W4413318774": {
+   "line": "other",
+   "near": "",
+   "why": "4족 로봇 동작 옮기기",
+   "title": "Spatio-Temporal Motion Retargeting for Quadruped Robots"
+  },
+  "W4394844527": {
+   "line": "other",
+   "near": "",
+   "why": "뇌파 데이터셋",
+   "title": "An EEG Dataset of Neural Signatures in a Competitive Two-Player Game Encouraging"
+  },
+  "W4394681418": {
+   "line": "other",
+   "near": "",
+   "why": "시각 피로 해독",
+   "title": "Decoding visual fatigue in a visual search task selectively manipulated via myop"
+  },
+  "W4402347462": {
+   "line": "other",
+   "near": "",
+   "why": "뇌파 잡음 제거와 해독",
+   "title": "I see artifacts: ICA-based EEG artifact removal does not improve deep network de"
+  },
+  "W4386362121": {
+   "line": "other",
+   "near": "",
+   "why": "운전 속도 지각",
+   "title": "Dynamic measurements of speed and risk perception during driving: Evidence of sp"
+  },
+  "W4321487989": {
+   "line": "other",
+   "near": "",
+   "why": "위험 의사결정",
+   "title": "Relationship between virtual reality balloon analogue risk task and risky decisi"
+  },
+  "W4387891862": {
+   "line": "other",
+   "near": "",
+   "why": "금융 헤지 트랜스포머",
+   "title": "SigFormer: Signature Transformers for Deep Hedging"
+  },
+  "W4385851598": {
+   "line": "other",
+   "near": "",
+   "why": "대기오염 분석",
+   "title": "Roles of ambient temperature and relative humidity on the relationship between f"
+  },
+  "W7126021189": {
+   "line": "other",
+   "near": "",
+   "why": "시계열 해석 개관",
+   "title": "Towards Transparent Time Series Analysis: Exploring Methods and Enhancing Interp"
+  },
+  "W4409347647": {
+   "line": "other",
+   "near": "",
+   "why": "라벨 분포 변화 도메인 적응",
+   "title": "CASUAL: Conditional Support Alignment for Domain Adaptation with Label Shift"
+  },
+  "W7161543301": {
+   "line": "adapt",
+   "near": "lora",
+   "why": "저차원 회전 미세조정",
+   "title": "LoCo: Low-Rank Compositional Rotation Fine-Tuning"
+  },
+  "W4400128031": {
+   "line": "retr",
+   "near": "rag",
+   "why": "검색과 자기 성찰로 의료 추론(Self-BioRAG)",
+   "title": "Improving medical reasoning through retrieval and self-reflection with retrieval"
+  },
+  "W4410028173": {
+   "line": "align",
+   "near": "cot",
+   "why": "교과서로 작은 언어 모델 추론 학습",
+   "title": "Small language models learn enhanced reasoning skills from medical textbooks"
+  },
+  "W4389524398": {
+   "line": "retr",
+   "near": "rag",
+   "why": "검색 보강으로 모호한 질문 풀기",
+   "title": "Tree of Clarifications: Answering Ambiguous Questions with Retrieval-Augmented L"
+  },
+  "W4411120331": {
+   "line": "retr",
+   "near": "rag",
+   "why": "근거 안내 검색 보강 생성(RAG²)",
+   "title": "Rationale-Guided Retrieval Augmented Generation for Medical Question Answering"
+  },
+  "W4404781906": {
+   "line": "retr",
+   "near": "lost-in-the-middle",
+   "why": "검색 문서 압축",
+   "title": "CompAct: Compressing Retrieved Documents Actively for Question Answering"
+  },
+  "W4321094913": {
+   "line": "lm",
+   "near": "",
+   "why": "기계 번역 평가 지표 개관",
+   "title": "A Survey on Evaluation Metrics for Machine Translation"
+  },
+  "W4416118450": {
+   "line": "agent",
+   "near": "",
+   "why": "다중 에이전트 토론 추론",
+   "title": "Debate Only When Necessary: Adaptive Multiagent Collaboration for Efficient LLM "
+  },
+  "W4401590037": {
+   "line": "other",
+   "near": "",
+   "why": "건축 설계 규정 검사",
+   "title": "Automated Compliance Checking System for Structural Design Codes in a BIM Enviro"
+  },
+  "W4411113072": {
+   "line": "retr",
+   "near": "rag",
+   "why": "RAG 평가 벤치마크",
+   "title": "MIRAGE: A Metric-Intensive Benchmark for Retrieval-Augmented Generation Evaluati"
+  },
+  "W4386722107": {
+   "line": "align",
+   "near": "instructgpt",
+   "why": "피드백 학습으로 질의응답 언어 모델 다듬기",
+   "title": "Towards Reliable and Fluent Large Language Models: Incorporating Feedback Learni"
+  },
+  "W4412377003": {
+   "line": "align",
+   "near": "cot",
+   "why": "언어 모델 추론으로 추천",
+   "title": "Review-driven Personalized Preference Reasoning with Large Language Models for R"
+  },
+  "W4390873143": {
+   "line": "basics",
+   "near": "",
+   "why": "능동 학습",
+   "title": "TiDAL: Learning Training Dynamics for Active Learning"
+  },
+  "W4409367274": {
+   "line": "vision",
+   "near": "flamingo",
+   "why": "멀티모달 언어 모델 환각 줄이기",
+   "title": "ConVis: Contrastive Decoding with Hallucination Visualization for Mitigating Hal"
+  },
+  "W7104363030": {
+   "line": "retr",
+   "near": "rag",
+   "why": "RAG 시스템 취약점(The RAG Paradox)",
+   "title": "The RAG Paradox: A Black-Box Attack Exploiting Unintentional Vulnerabilities in "
+  },
+  "W4321485142": {
+   "line": "other",
+   "near": "",
+   "why": "콘텐츠 검열 임계값",
+   "title": "Reliable Decision from Multiple Subtasks through Threshold Optimization: Content"
+  },
+  "W4387348567": {
+   "line": "gen",
+   "near": "ldm",
+   "why": "지시문으로 학습한 글에서 그림 확산 모델",
+   "title": "InstructCV: Instruction-Tuned Text-to-Image Diffusion Models as Vision Generalis"
+  },
+  "W4399554773": {
+   "line": "gen",
+   "near": "ddpm",
+   "why": "확산 모델 이론",
+   "title": "Mean-field Chaos Diffusion Models"
+  }
+ }
+}
