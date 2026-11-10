@@ -4182,6 +4182,1623 @@
    "arxiv": null,
    "n_refs": 0,
    "refs": []
+  },
+  "kan": {
+   "id": "ARXIV:2404.19756",
+   "paperId": "14fdab35cc6288083a38a92392af3f1da0b95a90",
+   "title": "KAN: Kolmogorov-Arnold Networks",
+   "year": 2024,
+   "date": "2024-04-30",
+   "venue": "International Conference on Learning Representations",
+   "cites": 2362,
+   "influential": 360,
+   "arxiv": "2404.19756",
+   "n_refs": 151,
+   "refs": [
+    {
+     "to": "scaling",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "transformer",
+     "inf": true,
+     "intents": []
+    },
+    {
+     "to": "ewc",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "resnet",
+     "inf": false,
+     "intents": []
+    }
+   ]
+  },
+  "muon": {
+   "id": "ARXIV:2502.16982",
+   "paperId": "1d239507d99278b79b85c04eab7b59fd7e3e3216",
+   "title": "Muon is Scalable for LLM Training",
+   "year": 2025,
+   "date": "2025-02-24",
+   "venue": "arXiv.org",
+   "cites": 503,
+   "influential": 77,
+   "arxiv": "2502.16982",
+   "n_refs": 46,
+   "refs": [
+    {
+     "to": "llama3",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "chinchilla",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "scaling",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "adam",
+     "inf": true,
+     "intents": []
+    },
+    {
+     "to": "deepseek-v3",
+     "inf": false,
+     "intents": []
+    }
+   ]
+  },
+  "dyt": {
+   "id": "ARXIV:2503.10622",
+   "paperId": "1e178f0c5bb9709ae5c7bdb60ecd76f00b0fcd86",
+   "title": "Transformers without Normalization",
+   "year": 2025,
+   "date": "2025-03-13",
+   "venue": "Computer Vision and Pattern Recognition",
+   "cites": 233,
+   "influential": 23,
+   "arxiv": "2503.10622",
+   "n_refs": 88,
+   "refs": [
+    {
+     "to": "deepseek-r1",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "llama3",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "mamba",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "llama",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "dit",
+     "inf": true,
+     "intents": []
+    },
+    {
+     "to": "dino",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "vit",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "wav2vec2",
+     "inf": true,
+     "intents": []
+    },
+    {
+     "to": "t5",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "transformer",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "layernorm",
+     "inf": true,
+     "intents": []
+    },
+    {
+     "to": "resnet",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "batchnorm",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "vgg",
+     "inf": false,
+     "intents": []
+    }
+   ]
+  },
+  "sam2": {
+   "id": "ARXIV:2408.00714",
+   "paperId": "92a09cdfc19f3f582d89c28c1b4f386299cc69e1",
+   "title": "SAM 2: Segment Anything in Images and Videos",
+   "year": 2024,
+   "date": "2024-08-01",
+   "venue": "International Conference on Learning Representations",
+   "cites": 4857,
+   "influential": 712,
+   "arxiv": "2408.00714",
+   "n_refs": 126,
+   "refs": [
+    {
+     "to": "sam",
+     "inf": true,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    }
+   ]
+  },
+  "vggt": {
+   "id": "ARXIV:2503.11651",
+   "paperId": "4356b46e5dd1a4ebd579b1cd6eb3eeedddd5a65c",
+   "title": "VGGT: Visual Geometry Grounded Transformer",
+   "year": 2025,
+   "date": "2025-03-14",
+   "venue": "Computer Vision and Pattern Recognition",
+   "cites": 2202,
+   "influential": 552,
+   "arxiv": "2503.11651",
+   "n_refs": 152,
+   "refs": [
+    {
+     "to": "dit",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "dino",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "clip",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "vit",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "gpt3",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "transformer",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "bert",
+     "inf": false,
+     "intents": []
+    }
+   ]
+  },
+  "sam3": {
+   "id": "ARXIV:2511.16719",
+   "paperId": "9e341dd3dcf9ab98020625332700f84d56760c08",
+   "title": "SAM 3: Segment Anything with Concepts",
+   "year": 2025,
+   "date": "2025-11-20",
+   "venue": "arXiv.org",
+   "cites": 1486,
+   "influential": 242,
+   "arxiv": "2511.16719",
+   "n_refs": 0,
+   "refs": []
+  },
+  "qwen2-vl": {
+   "id": "ARXIV:2409.12191",
+   "paperId": "a22b23b65cdbc0335b872ed7c7a7206c710f8997",
+   "title": "Qwen2-VL: Enhancing Vision-Language Model's Perception of the World at Any Resolution",
+   "year": 2024,
+   "date": "2024-09-18",
+   "venue": "arXiv.org",
+   "cites": 5420,
+   "influential": 704,
+   "arxiv": "2409.12191",
+   "n_refs": 0,
+   "refs": []
+  },
+  "qwen25-vl": {
+   "id": "ARXIV:2502.13923",
+   "paperId": "f61cc9b5583c6295d5cd756ec0f34e4c003aab29",
+   "title": "Qwen2.5-VL Technical Report",
+   "year": 2025,
+   "date": "2025-02-19",
+   "venue": "arXiv.org",
+   "cites": 6573,
+   "influential": 1469,
+   "arxiv": "2502.13923",
+   "n_refs": 0,
+   "refs": []
+  },
+  "qwen25-omni": {
+   "id": "ARXIV:2503.20215",
+   "paperId": "2024e5247104cf2261314e813e0bf8d48467ec43",
+   "title": "Qwen2.5-Omni Technical Report",
+   "year": 2025,
+   "date": "2025-03-26",
+   "venue": "arXiv.org",
+   "cites": 958,
+   "influential": 172,
+   "arxiv": "2503.20215",
+   "n_refs": 85,
+   "refs": [
+    {
+     "to": "qwen25-vl",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "qwen2-vl",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "llama3",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "dpo",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "llava",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "llama",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "blip2",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "whisper",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "gpt3",
+     "inf": false,
+     "intents": []
+    }
+   ]
+  },
+  "gemma4": {
+   "id": "ARXIV:2607.02770",
+   "paperId": "bae8d2f66cd289f690db7d3f89e2951e34229d8e",
+   "title": "Gemma 4 Technical Report",
+   "year": 2026,
+   "date": "2026-07-02",
+   "venue": "arXiv.org",
+   "cites": 365,
+   "influential": 50,
+   "arxiv": "2607.02770",
+   "n_refs": 50,
+   "refs": [
+    {
+     "to": "deepseek-v4",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "qwen35-omni",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "transformer",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "layernorm",
+     "inf": false,
+     "intents": []
+    }
+   ]
+  },
+  "llama3": {
+   "id": "ARXIV:2407.21783",
+   "paperId": "9da8ea6466d7142703d8771d8dcea44e19304abb",
+   "title": "The Llama 3 Herd of Models",
+   "year": 2024,
+   "date": "2024-07-31",
+   "venue": "",
+   "cites": 20924,
+   "influential": 3809,
+   "arxiv": "2407.21783",
+   "n_refs": 0,
+   "refs": []
+  },
+  "qwen3": {
+   "id": "ARXIV:2505.09388",
+   "paperId": "d2d84d56f730f81d276a02b48d5d44db5bde0b4a",
+   "title": "Qwen3 Technical Report",
+   "year": 2025,
+   "date": "2025-05-14",
+   "venue": "",
+   "cites": 10178,
+   "influential": 1482,
+   "arxiv": "2505.09388",
+   "n_refs": 72,
+   "refs": [
+    {
+     "to": "gemma3",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "qwen25-vl",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "deepseek-r1",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "llama3",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "deepseekmath",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "gpt3",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "deepseek-v3",
+     "inf": true,
+     "intents": []
+    }
+   ]
+  },
+  "gemma3": {
+   "id": "ARXIV:2503.19786",
+   "paperId": "adac25c0aebd013f1225ec02636edfcc0bf4cf7c",
+   "title": "Gemma 3 Technical Report",
+   "year": 2025,
+   "date": "2025-03-25",
+   "venue": "arXiv.org",
+   "cites": 2218,
+   "influential": 367,
+   "arxiv": "2503.19786",
+   "n_refs": 92,
+   "refs": [
+    {
+     "to": "llama3",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "llava",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "clip",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "vit",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "transformer",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "distill",
+     "inf": false,
+     "intents": []
+    }
+   ]
+  },
+  "deepseek-v4": {
+   "id": "ARXIV:2606.19348",
+   "paperId": "c055403632ddca2292e8cb62e5e60ba12e65dd25",
+   "title": "DeepSeek-V4: Towards Highly Efficient Million-Token Context Intelligence",
+   "year": 2026,
+   "date": "2026-04-26",
+   "venue": "",
+   "cites": 1472,
+   "influential": 109,
+   "arxiv": "2606.19348",
+   "n_refs": 0,
+   "refs": []
+  },
+  "sd3": {
+   "id": "ARXIV:2403.03206",
+   "paperId": "41a66997ce0a366bba3becf7c3f37c9aebb13fbd",
+   "title": "Scaling Rectified Flow Transformers for High-Resolution Image Synthesis",
+   "year": 2024,
+   "date": "2024-03-05",
+   "venue": "International Conference on Machine Learning",
+   "cites": 5248,
+   "influential": 901,
+   "arxiv": "2403.03206",
+   "n_refs": 75,
+   "refs": [
+    {
+     "to": "dpo",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "dit",
+     "inf": false,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    },
+    {
+     "to": "ldm",
+     "inf": true,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    },
+    {
+     "to": "clip",
+     "inf": true,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "score-sde",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "vit",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "ddpm",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "scaling",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "t5",
+     "inf": false,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    },
+    {
+     "to": "transformer",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    }
+   ]
+  },
+  "wan": {
+   "id": "ARXIV:2503.20314",
+   "paperId": "8877e9a5bf473404c35b758faa76905c202f0f36",
+   "title": "Wan: Open and Advanced Large-Scale Video Generative Models",
+   "year": 2025,
+   "date": "2025-03-26",
+   "venue": "arXiv.org",
+   "cites": 3165,
+   "influential": 945,
+   "arxiv": "2503.20314",
+   "n_refs": 0,
+   "refs": []
+  },
+  "flux-kontext": {
+   "id": "ARXIV:2506.15742",
+   "paperId": "81244a5f36534b41d6265d259082933d951c503e",
+   "title": "FLUX.1 Kontext: Flow Matching for In-Context Image Generation and Editing in Latent Space",
+   "year": 2025,
+   "date": "2025-06-17",
+   "venue": "arXiv.org",
+   "cites": 1197,
+   "influential": 237,
+   "arxiv": "2506.15742",
+   "n_refs": 57,
+   "refs": [
+    {
+     "to": "sd3",
+     "inf": true,
+     "intents": []
+    },
+    {
+     "to": "dit",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "cfg",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "ldm",
+     "inf": true,
+     "intents": []
+    },
+    {
+     "to": "ddpm",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "gpt3",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "vgg",
+     "inf": false,
+     "intents": []
+    }
+   ]
+  },
+  "deepseekmath": {
+   "id": "ARXIV:2402.03300",
+   "paperId": "35b142ea69598e6241f0011312128031df55895c",
+   "title": "DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models",
+   "year": 2024,
+   "date": "2024-02-05",
+   "venue": "arXiv.org",
+   "cites": 10915,
+   "influential": 3176,
+   "arxiv": "2402.03300",
+   "n_refs": 57,
+   "refs": [
+    {
+     "to": "vllm",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "dpo",
+     "inf": true,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "instructgpt",
+     "inf": true,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "cot",
+     "inf": true,
+     "intents": [
+      "methodology",
+      "background"
+     ]
+    },
+    {
+     "to": "ppo",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    }
+   ]
+  },
+  "deepseek-r1": {
+   "id": "ARXIV:2501.12948",
+   "paperId": "2eed1fad9bbf887d4395de40f20144c4fafefd7f",
+   "title": "DeepSeek-R1 incentivizes reasoning in LLMs through reinforcement learning",
+   "year": 2025,
+   "date": "2025-01-22",
+   "venue": "Nature",
+   "cites": 6066,
+   "influential": 966,
+   "arxiv": "2501.12948",
+   "n_refs": 28,
+   "refs": [
+    {
+     "to": "deepseekmath",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "vllm",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "self-consistency",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "instructgpt",
+     "inf": true,
+     "intents": []
+    },
+    {
+     "to": "cot",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "scaling",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "ppo",
+     "inf": true,
+     "intents": []
+    },
+    {
+     "to": "deepseek-v3",
+     "inf": false,
+     "intents": []
+    }
+   ]
+  },
+  "dapo": {
+   "id": "ARXIV:2503.14476",
+   "paperId": "dd4cfde3e135f799a9a71b4f57e13a29de89f7e3",
+   "title": "DAPO: An Open-Source LLM Reinforcement Learning System at Scale",
+   "year": 2025,
+   "date": "2025-03-18",
+   "venue": "Neural Information Processing Systems",
+   "cites": 3192,
+   "influential": 652,
+   "arxiv": "2503.14476",
+   "n_refs": 37,
+   "refs": [
+    {
+     "to": "deepseekmath",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "instructgpt",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "gpt3",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "ppo",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "deepseek-v3",
+     "inf": false,
+     "intents": []
+    }
+   ]
+  },
+  "self-distilled-reasoner": {
+   "id": "ARXIV:2601.18734",
+   "paperId": "06571d39f14fbd771423bf57c9a237faaf7994bf",
+   "title": "Self-Distilled Reasoner: On-Policy Self-Distillation for Large Language Models",
+   "year": 2026,
+   "date": "2026-01-26",
+   "venue": "arXiv.org",
+   "cites": 541,
+   "influential": 135,
+   "arxiv": "2601.18734",
+   "n_refs": 49,
+   "refs": [
+    {
+     "to": "qwen3",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "dapo",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "deepseekmath",
+     "inf": true,
+     "intents": []
+    },
+    {
+     "to": "ppo",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "distill",
+     "inf": false,
+     "intents": []
+    }
+   ]
+  },
+  "lightrag": {
+   "id": "ARXIV:2410.05779",
+   "paperId": "1ea143c34b9bc359780f79ba4d68dee68bcc1129",
+   "title": "LightRAG: Simple and Fast Retrieval-Augmented Generation",
+   "year": 2024,
+   "date": "2024-10-08",
+   "venue": "Conference on Empirical Methods in Natural Language Processing",
+   "cites": 603,
+   "influential": 87,
+   "arxiv": "2410.05779",
+   "n_refs": 21,
+   "refs": [
+    {
+     "to": "graphrag",
+     "inf": true,
+     "intents": []
+    }
+   ]
+  },
+  "search-r1": {
+   "id": "ARXIV:2503.09516",
+   "paperId": "1fcaafeb72142fe3d1a5d698a072d69778d244b0",
+   "title": "Search-R1: Training LLMs to Reason and Leverage Search Engines with Reinforcement Learning",
+   "year": 2025,
+   "date": "2025-03-12",
+   "venue": "arXiv.org",
+   "cites": 1803,
+   "influential": 356,
+   "arxiv": "2503.09516",
+   "n_refs": 64,
+   "refs": [
+    {
+     "to": "llama3",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "deepseekmath",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "self-rag",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "dpo",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "toolformer",
+     "inf": true,
+     "intents": []
+    },
+    {
+     "to": "react",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "instructgpt",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "cot",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "rag",
+     "inf": true,
+     "intents": []
+    },
+    {
+     "to": "dpr",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "ppo",
+     "inf": false,
+     "intents": []
+    }
+   ]
+  },
+  "mem0": {
+   "id": "ARXIV:2504.19413",
+   "paperId": "1d9c21a0fdb1cc16a32c5d490ebaf98436a23382",
+   "title": "Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory",
+   "year": 2025,
+   "date": "2025-04-28",
+   "venue": "European Conference on Artificial Intelligence",
+   "cites": 911,
+   "influential": 176,
+   "arxiv": "2504.19413",
+   "n_refs": 31,
+   "refs": [
+    {
+     "to": "a-mem",
+     "inf": false,
+     "intents": []
+    }
+   ]
+  },
+  "osworld": {
+   "id": "ARXIV:2404.07972",
+   "paperId": "ff3e4f7c2481fb6df539f02be5945235101cbc19",
+   "title": "OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments",
+   "year": 2024,
+   "date": "2024-04-11",
+   "venue": "Neural Information Processing Systems",
+   "cites": 1489,
+   "influential": 215,
+   "arxiv": "2404.07972",
+   "n_refs": 0,
+   "refs": []
+  },
+  "a-mem": {
+   "id": "ARXIV:2502.12110",
+   "paperId": "1f35a15fe9df43d24ec6ea551ec6c9766c17eccf",
+   "title": "A-MEM: Agentic Memory for LLM Agents",
+   "year": 2025,
+   "date": "2025-02-17",
+   "venue": "Neural Information Processing Systems",
+   "cites": 1404,
+   "influential": 185,
+   "arxiv": "2502.12110",
+   "n_refs": 50,
+   "refs": [
+    {
+     "to": "deepseek-r1",
+     "inf": true,
+     "intents": []
+    },
+    {
+     "to": "graphrag",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "self-rag",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "rag",
+     "inf": true,
+     "intents": []
+    }
+   ]
+  },
+  "ui-tars": {
+   "id": "ARXIV:2501.12326",
+   "paperId": "23c5d8fb6de30553efd1e38f796b40f2bff33453",
+   "title": "UI-TARS: Pioneering Automated GUI Interaction with Native Agents",
+   "year": 2025,
+   "date": "2025-01-21",
+   "venue": "arXiv.org",
+   "cites": 686,
+   "influential": 191,
+   "arxiv": "2501.12326",
+   "n_refs": 0,
+   "refs": []
+  },
+  "meta-harness": {
+   "id": "ARXIV:2603.28052",
+   "paperId": "64cd8a551607d5d004e37bb0c6cbd6d65241fbfb",
+   "title": "Meta-Harness: End-to-End Optimization of Model Harnesses",
+   "year": 2026,
+   "date": "2026-03-30",
+   "venue": "arXiv.org",
+   "cites": 377,
+   "influential": 72,
+   "arxiv": "2603.28052",
+   "n_refs": 54,
+   "refs": [
+    {
+     "to": "rag",
+     "inf": false,
+     "intents": []
+    }
+   ]
+  },
+  "deepseek-v3": {
+   "id": "CorpusId:275118643",
+   "paperId": "5b6fdb2aea424d02c141da81d62b04d739d62b96",
+   "title": "DeepSeek-V3 Technical Report",
+   "year": 2024,
+   "date": null,
+   "venue": "arXiv.org",
+   "cites": 4450,
+   "influential": 457,
+   "arxiv": null,
+   "n_refs": 0,
+   "refs": []
+  },
+  "nsa": {
+   "id": "ARXIV:2502.11089",
+   "paperId": "23c2e21b6a5789724715f2986fdc586a517ffe57",
+   "title": "Native Sparse Attention: Hardware-Aligned and Natively Trainable Sparse Attention",
+   "year": 2025,
+   "date": "2025-02-16",
+   "venue": "Annual Meeting of the Association for Computational Linguistics",
+   "cites": 626,
+   "influential": 54,
+   "arxiv": "2502.11089",
+   "n_refs": 48,
+   "refs": [
+    {
+     "to": "deepseek-r1",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "generative-agents",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "cot",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "transformer",
+     "inf": false,
+     "intents": []
+    }
+   ]
+  },
+  "minimax-01": {
+   "id": "ARXIV:2501.08313",
+   "paperId": "b4d0f1237431cbc73db16685771790541c8c246a",
+   "title": "MiniMax-01: Scaling Foundation Models with Lightning Attention",
+   "year": 2025,
+   "date": "2025-01-14",
+   "venue": "",
+   "cites": 194,
+   "influential": 12,
+   "arxiv": "2501.08313",
+   "n_refs": 0,
+   "refs": []
+  },
+  "openvla": {
+   "id": "ARXIV:2406.09246",
+   "paperId": "8f9ceb5ffad8e7a066dfc9d9aaa5153b714740ee",
+   "title": "OpenVLA: An Open-Source Vision-Language-Action Model",
+   "year": 2024,
+   "date": "2024-06-13",
+   "venue": "Conference on Robot Learning",
+   "cites": 4398,
+   "influential": 601,
+   "arxiv": "2406.09246",
+   "n_refs": 110,
+   "refs": [
+    {
+     "to": "rt2",
+     "inf": true,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    },
+    {
+     "to": "qlora",
+     "inf": false,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    },
+    {
+     "to": "llava",
+     "inf": true,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    },
+    {
+     "to": "diffusion-policy",
+     "inf": false,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    },
+    {
+     "to": "llama",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "blip2",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "lora",
+     "inf": false,
+     "intents": [
+      "result",
+      "methodology"
+     ]
+    },
+    {
+     "to": "clip",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    }
+   ]
+  },
+  "pi05": {
+   "id": "ARXIV:2504.16054",
+   "paperId": "1e2a82ef5e0325a26ca0344c4f8c256c52fae7ec",
+   "title": "π0.5: a Vision-Language-Action Model with Open-World Generalization",
+   "year": 2025,
+   "date": "2025-04-22",
+   "venue": "arXiv.org",
+   "cites": 2748,
+   "influential": 544,
+   "arxiv": "2504.16054",
+   "n_refs": 90,
+   "refs": [
+    {
+     "to": "groot-n1",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "openvla",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "sd3",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "sam",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "llama",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "cot",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "clip",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "gpt3",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "transformer",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "resnet",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "bert",
+     "inf": false,
+     "intents": []
+    }
+   ]
+  },
+  "groot-n1": {
+   "id": "ARXIV:2503.14734",
+   "paperId": "731c50b0d6af4c1cb8d95f506541681ea487973b",
+   "title": "GR00T N1: An Open Foundation Model for Generalist Humanoid Robots",
+   "year": 2025,
+   "date": "2025-03-18",
+   "venue": "arXiv.org",
+   "cites": 1782,
+   "influential": 268,
+   "arxiv": "2503.14734",
+   "n_refs": 99,
+   "refs": [
+    {
+     "to": "wan",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "openvla",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "rt2",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "diffusion-policy",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "dit",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "flamingo",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "lora",
+     "inf": false,
+     "intents": []
+    }
+   ]
+  },
+  "wam-zero-shot": {
+   "id": "ARXIV:2602.15922",
+   "paperId": "badf8adcf2b6a6780a308881de75f148a4cacea0",
+   "title": "World Action Models are Zero-shot Policies",
+   "year": 2026,
+   "date": "2026-02-17",
+   "venue": "arXiv.org",
+   "cites": 623,
+   "influential": 79,
+   "arxiv": "2602.15922",
+   "n_refs": 87,
+   "refs": [
+    {
+     "to": "qwen3",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "pi05",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "wan",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "groot-n1",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "openvla",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "rt2",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "cfg",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "scaling",
+     "inf": false,
+     "intents": []
+    }
+   ]
+  },
+  "moshi": {
+   "id": "ARXIV:2410.00037",
+   "paperId": "ae4aa7b0c5a327dae63ad20e00b58bcc6176b3b8",
+   "title": "Moshi: a speech-text foundation model for real-time dialogue",
+   "year": 2024,
+   "date": "2024-09-17",
+   "venue": "arXiv.org",
+   "cites": 891,
+   "influential": 179,
+   "arxiv": "2410.00037",
+   "n_refs": 0,
+   "refs": []
+  },
+  "kimi-audio": {
+   "id": "ARXIV:2504.18425",
+   "paperId": "8d84b801dee746340627d7c05eb0e6d1d8c9bf17",
+   "title": "Kimi-Audio Technical Report",
+   "year": 2025,
+   "date": "2025-04-25",
+   "venue": "arXiv.org",
+   "cites": 320,
+   "influential": 54,
+   "arxiv": "2504.18425",
+   "n_refs": 86,
+   "refs": [
+    {
+     "to": "qwen25-omni",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "muon",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "moshi",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "llama3",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "whisper",
+     "inf": true,
+     "intents": []
+    }
+   ]
+  },
+  "qwen35-omni": {
+   "id": "ARXIV:2604.15804",
+   "paperId": "6073e690859fe39bffe77ee3731524a5f37e8150",
+   "title": "Qwen3.5-Omni Technical Report",
+   "year": 2026,
+   "date": "2026-04-17",
+   "venue": "arXiv.org",
+   "cites": 222,
+   "influential": 26,
+   "arxiv": "2604.15804",
+   "n_refs": 96,
+   "refs": [
+    {
+     "to": "qwen3",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "qwen25-omni",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "qwen25-vl",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "dpo",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "llava",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "blip2",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "gpt3",
+     "inf": false,
+     "intents": []
+    }
+   ]
+  },
+  "med-gemini": {
+   "id": "ARXIV:2404.18416",
+   "paperId": "6d227a30452f773cea678fa8872ed43566c4f394",
+   "title": "Capabilities of Gemini Models in Medicine",
+   "year": 2024,
+   "date": "2024-04-29",
+   "venue": "arXiv.org",
+   "cites": 464,
+   "influential": 36,
+   "arxiv": "2404.18416",
+   "n_refs": 0,
+   "refs": []
+  },
+  "medgemma": {
+   "id": "ARXIV:2507.05201",
+   "paperId": "d23432504ce8755dd9933b93fbffd66bd462c9c9",
+   "title": "An open vision-language model for diverse medical applications",
+   "year": 2025,
+   "date": "2025-07-07",
+   "venue": "Nature Medicine",
+   "cites": 529,
+   "influential": 84,
+   "arxiv": "2507.05201",
+   "n_refs": 72,
+   "refs": [
+    {
+     "to": "gemma3",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "deepseek-r1",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "med-gemini",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "llama",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "medpalm",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "flamingo",
+     "inf": false,
+     "intents": []
+    }
+   ]
+  },
+  "medsam2": {
+   "id": "ARXIV:2504.03600",
+   "paperId": "5a89872997ebadb39ba5a18c703c5a192aa433ef",
+   "title": "MedSAM2: Segment Anything in 3D Medical Images and Videos",
+   "year": 2025,
+   "date": "2025-04-04",
+   "venue": "arXiv.org",
+   "cites": 180,
+   "influential": 21,
+   "arxiv": "2504.03600",
+   "n_refs": 53,
+   "refs": [
+    {
+     "to": "sam2",
+     "inf": true,
+     "intents": []
+    },
+    {
+     "to": "sam",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "vit",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "unet",
+     "inf": false,
+     "intents": []
+    }
+   ]
+  },
+  "chronos": {
+   "id": "ARXIV:2403.07815",
+   "paperId": "02fa77e4f355198cb4270f6d4a07517bf09c46dd",
+   "title": "Chronos: Learning the Language of Time Series",
+   "year": 2024,
+   "date": "2024-03-12",
+   "venue": "Trans. Mach. Learn. Res.",
+   "cites": 1285,
+   "influential": 235,
+   "arxiv": "2403.07815",
+   "n_refs": 0,
+   "refs": []
+  },
+  "sundial": {
+   "id": "ARXIV:2502.00816",
+   "paperId": "280c58271770030e5d4d15ca5531f75ba2a5aba0",
+   "title": "Sundial: A Family of Highly Capable Time Series Foundation Models",
+   "year": 2025,
+   "date": "2025-02-02",
+   "venue": "International Conference on Machine Learning",
+   "cites": 231,
+   "influential": 37,
+   "arxiv": "2502.00816",
+   "n_refs": 64,
+   "refs": [
+    {
+     "to": "chronos",
+     "inf": true,
+     "intents": []
+    },
+    {
+     "to": "sd3",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "llama",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "dit",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "patchtst",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "flashattn",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "ldm",
+     "inf": false,
+     "intents": []
+    }
+   ]
+  },
+  "hipporag2": {
+   "id": "ARXIV:2502.14802",
+   "paperId": "b79b3a401119bc610b6e2db738aeee531b40aaf0",
+   "title": "From RAG to Memory: Non-Parametric Continual Learning for Large Language Models",
+   "year": 2025,
+   "date": "2025-02-20",
+   "venue": "International Conference on Machine Learning",
+   "cites": 302,
+   "influential": 54,
+   "arxiv": "2502.14802",
+   "n_refs": 43,
+   "refs": [
+    {
+     "to": "vllm",
+     "inf": false,
+     "intents": []
+    }
+   ]
+  },
+  "self-distill-cl": {
+   "id": "ARXIV:2601.19897",
+   "paperId": "370a293b5dcf9d456ba7f805b5b0a3d8e984ff6e",
+   "title": "Self-Distillation Enables Continual Learning",
+   "year": 2026,
+   "date": "2026-01-27",
+   "venue": "arXiv.org",
+   "cites": 270,
+   "influential": 47,
+   "arxiv": "2601.19897",
+   "n_refs": 60,
+   "refs": [
+    {
+     "to": "self-distilled-reasoner",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "dpo",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "cai",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "instructgpt",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "gpt3",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "ewc",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "distill",
+     "inf": false,
+     "intents": []
+    }
+   ]
   }
  }
 }

@@ -39,10 +39,15 @@
     return m;
   }
   const haloR = n => 12 + 6.5 * Math.sqrt(n);
+  // 최근 3년 역: 2024년 이후 논문. 노란 역으로 칠하고 '최근 3년' 고르기로 따로 볼 수 있다
+  const RECENT_FROM = 2024;
+  const isRecent = s => (BY[s] && BY[s].y) >= RECENT_FROM;
+  const RECENT = Object.keys(BY).filter(isRecent);
+  const RECENT_NAME = '최근 3년(' + RECENT_FROM + '~)';
 
   const MAPW = 1880, PAD = 28, SIDE = 292, GAP = 36, W = MAPW + GAP + SIDE + PAD;
   let geo = null;           // 바탕을 그릴 때 정한 자리
-  let mode = null;          // null, {line}, {prof}
+  let mode = null;          // null, {line}, {prof}, {recent}
 
   function drawBase() {
     const M = metroLayout(MAPW);
@@ -103,6 +108,9 @@
     // 노선 고르기 줄(제목 아래)
     const chips = [];
     let cx = PAD, cy = 98;
+    const rw = Math.ceil(26 + tw(RECENT_NAME, 13, 700) + 12);
+    chips.push({ recent: true, x: cx, y: cy, w: rw });
+    cx += rw + 14;
     LINES.forEach(l => {
       const w = Math.ceil(26 + tw(l.name, 13, 700) + 12);
       if (cx + w > MAPW) { cx = PAD; cy += 34; }
@@ -122,8 +130,15 @@
 
     let g = '';
     g += '<text x="' + PAD + '" y="44" class="t1">AI 분야 노선도와 교수님 연구</text>';
-    g += '<text x="' + PAD + '" y="72" class="t2">역은 분야마다 대표 논문 ' + Object.keys(BY).length + '편, 선은 논문끼리의 인용입니다. 역 둘레의 원이 클수록 그 역 가까이 있는 교수님 논문이 많습니다.</text>';
+    g += '<text x="' + PAD + '" y="72" class="t2">역은 분야마다 대표 논문 ' + Object.keys(BY).length + '편, 선은 논문끼리의 인용입니다. 노란 역은 ' + RECENT_FROM + '년 이후 논문(' + RECENT.length + '편)입니다. 역 둘레의 원이 클수록 그 역 가까이 있는 교수님 논문이 많습니다.</text>';
     chips.forEach(c => {
+      if (c.recent) {
+        g += '<g class="lchip rchip" data-recent="1" tabindex="0" role="button" aria-label="' + esc(RECENT_NAME + ' 역만 보기') + '">'
+          + '<rect x="' + c.x + '" y="' + c.y + '" width="' + c.w + '" height="26" rx="13"/>'
+          + '<circle cx="' + (c.x + 14) + '" cy="' + (c.y + 13) + '" r="5.5" class="rdot"/>'
+          + '<text x="' + (c.x + 26) + '" y="' + (c.y + 17.5) + '">' + esc(RECENT_NAME) + '</text></g>';
+        return;
+      }
       g += '<g class="lchip" data-line="' + c.l.id + '" tabindex="0" role="button" aria-label="' + esc(c.l.name + ' 노선 고르기') + '">'
         + '<rect x="' + c.x + '" y="' + c.y + '" width="' + c.w + '" height="26" rx="13"/>'
         + '<circle cx="' + (c.x + 14) + '" cy="' + (c.y + 13) + '" r="5" fill="' + c.l.color + '"/>'
@@ -153,14 +168,15 @@
     });
     M.stations.forEach(s => {
       const lines = STATION_LINES[s.slug].join(' '), y = s.y + dy;
-      if (s.k > 1) g += '<rect class="xf" data-st="' + s.slug + '" data-lines="' + lines + '" x="' + (s.x - RX).toFixed(1) + '" y="' + (y - s.hh).toFixed(1) + '" width="' + (2 * RX) + '" height="' + (2 * s.hh).toFixed(1) + '" rx="' + RX + '"/>';
-      else g += '<circle class="st" data-st="' + s.slug + '" data-lines="' + lines + '" cx="' + s.x.toFixed(1) + '" cy="' + y.toFixed(1) + '" r="' + RS + '" stroke="' + LBY[STATION_LINES[s.slug][0]].color + '"/>';
+      const rc = isRecent(s.slug) ? ' rc' : '';
+      if (s.k > 1) g += '<rect class="xf' + rc + '" data-st="' + s.slug + '" data-lines="' + lines + '" x="' + (s.x - RX).toFixed(1) + '" y="' + (y - s.hh).toFixed(1) + '" width="' + (2 * RX) + '" height="' + (2 * s.hh).toFixed(1) + '" rx="' + RX + '"/>';
+      else g += '<circle class="st' + rc + '" data-st="' + s.slug + '" data-lines="' + lines + '" cx="' + s.x.toFixed(1) + '" cy="' + y.toFixed(1) + '" r="' + RS + '" stroke="' + LBY[STATION_LINES[s.slug][0]].color + '"/>';
     });
     const boxes = [];   // 덧그림이 피할 자리
     labels.forEach(o => {
       const p = BY[o.s.slug], x = o.r[0], y = o.r[1] + dy;
       boxes.push([x, y, x + o.w, y + 24]);
-      g += '<g class="slab" data-st="' + o.s.slug + '" data-lines="' + STATION_LINES[o.s.slug].join(' ') + '"><title>' + esc(p.t + ' (' + p.y + ', 인용 ' + p.c.toLocaleString('ko-KR') + ')') + '</title><rect x="' + x.toFixed(1) + '" y="' + y.toFixed(1) + '" width="' + o.w + '" height="24" rx="7"/>'
+      g += '<g class="slab' + (isRecent(o.s.slug) ? ' rc' : '') + '" data-st="' + o.s.slug + '" data-lines="' + STATION_LINES[o.s.slug].join(' ') + '"><title>' + esc(p.t + ' (' + p.y + ', 인용 ' + p.c.toLocaleString('ko-KR') + ')') + '</title><rect x="' + x.toFixed(1) + '" y="' + y.toFixed(1) + '" width="' + o.w + '" height="24" rx="7"/>'
         + '<text x="' + (x + 6).toFixed(1) + '" y="' + (y + 16.5).toFixed(1) + '" class="sn' + (o.multi ? ' sx' : '') + '">' + esc(p.l)
         + '<tspan class="sy" dx="4">' + p.y + '</tspan></text></g>';
     });
@@ -227,7 +243,7 @@
   function overlay() {
     const ov = $('#ov');
     let g = '';
-    if (!mode) { ov.innerHTML = ''; return; }
+    if (!mode || mode.recent) { ov.innerHTML = ''; return; }
     const pick = mode.line ? nearBy((p, w) => w.line === mode.line) : nearBy(p => p.i === mode.prof);
     const color = mode.line ? LBY[mode.line].color : '#8b1538';
     const used = [];
@@ -258,14 +274,16 @@
     const svg = $('#pmSvg');
     let onLines = null, onSt = null;
     if (mode && mode.line) { onLines = new Set([mode.line]); onSt = new Set(LBY[mode.line].st); }
+    if (mode && mode.recent) { onLines = new Set(); onSt = new Set(RECENT); }
     if (mode && mode.prof != null) {
       const ws = PROFS[mode.prof].papers;
       onLines = new Set(ws.filter(w => w.line !== 'other').map(w => w.line));
       onSt = new Set(ws.map(w => w.near).filter(Boolean));
     }
     svg.classList.toggle('focus', !!mode);
+    svg.classList.toggle('recent', !!(mode && mode.recent));
     svg.querySelectorAll('.ln, .ltag, .lchip').forEach(e => e.classList.toggle('hi', !!onLines && onLines.has(e.dataset.line)));
-    svg.querySelectorAll('.lchip').forEach(e => e.classList.toggle('me', !!(mode && mode.line === e.dataset.line)));
+    svg.querySelectorAll('.lchip').forEach(e => e.classList.toggle('me', !!(mode && (e.dataset.recent ? mode.recent : mode.line === e.dataset.line))));
     svg.querySelectorAll('.st, .xf, .slab').forEach(e => {
       const inLine = !!onLines && e.dataset.lines.split(' ').some(l => onLines.has(l));
       e.classList.toggle('hi', inLine || (!!onSt && onSt.has(e.dataset.st)));
@@ -281,9 +299,12 @@
     detail();
   }
   function setMode(m) {
-    const same = m && mode && ((m.line && m.line === mode.line) || (m.prof != null && m.prof === mode.prof));
+    const same = m && mode && ((m.line && m.line === mode.line) || (m.prof != null && m.prof === mode.prof) || (m.recent && mode.recent));
     mode = same ? null : m;
     apply();
+    // 좁은 화면에서는 최근 역이 노선도 오른쪽 끝에 있으므로 노선도 끝(교수님 줄 앞)이 보이게 민다
+    const fig = $('.pm-fig');
+    if (mode && mode.recent && fig.scrollWidth > fig.clientWidth) fig.scrollTo({ left: Math.max(0, (MAPW + PAD) / W * fig.scrollWidth - fig.clientWidth), behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
   }
 
   function paperLi(w) {
@@ -296,11 +317,17 @@
   function detail() {
     const box = $('#pmDetail');
     if (!mode) {
-      box.innerHTML = '<p class="pm-hint">위의 노선 이름이나 오른쪽 교수님 이름을 눌러 보세요. 노선을 누르면 그 분야 교수님이 역 옆에 나타나고, 교수님을 누르면 그 교수님 논문이 닿은 역과 노선만 남습니다. 한 번 더 누르면 풀립니다.</p>';
+      box.innerHTML = '<p class="pm-hint">위의 노선 이름이나 오른쪽 교수님 이름을 눌러 보세요. 맨 앞 \'' + RECENT_NAME + '\'를 누르면 최근 논문만 남습니다. 노선을 누르면 그 분야 교수님이 역 옆에 나타나고, 교수님을 누르면 그 교수님 논문이 닿은 역과 노선만 남습니다. 한 번 더 누르면 풀립니다.</p>';
       return;
     }
     let h;
-    if (mode.line) {
+    if (mode.recent) {
+      const rows = LINES.map(l => ({ l, ss: l.st.filter(isRecent).sort((a, b) => BY[a].d < BY[b].d ? -1 : 1) })).filter(r => r.ss.length);
+      const none = LINES.filter(l => !l.st.some(isRecent)).map(l => l.name);
+      h = '<div class="pm-dh"><h3><i class="rdot"></i>' + esc(RECENT_NAME) + '</h3><span>' + RECENT_FROM + '년 이후 논문 ' + RECENT.length + '편. 노선마다 발표 연도별로 인용이 많은 논문을 골랐습니다' + (none.length ? '. 기준을 넘는 논문이 없는 노선: ' + esc(none.join(', ')) : '') + '</span><button type="button" class="pm-clear">선택 풀기</button></div>'
+        + rows.map(r => '<h4><span class="pm-line" style="--c:' + r.l.color + '">' + esc(r.l.name) + '</span></h4><ol class="pm-papers">' + r.ss.map(s => { const p = BY[s];
+          return '<li><a href="' + esc(p.u) + '" target="_blank" rel="noopener">' + (p.t.toLowerCase().startsWith(p.l.toLowerCase()) ? '' : esc(p.l) + ': ') + esc(p.t) + '</a><small>' + esc([p.d || p.y, p.v, '인용 ' + p.c.toLocaleString('ko-KR')].filter(Boolean).join(', ')) + '</small></li>'; }).join('') + '</ol>').join('');
+    } else if (mode.line) {
       const l = LBY[mode.line], rows = PROFS.map(p => ({ p, ws: p.papers.filter(w => w.line === mode.line) })).filter(r => r.ws.length).sort((a, b) => b.ws.length - a.ws.length);
       h = '<div class="pm-dh"><h3><i style="background:' + l.color + '"></i>' + esc(l.name) + '</h3><span>' + esc(l.desc) + '. 교수님 ' + rows.length + '명, 논문 ' + rows.reduce((a, r) => a + r.ws.length, 0) + '편</span><button type="button" class="pm-clear">선택 풀기</button></div>'
         + (rows.length ? rows.map(r => '<h4>' + esc(r.p.name) + ' <small>' + esc(r.p.dept) + '</small></h4><ol class="pm-papers">' + r.ws.map(paperLi).join('') + '</ol>').join('') : '<p class="pm-hint">이 노선에 든 교수님 논문이 없습니다.</p>');
@@ -341,7 +368,7 @@
       const blob = await new Promise(r => c.toBlob(r, 'image/png'));
       const a = document.createElement('a');
       a.href = URL.createObjectURL(blob);
-      const tag = !mode ? '' : mode.line ? '_' + LBY[mode.line].name.replace(/\s+/g, '') : '_' + PROFS[mode.prof].name;
+      const tag = !mode ? '' : mode.recent ? '_최근3년' : mode.line ? '_' + LBY[mode.line].name.replace(/\s+/g, '') : '_' + PROFS[mode.prof].name;
       a.download = 'AI분야노선도_교수님' + tag + '.png';
       document.body.appendChild(a); a.click(); a.remove();
       setTimeout(() => URL.revokeObjectURL(a.href), 4000);
@@ -361,12 +388,14 @@
       const pr = t.closest('.pr');
       if (pr) return setMode({ prof: +pr.dataset.p }), true;
       const ln = t.closest('.lchip, .ltag');
+      if (ln && ln.dataset.recent) return setMode({ recent: true }), true;
       if (ln) return setMode({ line: ln.dataset.line }), true;
       return false;
     };
     svg.addEventListener('click', e => { if (!act(e.target) && mode && !e.target.closest('.slab')) setMode(null); });
     svg.addEventListener('keydown', e => { if ((e.key === 'Enter' || e.key === ' ') && act(e.target)) e.preventDefault(); if (e.key === 'Escape') setMode(null); });
     $('#pmSave').addEventListener('click', e => savePng(e.currentTarget));
+    if (location.hash === '#recent') setMode({ recent: true });  // 최근 3년만 보는 주소
     document.body.dataset.ready = '1';
   }
   start();

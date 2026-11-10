@@ -22,6 +22,7 @@
 .pm-papers a, .pm-papers b { font-weight: 600; color: var(--color-text); word-break: keep-all; overflow-wrap: anywhere; }
 .pm-papers small { grid-column: 2; color: var(--color-text-muted); font-size: 13px; }
 .pm-papers small.why { color: var(--color-text-soft); }
+.pm-dh h3 .rdot { display: inline-block; width: 12px; height: 12px; margin-right: 8px; border-radius: 50%; background: #ffd24d; border: 2px solid #b7791f; vertical-align: 1px; }
 .pm-method { margin-top: 18px; font-size: 14px; color: var(--color-text-muted); line-height: 1.7; }
 .pm-method li { margin: 2px 0; }
 @media (max-width: 600px) {
@@ -80,6 +81,12 @@
 #pmSvg.still .ohalo, #pmSvg.still .chip { animation: none; }
 #pmSvg.still * { transition: none !important; }
 @media (prefers-reduced-motion: reduce) { #pmSvg .ohalo, #pmSvg .chip { animation: none; } #pmSvg * { transition: none !important; } }
+#pmSvg .st.rc { fill: #ffd24d; }
+#pmSvg .xf.rc { fill: #ffe9a3; }
+#pmSvg .slab.rc .sy { fill: #9a5b00; font-weight: 800; }
+#pmSvg .rdot { fill: #ffd24d; stroke: #b7791f; stroke-width: 1.6; }
+#pmSvg .rchip.me .rdot { stroke: #ffd24d; }
+#pmSvg.focus.recent .ln:not(.hi) { opacity: .28; }
 /* svg 끝 */
 .pm-dh h3 i { display: inline-block; width: 12px; height: 12px; border-radius: 50%; margin-right: 8px; vertical-align: 1px; }
 .pm-detail h4 { margin: 16px 0 0; font-size: 16px; }
