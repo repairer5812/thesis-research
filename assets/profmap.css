@@ -1,22 +1,11 @@
 /* 논문 노선도 쪽(profmap.html). "svg 시작"과 "svg 끝" 사이는 PNG 저장 때 그림 안에도 넣는다 */
-.pm-tools { display: flex; flex-wrap: wrap; gap: 14px 24px; align-items: flex-start; justify-content: space-between; margin-bottom: 16px; }
-.pm-profs { display: flex; flex-direction: column; gap: 10px; flex: 1 1 640px; }
-.pm-dept { display: flex; gap: 10px; align-items: baseline; }
-.pm-dept > b { flex: 0 0 72px; font-size: 13px; color: var(--color-text-muted); }
-.pm-dept > div { display: flex; flex-wrap: wrap; gap: 6px; }
-.pm-profs button { display: inline-flex; align-items: center; gap: 6px; min-height: 36px; padding: 0 12px; border: 1px solid var(--color-border-strong); border-radius: 18px;
-  background: var(--color-surface); color: var(--color-text); font: inherit; font-size: 14px; font-weight: 600; cursor: pointer; box-shadow: var(--shadow-sm); transition: background var(--tx-fast), border-color var(--tx-fast); }
-.pm-profs button i { font-style: normal; font-size: 11.5px; font-weight: 700; color: var(--color-text-soft); }
-.pm-profs button:hover { border-color: var(--color-accent); }
-.pm-profs button[aria-pressed="true"] { background: var(--color-accent); border-color: var(--color-accent); color: #fff; }
-.pm-profs button[aria-pressed="true"] i { color: rgba(255, 255, 255, .8); }
-.pm-profs button:focus-visible, .pm-save:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
 .pm-save { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 18px; border: 0; border-radius: 10px; background: var(--color-primary); color: #fff;
   font: inherit; font-size: 15px; font-weight: 700; cursor: pointer; box-shadow: var(--shadow-md); }
 .pm-save:hover { background: var(--color-primary-dark); }
 .pm-save:disabled { opacity: .7; cursor: progress; }
+.pm-wide { width: min(2200px, calc(100vw - 32px)); margin-left: 50%; transform: translateX(-50%); }
 .pm-fig { overflow-x: auto; border: 1px solid var(--color-border); border-radius: var(--radius-lg); background: #fff; box-shadow: var(--shadow); -webkit-overflow-scrolling: touch; }
-.pm-fig svg { display: block; width: 100%; min-width: 980px; height: auto; }
+.pm-fig svg { display: block; width: 100%; min-width: 1500px; height: auto; }
 .pm-scrollnote { display: none; margin: 6px 2px 0; font-size: 13px; color: var(--color-text-soft); }
 @media (max-width: 1000px) { .pm-scrollnote { display: block; } }
 .pm-detail { margin-top: 18px; padding: 18px 20px; border: 1px solid var(--color-border); border-radius: var(--radius-lg); background: var(--color-surface); }
@@ -36,47 +25,63 @@
 .pm-method { margin-top: 18px; font-size: 14px; color: var(--color-text-muted); line-height: 1.7; }
 .pm-method li { margin: 2px 0; }
 @media (max-width: 600px) {
-  .pm-dept { flex-direction: column; gap: 6px; }
-  .pm-dept > b { flex: none; }
-  .pm-save { width: 100%; justify-content: center; }
+      .pm-save { width: 100%; justify-content: center; }
   .pm-papers li { grid-template-columns: 1fr; }
   .pm-line { grid-row: auto; justify-self: start; }
   .pm-papers small { grid-column: 1; }
 }
 
 /* svg 시작 */
-#pmSvg { font-family: "PM Pretendard", "Pretendard Variable", "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans CJK KR", "Noto Sans KR", sans-serif; }
+#pmSvg { font-kerning: none; font-variant-ligatures: none; font-feature-settings: "liga" 0, "calt" 0, "kern" 0; font-family: "PM Pretendard", "Pretendard Variable", "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans CJK KR", "Noto Sans KR", sans-serif; }
 #pmSvg .bg { fill: #ffffff; }
 #pmSvg .t1 { font-size: 26px; font-weight: 800; fill: #1d1d1f; }
 #pmSvg .t2 { font-size: 14px; font-weight: 500; fill: #55565b; }
 #pmSvg .t3 { font-size: 12.5px; font-weight: 500; fill: #6f7075; }
-#pmSvg .h2 { font-size: 17px; font-weight: 800; fill: #1d1d1f; }
-#pmSvg .ln { fill: none; stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; }
+#pmSvg .h2 { font-size: 18px; font-weight: 800; fill: #1d1d1f; }
+#pmSvg .dept { font-size: 12.5px; font-weight: 700; fill: #8b1538; letter-spacing: .02em; }
+#pmSvg .ln, #pmSvg .st, #pmSvg .xf, #pmSvg .xl, #pmSvg .slab, #pmSvg .ltag, #pmSvg .lchip, #pmSvg .halo, #pmSvg .pr { transition: opacity .32s ease; }
+#pmSvg .ln { fill: none; stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; transition: opacity .32s ease, stroke-width .32s ease; }
 #pmSvg .st { fill: #fff; stroke-width: 3.2; }
 #pmSvg .xf { fill: #fff; stroke: #1d1d1f; stroke-width: 2.8; }
-#pmSvg .xl { fill: none; stroke: #6f7075; stroke-width: 3; stroke-linecap: round; stroke-dasharray: 0.1 7; }
-#pmSvg .slab rect { fill: rgba(255, 255, 255, .9); }
+#pmSvg .xl { fill: none; stroke: #8a8b90; stroke-width: 2.2; stroke-linecap: round; stroke-dasharray: 0.1 6; opacity: .55; }
+#pmSvg .halo { fill: #8b1538; fill-opacity: .13; stroke: #8b1538; stroke-opacity: .28; stroke-width: 1; }
+#pmSvg .slab rect { fill: rgba(255, 255, 255, .9); transition: fill .3s; }
+#pmSvg .slab.lit rect { fill: #fbe9ee; stroke: #8b1538; stroke-width: 1.5; }
 #pmSvg .sn { font-size: 13px; font-weight: 600; fill: #1d1d1f; }
 #pmSvg .sn.sx { font-weight: 800; }
 #pmSvg .sy { font-size: 11.5px; font-weight: 500; fill: #6f7075; }
 #pmSvg .tn { font-size: 12px; font-weight: 700; }
-#pmSvg .tc { font-size: 11px; font-weight: 700; }
-#pmSvg .pmk circle { fill: #8b1538; stroke: #fff; stroke-width: 2; }
-#pmSvg .pmk text { font-size: 11.5px; font-weight: 800; fill: #fff; text-anchor: middle; }
-#pmSvg .cbg { fill: #f7f6f3; stroke: #e6e3dd; }
-#pmSvg .cn { font-size: 15px; font-weight: 800; fill: #1d1d1f; }
-#pmSvg .cm { font-size: 12.5px; font-weight: 600; fill: #6f7075; }
-#pmSvg .ce { font-size: 13px; fill: #8a8b90; }
-#pmSvg .pn { font-size: 13.5px; font-weight: 600; fill: #1d1d1f; }
-#pmSvg .pr { cursor: pointer; }
-#pmSvg .pr .hit { fill: transparent; }
-#pmSvg .pr:hover .hit { fill: #ebe7e0; }
-#pmSvg .pr.me .hit { fill: #f6dfe5; }
+#pmSvg .ltag, #pmSvg .lchip, #pmSvg .pr { cursor: pointer; }
+#pmSvg .lchip rect { fill: #fff; stroke: #d9d6cf; transition: fill .25s, stroke .25s; }
+#pmSvg .lchip text { font-size: 13px; font-weight: 700; fill: #2b2c30; }
+#pmSvg .lchip:hover rect { stroke: #8b1538; }
+#pmSvg .lchip.me rect { fill: #1d1d1f; stroke: #1d1d1f; }
+#pmSvg .lchip.me text { fill: #fff; }
+#pmSvg .pn { font-size: 14px; font-weight: 650; fill: #1d1d1f; }
+#pmSvg .pr .hit { fill: transparent; transition: fill .2s; }
+#pmSvg .pr:hover .hit { fill: #f1eee8; }
+#pmSvg .pr.me .hit { fill: #fbe2e9; }
 #pmSvg .pr.me .pn { fill: #8b1538; font-weight: 800; }
-#pmSvg .pr:focus { outline: none; }
-#pmSvg .pr:focus-visible .hit { stroke: #8b1538; stroke-width: 2; }
-#pmSvg.focus .ln:not(.hi), #pmSvg.focus .xl:not(.hi) { opacity: .12; }
-#pmSvg.focus .st:not(.hi), #pmSvg.focus .xf:not(.hi), #pmSvg.focus .slab:not(.hi) { opacity: .28; }
-#pmSvg.focus .ltag:not(.hi), #pmSvg.focus .card:not(.hi) { opacity: .3; }
+#pmSvg .pr .empty { fill: #eeece7; }
+#pmSvg .pr:focus, #pmSvg .lchip:focus, #pmSvg .ltag:focus { outline: none; }
+#pmSvg .pr:focus-visible .hit, #pmSvg .lchip:focus-visible rect, #pmSvg .ltag:focus-visible rect { stroke: #8b1538; stroke-width: 2.5; }
+#pmSvg.focus .ln:not(.hi) { opacity: .1; }
+#pmSvg.focus .ln.hi { stroke-width: 7.5; }
+#pmSvg.focus .xl:not(.hi), #pmSvg.focus .halo { opacity: .08; }
+#pmSvg.focus .st:not(.hi), #pmSvg.focus .xf:not(.hi), #pmSvg.focus .slab:not(.hi) { opacity: .2; }
+#pmSvg.focus .ltag:not(.hi) { opacity: .25; }
+#pmSvg.focus .pr:not(.me):not(.hi) { opacity: .42; }
+#pmSvg .ohalo { fill-opacity: .2; animation: pm-grow .5s cubic-bezier(.2, .8, .2, 1.2) both; transform-box: fill-box; transform-origin: center; }
+#pmSvg .chip { animation: pm-pop .42s cubic-bezier(.2, .8, .2, 1.15) both; transform-box: fill-box; transform-origin: center; }
+#pmSvg .chip rect { stroke: #fff; stroke-width: 2; }
+#pmSvg .chip text { font-size: 12px; font-weight: 700; text-anchor: middle; }
+@keyframes pm-grow { from { opacity: 0; transform: scale(.3); } to { opacity: 1; transform: scale(1); } }
+@keyframes pm-pop { from { opacity: 0; transform: translateY(6px) scale(.85); } to { opacity: 1; transform: none; } }
+#pmSvg.still .ohalo, #pmSvg.still .chip { animation: none; }
+#pmSvg.still * { transition: none !important; }
+@media (prefers-reduced-motion: reduce) { #pmSvg .ohalo, #pmSvg .chip { animation: none; } #pmSvg * { transition: none !important; } }
 /* svg 끝 */
-.pm-profs button:disabled { opacity: .55; cursor: default; }
+.pm-dh h3 i { display: inline-block; width: 12px; height: 12px; border-radius: 50%; margin-right: 8px; vertical-align: 1px; }
+.pm-detail h4 { margin: 16px 0 0; font-size: 16px; }
+.pm-detail h4 small { font-weight: 500; color: var(--color-text-soft); font-size: 13px; margin-left: 4px; }
+.pm-top { display: flex; justify-content: flex-end; margin-bottom: 12px; }

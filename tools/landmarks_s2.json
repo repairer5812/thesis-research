@@ -1,0 +1,4187 @@
+{
+ "made": "2026-11-11",
+ "source": "Semantic Scholar Graph API",
+ "papers": {
+  "alexnet": {
+   "id": "DOI:10.1145/3065386",
+   "paperId": "abd1c342495432171beb7ca8fd9551ef13cbd0ff",
+   "title": "ImageNet classification with deep convolutional neural networks",
+   "year": 2012,
+   "date": "2012-12-03",
+   "venue": "Communications of the ACM",
+   "cites": 132812,
+   "influential": 13463,
+   "arxiv": null,
+   "n_refs": 0,
+   "refs": []
+  },
+  "dropout": {
+   "id": "ARXIV:1207.0580",
+   "paperId": "0060745e006c5f14ec326904119dca19c6545e51",
+   "title": "Improving neural networks by preventing co-adaptation of feature detectors",
+   "year": 2012,
+   "date": "2012-07-02",
+   "venue": "arXiv.org",
+   "cites": 8233,
+   "influential": 755,
+   "arxiv": "1207.0580",
+   "n_refs": 26,
+   "refs": []
+  },
+  "adam": {
+   "id": "ARXIV:1412.6980",
+   "paperId": "cf5cf758f1b00214d70e34f8a57813557dc03e17",
+   "title": "Adam: A Method for Stochastic Optimization",
+   "year": 2014,
+   "date": "2014-12-22",
+   "venue": "International Conference on Learning Representations",
+   "cites": 175079,
+   "influential": 27624,
+   "arxiv": "1412.6980",
+   "n_refs": 26,
+   "refs": [
+    {
+     "to": "vae",
+     "inf": true,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    },
+    {
+     "to": "alexnet",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "dropout",
+     "inf": false,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    }
+   ]
+  },
+  "batchnorm": {
+   "id": "ARXIV:1502.03167",
+   "paperId": "995c5f5e62614fcb4d2796ad2faab969da51713e",
+   "title": "Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift",
+   "year": 2015,
+   "date": "2015-02-10",
+   "venue": "International Conference on Machine Learning",
+   "cites": 48679,
+   "influential": 2366,
+   "arxiv": "1502.03167",
+   "n_refs": 53,
+   "refs": [
+    {
+     "to": "resnet",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "yolo",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "vgg",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "alexnet",
+     "inf": false,
+     "intents": []
+    }
+   ]
+  },
+  "distill": {
+   "id": "ARXIV:1503.02531",
+   "paperId": "0c908739fbff75f03469d13d4a1a07de3414ee19",
+   "title": "Distilling the Knowledge in a Neural Network",
+   "year": 2015,
+   "date": "2015-03-09",
+   "venue": "arXiv.org",
+   "cites": 27695,
+   "influential": 2995,
+   "arxiv": "1503.02531",
+   "n_refs": 9,
+   "refs": [
+    {
+     "to": "alexnet",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "dropout",
+     "inf": false,
+     "intents": []
+    }
+   ]
+  },
+  "resnet": {
+   "id": "ARXIV:1512.03385",
+   "paperId": "2c03df8b48bf3fa39054345bafabfeff15bfd11d",
+   "title": "Deep Residual Learning for Image Recognition",
+   "year": 2015,
+   "date": "2015-12-10",
+   "venue": "Computer Vision and Pattern Recognition",
+   "cites": 246827,
+   "influential": 33284,
+   "arxiv": "1512.03385",
+   "n_refs": 53,
+   "refs": [
+    {
+     "to": "faster-rcnn",
+     "inf": true,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    },
+    {
+     "to": "batchnorm",
+     "inf": true,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    },
+    {
+     "to": "vgg",
+     "inf": true,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    },
+    {
+     "to": "alexnet",
+     "inf": true,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    },
+    {
+     "to": "dropout",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    }
+   ]
+  },
+  "layernorm": {
+   "id": "ARXIV:1607.06450",
+   "paperId": "97fb4e3d45bb098e27e0071448b6152217bd35a5",
+   "title": "Layer Normalization",
+   "year": 2016,
+   "date": "2016-07-21",
+   "venue": "arXiv.org",
+   "cites": 13785,
+   "influential": 599,
+   "arxiv": "1607.06450",
+   "n_refs": 33,
+   "refs": [
+    {
+     "to": "batchnorm",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "adam",
+     "inf": true,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "seq2seq",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "vgg",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "word2vec",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "alexnet",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    }
+   ]
+  },
+  "vgg": {
+   "id": "ARXIV:1409.1556",
+   "paperId": "eb42cf88027de515750f230b23b1a057dc782108",
+   "title": "Very Deep Convolutional Networks for Large-Scale Image Recognition",
+   "year": 2014,
+   "date": "2014-09-04",
+   "venue": "International Conference on Learning Representations",
+   "cites": 116379,
+   "influential": 14669,
+   "arxiv": "1409.1556",
+   "n_refs": 43,
+   "refs": [
+    {
+     "to": "alexnet",
+     "inf": true,
+     "intents": [
+      "methodology",
+      "background"
+     ]
+    }
+   ]
+  },
+  "faster-rcnn": {
+   "id": "ARXIV:1506.01497",
+   "paperId": "424561d8585ff8ebce7d5d07de8dbf7aae5e7270",
+   "title": "Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks",
+   "year": 2015,
+   "date": "2015-06-04",
+   "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+   "cites": 77368,
+   "influential": 9937,
+   "arxiv": "1506.01497",
+   "n_refs": 47,
+   "refs": [
+    {
+     "to": "resnet",
+     "inf": true,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "vgg",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "alexnet",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    }
+   ]
+  },
+  "yolo": {
+   "id": "ARXIV:1506.02640",
+   "paperId": "f8e79ac0ea341056ef20f2616628b3e964764cfd",
+   "title": "You Only Look Once: Unified, Real-Time Object Detection",
+   "year": 2015,
+   "date": "2015-06-08",
+   "venue": "Computer Vision and Pattern Recognition",
+   "cites": 49746,
+   "influential": 3431,
+   "arxiv": "1506.02640",
+   "n_refs": 40,
+   "refs": [
+    {
+     "to": "faster-rcnn",
+     "inf": true,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "dropout",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    }
+   ]
+  },
+  "mask-rcnn": {
+   "id": "ARXIV:1703.06870",
+   "paperId": "1a0912bb76777469295bb2c059faee907e7f3258",
+   "title": "Mask R-CNN",
+   "year": 2017,
+   "date": "2017-03-20",
+   "venue": "",
+   "cites": 33888,
+   "influential": 4429,
+   "arxiv": "1703.06870",
+   "n_refs": 40,
+   "refs": [
+    {
+     "to": "resnet",
+     "inf": true,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    },
+    {
+     "to": "faster-rcnn",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "alexnet",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    }
+   ]
+  },
+  "detr": {
+   "id": "ARXIV:2005.12872",
+   "paperId": "962dc29fdc3fbdc5930a10aba114050b82fe5a3e",
+   "title": "End-to-End Object Detection with Transformers",
+   "year": 2020,
+   "date": "2020-05-26",
+   "venue": "European Conference on Computer Vision",
+   "cites": 21007,
+   "influential": 2062,
+   "arxiv": "2005.12872",
+   "n_refs": 53,
+   "refs": [
+    {
+     "to": "transformer",
+     "inf": true,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    },
+    {
+     "to": "resnet",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "yolo",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "faster-rcnn",
+     "inf": true,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    },
+    {
+     "to": "seq2seq",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "bahdanau",
+     "inf": true,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "bert",
+     "inf": false,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    }
+   ]
+  },
+  "vit": {
+   "id": "ARXIV:2010.11929",
+   "paperId": "268d347e8a55b5eb82fb5e7d2f800e33c75ab18a",
+   "title": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale",
+   "year": 2020,
+   "date": "2020-10-22",
+   "venue": "International Conference on Learning Representations",
+   "cites": 74209,
+   "influential": 7840,
+   "arxiv": "2010.11929",
+   "n_refs": 64,
+   "refs": [
+    {
+     "to": "gpt3",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "detr",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "simclr",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "moco",
+     "inf": true,
+     "intents": []
+    },
+    {
+     "to": "transformer",
+     "inf": true,
+     "intents": []
+    },
+    {
+     "to": "resnet",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "batchnorm",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "adam",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "alexnet",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "bert",
+     "inf": true,
+     "intents": []
+    }
+   ]
+  },
+  "swin": {
+   "id": "ARXIV:2103.14030",
+   "paperId": "c8b25fab5608c3e033d34b4483ec47e68ba109b7",
+   "title": "Swin Transformer: Hierarchical Vision Transformer using Shifted Windows",
+   "year": 2021,
+   "date": null,
+   "venue": "IEEE International Conference on Computer Vision",
+   "cites": 37648,
+   "influential": 4310,
+   "arxiv": "2103.14030",
+   "n_refs": 86,
+   "refs": [
+    {
+     "to": "clip",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "vit",
+     "inf": true,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    },
+    {
+     "to": "detr",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "t5",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "transformer",
+     "inf": false,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    },
+    {
+     "to": "mask-rcnn",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "resnet",
+     "inf": true,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    },
+    {
+     "to": "unet",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "adam",
+     "inf": true,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "vgg",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "alexnet",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    }
+   ]
+  },
+  "sam": {
+   "id": "ARXIV:2304.02643",
+   "paperId": "7470a1702c8c86e6f28d32cfa315381150102f5b",
+   "title": "Segment Anything",
+   "year": 2023,
+   "date": "2023-04-05",
+   "venue": "IEEE International Conference on Computer Vision",
+   "cites": 16805,
+   "influential": 2204,
+   "arxiv": "2304.02643",
+   "n_refs": 149,
+   "refs": [
+    {
+     "to": "chinchilla",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "clip",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "vit",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "gpt3",
+     "inf": true,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    },
+    {
+     "to": "detr",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "scaling",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "transformer",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "mask-rcnn",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "layernorm",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "resnet",
+     "inf": true,
+     "intents": []
+    },
+    {
+     "to": "faster-rcnn",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    }
+   ]
+  },
+  "moco": {
+   "id": "ARXIV:1911.05722",
+   "paperId": "add2f205338d70e10ce5e686df4a690e2851bdfc",
+   "title": "Momentum Contrast for Unsupervised Visual Representation Learning",
+   "year": 2019,
+   "date": "2019-11-13",
+   "venue": "Computer Vision and Pattern Recognition",
+   "cites": 16277,
+   "influential": 2202,
+   "arxiv": "1911.05722",
+   "n_refs": 66,
+   "refs": [
+    {
+     "to": "simclr",
+     "inf": true,
+     "intents": []
+    },
+    {
+     "to": "mask-rcnn",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "resnet",
+     "inf": true,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    },
+    {
+     "to": "faster-rcnn",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "batchnorm",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "vgg",
+     "inf": true,
+     "intents": []
+    },
+    {
+     "to": "bert",
+     "inf": false,
+     "intents": [
+      "methodology",
+      "background"
+     ]
+    }
+   ]
+  },
+  "simclr": {
+   "id": "ARXIV:2002.05709",
+   "paperId": "7af72a461ed7cda180e7eab878efd5f35d79bbf4",
+   "title": "A Simple Framework for Contrastive Learning of Visual Representations",
+   "year": 2020,
+   "date": "2020-02-13",
+   "venue": "International Conference on Machine Learning",
+   "cites": 27356,
+   "influential": 4302,
+   "arxiv": "2002.05709",
+   "n_refs": 67,
+   "refs": [
+    {
+     "to": "moco",
+     "inf": true,
+     "intents": []
+    },
+    {
+     "to": "resnet",
+     "inf": true,
+     "intents": []
+    },
+    {
+     "to": "batchnorm",
+     "inf": true,
+     "intents": []
+    },
+    {
+     "to": "vgg",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "word2vec",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "alexnet",
+     "inf": true,
+     "intents": []
+    }
+   ]
+  },
+  "clip": {
+   "id": "ARXIV:2103.00020",
+   "paperId": "6f870f7f02a8c59c3e23f407f3ef00dd1dcf8fc4",
+   "title": "Learning Transferable Visual Models From Natural Language Supervision",
+   "year": 2021,
+   "date": "2021-02-26",
+   "venue": "International Conference on Machine Learning",
+   "cites": 59776,
+   "influential": 10948,
+   "arxiv": "2103.00020",
+   "n_refs": 221,
+   "refs": [
+    {
+     "to": "vit",
+     "inf": true,
+     "intents": [
+      "methodology",
+      "result",
+      "background"
+     ]
+    },
+    {
+     "to": "gpt3",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "simclr",
+     "inf": true,
+     "intents": [
+      "methodology",
+      "background"
+     ]
+    },
+    {
+     "to": "scaling",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "moco",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "t5",
+     "inf": false,
+     "intents": [
+      "methodology",
+      "background"
+     ]
+    },
+    {
+     "to": "transformer",
+     "inf": true,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "resnet",
+     "inf": true,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "batchnorm",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "adam",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "alexnet",
+     "inf": false,
+     "intents": [
+      "methodology",
+      "background"
+     ]
+    },
+    {
+     "to": "bert",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    }
+   ]
+  },
+  "dino": {
+   "id": "ARXIV:2104.14294",
+   "paperId": "ad4a0938c48e61b7827869e4ac3baffd0aefab35",
+   "title": "Emerging Properties in Self-Supervised Vision Transformers",
+   "year": 2021,
+   "date": "2021-04-29",
+   "venue": "IEEE International Conference on Computer Vision",
+   "cites": 10976,
+   "influential": 1799,
+   "arxiv": "2104.14294",
+   "n_refs": 90,
+   "refs": [
+    {
+     "to": "vit",
+     "inf": true,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    },
+    {
+     "to": "simclr",
+     "inf": true,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    },
+    {
+     "to": "moco",
+     "inf": true,
+     "intents": []
+    },
+    {
+     "to": "transformer",
+     "inf": true,
+     "intents": []
+    },
+    {
+     "to": "resnet",
+     "inf": true,
+     "intents": []
+    },
+    {
+     "to": "distill",
+     "inf": true,
+     "intents": []
+    },
+    {
+     "to": "bahdanau",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "bert",
+     "inf": true,
+     "intents": []
+    }
+   ]
+  },
+  "flamingo": {
+   "id": "ARXIV:2204.14198",
+   "paperId": "26218bdcc3945c7edae7aa2adbfba4cd820a2df3",
+   "title": "Flamingo: a Visual Language Model for Few-Shot Learning",
+   "year": 2022,
+   "date": "2022-04-29",
+   "venue": "Neural Information Processing Systems",
+   "cites": 6986,
+   "influential": 435,
+   "arxiv": "2204.14198",
+   "n_refs": 184,
+   "refs": [
+    {
+     "to": "chinchilla",
+     "inf": true,
+     "intents": [
+      "methodology",
+      "background"
+     ]
+    },
+    {
+     "to": "clip",
+     "inf": true,
+     "intents": [
+      "methodology",
+      "background"
+     ]
+    },
+    {
+     "to": "vit",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "gpt3",
+     "inf": true,
+     "intents": [
+      "methodology",
+      "background",
+      "result"
+     ]
+    },
+    {
+     "to": "detr",
+     "inf": false,
+     "intents": [
+      "methodology",
+      "background"
+     ]
+    },
+    {
+     "to": "scaling",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "t5",
+     "inf": false,
+     "intents": [
+      "methodology",
+      "background"
+     ]
+    },
+    {
+     "to": "transformer",
+     "inf": true,
+     "intents": [
+      "methodology",
+      "background"
+     ]
+    },
+    {
+     "to": "swin",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "bert",
+     "inf": true,
+     "intents": [
+      "methodology",
+      "background"
+     ]
+    }
+   ]
+  },
+  "blip2": {
+   "id": "ARXIV:2301.12597",
+   "paperId": "3f5b31c4f7350dc88002c121aecbdc82f86eb5bb",
+   "title": "BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models",
+   "year": 2023,
+   "date": "2023-01-30",
+   "venue": "International Conference on Machine Learning",
+   "cites": 9812,
+   "influential": 1032,
+   "arxiv": "2301.12597",
+   "n_refs": 47,
+   "refs": [
+    {
+     "to": "flamingo",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "chinchilla",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "clip",
+     "inf": true,
+     "intents": []
+    },
+    {
+     "to": "gpt3",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "bert",
+     "inf": false,
+     "intents": []
+    }
+   ]
+  },
+  "llava": {
+   "id": "ARXIV:2304.08485",
+   "paperId": "a5036f31f0e629dc661f120b8c3b1f374d479ab8",
+   "title": "Visual Instruction Tuning",
+   "year": 2023,
+   "date": "2023-04-17",
+   "venue": "Neural Information Processing Systems",
+   "cites": 11918,
+   "influential": 1754,
+   "arxiv": "2304.08485",
+   "n_refs": 63,
+   "refs": [
+    {
+     "to": "sam",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "llama",
+     "inf": true,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "blip2",
+     "inf": false,
+     "intents": [
+      "methodology",
+      "background"
+     ]
+    },
+    {
+     "to": "flamingo",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "instructgpt",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "ldm",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "clip",
+     "inf": false,
+     "intents": [
+      "methodology",
+      "background"
+     ]
+    },
+    {
+     "to": "gpt3",
+     "inf": true,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "t5",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    }
+   ]
+  },
+  "word2vec": {
+   "id": "ARXIV:1301.3781",
+   "paperId": "f6b51c8753a871dc94ff32152c00c01e94f90f09",
+   "title": "Efficient Estimation of Word Representations in Vector Space",
+   "year": 2013,
+   "date": "2013-01-16",
+   "venue": "International Conference on Learning Representations",
+   "cites": 36138,
+   "influential": 4635,
+   "arxiv": "1301.3781",
+   "n_refs": 36,
+   "refs": []
+  },
+  "seq2seq": {
+   "id": "ARXIV:1409.3215",
+   "paperId": "cea967b59209c6be22829699f05b8b1ac4dc092d",
+   "title": "Sequence to Sequence Learning with Neural Networks",
+   "year": 2014,
+   "date": "2014-09-10",
+   "venue": "Neural Information Processing Systems",
+   "cites": 22904,
+   "influential": 1418,
+   "arxiv": "1409.3215",
+   "n_refs": 40,
+   "refs": [
+    {
+     "to": "bahdanau",
+     "inf": false,
+     "intents": [
+      "result",
+      "methodology"
+     ]
+    },
+    {
+     "to": "word2vec",
+     "inf": false,
+     "intents": []
+    }
+   ]
+  },
+  "bahdanau": {
+   "id": "ARXIV:1409.0473",
+   "paperId": "fa72afa9b2cbc8f0d7b05d52548906610ffbb9c5",
+   "title": "Neural Machine Translation by Jointly Learning to Align and Translate",
+   "year": 2014,
+   "date": "2014-09-01",
+   "venue": "International Conference on Learning Representations",
+   "cites": 30813,
+   "influential": 2654,
+   "arxiv": "1409.0473",
+   "n_refs": 33,
+   "refs": [
+    {
+     "to": "seq2seq",
+     "inf": true,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    }
+   ]
+  },
+  "transformer": {
+   "id": "ARXIV:1706.03762",
+   "paperId": "204e3073870fae3d05bcbc2f6a8e263d9b72e776",
+   "title": "Attention is All you Need",
+   "year": 2017,
+   "date": "2017-06-12",
+   "venue": "Neural Information Processing Systems",
+   "cites": 202171,
+   "influential": 21467,
+   "arxiv": "1706.03762",
+   "n_refs": 41,
+   "refs": [
+    {
+     "to": "moe",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "layernorm",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "resnet",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "adam",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "seq2seq",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "bahdanau",
+     "inf": true,
+     "intents": [
+      "methodology",
+      "background"
+     ]
+    }
+   ]
+  },
+  "bert": {
+   "id": "ARXIV:1810.04805",
+   "paperId": "df2b0e26d0599ce3e70df8a9da02e51594e0e992",
+   "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+   "year": 2019,
+   "date": null,
+   "venue": "North American Chapter of the Association for Computational Linguistics",
+   "cites": 125405,
+   "influential": 23519,
+   "arxiv": "1810.04805",
+   "n_refs": 63,
+   "refs": [
+    {
+     "to": "transformer",
+     "inf": true,
+     "intents": [
+      "methodology"
+     ]
+    }
+   ]
+  },
+  "t5": {
+   "id": "ARXIV:1910.10683",
+   "paperId": "6c4b76232bb72897685d19b3d264c6ee3005bc2b",
+   "title": "Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer",
+   "year": 2019,
+   "date": "2019-10-23",
+   "venue": "Journal of machine learning research",
+   "cites": 28358,
+   "influential": 2696,
+   "arxiv": "1910.10683",
+   "n_refs": 134,
+   "refs": [
+    {
+     "to": "transformer",
+     "inf": true,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "moe",
+     "inf": true,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "resnet",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "distill",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "seq2seq",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "bahdanau",
+     "inf": false,
+     "intents": [
+      "methodology",
+      "background"
+     ]
+    },
+    {
+     "to": "word2vec",
+     "inf": false,
+     "intents": [
+      "methodology",
+      "background"
+     ]
+    },
+    {
+     "to": "bert",
+     "inf": true,
+     "intents": [
+      "methodology",
+      "background"
+     ]
+    }
+   ]
+  },
+  "scaling": {
+   "id": "ARXIV:2001.08361",
+   "paperId": "e6c561d02500b2596a230b341a8eb8b921ca5bf2",
+   "title": "Scaling Laws for Neural Language Models",
+   "year": 2020,
+   "date": "2020-01-23",
+   "venue": "arXiv.org",
+   "cites": 9603,
+   "influential": 648,
+   "arxiv": "2001.08361",
+   "n_refs": 59,
+   "refs": [
+    {
+     "to": "t5",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "transformer",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "adam",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "alexnet",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "bert",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    }
+   ]
+  },
+  "gpt3": {
+   "id": "ARXIV:2005.14165",
+   "paperId": "90abbc2cf38462b954ae1b772fac9532e2ccd8b0",
+   "title": "Language Models are Few-Shot Learners",
+   "year": 2020,
+   "date": "2020-05-28",
+   "venue": "Neural Information Processing Systems",
+   "cites": 66384,
+   "influential": 5637,
+   "arxiv": "2005.14165",
+   "n_refs": 146,
+   "refs": [
+    {
+     "to": "rag",
+     "inf": true,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "realm",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "scaling",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "t5",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "transformer",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "moe",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "distill",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "word2vec",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "bert",
+     "inf": false,
+     "intents": []
+    }
+   ]
+  },
+  "chinchilla": {
+   "id": "ARXIV:2203.15556",
+   "paperId": "8342b592fe238f3d230e4959b06fd10153c45db1",
+   "title": "Training Compute-Optimal Large Language Models",
+   "year": 2022,
+   "date": "2022-03-29",
+   "venue": "Advances in Neural Information Processing Systems 35",
+   "cites": 4042,
+   "influential": 374,
+   "arxiv": "2203.15556",
+   "n_refs": 79,
+   "refs": [
+    {
+     "to": "gpt3",
+     "inf": true,
+     "intents": []
+    },
+    {
+     "to": "rag",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "realm",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "scaling",
+     "inf": true,
+     "intents": []
+    },
+    {
+     "to": "t5",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "transformer",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "adam",
+     "inf": true,
+     "intents": []
+    }
+   ]
+  },
+  "llama": {
+   "id": "ARXIV:2302.13971",
+   "paperId": "57e849d0de13ed5f91d086936296721d4ff75a75",
+   "title": "LLaMA: Open and Efficient Foundation Language Models",
+   "year": 2023,
+   "date": "2023-02-27",
+   "venue": "arXiv.org",
+   "cites": 22584,
+   "influential": 2312,
+   "arxiv": "2302.13971",
+   "n_refs": 81,
+   "refs": [
+    {
+     "to": "flashattn",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "chinchilla",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "self-consistency",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "instructgpt",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "gpt3",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "scaling",
+     "inf": false,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    },
+    {
+     "to": "t5",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "transformer",
+     "inf": false,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    },
+    {
+     "to": "bert",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    }
+   ]
+  },
+  "vae": {
+   "id": "ARXIV:1312.6114",
+   "paperId": "5f5dc5b9a2ba710937e2c413b37b053cd673df02",
+   "title": "Auto-Encoding Variational Bayes",
+   "year": 2013,
+   "date": "2013-12-20",
+   "venue": "International Conference on Learning Representations",
+   "cites": 18899,
+   "influential": 3221,
+   "arxiv": "1312.6114",
+   "n_refs": 26,
+   "refs": []
+  },
+  "stylegan": {
+   "id": "ARXIV:1812.04948",
+   "paperId": "ceb2ebef0b41e31c1a21b28c2734123900c005e2",
+   "title": "A Style-Based Generator Architecture for Generative Adversarial Networks",
+   "year": 2018,
+   "date": "2018-12-12",
+   "venue": "Computer Vision and Pattern Recognition",
+   "cites": 14005,
+   "influential": 2129,
+   "arxiv": "1812.04948",
+   "n_refs": 64,
+   "refs": [
+    {
+     "to": "batchnorm",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "adam",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "vgg",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "vae",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    }
+   ]
+  },
+  "ddpm": {
+   "id": "ARXIV:2006.11239",
+   "paperId": "5c126ae3421f05768d8edd97ecd44b1364e2c99a",
+   "title": "Denoising Diffusion Probabilistic Models",
+   "year": 2020,
+   "date": "2020-06-19",
+   "venue": "Neural Information Processing Systems",
+   "cites": 37656,
+   "influential": 5144,
+   "arxiv": "2006.11239",
+   "n_refs": 73,
+   "refs": [
+    {
+     "to": "stylegan",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "transformer",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "wavenet",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "unet",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "adam",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "vae",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    }
+   ]
+  },
+  "score-sde": {
+   "id": "ARXIV:2011.13456",
+   "paperId": "633e2fbfc0b21e959a244100937c5853afca4853",
+   "title": "Score-Based Generative Modeling through Stochastic Differential Equations",
+   "year": 2020,
+   "date": "2020-11-26",
+   "venue": "International Conference on Learning Representations",
+   "cites": 13024,
+   "influential": 2068,
+   "arxiv": "2011.13456",
+   "n_refs": 65,
+   "refs": [
+    {
+     "to": "ddpm",
+     "inf": true,
+     "intents": []
+    },
+    {
+     "to": "stylegan",
+     "inf": false,
+     "intents": []
+    }
+   ]
+  },
+  "ldm": {
+   "id": "ARXIV:2112.10752",
+   "paperId": "f58acfeb022ba15282ec5fc047c98010311fa9da",
+   "title": "High-Resolution Image Synthesis with Latent Diffusion Models",
+   "year": 2021,
+   "date": "2021-12-20",
+   "venue": "Computer Vision and Pattern Recognition",
+   "cites": 28975,
+   "influential": 5942,
+   "arxiv": "2112.10752",
+   "n_refs": 110,
+   "refs": [
+    {
+     "to": "cfg",
+     "inf": true,
+     "intents": []
+    },
+    {
+     "to": "clip",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "score-sde",
+     "inf": true,
+     "intents": []
+    },
+    {
+     "to": "ddpm",
+     "inf": true,
+     "intents": []
+    },
+    {
+     "to": "stylegan",
+     "inf": true,
+     "intents": []
+    },
+    {
+     "to": "transformer",
+     "inf": true,
+     "intents": []
+    },
+    {
+     "to": "unet",
+     "inf": true,
+     "intents": []
+    },
+    {
+     "to": "vgg",
+     "inf": true,
+     "intents": []
+    },
+    {
+     "to": "vae",
+     "inf": true,
+     "intents": []
+    },
+    {
+     "to": "bert",
+     "inf": false,
+     "intents": []
+    }
+   ]
+  },
+  "cfg": {
+   "id": "ARXIV:2207.12598",
+   "paperId": "af9f365ed86614c800f082bd8eb14be76072ad16",
+   "title": "Classifier-Free Diffusion Guidance",
+   "year": 2022,
+   "date": "2022-07-26",
+   "venue": "arXiv.org",
+   "cites": 7765,
+   "influential": 1130,
+   "arxiv": "2207.12598",
+   "n_refs": 25,
+   "refs": [
+    {
+     "to": "score-sde",
+     "inf": false,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    },
+    {
+     "to": "ddpm",
+     "inf": true,
+     "intents": [
+      "background"
+     ]
+    }
+   ]
+  },
+  "dit": {
+   "id": "ARXIV:2212.09748",
+   "paperId": "736973165f98105fec3729b7db414ae4d80fcbeb",
+   "title": "Scalable Diffusion Models with Transformers",
+   "year": 2022,
+   "date": "2022-12-19",
+   "venue": "IEEE International Conference on Computer Vision",
+   "cites": 8116,
+   "influential": 923,
+   "arxiv": "2212.09748",
+   "n_refs": 69,
+   "refs": [
+    {
+     "to": "cfg",
+     "inf": false,
+     "intents": [
+      "methodology",
+      "background"
+     ]
+    },
+    {
+     "to": "ldm",
+     "inf": true,
+     "intents": [
+      "methodology",
+      "background"
+     ]
+    },
+    {
+     "to": "decision-transformer",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "clip",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "vit",
+     "inf": true,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    },
+    {
+     "to": "ddpm",
+     "inf": true,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    },
+    {
+     "to": "gpt3",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "scaling",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "stylegan",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "transformer",
+     "inf": false,
+     "intents": [
+      "methodology",
+      "background"
+     ]
+    },
+    {
+     "to": "resnet",
+     "inf": false,
+     "intents": [
+      "methodology",
+      "background"
+     ]
+    },
+    {
+     "to": "unet",
+     "inf": false,
+     "intents": [
+      "background",
+      "result"
+     ]
+    },
+    {
+     "to": "adam",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "alexnet",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "bert",
+     "inf": false,
+     "intents": []
+    }
+   ]
+  },
+  "rlhf": {
+   "id": "ARXIV:1706.03741",
+   "paperId": "5bbb6f9a8204eb13070b6f033e61c84ef8ee68dd",
+   "title": "Deep Reinforcement Learning from Human Preferences",
+   "year": 2017,
+   "date": "2017-06-12",
+   "venue": "Neural Information Processing Systems",
+   "cites": 6364,
+   "influential": 704,
+   "arxiv": "1706.03741",
+   "n_refs": 45,
+   "refs": [
+    {
+     "to": "alphago",
+     "inf": true,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "dqn",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    }
+   ]
+  },
+  "cot": {
+   "id": "ARXIV:2201.11903",
+   "paperId": "1b6e810ce0afd0dd093f789d2b2742d047e316d5",
+   "title": "Chain of Thought Prompting Elicits Reasoning in Large Language Models",
+   "year": 2022,
+   "date": "2022-01-28",
+   "venue": "Neural Information Processing Systems",
+   "cites": 23784,
+   "influential": 1490,
+   "arxiv": "2201.11903",
+   "n_refs": 119,
+   "refs": [
+    {
+     "to": "self-consistency",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "instructgpt",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "gpt3",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "scaling",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "t5",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "bert",
+     "inf": false,
+     "intents": []
+    }
+   ]
+  },
+  "instructgpt": {
+   "id": "ARXIV:2203.02155",
+   "paperId": "d766bffc357127e0dc86dd69561d5aeb520d6f4c",
+   "title": "Training language models to follow instructions with human feedback",
+   "year": 2022,
+   "date": "2022-03-04",
+   "venue": "Neural Information Processing Systems",
+   "cites": 25838,
+   "influential": 2554,
+   "arxiv": "2203.02155",
+   "n_refs": 83,
+   "refs": [
+    {
+     "to": "gpt3",
+     "inf": true,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    },
+    {
+     "to": "ppo",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "rlhf",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    }
+   ]
+  },
+  "self-consistency": {
+   "id": "ARXIV:2203.11171",
+   "paperId": "5f19ae1135a9500940978104ec15a5b8751bc7d2",
+   "title": "Self-Consistency Improves Chain of Thought Reasoning in Language Models",
+   "year": 2022,
+   "date": "2022-03-21",
+   "venue": "International Conference on Learning Representations",
+   "cites": 8243,
+   "influential": 977,
+   "arxiv": "2203.11171",
+   "n_refs": 81,
+   "refs": [
+    {
+     "to": "cot",
+     "inf": true,
+     "intents": [
+      "methodology",
+      "background"
+     ]
+    },
+    {
+     "to": "gpt3",
+     "inf": true,
+     "intents": [
+      "background"
+     ]
+    }
+   ]
+  },
+  "cai": {
+   "id": "ARXIV:2212.08073",
+   "paperId": "3936fd3c6187f606c6e4e2e20b196dbc41cc4654",
+   "title": "Constitutional AI: Harmlessness from AI Feedback",
+   "year": 2022,
+   "date": "2022-12-15",
+   "venue": "arXiv.org",
+   "cites": 3993,
+   "influential": 268,
+   "arxiv": "2212.08073",
+   "n_refs": 77,
+   "refs": [
+    {
+     "to": "instructgpt",
+     "inf": true,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    },
+    {
+     "to": "cot",
+     "inf": true,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "rlhf",
+     "inf": false,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    }
+   ]
+  },
+  "dpo": {
+   "id": "ARXIV:2305.18290",
+   "paperId": "0d1c76d45afa012ded7ab741194baf142117c495",
+   "title": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model",
+   "year": 2023,
+   "date": "2023-05-29",
+   "venue": "Neural Information Processing Systems",
+   "cites": 11584,
+   "influential": 2390,
+   "arxiv": "2305.18290",
+   "n_refs": 59,
+   "refs": [
+    {
+     "to": "llama",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "cai",
+     "inf": false,
+     "intents": [
+      "methodology",
+      "background"
+     ]
+    },
+    {
+     "to": "instructgpt",
+     "inf": true,
+     "intents": [
+      "methodology",
+      "background"
+     ]
+    },
+    {
+     "to": "gpt3",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "ppo",
+     "inf": true,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "rlhf",
+     "inf": false,
+     "intents": [
+      "methodology",
+      "background"
+     ]
+    }
+   ]
+  },
+  "realm": {
+   "id": "ARXIV:2002.08909",
+   "paperId": "832fff14d2ed50eb7969c4c4b976c35776548f56",
+   "title": "REALM: Retrieval-Augmented Language Model Pre-Training",
+   "year": 2020,
+   "date": "2020-02-10",
+   "venue": "International Conference on Machine Learning",
+   "cites": 3631,
+   "influential": 255,
+   "arxiv": "2002.08909",
+   "n_refs": 43,
+   "refs": [
+    {
+     "to": "t5",
+     "inf": true,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    },
+    {
+     "to": "bahdanau",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "word2vec",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "bert",
+     "inf": true,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    }
+   ]
+  },
+  "dpr": {
+   "id": "ARXIV:2004.04906",
+   "paperId": "b26f2037f769d5ffc5f7bdcec2de8da28ec14bee",
+   "title": "Dense Passage Retrieval for Open-Domain Question Answering",
+   "year": 2020,
+   "date": "2020-04-10",
+   "venue": "Conference on Empirical Methods in Natural Language Processing",
+   "cites": 7848,
+   "influential": 1162,
+   "arxiv": "2004.04906",
+   "n_refs": 55,
+   "refs": [
+    {
+     "to": "rag",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "realm",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "t5",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "bert",
+     "inf": false,
+     "intents": []
+    }
+   ]
+  },
+  "rag": {
+   "id": "ARXIV:2005.11401",
+   "paperId": "659bf9ce7175e1ec266ff54359e2bd76e0b7ff31",
+   "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+   "year": 2020,
+   "date": "2020-05-22",
+   "venue": "Neural Information Processing Systems",
+   "cites": 20878,
+   "influential": 1828,
+   "arxiv": "2005.11401",
+   "n_refs": 66,
+   "refs": [
+    {
+     "to": "dpr",
+     "inf": true,
+     "intents": [
+      "methodology",
+      "result",
+      "background"
+     ]
+    },
+    {
+     "to": "realm",
+     "inf": true,
+     "intents": [
+      "methodology",
+      "background"
+     ]
+    },
+    {
+     "to": "t5",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "transformer",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "adam",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "bert",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    }
+   ]
+  },
+  "lost-middle": {
+   "id": "ARXIV:2307.03172",
+   "paperId": "1733eb7792f7a43dd21f51f4d1017a1bffd217b5",
+   "title": "Lost in the Middle: How Language Models Use Long Contexts",
+   "year": 2023,
+   "date": "2023-07-06",
+   "venue": "Transactions of the Association for Computational Linguistics",
+   "cites": 5942,
+   "influential": 340,
+   "arxiv": "2307.03172",
+   "n_refs": 59,
+   "refs": [
+    {
+     "to": "llama",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "toolformer",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "flashattn",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "t5",
+     "inf": true,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "transformer",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    }
+   ]
+  },
+  "self-rag": {
+   "id": "ARXIV:2310.11511",
+   "paperId": "ddbd8fe782ac98e9c64dd98710687a962195dd9b",
+   "title": "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection",
+   "year": 2023,
+   "date": "2023-10-17",
+   "venue": "International Conference on Learning Representations",
+   "cites": 3086,
+   "influential": 269,
+   "arxiv": "2310.11511",
+   "n_refs": 57,
+   "refs": [
+    {
+     "to": "vllm",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "toolformer",
+     "inf": true,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "flashattn",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "instructgpt",
+     "inf": true,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    },
+    {
+     "to": "rag",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "realm",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "ppo",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    }
+   ]
+  },
+  "graphrag": {
+   "id": "ARXIV:2404.16130",
+   "paperId": "c1799bf28d1ae93e1631be5b59196ee1e568f538",
+   "title": "From Local to Global: A Graph RAG Approach to Query-Focused Summarization",
+   "year": 2024,
+   "date": "2024-04-24",
+   "venue": "arXiv.org",
+   "cites": 2566,
+   "influential": 351,
+   "arxiv": "2404.16130",
+   "n_refs": 57,
+   "refs": [
+    {
+     "to": "lost-middle",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "gpt3",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "rag",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    }
+   ]
+  },
+  "react": {
+   "id": "ARXIV:2210.03629",
+   "paperId": "99832586d55f540f603637e458a292406a0ed75d",
+   "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+   "year": 2022,
+   "date": "2022-10-06",
+   "venue": "International Conference on Learning Representations",
+   "cites": 13729,
+   "influential": 1305,
+   "arxiv": "2210.03629",
+   "n_refs": 65,
+   "refs": [
+    {
+     "to": "self-consistency",
+     "inf": true,
+     "intents": []
+    },
+    {
+     "to": "cot",
+     "inf": true,
+     "intents": []
+    },
+    {
+     "to": "gpt3",
+     "inf": true,
+     "intents": []
+    },
+    {
+     "to": "rag",
+     "inf": true,
+     "intents": []
+    }
+   ]
+  },
+  "toolformer": {
+   "id": "ARXIV:2302.04761",
+   "paperId": "53d128ea815bcc0526856eb5a9c42cc977cb36a7",
+   "title": "Toolformer: Language Models Can Teach Themselves to Use Tools",
+   "year": 2023,
+   "date": "2023-02-09",
+   "venue": "Neural Information Processing Systems",
+   "cites": 6601,
+   "influential": 227,
+   "arxiv": "2302.04761",
+   "n_refs": 63,
+   "refs": [
+    {
+     "to": "react",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "gpt3",
+     "inf": true,
+     "intents": [
+      "methodology",
+      "background",
+      "result"
+     ]
+    },
+    {
+     "to": "realm",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "bert",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    }
+   ]
+  },
+  "generative-agents": {
+   "id": "ARXIV:2304.03442",
+   "paperId": "5278a8eb2ba2429d4029745caf4e661080073c81",
+   "title": "Generative Agents: Interactive Simulacra of Human Behavior",
+   "year": 2023,
+   "date": "2023-04-07",
+   "venue": "ACM Symposium on User Interface Software and Technology",
+   "cites": 6416,
+   "influential": 375,
+   "arxiv": "2304.03442",
+   "n_refs": 113,
+   "refs": [
+    {
+     "to": "instructgpt",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "cot",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "gpt3",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    }
+   ]
+  },
+  "swe-bench": {
+   "id": "ARXIV:2310.06770",
+   "paperId": "94a5f96308729e31c1ffbc0f0618db87795092fe",
+   "title": "SWE-bench: Can Language Models Resolve Real-World GitHub Issues?",
+   "year": 2023,
+   "date": "2023-10-10",
+   "venue": "International Conference on Learning Representations",
+   "cites": 4826,
+   "influential": 791,
+   "arxiv": "2310.06770",
+   "n_refs": 64,
+   "refs": [
+    {
+     "to": "lost-middle",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "flashattn",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "lora",
+     "inf": true,
+     "intents": [
+      "methodology"
+     ]
+    }
+   ]
+  },
+  "swe-agent": {
+   "id": "ARXIV:2405.15793",
+   "paperId": "1c3c531fc0fbe79f97f367ed3648de8467caeeaa",
+   "title": "SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering",
+   "year": 2024,
+   "date": "2024-05-06",
+   "venue": "Neural Information Processing Systems",
+   "cites": 2443,
+   "influential": 202,
+   "arxiv": "2405.15793",
+   "n_refs": 0,
+   "refs": []
+  },
+  "moe": {
+   "id": "ARXIV:1701.06538",
+   "paperId": "510e26733aaff585d65701b9f1be7ca9d5afc586",
+   "title": "Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer",
+   "year": 2017,
+   "date": "2017-01-23",
+   "venue": "International Conference on Learning Representations",
+   "cites": 6265,
+   "influential": 585,
+   "arxiv": "1701.06538",
+   "n_refs": 45,
+   "refs": [
+    {
+     "to": "resnet",
+     "inf": true,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "batchnorm",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "adam",
+     "inf": true,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "seq2seq",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "bahdanau",
+     "inf": false,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    },
+    {
+     "to": "alexnet",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    }
+   ]
+  },
+  "lora": {
+   "id": "ARXIV:2106.09685",
+   "paperId": "a8ca46b171467ceb2d7652fbfb67fe701ad86092",
+   "title": "LoRA: Low-Rank Adaptation of Large Language Models",
+   "year": 2021,
+   "date": "2021-06-17",
+   "venue": "International Conference on Learning Representations",
+   "cites": 25584,
+   "influential": 3552,
+   "arxiv": "2106.09685",
+   "n_refs": 65,
+   "refs": [
+    {
+     "to": "gpt3",
+     "inf": true,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "transformer",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "ewc",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "adam",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "bert",
+     "inf": true,
+     "intents": [
+      "background"
+     ]
+    }
+   ]
+  },
+  "flashattn": {
+   "id": "ARXIV:2205.14135",
+   "paperId": "87c5b281fa43e6f27191b20a8dd694eda1126336",
+   "title": "FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness",
+   "year": 2022,
+   "date": "2022-05-27",
+   "venue": "Neural Information Processing Systems",
+   "cites": 5841,
+   "influential": 495,
+   "arxiv": "2205.14135",
+   "n_refs": 111,
+   "refs": [
+    {
+     "to": "vit",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "gpt3",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "transformer",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "bert",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    }
+   ]
+  },
+  "qlora": {
+   "id": "ARXIV:2305.14314",
+   "paperId": "32ac52069e562d4f900afee70bdca63f53461481",
+   "title": "QLoRA: Efficient Finetuning of Quantized LLMs",
+   "year": 2023,
+   "date": "2023-05-23",
+   "venue": "Neural Information Processing Systems",
+   "cites": 6340,
+   "influential": 730,
+   "arxiv": "2305.14314",
+   "n_refs": 72,
+   "refs": [
+    {
+     "to": "llama",
+     "inf": false,
+     "intents": [
+      "methodology",
+      "background"
+     ]
+    },
+    {
+     "to": "cai",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "instructgpt",
+     "inf": false,
+     "intents": [
+      "methodology",
+      "background"
+     ]
+    },
+    {
+     "to": "cot",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "lora",
+     "inf": true,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "t5",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "rlhf",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    }
+   ]
+  },
+  "vllm": {
+   "id": "ARXIV:2309.06180",
+   "paperId": "83b90f4a0ae4cc214eb3cc140ccfef9cd99fac05",
+   "title": "Efficient Memory Management for Large Language Model Serving with PagedAttention",
+   "year": 2023,
+   "date": "2023-09-12",
+   "venue": "Symposium on Operating Systems Principles",
+   "cites": 9997,
+   "influential": 1385,
+   "arxiv": "2309.06180",
+   "n_refs": 62,
+   "refs": [
+    {
+     "to": "llama",
+     "inf": true,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "flashattn",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "gpt3",
+     "inf": true,
+     "intents": []
+    },
+    {
+     "to": "transformer",
+     "inf": false,
+     "intents": [
+      "methodology",
+      "background"
+     ]
+    },
+    {
+     "to": "layernorm",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "resnet",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "seq2seq",
+     "inf": false,
+     "intents": [
+      "methodology",
+      "background"
+     ]
+    }
+   ]
+  },
+  "mamba": {
+   "id": "ARXIV:2312.00752",
+   "paperId": "7bbc7595196a0606a07506c4fb1473e5e87f6082",
+   "title": "Mamba: Linear-Time Sequence Modeling with Selective State Spaces",
+   "year": 2023,
+   "date": "2023-12-01",
+   "venue": "arXiv.org",
+   "cites": 10162,
+   "influential": 1414,
+   "arxiv": "2312.00752",
+   "n_refs": 0,
+   "refs": []
+  },
+  "dqn": {
+   "id": "ARXIV:1312.5602",
+   "paperId": "2319a491378867c7049b3da055c5df60e1671158",
+   "title": "Playing Atari with Deep Reinforcement Learning",
+   "year": 2013,
+   "date": "2013-12-19",
+   "venue": "arXiv.org",
+   "cites": 14221,
+   "influential": 1508,
+   "arxiv": "1312.5602",
+   "n_refs": 30,
+   "refs": []
+  },
+  "alphago": {
+   "id": "DOI:10.1038/nature16961",
+   "paperId": "846aedd869a00c09b40f1f1f35673cb22bc87490",
+   "title": "Mastering the game of Go with deep neural networks and tree search",
+   "year": 2016,
+   "date": "2016-01-27",
+   "venue": "Nature",
+   "cites": 19653,
+   "influential": 666,
+   "arxiv": null,
+   "n_refs": 0,
+   "refs": []
+  },
+  "ppo": {
+   "id": "ARXIV:1707.06347",
+   "paperId": "dce6f9d4017b1785979e7520fd0834ef8cf02f4b",
+   "title": "Proximal Policy Optimization Algorithms",
+   "year": 2017,
+   "date": "2017-07-20",
+   "venue": "arXiv.org",
+   "cites": 33363,
+   "influential": 5400,
+   "arxiv": "1707.06347",
+   "n_refs": 14,
+   "refs": [
+    {
+     "to": "adam",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    }
+   ]
+  },
+  "sac": {
+   "id": "ARXIV:1801.01290",
+   "paperId": "811df72e210e20de99719539505da54762a11c6d",
+   "title": "Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor",
+   "year": 2018,
+   "date": "2018-01-04",
+   "venue": "International Conference on Machine Learning",
+   "cites": 13031,
+   "influential": 2180,
+   "arxiv": "1801.01290",
+   "n_refs": 42,
+   "refs": [
+    {
+     "to": "ppo",
+     "inf": true,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    },
+    {
+     "to": "alphago",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "adam",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "dqn",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    }
+   ]
+  },
+  "decision-transformer": {
+   "id": "ARXIV:2106.01345",
+   "paperId": "c1ad5f9b32d80f1c65d67894e5b8c2fdf0ae4500",
+   "title": "Decision Transformer: Reinforcement Learning via Sequence Modeling",
+   "year": 2021,
+   "date": "2021-06-02",
+   "venue": "Neural Information Processing Systems",
+   "cites": 2646,
+   "influential": 387,
+   "arxiv": "2106.01345",
+   "n_refs": 91,
+   "refs": [
+    {
+     "to": "vit",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "gpt3",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "detr",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "stylegan",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "transformer",
+     "inf": false,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    },
+    {
+     "to": "layernorm",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "dqn",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "bert",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    }
+   ]
+  },
+  "wavenet": {
+   "id": "ARXIV:1609.03499",
+   "paperId": "df0402517a7338ae28bc54acaac400de6b456a46",
+   "title": "WaveNet: A Generative Model for Raw Audio",
+   "year": 2016,
+   "date": "2016-09-12",
+   "venue": "Speech Synthesis Workshop",
+   "cites": 8697,
+   "influential": 915,
+   "arxiv": "1609.03499",
+   "n_refs": 64,
+   "refs": [
+    {
+     "to": "resnet",
+     "inf": true,
+     "intents": [
+      "methodology",
+      "background"
+     ]
+    }
+   ]
+  },
+  "tacotron2": {
+   "id": "ARXIV:1712.05884",
+   "paperId": "1a2599e467e855f845dcbf9282f8bdbd97b85708",
+   "title": "Natural TTS Synthesis by Conditioning Wavenet on MEL Spectrogram Predictions",
+   "year": 2017,
+   "date": "2017-12-16",
+   "venue": "IEEE International Conference on Acoustics, Speech, and Signal Processing",
+   "cites": 3237,
+   "influential": 399,
+   "arxiv": "1712.05884",
+   "n_refs": 31,
+   "refs": [
+    {
+     "to": "wavenet",
+     "inf": false,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    },
+    {
+     "to": "batchnorm",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "adam",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "seq2seq",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "bahdanau",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    }
+   ]
+  },
+  "wav2vec2": {
+   "id": "ARXIV:2006.11477",
+   "paperId": "49a049dc85e2380dde80501a984878341dd8efdf",
+   "title": "wav2vec 2.0: A Framework for Self-Supervised Learning of Speech Representations",
+   "year": 2020,
+   "date": "2020-06-20",
+   "venue": "Neural Information Processing Systems",
+   "cites": 9913,
+   "influential": 3546,
+   "arxiv": "2006.11477",
+   "n_refs": 62,
+   "refs": [
+    {
+     "to": "simclr",
+     "inf": false,
+     "intents": [
+      "methodology",
+      "background"
+     ]
+    },
+    {
+     "to": "moco",
+     "inf": false,
+     "intents": [
+      "methodology",
+      "background"
+     ]
+    },
+    {
+     "to": "transformer",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "layernorm",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "adam",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "bert",
+     "inf": true,
+     "intents": [
+      "methodology",
+      "background"
+     ]
+    }
+   ]
+  },
+  "vits": {
+   "id": "ARXIV:2106.06103",
+   "paperId": "92bf1c069747374fbc3efb55e7a916a3e2d736da",
+   "title": "Conditional Variational Autoencoder with Adversarial Learning for End-to-End Text-to-Speech",
+   "year": 2021,
+   "date": "2021-06-11",
+   "venue": "International Conference on Machine Learning",
+   "cites": 1475,
+   "influential": 166,
+   "arxiv": "2106.06103",
+   "n_refs": 45,
+   "refs": [
+    {
+     "to": "tacotron2",
+     "inf": true,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    },
+    {
+     "to": "transformer",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "wavenet",
+     "inf": false,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    }
+   ]
+  },
+  "hubert": {
+   "id": "ARXIV:2106.07447",
+   "paperId": "4fffa5245d3972077c83614c2a08a47cb578631e",
+   "title": "HuBERT: Self-Supervised Speech Representation Learning by Masked Prediction of Hidden Units",
+   "year": 2021,
+   "date": "2021-06-14",
+   "venue": "IEEE/ACM Transactions on Audio Speech and Language Processing",
+   "cites": 5469,
+   "influential": 1472,
+   "arxiv": "2106.07447",
+   "n_refs": 64,
+   "refs": [
+    {
+     "to": "wav2vec2",
+     "inf": true,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    },
+    {
+     "to": "gpt3",
+     "inf": true,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "moco",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "adam",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "bert",
+     "inf": false,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    }
+   ]
+  },
+  "whisper": {
+   "id": "ARXIV:2212.04356",
+   "paperId": "a02fbaf22237a1aedacb1320b6007cd70c1fe6ec",
+   "title": "Robust Speech Recognition via Large-Scale Weak Supervision",
+   "year": 2022,
+   "date": "2022-12-06",
+   "venue": "International Conference on Machine Learning",
+   "cites": 9478,
+   "influential": 1324,
+   "arxiv": "2212.04356",
+   "n_refs": 100,
+   "refs": [
+    {
+     "to": "hubert",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "clip",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "wav2vec2",
+     "inf": true,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "t5",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "transformer",
+     "inf": true,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "seq2seq",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    }
+   ]
+  },
+  "pointnet": {
+   "id": "ARXIV:1612.00593",
+   "paperId": "d997beefc0922d97202789d2ac307c55c2c52fba",
+   "title": "PointNet: Deep Learning on Point Sets for 3D Classification and Segmentation",
+   "year": 2016,
+   "date": "2016-12-02",
+   "venue": "Computer Vision and Pattern Recognition",
+   "cites": 19073,
+   "influential": 3353,
+   "arxiv": "1612.00593",
+   "n_refs": 34,
+   "refs": []
+  },
+  "nerf": {
+   "id": "ARXIV:2003.08934",
+   "paperId": "428b663772dba998f5dc6a24488fff1858a0899f",
+   "title": "NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis",
+   "year": 2020,
+   "date": "2020-03-19",
+   "venue": "European Conference on Computer Vision",
+   "cites": 1083,
+   "influential": 216,
+   "arxiv": "2003.08934",
+   "n_refs": 57,
+   "refs": [
+    {
+     "to": "transformer",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "adam",
+     "inf": false,
+     "intents": []
+    }
+   ]
+  },
+  "diffusion-policy": {
+   "id": "ARXIV:2303.04137",
+   "paperId": "bdba3bd30a49ea4c5b20b43dbd8f0eb59e9d80e2",
+   "title": "Diffusion policy: Visuomotor policy learning via action diffusion",
+   "year": 2023,
+   "date": "2023-03-07",
+   "venue": "Robotics: Science and Systems Conference",
+   "cites": 5100,
+   "influential": 949,
+   "arxiv": "2303.04137",
+   "n_refs": 71,
+   "refs": [
+    {
+     "to": "clip",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "vit",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "ddpm",
+     "inf": true,
+     "intents": []
+    },
+    {
+     "to": "moco",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "transformer",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "resnet",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "unet",
+     "inf": false,
+     "intents": []
+    }
+   ]
+  },
+  "rt2": {
+   "id": "ARXIV:2307.15818",
+   "paperId": "38939304bb760473141c2aca0305e44fbe04e6e8",
+   "title": "RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control",
+   "year": 2023,
+   "date": "2023-07-28",
+   "venue": "Conference on Robot Learning",
+   "cites": 5096,
+   "influential": 258,
+   "arxiv": "2307.15818",
+   "n_refs": 94,
+   "refs": [
+    {
+     "to": "sam",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "blip2",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "flamingo",
+     "inf": true,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "cot",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "clip",
+     "inf": false,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    },
+    {
+     "to": "gpt3",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    }
+   ]
+  },
+  "3dgs": {
+   "id": "ARXIV:2308.04079",
+   "paperId": "2cc1d857e86d5152ba7fe6a8355c2a0150cc280a",
+   "title": "3D Gaussian Splatting for Real-Time Radiance Field Rendering",
+   "year": 2023,
+   "date": "2023-07-26",
+   "venue": "ACM Transactions on Graphics",
+   "cites": 11378,
+   "influential": 2924,
+   "arxiv": "2308.04079",
+   "n_refs": 59,
+   "refs": [
+    {
+     "to": "nerf",
+     "inf": false,
+     "intents": []
+    }
+   ]
+  },
+  "gcn": {
+   "id": "ARXIV:1609.02907",
+   "paperId": "36eff562f65125511b5dfab68ce7f7a943c27478",
+   "title": "Semi-Supervised Classification with Graph Convolutional Networks",
+   "year": 2016,
+   "date": "2016-09-09",
+   "venue": "International Conference on Learning Representations",
+   "cites": 38682,
+   "influential": 7687,
+   "arxiv": "1609.02907",
+   "n_refs": 40,
+   "refs": [
+    {
+     "to": "resnet",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "adam",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    }
+   ]
+  },
+  "graphsage": {
+   "id": "ARXIV:1706.02216",
+   "paperId": "6b7d6e6416343b2a122f8416e69059ce919026ef",
+   "title": "Inductive Representation Learning on Large Graphs",
+   "year": 2017,
+   "date": "2017-06-07",
+   "venue": "Neural Information Processing Systems",
+   "cites": 22133,
+   "influential": 3052,
+   "arxiv": "1706.02216",
+   "n_refs": 42,
+   "refs": [
+    {
+     "to": "pointnet",
+     "inf": true,
+     "intents": []
+    },
+    {
+     "to": "gcn",
+     "inf": true,
+     "intents": []
+    },
+    {
+     "to": "adam",
+     "inf": false,
+     "intents": []
+    }
+   ]
+  },
+  "gat": {
+   "id": "ARXIV:1710.10903",
+   "paperId": "33998aff64ce51df8dee45989cdca4b6b1329ec4",
+   "title": "Graph Attention Networks",
+   "year": 2017,
+   "date": "2017-10-30",
+   "venue": "International Conference on Learning Representations",
+   "cites": 29839,
+   "influential": 4011,
+   "arxiv": "1710.10903",
+   "n_refs": 47,
+   "refs": [
+    {
+     "to": "transformer",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "graphsage",
+     "inf": true,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "gcn",
+     "inf": true,
+     "intents": [
+      "result",
+      "methodology"
+     ]
+    },
+    {
+     "to": "resnet",
+     "inf": true,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    },
+    {
+     "to": "adam",
+     "inf": true,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "bahdanau",
+     "inf": true,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    }
+   ]
+  },
+  "gin": {
+   "id": "ARXIV:1810.00826",
+   "paperId": "62ed9bf1d83c8db1f9cbf92ea2f57ea90ef683d9",
+   "title": "How Powerful are Graph Neural Networks?",
+   "year": 2018,
+   "date": "2018-10-01",
+   "venue": "International Conference on Learning Representations",
+   "cites": 10880,
+   "influential": 1858,
+   "arxiv": "1810.00826",
+   "n_refs": 44,
+   "refs": [
+    {
+     "to": "gat",
+     "inf": true,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "graphsage",
+     "inf": true,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    },
+    {
+     "to": "pointnet",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "gcn",
+     "inf": true,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    },
+    {
+     "to": "batchnorm",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "adam",
+     "inf": false,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    }
+   ]
+  },
+  "unet": {
+   "id": "ARXIV:1505.04597",
+   "paperId": "6364fdaa0a0eccd823a779fcdd489173f938e91a",
+   "title": "U-Net: Convolutional Networks for Biomedical Image Segmentation",
+   "year": 2015,
+   "date": "2015-05-18",
+   "venue": "International Conference on Medical Image Computing and Computer-Assisted Intervention",
+   "cites": 104924,
+   "influential": 11891,
+   "arxiv": "1505.04597",
+   "n_refs": 18,
+   "refs": [
+    {
+     "to": "vgg",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "alexnet",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    }
+   ]
+  },
+  "chexnet": {
+   "id": "ARXIV:1711.05225",
+   "paperId": "b8e1914c78c0b616e7d081759b1343cbfead42ad",
+   "title": "CheXNet: Radiologist-Level Pneumonia Detection on Chest X-Rays with Deep Learning",
+   "year": 2017,
+   "date": "2017-11-14",
+   "venue": "arXiv.org",
+   "cites": 3745,
+   "influential": 364,
+   "arxiv": "1711.05225",
+   "n_refs": 30,
+   "refs": [
+    {
+     "to": "batchnorm",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "adam",
+     "inf": false,
+     "intents": []
+    }
+   ]
+  },
+  "nnunet": {
+   "id": "ARXIV:1809.10486",
+   "paperId": "849e99219259a2cc28209b02d0c646b7183dd40e",
+   "title": "nnU-Net: Self-adapting Framework for U-Net-Based Medical Image Segmentation",
+   "year": 2018,
+   "date": "2018-09-27",
+   "venue": "Bildverarbeitung für die Medizin",
+   "cites": 1151,
+   "influential": 104,
+   "arxiv": "1809.10486",
+   "n_refs": 19,
+   "refs": [
+    {
+     "to": "unet",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "batchnorm",
+     "inf": false,
+     "intents": []
+    }
+   ]
+  },
+  "transunet": {
+   "id": "ARXIV:2102.04306",
+   "paperId": "24b8a0b02bcb7934967757fc59d273a71ba67e30",
+   "title": "TransUNet: Transformers Make Strong Encoders for Medical Image Segmentation",
+   "year": 2021,
+   "date": "2021-02-08",
+   "venue": "arXiv.org",
+   "cites": 6658,
+   "influential": 872,
+   "arxiv": "2102.04306",
+   "n_refs": 21,
+   "refs": [
+    {
+     "to": "vit",
+     "inf": true,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    },
+    {
+     "to": "transformer",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "resnet",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "unet",
+     "inf": true,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    },
+    {
+     "to": "bert",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    }
+   ]
+  },
+  "medpalm": {
+   "id": "ARXIV:2212.13138",
+   "paperId": "6052486bc9144dc1730c12bf35323af3792a1fd0",
+   "title": "Large language models encode clinical knowledge",
+   "year": 2022,
+   "date": "2022-12-26",
+   "venue": "Nature",
+   "cites": 5828,
+   "influential": 250,
+   "arxiv": "2212.13138",
+   "n_refs": 112,
+   "refs": [
+    {
+     "to": "chinchilla",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "self-consistency",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "instructgpt",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "cot",
+     "inf": true,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    },
+    {
+     "to": "gpt3",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "scaling",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "t5",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "transformer",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    }
+   ]
+  },
+  "eegnet": {
+   "id": "ARXIV:1611.08024",
+   "paperId": "64a2261b178f09e19a4dbbe5296f9f15cee053e3",
+   "title": "EEGNet: a compact convolutional neural network for EEG-based brain–computer interfaces",
+   "year": 2016,
+   "date": "2016-11-23",
+   "venue": "Journal of Neural Engineering",
+   "cites": 5143,
+   "influential": 643,
+   "arxiv": "1611.08024",
+   "n_refs": 138,
+   "refs": [
+    {
+     "to": "resnet",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "batchnorm",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "adam",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "vgg",
+     "inf": true,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    },
+    {
+     "to": "alexnet",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    }
+   ]
+  },
+  "informer": {
+   "id": "ARXIV:2012.07436",
+   "paperId": "5b9d8bcc46b766b47389c912a8e026f81b91b0d8",
+   "title": "Informer: Beyond Efficient Transformer for Long Sequence Time-Series Forecasting",
+   "year": 2020,
+   "date": "2020-12-14",
+   "venue": "AAAI Conference on Artificial Intelligence",
+   "cites": 9608,
+   "influential": 848,
+   "arxiv": "2012.07436",
+   "n_refs": 57,
+   "refs": [
+    {
+     "to": "gpt3",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "transformer",
+     "inf": true,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    },
+    {
+     "to": "seq2seq",
+     "inf": false,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    },
+    {
+     "to": "bahdanau",
+     "inf": false,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    },
+    {
+     "to": "bert",
+     "inf": false,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    }
+   ]
+  },
+  "anomaly-transformer": {
+   "id": "ARXIV:2110.02642",
+   "paperId": "a46b06a4b8b4deecf96a4e42cd19b4696f999e66",
+   "title": "Anomaly Transformer: Time Series Anomaly Detection with Association Discrepancy",
+   "year": 2021,
+   "date": "2021-10-06",
+   "venue": "International Conference on Learning Representations",
+   "cites": 1402,
+   "influential": 234,
+   "arxiv": "2110.02642",
+   "n_refs": 49,
+   "refs": [
+    {
+     "to": "informer",
+     "inf": false,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    },
+    {
+     "to": "vit",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "gpt3",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "transformer",
+     "inf": true,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    },
+    {
+     "to": "adam",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "swin",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "bert",
+     "inf": true,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    }
+   ]
+  },
+  "patchtst": {
+   "id": "ARXIV:2211.14730",
+   "paperId": "dad15404d372a23b4b3bf9a63b3124693df3c85e",
+   "title": "A Time Series is Worth 64 Words: Long-term Forecasting with Transformers",
+   "year": 2022,
+   "date": "2022-11-27",
+   "venue": "International Conference on Learning Representations",
+   "cites": 5373,
+   "influential": 889,
+   "arxiv": "2211.14730",
+   "n_refs": 45,
+   "refs": [
+    {
+     "to": "hubert",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "informer",
+     "inf": true,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    },
+    {
+     "to": "vit",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "wav2vec2",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "transformer",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "bert",
+     "inf": true,
+     "intents": [
+      "methodology"
+     ]
+    }
+   ]
+  },
+  "dann": {
+   "id": "ARXIV:1505.07818",
+   "paperId": "1d5972b32a9b5a455a6eef389de5b7fca25771ad",
+   "title": "Domain-Adversarial Training of Neural Networks",
+   "year": 2015,
+   "date": "2015-05-28",
+   "venue": "Journal of machine learning research",
+   "cites": 12727,
+   "influential": 1775,
+   "arxiv": "1505.07818",
+   "n_refs": 68,
+   "refs": [
+    {
+     "to": "alexnet",
+     "inf": false,
+     "intents": []
+    }
+   ]
+  },
+  "ewc": {
+   "id": "ARXIV:1612.00796",
+   "paperId": "2e55ba6c97ce5eb55abd959909403fe8da7e9fe9",
+   "title": "Overcoming catastrophic forgetting in neural networks",
+   "year": 2016,
+   "date": "2016-12-02",
+   "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+   "cites": 11730,
+   "influential": 1538,
+   "arxiv": "1612.00796",
+   "n_refs": 50,
+   "refs": [
+    {
+     "to": "alexnet",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    }
+   ]
+  },
+  "ood-baseline": {
+   "id": "ARXIV:1610.02136",
+   "paperId": "6ff2a434578ff2746b9283e45abf296887f48a2d",
+   "title": "A Baseline for Detecting Misclassified and Out-of-Distribution Examples in Neural Networks",
+   "year": 2016,
+   "date": "2016-10-07",
+   "venue": "International Conference on Learning Representations",
+   "cites": 4940,
+   "influential": 898,
+   "arxiv": "1610.02136",
+   "n_refs": 47,
+   "refs": [
+    {
+     "to": "adam",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    }
+   ]
+  },
+  "l2p": {
+   "id": "ARXIV:2112.08654",
+   "paperId": "b526c3c450d9810ae8b037b4a87bf2a22ac48b38",
+   "title": "Learning to Prompt for Continual Learning",
+   "year": 2021,
+   "date": "2021-12-16",
+   "venue": "Computer Vision and Pattern Recognition",
+   "cites": 1505,
+   "influential": 342,
+   "arxiv": "2112.08654",
+   "n_refs": 68,
+   "refs": [
+    {
+     "to": "lora",
+     "inf": false,
+     "intents": [
+      "background"
+     ]
+    },
+    {
+     "to": "vit",
+     "inf": true,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    },
+    {
+     "to": "t5",
+     "inf": false,
+     "intents": [
+      "background",
+      "methodology"
+     ]
+    },
+    {
+     "to": "transformer",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    },
+    {
+     "to": "ewc",
+     "inf": false,
+     "intents": []
+    },
+    {
+     "to": "adam",
+     "inf": false,
+     "intents": [
+      "methodology"
+     ]
+    }
+   ]
+  },
+  "gan": {
+   "id": "c68796f833a7151f0a63d1d1608dc902b4fdc9b6",
+   "paperId": "c68796f833a7151f0a63d1d1608dc902b4fdc9b6",
+   "title": "GENERATIVE ADVERSARIAL NETS",
+   "year": 2018,
+   "date": null,
+   "venue": "",
+   "cites": 47814,
+   "influential": 4800,
+   "arxiv": null,
+   "n_refs": 0,
+   "refs": []
+  }
+ }
+}

@@ -896,6 +896,16 @@
    "check": "AIX 연구실 Publications 목록에 있는 논문만 골랐다. A5100406187에는 심장이식 등 다른 Changhee Lee 논문이 섞여 있음",
    "papers": [
     {
+     "title": "Conditional Information Bottleneck Approach for Time Series Imputation",
+     "year": 2024,
+     "venue": "International Conference on Learning Representations",
+     "cites": 28,
+     "url": "https://www.semanticscholar.org/paper/52ee0b94390f2c50aa6e1d17bbe54de45c3a621b",
+     "openalex": "S2:52ee0b94390f2c50aa6e1d17bbe54de45c3a621b",
+     "abstract": "",
+     "source": "Semantic Scholar"
+    },
+    {
      "title": "Mobility Management Paradigm Shift: From Reactive to Proactive Handover Using AI/ML",
      "year": 2024,
      "venue": "IEEE Network",
@@ -905,39 +915,32 @@
      "abstract": ""
     },
     {
+     "title": "T-Phenotype: Discovering Phenotypes of Predictive Temporal Patterns in Disease Progression",
+     "year": 2023,
+     "venue": "International Conference on Artificial Intelligence and Statistics",
+     "cites": 14,
+     "url": "https://doi.org/10.48550/arXiv.2302.12619",
+     "openalex": "S2:3db6e87adc7f15f255848faeef101ecebb6d98c2",
+     "abstract": "",
+     "source": "Semantic Scholar"
+    },
+    {
+     "title": "Stochastic Encodings for Active Feature Acquisition",
+     "year": 2025,
+     "venue": "International Conference on Machine Learning",
+     "cites": 13,
+     "url": "https://doi.org/10.48550/arXiv.2508.01957",
+     "openalex": "S2:2f28ad4a7e3208ee66b02acfd3130a727dd8fe46",
+     "abstract": "",
+     "source": "Semantic Scholar"
+    },
+    {
      "title": "A pediatric emergency prediction model using natural language process in the pediatric emergency department",
      "year": 2025,
      "venue": "Scientific Reports",
      "cites": 10,
      "url": "https://doi.org/10.1038/s41598-025-87161-x",
      "openalex": "W4406964147",
-     "abstract": ""
-    },
-    {
-     "title": "Enhancing Anomaly Detection via Generating Diversified and Hard-to-distinguish Synthetic Anomalies",
-     "year": 2024,
-     "venue": "ACM International Conference on Information and Knowledge Management (CIKM)",
-     "cites": 8,
-     "url": "https://doi.org/10.1145/3627673.3679623",
-     "openalex": "W4403582571",
-     "abstract": ""
-    },
-    {
-     "title": "A predictive algorithm for perioperative complications and readmission after ankle arthrodesis",
-     "year": 2024,
-     "venue": "European Journal of Orthopaedic Surgery & Traumatology",
-     "cites": 6,
-     "url": "https://doi.org/10.1007/s00590-023-03805-6",
-     "openalex": "W4390585500",
-     "abstract": ""
-    },
-    {
-     "title": "DSG-KD: Knowledge Distillation From Domain-Specific to General Language Models",
-     "year": 2024,
-     "venue": "IEEE Access",
-     "cites": 6,
-     "url": "https://doi.org/10.1109/access.2024.3457850",
-     "openalex": "W4402435299",
      "abstract": ""
     }
    ]
@@ -1190,9 +1193,30 @@
    "lab_url": "https://aii.korea.ac.kr",
    "name_en": "Sungjoon Choi",
    "openalex": [],
-   "confidence": "low",
-   "check": "2025년 Google Research에서 옮겨 옴(연구실 People 페이지). OpenAlex에서 Google 소속 Sungjoon Choi 저자 ID를 찾지 못함. 연구실 목록의 2026 논문 2편(ECCV 2026, 프리프린트)을 제목으로 찾는 단계가 남음",
-   "papers": []
+   "confidence": "medium",
+   "check": "2025년 Google Research에서 옮겨 옴(연구실 People 페이지). OpenAlex에서 Google 소속 Sungjoon Choi 저자 ID를 찾지 못함. 연구실 목록의 2026 논문 2편(ECCV 2026, 프리프린트)을 제목으로 찾는 단계가 남음 2026-11-11 연구실 목록 제목을 Semantic Scholar 제목 일치로 찾음.",
+   "papers": [
+    {
+     "title": "Formalizing the Sampling Design Space of Diffusion-Based Generative Models via Adaptive Solvers and Wasserstein-Bounded Timesteps",
+     "year": 2026,
+     "venue": "arXiv.org",
+     "cites": 5,
+     "url": "https://doi.org/10.48550/arXiv.2602.12624",
+     "openalex": "S2:9ca39dd3da0e783b97e894e1661d47ecb3226e7f",
+     "abstract": "",
+     "source": "Semantic Scholar"
+    },
+    {
+     "title": "Flow Straight to Reality: Perceptually Consistent Flow Matching for Efficient Image Restoration",
+     "year": 2026,
+     "venue": "European Conference on Computer Vision",
+     "cites": 2,
+     "url": "https://doi.org/10.1007/978-3-032-37718-0_14",
+     "openalex": "S2:d7444c24aaff7dad9b2c240e4aa5054f478210aa",
+     "abstract": "",
+     "source": "Semantic Scholar"
+    }
+   ]
   },
   {
    "name": "Christian Wallraven",
@@ -1269,6 +1293,16 @@
    "check": "SDML 연구실 Publications 목록과 5편 대조(모두 있음). 3D 프린팅 분야 Anh Tong(A5038745824)은 다른 사람",
    "papers": [
     {
+     "title": "Neural ODE Transformers: Analyzing Internal Dynamics and Adaptive Fine-tuning",
+     "year": 2025,
+     "venue": "International Conference on Learning Representations",
+     "cites": 15,
+     "url": "https://doi.org/10.48550/arXiv.2503.01329",
+     "openalex": "S2:07d820da965aacab1dcba634816abbef85c2f91e",
+     "abstract": "",
+     "source": "Semantic Scholar"
+    },
+    {
      "title": "SigFormer: Signature Transformers for Deep Hedging",
      "year": 2023,
      "venue": "ACM International Conference on AI in Finance (ICAIF)",
@@ -1302,15 +1336,6 @@
      "cites": 2,
      "url": "https://doi.org/10.1609/aaai.v39i18.34166",
      "openalex": "W4409347647",
-     "abstract": ""
-    },
-    {
-     "title": "LoCo: Low-Rank Compositional Rotation Fine-Tuning",
-     "year": 2026,
-     "venue": "International Joint Conference on Artificial Intelligence",
-     "cites": 1,
-     "url": "https://doi.org/10.24963/ijcai.2026/521",
-     "openalex": "W7161543301",
      "abstract": ""
     }
    ]
@@ -1518,6 +1543,16 @@
      "abstract": ""
     },
     {
+     "title": "Neural Stochastic Differential Games for Time-series Analysis",
+     "year": 2023,
+     "venue": "International Conference on Machine Learning",
+     "cites": 3,
+     "url": "https://www.semanticscholar.org/paper/7a8cefd4d84584444d8ec952461bbcb482cb2761",
+     "openalex": "S2:7a8cefd4d84584444d8ec952461bbcb482cb2761",
+     "abstract": "",
+     "source": "Semantic Scholar"
+    },
+    {
      "title": "Mean-field Chaos Diffusion Models",
      "year": 2024,
      "venue": "arXiv (Cornell University)",
@@ -1525,9 +1560,20 @@
      "url": "https://doi.org/10.48550/arxiv.2406.05396",
      "openalex": "W4399554773",
      "abstract": ""
+    },
+    {
+     "title": "Neural Hamiltonian Diffusions for Modeling Structured Geometric Dynamics",
+     "year": 2025,
+     "venue": "Neural Information Processing Systems",
+     "cites": 1,
+     "url": "https://doi.org/10.52202/085713-5286",
+     "openalex": "S2:dbbb0fecf5fdbacdb7e1e739f496fd2261ffdae0",
+     "abstract": "",
+     "source": "Semantic Scholar"
     }
    ]
   }
  ],
- "pending": "OpenAlex 무키 일일 한도 소진으로 미완료: 제목 조회 이승규, 이창희, 최성준B, Anh Tong, 박성우 / 초록"
+ "pending": "OpenAlex 무키 일일 한도 소진으로 미완료: 제목 조회 이승규, 이창희, 최성준B, Anh Tong, 박성우 / 초록",
+ "note": "OpenAlex 한도로 못 찾은 제목은 2026-11-11 Semantic Scholar 제목 일치 검색으로 채웠다(openalex 칸이 S2:로 시작)."
 }
