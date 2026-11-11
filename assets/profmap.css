@@ -34,7 +34,7 @@
 
 /* 노선도 옆 교수님 목록 */
 .pm-layout { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 16px; align-items: start; }
-.pm-side { position: sticky; top: 12px; max-height: calc(100vh - 24px); display: flex; flex-direction: column; border: 1px solid var(--color-border); border-radius: var(--radius-lg); background: #fff; box-shadow: var(--shadow); overflow: hidden; }
+.pm-side { position: sticky; top: calc(var(--pm-head, 72px) + 12px); max-height: calc(100vh - var(--pm-head, 72px) - 24px); display: flex; flex-direction: column; border: 1px solid var(--color-border); border-radius: var(--radius-lg); background: #fff; box-shadow: var(--shadow); overflow: hidden; }
 .pm-sh { padding: 14px 16px 6px; }
 .pm-sh h2 { margin: 0; font-size: 18px; }
 .pm-sh h2 small { font-size: 13px; font-weight: 600; color: var(--color-text-soft); }
@@ -68,11 +68,24 @@
 .pm-mini i { flex: none; width: 9px; height: 9px; border-radius: 2px; transform: translateY(1px); }
 .pm-mini a { color: var(--color-text); }
 .pm-mini small { display: block; color: var(--color-text-soft); font-size: 11.5px; }
+.pm-sh { position: relative; }
+.pm-fold { position: absolute; top: 10px; right: 10px; min-height: 36px; padding: 0 12px; border: 1px solid var(--color-border-strong); border-radius: 8px; background: #fff; font: inherit; font-size: 13px; font-weight: 600; color: var(--color-text-muted); cursor: pointer; }
+.pm-fold:hover { border-color: #8b1538; color: #8b1538; }
+.pm-unfold { display: none; }
+@media (min-width: 1001px) {
+  .pm-layout.folded { grid-template-columns: minmax(0, 1fr) 48px; }
+  .pm-layout.folded .pm-side > :not(.pm-unfold) { display: none; }
+  .pm-layout.folded .pm-unfold { display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; min-height: 220px; padding: 14px 0; border: 0; background: #fff; font: inherit; font-size: 14px; font-weight: 700; color: var(--color-text); writing-mode: vertical-rl; cursor: pointer; }
+  .pm-layout.folded .pm-unfold b { color: #8b1538; }
+  .pm-layout.folded .pm-unfold:hover { background: #f8f6f2; color: #8b1538; }
+}
+.pm-fold:focus-visible, .pm-unfold:focus-visible { outline: 2px solid #8b1538; outline-offset: -2px; }
 .pm-none { padding: 12px 8px; font-size: 14px; color: var(--color-text-muted); }
 @media (max-width: 1000px) {
   .pm-layout { grid-template-columns: 1fr; }
   .pm-side { position: static; max-height: none; order: -1; }
   .pm-list { max-height: 46vh; }
+  .pm-fold { display: none; }
 }
 
 /* svg 시작 */

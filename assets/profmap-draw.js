@@ -221,11 +221,25 @@
   };
   function side() {
     const box = $('#pmSide');
-    box.innerHTML = '<div class="pm-sh"><h2>교수님 <small>' + PROFS.length + '명</small></h2><p>논문지도를 맡을 수 있는 정보대학 전임교원입니다. 칸 하나가 논문 한 편, 색은 노선, 회색은 노선 밖입니다.</p></div>'
+    box.innerHTML = '<button type="button" class="pm-unfold" aria-label="교수님 목록 펴기">교수님 목록 펴기 <b>' + PROFS.length + '</b></button>'
+      + '<div class="pm-sh"><button type="button" class="pm-fold" aria-label="교수님 목록 접기" title="목록을 접으면 노선도가 넓어집니다">접기</button><h2>교수님 <small>' + PROFS.length + '명</small></h2><p>논문지도를 맡을 수 있는 정보대학 전임교원입니다. 칸 하나가 논문 한 편, 색은 노선, 회색은 노선 밖입니다.</p></div>'
       + '<div class="pm-tabs" role="group" aria-label="학과 고르기">' + [null].concat(DEPTS).map(d =>
         '<button type="button" data-dept="' + esc(d || '') + '" aria-pressed="' + (flt.dept === d) + '">' + esc(d ? d.replace(/학과$/, '') : '전체') + ' <b>' + PROFS.filter(p => !d || p.dept === d).length + '</b></button>').join('') + '</div>'
       + '<label class="pm-q"><span class="sr">교수님 이름이나 연구실로 찾기</span><input type="search" id="pmQ" placeholder="이름, 연구실로 찾기" autocomplete="off" value="' + esc(flt.q) + '"></label>'
       + '<div class="pm-list" id="pmList"></div>';
+    // 목록 접기: 노선도가 넓어진다. 고른 상태는 이 브라우저에만 기억한다
+    const lay = $('.pm-layout');
+    const fold = on => {
+      lay.classList.toggle('folded', on);
+      box.querySelector('.pm-unfold').setAttribute('aria-expanded', String(!on));
+      box.querySelector('.pm-fold').setAttribute('aria-expanded', String(!on));
+      try { localStorage.setItem('pmFold', on ? '1' : '0'); } catch (e) {}
+    };
+    let saved = null;
+    try { saved = localStorage.getItem('pmFold'); } catch (e) {}
+    fold(saved === '1');
+    box.querySelector('.pm-fold').addEventListener('click', () => fold(true));
+    box.querySelector('.pm-unfold').addEventListener('click', () => { fold(false); $('#pmQ').focus({ preventScroll: true }); });
     box.querySelectorAll('.pm-tabs button').forEach(b => b.addEventListener('click', () => {
       flt.dept = b.dataset.dept || null;
       box.querySelectorAll('.pm-tabs button').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
@@ -466,6 +480,10 @@
 
   async function start() {
     await loadFont();
+    // 위쪽 메뉴 띠가 붙어 있으므로 교수님 목록은 그 아래에 붙인다
+    const head = document.querySelector('.site-header');
+    const setHead = () => document.documentElement.style.setProperty('--pm-head', (head ? head.offsetHeight : 0) + 'px');
+    setHead(); addEventListener('resize', setHead);
     drawBase();
     side();
     apply();
