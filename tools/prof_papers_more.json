@@ -1204,7 +1204,7 @@
     "A5109279304"
    ],
    "confidence": "low",
-   "check": "OpenAlex의 두 ID가 다른 사람(세종대 패턴 마이닝 학생, UCLA, 충북대 곤충학, 김영근 교수 연구실 학생)과 섞여 있음. 고려대 소속이면서 박성빈이 마지막 저자이고 공저자(Yuri Kim, Seoyeon Oh, Chaerin Noh)가 겹치는 4편만 남김. 주제(시맨틱 웹, 추천, 컴퓨터 교육)는 하이퍼미디어 연구실과 맞지만 연구실 누리집이 없어 목록 대조 못 함",
+   "check": "OpenAlex의 두 ID가 다른 사람(세종대 패턴 마이닝 학생, UCLA, 충북대 곤충학, 김영근 교수 연구실 학생)과 섞여 있음. 고려대 소속이면서 박성빈이 마지막 저자이고 공저자(Yuri Kim, Seoyeon Oh, Chaerin Noh)가 겹치는 4편만 남김. 주제(시맨틱 웹, 추천, 컴퓨터 교육)는 하이퍼미디어 연구실과 맞지만 연구실 누리집이 없어 목록 대조 못 함 2026-11-11 보충: 고려대 공식 연구자 DB(scholar.korea.ac.kr)에 Electronics 2025 2편이 박성빈 교수 실적으로 등재되어 있다. 이 2편의 제1저자 Yuri Anna Kim(같은 OpenAlex 저자 ID), Seoyeon Oh와 공저하고 고려대 소속으로 박성빈이 마지막 저자인 ITiCSE 2023 논문을 추가했다. 기존 2편(이산수학 수업, Linked Data)은 공식 DB에는 없고 공저자 겹침으로만 판단한 것이다.",
    "papers": [
     {
      "title": "A Rule-Based Stock Trading Recommendation System Using Sentiment Analysis and Technical Indicators",
@@ -1241,6 +1241,16 @@
      "url": "https://doi.org/10.18517/ijaseit.14.4.16802",
      "openalex": "W4401300398",
      "abstract": "Linked Open Data (LOD) refers to guidelines for publishing and connecting structured data on the internet. Utilizing web technologies like HTTP, RDF, and URIs, Linked Data establishes entities across diverse domains and links them through categorized connections, thus forming a web of data readable by machines rather than humans. The LOD, often dubbed the Web of Linked Data, is an ever-expanding r"
+    },
+    {
+     "title": "Introduction to programming Using Clean",
+     "year": 2023,
+     "venue": "ITiCSE 2023",
+     "cites": 0,
+     "url": "https://doi.org/10.1145/3587103.3594176",
+     "abstract": "In this poster, we report our on-going project that aims to design a good set of course materials for introduction to programming using a functional programming language, Clean[2]. While procedural languages such as C, Python, etc are used in most introduction to programming classes, we believe that Clean might be better for students, because the syntax is very simple and in many cases, the size of a program in Clean is shorter than a corresponding program in C or other procedural languages. In addition, if Clean is used in an introduction to programming course, a lot of recursive examples can be introduced intuitively. This is important because even though recursion is one of important concepts that students should understand, many students have difficulty understanding the concept[3].",
+     "openalex": "W4382515914",
+     "source": "OpenAlex"
     }
    ]
   },

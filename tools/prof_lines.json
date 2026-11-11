@@ -2185,6 +2185,24 @@
    "near": "dit",
    "why": "확산 트랜스포머 안의 분할 능력",
    "title": "Seg4Diff: Unveiling Open-Vocabulary Segmentation in Text-to-Image Diffusion Tran"
+  },
+  "W4289131851": {
+   "line": "robot",
+   "near": "",
+   "why": "저가 로봇 군집의 분산 대형 제어",
+   "title": "Distributed cohesive configuration controller for a swarm with low‐cost platform"
+  },
+  "Euler–Poincaré Neural Dynamics: A Geometric-Mechanics Framework for Scientific Simulation": {
+   "line": "basics",
+   "near": "",
+   "why": "기하역학을 넣은 신경 동역학으로 과학 시뮬레이션",
+   "title": "Euler–Poincaré Neural Dynamics: A Geometric-Mechanics Framework for Scientific S"
+  },
+  "W4382515914": {
+   "line": "other",
+   "near": "",
+   "why": "프로그래밍 교육",
+   "title": "Introduction to programming Using Clean"
   }
  }
 }
