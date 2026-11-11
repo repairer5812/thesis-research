@@ -1,0 +1,2990 @@
+{
+ "made": "2026-11-11",
+ "source": "OpenAlex (보충 Semantic Scholar)",
+ "rule": "2023년 이후, 인용 상위 5편",
+ "profs": [
+  {
+   "name": "김동주",
+   "dept": "뇌공학과",
+   "email": "dongjookim@korea.ac.kr",
+   "lab": "Brain Lab.",
+   "lab_url": "https://brainlabku.github.io/",
+   "name_en": "Dong-Joo Kim",
+   "openalex": [
+    "A5101947623"
+   ],
+   "confidence": "high",
+   "check": "OpenAlex 저자 1개(ORCID 0000-0002-0988-2236), 고려대 소속, 주제(외상성 뇌손상, 수면, EEG) 일관. 같은 이름의 다른 고려대 저자 2명(콘크리트, 침술)은 제외. Brain Lab 논문 목록과 일부 제목 대조(3편 일치)",
+   "papers": [
+    {
+     "title": "Artificial Intelligence-Enhanced Neurocritical Care for Traumatic Brain Injury : Past, Present and Future",
+     "year": 2024,
+     "venue": "Journal of Korean Neurosurgical Society",
+     "cites": 28,
+     "url": "https://doi.org/10.3340/jkns.2023.0195",
+     "openalex": "W4390668402",
+     "abstract": "In neurointensive care units (NICUs), particularly in cases involving traumatic brain injury (TBI), swift and accurate decision-making is critical because of rapidly changing patient conditions and the risk of secondary brain injury. The use of artificial intelligence (AI) in NICU can enhance clinical decision support and provide valuable assistance in these complex scenarios. This article aims to"
+    },
+    {
+     "title": "NeuroNet: A Novel Hybrid Self-Supervised Learning Framework for Sleep Stage Classification Using Single-Channel EEG",
+     "year": 2024,
+     "venue": "arXiv (Cornell University)",
+     "cites": 27,
+     "url": "https://doi.org/10.48550/arxiv.2404.17585",
+     "openalex": "W4396818493",
+     "abstract": "The classification of sleep stages is a pivotal aspect of diagnosing sleep disorders and evaluating sleep quality. However, the conventional manual scoring process, conducted by clinicians, is time-consuming and prone to human bias. Recent advancements in deep learning have substantially propelled the automation of sleep stage classification. Nevertheless, challenges persist, including the need fo"
+    },
+    {
+     "title": "NeuroXAI: Adaptive, robust, explainable surrogate framework for determination of channel importance in EEG application",
+     "year": 2024,
+     "venue": "Expert Systems with Applications",
+     "cites": 19,
+     "url": "https://doi.org/10.1016/j.eswa.2024.125364",
+     "openalex": "W4402532475",
+     "abstract": "Electroencephalogram (EEG)-based applications often require numerous channels to achieve high performance, which limits their widespread use. Various channel selection methods have been proposed to identify minimum EEG channels without compromising performance. However, most methods are limited to specific data paradigms or prediction models. We propose NeuroXAI, a novel method that identifies cha"
+    },
+    {
+     "title": "Toward Foundational Model for Sleep Analysis Using a Multimodal Hybrid-Self-Supervised Learning Framework",
+     "year": 2025,
+     "venue": "IEEE Transactions on Cybernetics",
+     "cites": 18,
+     "url": "https://doi.org/10.1109/tcyb.2025.3603608",
+     "openalex": "W4414084603",
+     "abstract": "Sleep is essential for maintaining human health and quality of life. Analyzing physiological signals during sleep is critical in assessing sleep quality and diagnosing sleep disorders. However, manual diagnoses by clinicians are time-intensive and subjective. Despite advances in deep learning that have enhanced automation, these approaches remain heavily dependent on large-scale labeled datasets. "
+    },
+    {
+     "title": "Investigating the effect of mindfulness training for stress management in military training: the relationship between the autonomic nervous system and emotional regulation",
+     "year": 2025,
+     "venue": "BMC Psychology",
+     "cites": 18,
+     "url": "https://doi.org/10.1186/s40359-024-02322-3",
+     "openalex": "W4406125958",
+     "abstract": "BACKGROUND: Military personnel face an increased risk of developing mental disorders owing to the stressful environments they encounter. Effective stress management strategies are crucial to mitigate this risk. Mindfulness training (MT) is promising as a stress management approach in such demanding settings. This study uses a quantitative approach to investigate the impact of MT on the relationshi"
+    }
+   ]
+  },
+  {
+   "name": "한재호",
+   "dept": "뇌공학과",
+   "email": "hanjaeho@korea.ac.kr",
+   "lab": "Bionics and Photonics Lab",
+   "lab_url": "http://faculty.korea.ac.kr/hanjaeho",
+   "name_en": "Jae-Ho Han",
+   "openalex": [
+    "A5016279912"
+   ],
+   "confidence": "medium",
+   "check": "같은 OpenAlex ID에 다른 Jae-Ho Han(연세대 마찰학, 숭실대 발광소재, 아주대 병리, 포스텍 물리)이 대량 섞여 있음. 고려대 교수 소개 페이지(faculty.korea.ac.kr) 논문 목록에 있는 제목만 남김 Semantic Scholar 저자 목록과 비교해 OpenAlex에 없던 논문을 보충함(source: Semantic Scholar).",
+   "papers": [
+    {
+     "title": "HKA-Net: clinically-adapted deep learning for automated measurement of hip-knee-ankle angle on lower limb radiography for knee osteoarthritis assessment",
+     "year": 2024,
+     "venue": "Journal of Orthopaedic Surgery and Research",
+     "cites": 9,
+     "url": "https://doi.org/10.1186/s13018-024-05265-y",
+     "openalex": "W4404534756",
+     "abstract": "BACKGROUND: Accurate measurement of the hip-knee-ankle (HKA) angle is essential for informed clinical decision-making in the management of knee osteoarthritis (OA). Knee OA is commonly associated with varus deformity, where the alignment of the knee shifts medially, leading to increased stress and deterioration of the medial compartment. The HKA angle, which quantifies this alignment, is a critica"
+    },
+    {
+     "title": "Differentiating loss of consciousness causes through artificial intelligence-enabled decoding of functional connectivity",
+     "year": 2024,
+     "venue": "NeuroImage",
+     "cites": 5,
+     "url": "https://doi.org/10.1016/j.neuroimage.2024.120749",
+     "openalex": "W4400850193",
+     "abstract": "Differential diagnosis of acute loss of consciousness (LOC) is crucial due to the need for different therapeutic strategies despite similar clinical presentations among etiologies such as nonconvulsive status epilepticus, metabolic encephalopathy, and benzodiazepine intoxication. While altered functional connectivity (FC) plays a pivotal role in the pathophysiology of LOC, there has been a lack of"
+    },
+    {
+     "title": "Where and What: Contextual Dynamics-Aware Anomaly Detection in Surveillance Videos",
+     "year": 2025,
+     "venue": "IEEE Transactions on Image Processing",
+     "cites": 4,
+     "url": "https://doi.org/10.1109/TIP.2025.3623392",
+     "openalex": "W4415554352,S2:f65d5783ecfde49d9d37b4b1fcfa73d75a0a1147",
+     "abstract": "In surveillance environments, detecting anomalies requires understanding the contextual dynamics of the environment, human behaviors, and movements within a scene. Effective anomaly detection must address both the where and what of events, but existing approaches such as unimodal action-based methods or LLM-integrated multimodal frameworks have limitations. These methods either rely on implicit sc",
+     "source": "Semantic Scholar"
+    },
+    {
+     "title": "EEG‐based efficient demographic classification with selective data approach and scalable hybrid network",
+     "year": 2024,
+     "venue": "Electronics Letters",
+     "cites": 3,
+     "url": "https://doi.org/10.1049/ell2.13229",
+     "openalex": "W4399046236",
+     "abstract": "Abstract The proliferation of portable and wearable electroencephalography (EEG) devices has encouraged EEG research in various areas. These devices, while convenient, often come with limited computational capabilities. However, the challenge of minimizing network complexity for such edge devices was not fully addressed in previous studies. To tackle this, a scalable hybrid network is proposed to "
+    },
+    {
+     "title": "Bimodal Transformer with Regional EEG Data for Accurate Gameplay Regularity Classification",
+     "year": 2024,
+     "venue": "Brain Sciences",
+     "cites": 3,
+     "url": "https://doi.org/10.3390/brainsci14030282",
+     "openalex": "W4392845583",
+     "abstract": "As games have been applied across various fields, including education and healthcare, numerous new games tailored to each field have emerged. Therefore, understanding user behavior has become crucial in securing the right players for each type of game. This study provides valuable insights for improving game development by measuring the electroencephalography (EEG) of game users and classifying th"
+    }
+   ]
+  },
+  {
+   "name": "오윤배",
+   "dept": "뇌공학과",
+   "email": "oh_y@korea.ac.kr",
+   "lab": "Neural Engineering and Precision Surgery (NEPS, 정밀신경공학 연구실)",
+   "lab_url": "https://neps.korea.ac.kr/",
+   "name_en": "Yoonbae Oh",
+   "openalex": [
+    "A5039616973"
+   ],
+   "confidence": "high",
+   "check": "ORCID 0000-0003-1779-978X, Mayo Clinic 이후 고려대. 주제(뇌심부자극, FSCV 신경화학 측정) 일관. NEPS 연구실 논문 목록과 대조(대부분 일치)",
+   "papers": [
+    {
+     "title": "Deep brain stimulation alleviates tics in Tourette syndrome via striatal dopamine transmission",
+     "year": 2023,
+     "venue": "Brain",
+     "cites": 43,
+     "url": "https://doi.org/10.1093/brain/awad142",
+     "openalex": "W4368352593",
+     "abstract": "Tourette syndrome is a childhood-onset neuropsychiatric disorder characterized by intrusive motor and vocal tics that can lead to self-injury and deleterious mental health complications. While dysfunction in striatal dopamine neurotransmission has been proposed to underlie tic behaviour, evidence is scarce and inconclusive. Deep brain stimulation (DBS) of the thalamic centromedian parafascicular c"
+    },
+    {
+     "title": "Understanding the different effects of fouling mechanisms on working and reference electrodes in fast-scan cyclic voltammetry for neurotransmitter detection",
+     "year": 2024,
+     "venue": "The Analyst",
+     "cites": 35,
+     "url": "https://doi.org/10.1039/d3an02205f",
+     "openalex": "W4393936110",
+     "abstract": "The distinct impacts of fouling mechanisms on a carbon fiber microelectrode and an Ag/AgCl reference electrode, affecting their performance in neurotransmitter detection via Fast-scan Cyclic Voltammetry."
+    },
+    {
+     "title": "Virtual surgical planning in craniomaxillofacial surgery: A systematic review and meta-analysis of accuracy, operative time, and cost-effectiveness",
+     "year": 2025,
+     "venue": "Journal of Plastic Reconstructive & Aesthetic Surgery",
+     "cites": 21,
+     "url": "https://doi.org/10.1016/j.bjps.2025.04.037",
+     "openalex": "W4409783379",
+     "abstract": ""
+    },
+    {
+     "title": "High frequency deep brain stimulation can mitigate the acute effects of cocaine administration on tonic dopamine levels in the rat nucleus accumbens",
+     "year": 2023,
+     "venue": "Frontiers in Neuroscience",
+     "cites": 16,
+     "url": "https://doi.org/10.3389/fnins.2023.1061578",
+     "openalex": "W4318457268",
+     "abstract": "Cocaine’s addictive properties stem from its capacity to increase tonic extracellular dopamine levels in the nucleus accumbens (NAc). The ventral tegmental area (VTA) is a principal source of NAc dopamine. To investigate how high frequency stimulation (HFS) of the rodent VTA or nucleus accumbens core (NAcc) modulates the acute effects of cocaine administration on NAcc tonic dopamine levels multipl"
+    },
+    {
+     "title": "Techniques for Measurement of Serotonin: Implications in Neuropsychiatric Disorders and Advances in Absolute Value Recording Methods",
+     "year": 2023,
+     "venue": "ACS Chemical Neuroscience",
+     "cites": 14,
+     "url": "https://doi.org/10.1021/acschemneuro.3c00618",
+     "openalex": "W4389135033",
+     "abstract": "High Resolution Image Download MS PowerPoint Slide Serotonin (5-HT) is a monoamine neurotransmitter in the peripheral, enteric, and central nervous systems (CNS). Within the CNS, serotonin is principally involved in mood regulation and reward-seeking behaviors. It is a critical regulator in CNS pathologies such as major depressive disorder, addiction, and schizophrenia. Consequently, in vivo serot"
+    }
+   ]
+  },
+  {
+   "name": "박보용",
+   "dept": "뇌공학과",
+   "email": "boyongpark@korea.ac.kr",
+   "lab": "CAMIN Lab",
+   "lab_url": "https://www.caminlab.com/",
+   "name_en": "Bo-yong Park",
+   "openalex": [
+    "A5025571555"
+   ],
+   "confidence": "high",
+   "check": "ORCID 0000-0001-7096-337X, 인하대, IBS, 고려대 이력. 주제(뇌 연결성 기울기, 자폐, 뇌전증) 일관. 연구실 누리집이 스크립트로 그려져 목록 대조는 못 함",
+   "papers": [
+    {
+     "title": "A shifting role of thalamocortical connectivity in the emergence of cortical functional organization",
+     "year": 2024,
+     "venue": "Nature Neuroscience",
+     "cites": 58,
+     "url": "https://doi.org/10.1038/s41593-024-01679-3",
+     "openalex": "W4399500307",
+     "abstract": ""
+    },
+    {
+     "title": "Tau follows principal axes of functional and structural brain organization in Alzheimer’s disease",
+     "year": 2024,
+     "venue": "Nature Communications",
+     "cites": 56,
+     "url": "https://doi.org/10.1038/s41467-024-49300-2",
+     "openalex": "W4399562588",
+     "abstract": "Alzheimer's disease (AD) is a brain network disorder where pathological proteins accumulate through networks and drive cognitive decline. Yet, the role of network connectivity in facilitating this accumulation remains unclear. Using in-vivo multimodal imaging, we show that the distribution of tau and reactive microglia in humans follows spatial patterns of connectivity variation, the so-called gra"
+    },
+    {
+     "title": "Cortical microstructural gradients capture memory network reorganization in temporal lobe epilepsy",
+     "year": 2023,
+     "venue": "Brain",
+     "cites": 54,
+     "url": "https://doi.org/10.1093/brain/awad125",
+     "openalex": "W4366602404",
+     "abstract": "Temporal lobe epilepsy (TLE), one of the most common pharmaco-resistant epilepsies, is associated with pathology of paralimbic brain regions, particularly in the mesiotemporal lobe. Cognitive dysfunction in TLE is frequent, and particularly affects episodic memory. Crucially, these difficulties challenge the quality of life of patients, sometimes more than seizures, underscoring the need to assess"
+    },
+    {
+     "title": "Functional and microstructural plasticity following social and interoceptive mental training",
+     "year": 2023,
+     "venue": "eLife",
+     "cites": 40,
+     "url": "https://doi.org/10.7554/elife.85188",
+     "openalex": "W4383484015",
+     "abstract": "The human brain supports social cognitive functions, including Theory of Mind, empathy, and compassion, through its intrinsic hierarchical organization. However, it remains unclear how the learning and refinement of social skills shapes brain function and structure. We studied if different types of social mental training induce changes in cortical function and microstructure, investigating 332 hea"
+    },
+    {
+     "title": "Connectome reorganization associated with temporal lobe pathology and its surgical resection",
+     "year": 2024,
+     "venue": "Brain",
+     "cites": 35,
+     "url": "https://doi.org/10.1093/brain/awae141",
+     "openalex": "W4396605090",
+     "abstract": "Network neuroscience offers a unique framework to understand the organizational principles of the human brain. Despite recent progress, our understanding of how the brain is modulated by focal lesions remains incomplete. Resection of the temporal lobe is the most effective treatment to control seizures in pharmaco-resistant temporal lobe epilepsy (TLE), making this syndrome a powerful model to stu"
+    }
+   ]
+  },
+  {
+   "name": "장호진",
+   "dept": "뇌공학과",
+   "email": "hojin4671@korea.ac.kr",
+   "lab": "뇌기계인지 연구실 (Brain and Machine Cognition Lab)",
+   "lab_url": "https://bmcl.korea.ac.kr/",
+   "name_en": "Hojin Jang",
+   "openalex": [
+    "A5013293315"
+   ],
+   "confidence": "high",
+   "check": "ORCID 0000-0002-1756-1467, Vanderbilt, MIT 이후 고려대. 주제(사람 시각과 심층망) 일관. BMCL 논문 목록과 대조(일치)",
+   "papers": [
+    {
+     "title": "Improved modeling of human vision by incorporating robustness to blur in convolutional neural networks",
+     "year": 2024,
+     "venue": "Nature Communications",
+     "cites": 60,
+     "url": "https://doi.org/10.1038/s41467-024-45679-0",
+     "openalex": "W4392460428,W7111701489",
+     "abstract": "Whenever a visual scene is cast onto the retina, much of it will appear degraded due to poor resolution in the periphery; moreover, optical defocus can cause blur in central vision. However, the pervasiveness of blurry or degraded input is typically overlooked in the training of convolutional neural networks (CNNs). We hypothesized that the absence of blurry training inputs may cause CNNs to rely "
+    },
+    {
+     "title": "BRACTIVE: A Brain Activation Approach to Human Visual Brain Learning",
+     "year": 2025,
+     "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+     "cites": 8,
+     "url": "https://doi.org/10.1109/tpami.2025.3612582",
+     "openalex": "W4414404893",
+     "abstract": "The human brain is a highly efficient processing unit, and understanding how it works can inspire new algorithms and architectures in machine learning. In this work, we introduce a novel framework named Brain Activation Network (BRACTIVE), a transformer-based approach to studying the human visual brain. The primary objective of BRACTIVE is to align the visual features of subjects with their corres"
+    },
+    {
+     "title": "Robustness to Transformations Across Categories: Is Robustness Driven by Invariant Neural Representations?",
+     "year": 2023,
+     "venue": "Neural Computation",
+     "cites": 5,
+     "url": "https://doi.org/10.1162/neco_a_01621",
+     "openalex": "W4387664631",
+     "abstract": "Deep convolutional neural networks (DCNNs) have demonstrated impressive robustness to recognize objects under transformations (e.g., blur or noise) when these transformations are included in the training set. A hypothesis to explain such robustness is that DCNNs develop invariant neural representations that remain unaltered when the image is transformed. However, to what extent this hypothesis hol"
+    },
+    {
+     "title": "Category-specific perceptual learning of robust object recognition modelled using deep neural networks",
+     "year": 2025,
+     "venue": "PLoS Computational Biology",
+     "cites": 3,
+     "url": "https://doi.org/10.1371/journal.pcbi.1013529",
+     "openalex": "W4414431768",
+     "abstract": "Object recognition in real-world environments requires dealing with considerable ambiguity, yet the human visual system is highly robust to noisy viewing conditions. Here, we investigated the role of perceptual learning in the acquisition of robustness in both humans and deep neural networks (DNNs). Specifically, we sought to determine whether perceptual training with object images in Gaussian noi"
+    },
+    {
+     "title": "Configural processing as an optimized strategy for robust object recognition in neural networks",
+     "year": 2025,
+     "venue": "Communications Biology",
+     "cites": 3,
+     "url": "https://doi.org/10.1038/s42003-025-07672-1",
+     "openalex": "W4408230219,W4401201121",
+     "abstract": "Configural processing, the perception of spatial relationships among an object's components, is crucial for object recognition, yet its teleology and underlying mechanisms remain unclear. We hypothesize that configural processing drives robust recognition under varying conditions. Using identification tasks with composite letter stimuli, we compare neural network models trained with either configu"
+    }
+   ]
+  },
+  {
+   "name": "김상희",
+   "dept": "뇌공학과",
+   "email": "shkim0301@korea.ac.kr",
+   "lab": "정서인지연구실",
+   "lab_url": "http://acnl.korea.ac.kr/xe/",
+   "name_en": "Sang Hee Kim",
+   "openalex": [
+    "A5100694213"
+   ],
+   "confidence": "medium",
+   "check": "ORCID 0000-0003-3184-5391 고려대 저자. 2023년 이후 논문이 6편뿐이며 주제(정서, 뇌자극, EEG) 일관. 연구실 누리집 접속 불가(404)로 목록 대조 못 함",
+   "papers": [
+    {
+     "title": "Electroencephalography-based classification of Alzheimer’s disease spectrum during computer-based cognitive testing",
+     "year": 2024,
+     "venue": "Scientific Reports",
+     "cites": 47,
+     "url": "https://doi.org/10.1038/s41598-024-55656-8",
+     "openalex": "W4392362094",
+     "abstract": "Alzheimer's disease (AD) is a progressive disease leading to cognitive decline, and to prevent it, researchers seek to diagnose mild cognitive impairment (MCI) early. Particularly, non-amnestic MCI (naMCI) is often mistaken for normal aging as the representative symptom of AD, memory decline, is absent. Subjective cognitive decline (SCD), an intermediate step between normal aging and MCI, is cruci"
+    },
+    {
+     "title": "Inducing sad recognition bias: A novel emotional probabilistic reward task and its affective consequences",
+     "year": 2024,
+     "venue": "PLoS ONE",
+     "cites": 4,
+     "url": "https://doi.org/10.1371/journal.pone.0291979",
+     "openalex": "W4404134884",
+     "abstract": "Recognition of sadness from facial expressions is associated with empathic responses. In this study, we devised an emotional probabilistic reward task (PRT) to facilitate sadness recognition and tested its effects on attentional and empathic responses to others in distress. During the emotional PRT, healthy participants were asked to discriminate between facial expressions subtly expressing sadnes"
+    },
+    {
+     "title": "Affective and neural modulation of smart device-related stimuli following a single session of evaluative conditioning",
+     "year": 2026,
+     "venue": "Journal of Behavioral Addictions",
+     "cites": 0,
+     "url": "https://doi.org/10.1556/2006.2026.00036",
+     "openalex": "W7171358736",
+     "abstract": "Background: Evaluative conditioning (EC) has shown potential to reduce maladaptive affective biases underlying problematic health-related behaviors. However, there is limited evidence applying EC to smart device-related stimuli. We examined whether EC training can modify affective and neural responses to these stimuli in a proof-of-concept study conducted in a non-clinical sample. Methods: Healthy"
+    },
+    {
+     "title": "Virtual reality-based inhibition training influences food-related responses: no additional effects of repetitive transcranial magnetic stimulation",
+     "year": 2026,
+     "venue": "Frontiers in Psychiatry",
+     "cites": 0,
+     "url": "https://doi.org/10.3389/fpsyt.2026.1801985",
+     "openalex": "W7160491070",
+     "abstract": "Combining cognitive inhibition training with brain stimulation techniques has received increasing attention as a potential approach to modulating maladaptive food craving and food intake. Building on previous work in this line of research, the current study examined whether virtual reality (VR)-based no-go inhibition training paired with repetitive transcranial magnetic stimulation (rTMS) modulate"
+    },
+    {
+     "title": "Implicit intervention approach for empathy: exploring the combined effects of empathic concern and visual perspective-taking",
+     "year": 2025,
+     "venue": "Frontiers in Psychiatry",
+     "cites": 0,
+     "url": "https://doi.org/10.3389/fpsyt.2025.1530532",
+     "openalex": "W4410905445",
+     "abstract": "Interest in fostering empathy has expanded rapidly recently, with increasing recognition of its role in emotional wellbeing and positive social outcomes. The current study investigated whether interventions to enhance empathic concern and visual perspective taking would influence socioemotional information processing and enhance empathic responses toward others. For this purpose, we devised two im"
+    }
+   ]
+  },
+  {
+   "name": "이종환",
+   "dept": "뇌공학과",
+   "email": "jonghwan_lee@korea.ac.kr",
+   "lab": "Brain Signal Processing Lab",
+   "lab_url": "https://bspl.korea.ac.kr",
+   "name_en": "Jong-Hwan Lee",
+   "openalex": [
+    "A5033376623"
+   ],
+   "confidence": "high",
+   "check": "ORCID 0000-0002-8902-6009, 고려대 소속. 주제(fMRI, 뇌 신호 심층학습) 일관. BSPL 누리집 첫 화면의 논문 링크와 제목 대조(일치)",
+   "papers": [
+    {
+     "title": "Use of functional magnetic resonance imaging to identify cortical loci for lower limb movements and their efficacy for individuals after stroke",
+     "year": 2024,
+     "venue": "Journal of NeuroEngineering and Rehabilitation",
+     "cites": 8,
+     "url": "https://doi.org/10.1186/s12984-024-01319-8",
+     "openalex": "W4394848736",
+     "abstract": "Abstract Background Identification of cortical loci for lower limb movements for stroke rehabilitation is crucial for better rehabilitation outcomes via noninvasive brain stimulation by targeting the fine-grained cortical loci of the movements. However, identification of the cortical loci for lower limb movements using functional MRI (fMRI) is challenging due to head motion and difficulty in isola"
+    },
+    {
+     "title": "Discovering individual fingerprints in resting‐state functional connectivity using deep neural networks",
+     "year": 2023,
+     "venue": "Human Brain Mapping",
+     "cites": 8,
+     "url": "https://doi.org/10.1002/hbm.26561",
+     "openalex": "W4389719329",
+     "abstract": "Non-negligible idiosyncrasy due to interindividual differences is an ongoing issue in resting-state functional MRI (rfMRI) analysis. We show that a deep neural network (DNN) can be employed for individual identification by learning important features from the time-varying functional connectivity (FC) of rfMRI in the Human Connectome Project. We employed the trained DNN to identify individuals from"
+    },
+    {
+     "title": "Reliability of self-reported dispositional mindfulness scales and their association with working memory performance and functional connectivity",
+     "year": 2023,
+     "venue": "Brain and Cognition",
+     "cites": 7,
+     "url": "https://doi.org/10.1016/j.bandc.2023.106001",
+     "openalex": "W4378009689",
+     "abstract": ""
+    },
+    {
+     "title": "Autoencoder and restricted Boltzmann machine for transfer learning in functional magnetic resonance imaging task classification",
+     "year": 2023,
+     "venue": "Heliyon",
+     "cites": 6,
+     "url": "https://doi.org/10.1016/j.heliyon.2023.e18086",
+     "openalex": "W4384470566",
+     "abstract": "Deep neural networks (DNNs) have been adopted widely as classifiers for functional magnetic resonance imaging (fMRI) data, advancing beyond traditional machine learning models. Consequently, transfer learning of the pre-trained DNN becomes crucial to enhance DNN classification performance, specifically by alleviating an overfitting issue that occurs when a substantial number of DNN parameters are "
+    },
+    {
+     "title": "Neural representations of the perception of handwritten digits and visual objects from a convolutional neural network compared to humans",
+     "year": 2023,
+     "venue": "Human Brain Mapping",
+     "cites": 5,
+     "url": "https://doi.org/10.1002/hbm.26189",
+     "openalex": "W4315928597",
+     "abstract": "We investigated neural representations for visual perception of 10 handwritten digits and six visual objects from a convolutional neural network (CNN) and humans using functional magnetic resonance imaging (fMRI). Once our CNN model was fine-tuned using a pre-trained VGG16 model to recognize the visual stimuli from the digit and object categories, representational similarity analysis (RSA) was con"
+    }
+   ]
+  },
+  {
+   "name": "강성구",
+   "dept": "컴퓨터학과",
+   "email": "seongkukang@korea.ac.kr",
+   "lab": "데이터과학 및 응용 연구실 (Intelligent Data Science and Applications Lab)",
+   "lab_url": "https://idea.korea.ac.kr/",
+   "name_en": "SeongKu Kang",
+   "openalex": [
+    "A5075832345"
+   ],
+   "confidence": "high",
+   "check": "ORCID 0000-0001-5528-1426, 포스텍, UIUC 이후 고려대. 주제(추천, 검색) 일관. IDEA 연구실 논문 목록과 대조(대부분 일치) Semantic Scholar에 있는 Doubly Calibrated Estimator(WWW 2024)는 연구실 목록에 없어 넣지 않음.",
+   "papers": [
+    {
+     "title": "DeepRetrieval: Hacking Real Search Engines and Retrievers with Large Language Models via Reinforcement Learning",
+     "year": 2025,
+     "venue": "arXiv (Cornell University)",
+     "cites": 115,
+     "url": "https://doi.org/10.48550/arxiv.2503.00223",
+     "openalex": "W4417065331",
+     "abstract": "Information retrieval systems are crucial for enabling effective access to large document collections. Recent approaches have leveraged Large Language Models (LLMs) to enhance retrieval performance through query augmentation, but often rely on expensive supervised learning or distillation techniques that require significant computational resources and hand-labeled data. We introduce DeepRetrieval,"
+    },
+    {
+     "title": "Review-driven Personalized Preference Reasoning with Large Language Models for Recommendation",
+     "year": 2025,
+     "venue": "International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR)",
+     "cites": 45,
+     "url": "https://doi.org/10.1145/3726302.3730055",
+     "openalex": "W4412377003",
+     "abstract": "Recent advancements in Large Language Models (LLMs) have demonstrated exceptional performance across a wide range of tasks, generating significant interest in their application to recommendation systems. However, existing methods have not fully harnessed the potential of LLMs, often constrained by limited input information or failing to fully utilize their advanced reasoning capabilities. To addre"
+    },
+    {
+     "title": "Distillation from Heterogeneous Models for Top-K Recommendation",
+     "year": 2023,
+     "venue": "International World Wide Web Conference (WWW)",
+     "cites": 39,
+     "url": "https://doi.org/10.1145/3543507.3583209",
+     "openalex": "W4367046606",
+     "abstract": "Recent recommender systems have shown remarkable performance by using an ensemble of heterogeneous models. However, it is exceedingly costly because it requires resources and inference latency proportional to the number of models, which remains the bottleneck for production. Our work aims to transfer the ensemble knowledge of heterogeneous teachers to a lightweight student model using knowledge di"
+    },
+    {
+     "title": "Pearl: A Review-driven Persona-Knowledge Grounded Conversational Recommendation Dataset",
+     "year": 2024,
+     "venue": "Findings of the Association for Computational Linguistics: ACL (Findings of ACL)",
+     "cites": 25,
+     "url": "https://doi.org/10.18653/v1/2024.findings-acl.65",
+     "openalex": "W4402670896",
+     "abstract": "Conversational recommender systems are an emerging area that has garnered increasing interest in the community, especially with the advancements in large language models (LLMs) that enable sophisticated handling of conversational input.Despite the progress, the field still has many aspects left to explore.The currently available public datasets for conversational recommendation lack specific user "
+    },
+    {
+     "title": "Continual Collaborative Distillation for Recommender System",
+     "year": 2024,
+     "venue": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)",
+     "cites": 22,
+     "url": "https://doi.org/10.1145/3637528.3671924",
+     "openalex": "W4401863648",
+     "abstract": "Knowledge distillation (KD) has emerged as a promising technique for addressing the computational challenges associated with deploying large-scale recommender systems. KD transfers the knowledge of a massive teacher system to a compact student model, to reduce the huge computational burdens for inference while retaining high accuracy. The existing KD studies primarily focus on one-time distillatio"
+    }
+   ]
+  },
+  {
+   "name": "강형엽",
+   "dept": "컴퓨터학과",
+   "email": "siamiz_hkang@korea.ac.kr",
+   "lab": "",
+   "lab_url": "http://iiixr.korea.ac.kr/",
+   "name_en": "HyeongYeop Kang",
+   "openalex": [
+    "A5011229651"
+   ],
+   "confidence": "high",
+   "check": "ORCID 0000-0001-5292-4342, 경희대 이후 고려대. 주제(VR 손 상호작용, 동작 생성) 일관. IIIXR 연구실 논문 목록과 대조(고려대 시기 일치, 경희대 시기 2편은 목록 밖이나 같은 주제)",
+   "papers": [
+    {
+     "title": "VR-HandNet: A Visually and Physically Plausible Hand Manipulation System in Virtual Reality",
+     "year": 2023,
+     "venue": "IEEE Transactions on Visualization and Computer Graphics",
+     "cites": 18,
+     "url": "https://doi.org/10.1109/tvcg.2023.3255991",
+     "openalex": "W4324116424",
+     "abstract": "This study aims to allow users to perform dexterous hand manipulation of objects in virtual environments with hand-held VR controllers. To this end, the VR controller is mapped to the virtual hand and the hand motions are dynamically synthesized when the virtual hand approaches an object. At each frame, given the information about the virtual hand, VR controller input, and hand-object spatial rela"
+    },
+    {
+     "title": "REVECA: Adaptive Planning and Trajectory-Based Validation in Cooperative Language Agents Using Information Relevance and Relative Proximity",
+     "year": 2025,
+     "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+     "cites": 7,
+     "url": "https://doi.org/10.1609/aaai.v39i22.34496",
+     "openalex": "W4409363289",
+     "abstract": "We address the challenge of multi-agent cooperation, where agents achieve a common goal by cooperating with decentralized agents under complex partial observations. Existing cooperative agent systems often struggle with efficiently processing continuously accumulating information, managing globally suboptimal planning due to lack of consideration of collaborators, and addressing false planning cau"
+    },
+    {
+     "title": "Shaping the Future of VR Hand Interactions: Lessons Learned from Modern Methods",
+     "year": 2025,
+     "venue": "IEEE Conference on Virtual Reality and 3D User Interfaces (VR)",
+     "cites": 7,
+     "url": "https://doi.org/10.1109/vr59515.2025.00041",
+     "openalex": "W4408954746",
+     "abstract": "In virtual reality (VR), it is widely assumed that increased realism in hand-object interactions enhances user immersion and overall experience. However, recent studies challenge this assumption, suggesting that faithfully replicating real-world physics and visuals is not always necessary for improved usability or immersion. This has led to ambiguity for developers when choosing optimal hand inter"
+    },
+    {
+     "title": "BiPO: Bidirectional Partial Occlusion Network for Text-to-Motion Synthesis",
+     "year": 2026,
+     "venue": "IEEE Winter Conference on Applications of Computer Vision",
+     "cites": 5,
+     "url": "https://doi.org/10.1109/wacv61042.2026.00012",
+     "openalex": "W4405032458",
+     "abstract": "Text-to-motion generation allows language-driven animation, yet current models struggle to deliver long-range coherence and fine-grained limb coordination. A competitive system must (i) preserve temporal consistency across hundreds of frames, (ii) synchronize limb motions, and (iii) align nuanced sentences with a spectrum of plausible trajectories. We introduce BiPO, the first part-based bidirecti"
+    },
+    {
+     "title": "P‐Hologen: An End‐to‐End Generative Framework for Phase‐Only Holograms",
+     "year": 2024,
+     "venue": "Computer Graphics Forum",
+     "cites": 5,
+     "url": "https://doi.org/10.1111/cgf.15244",
+     "openalex": "W4404195261",
+     "abstract": "Abstract Holography stands at the forefront of visual technology, offering immersive, three‐dimensional visualizations through the manipulation of light wave amplitude and phase. Although generative models have been extensively explored in the image domain, their application to holograms remains relatively underexplored due to the inherent complexity of phase learning. Exploiting generative models"
+    }
+   ]
+  },
+  {
+   "name": "곽정호",
+   "dept": "컴퓨터학과",
+   "email": "jeonghokwak@korea.ac.kr",
+   "lab": "지능 컴퓨팅 및 네트워킹 연구실 (ICNL)",
+   "lab_url": "https://icnl.korea.ac.kr",
+   "name_en": "Jeongho Kwak",
+   "openalex": [
+    "A5049511446"
+   ],
+   "confidence": "high",
+   "check": "ORCID 0000-0002-5737-0665, DGIST 이후 고려대. 주제(엣지 컴퓨팅, 위성망) 일관. ICNL 논문 목록과 대조. 목록에 없는 미각 센서 논문(ACS AMI)은 동명이인 가능성으로 뺌",
+   "papers": [
+    {
+     "title": "Cutting-Edge Inference: Dynamic DNN Model Partitioning and Resource Scaling for Mobile AI",
+     "year": 2024,
+     "venue": "IEEE Transactions on Services Computing",
+     "cites": 27,
+     "url": "https://doi.org/10.1109/tsc.2024.3466848",
+     "openalex": "W4402811232",
+     "abstract": "Recently, applications using artificial intelligence (AI) technique in mobile devices such as augmented reality have been extensively pervasive. The hardware specifications of mobile devices, dynamic service demands, stochastic network states, and characteristics of DNN (Deep Neural Network) models affect the quality of experience (QoE) of such applications. In this paper, we proposeCutEdge, that "
+    },
+    {
+     "title": "Satellite Network Slice Planning: Architecture, Performance Analysis, and Open Issues",
+     "year": 2023,
+     "venue": "IEEE Vehicular Technology Magazine",
+     "cites": 27,
+     "url": "https://doi.org/10.1109/mvt.2023.3238515",
+     "openalex": "W4321780247",
+     "abstract": "For beyond-5G and 6G communications, the satellite-terrestrial integrated network (STIN) is expected to provide diverse services with global coverage. The first step in implementing a successful STIN is to make the satellite network capable of functioning seamlessly with its terrestrial counterpart. However, as satellites rotate around Earth at very high speeds and are connected over very long wir"
+    },
+    {
+     "title": "An Integration of Cryptography and Physical Layer Security for Multibeam Satellite Systems",
+     "year": 2024,
+     "venue": "IEEE Transactions on Communications",
+     "cites": 14,
+     "url": "https://doi.org/10.1109/tcomm.2024.3440873",
+     "openalex": "W4401416092",
+     "abstract": "Due to the broadcasting nature, satellite signals are vulnerable to potential eavesdropping attacks, which pose a significant security risk for users. Physical layer security (PLS) and cryptography technologies have been independently developed to address this security risk. However, the independent use of each technology in the power-limited satellite systems results in a trade-off problem betwee"
+    },
+    {
+     "title": "VisionScaling: Dynamic Deep Learning Model and Resource Scaling in Mobile Vision Applications",
+     "year": 2024,
+     "venue": "IEEE Internet of Things Journal",
+     "cites": 13,
+     "url": "https://doi.org/10.1109/jiot.2024.3349512",
+     "openalex": "W4390534062",
+     "abstract": "As deep learning technology becomes advanced, mobile vision applications, such as augmented reality (AR) or autonomous vehicles, are prevalent. The performance of such services highly depends on computing capability of different mobile devices, dynamic service requests, stochastic mobile network environment, and learning models. Existing studies have independently optimized such mobile resource al"
+    },
+    {
+     "title": "Satellite Network Slice Planning With Handover Trigger and DRL-Based Virtual Network Embedding",
+     "year": 2024,
+     "venue": "IEEE Transactions on Aerospace and Electronic Systems",
+     "cites": 11,
+     "url": "https://doi.org/10.1109/taes.2024.3487818",
+     "openalex": "W4403918323",
+     "abstract": "For satellite network slicing, the end-to-end connectivity should be maintained during the service time of slices under the mobility of low Earth orbit satellites. The ground user or station should update the satellite connection at least every 10 min, and the routing paths established through intersatellite links are susceptible to performance degradation as a consequence of fluctuations in relat"
+    }
+   ]
+  },
+  {
+   "name": "구건재",
+   "dept": "컴퓨터학과",
+   "email": "gunjaekoo@korea.ac.kr",
+   "lab": "Computer System Architecture Lab.",
+   "lab_url": "http://csarch.korea.ac.kr",
+   "name_en": "Gunjae Koo",
+   "openalex": [
+    "A5055061586"
+   ],
+   "confidence": "high",
+   "check": "ORCID 0000-0003-1706-6850, 고려대 소속. 주제(GPU, 가속기 구조) 일관. 연구실 논문 목록과 대조(일치)",
+   "papers": [
+    {
+     "title": "SAVector: Vectored Systolic Arrays",
+     "year": 2024,
+     "venue": "IEEE Access",
+     "cites": 12,
+     "url": "https://doi.org/10.1109/access.2024.3380433",
+     "openalex": "W4393171381",
+     "abstract": "Conventional DNN inference accelerators are designed with a few (up to four) large systolic arrays. As such a scale-up architecture often suffers from low utilization, a scale-out architecture, in which a single accelerator has tens of pods and each pod has a small systolic array, has been proposed. While the scale-out architecture is promising, it still incurs increasing off-chip memory access as"
+    },
+    {
+     "title": "SparsePIM: An Efficient HBM-Based PIM Architecture for Sparse Matrix-Vector Multiplications",
+     "year": 2025,
+     "venue": "International Conference on Supercomputing",
+     "cites": 9,
+     "url": "https://doi.org/10.1145/3721145.3735111",
+     "openalex": "W4413411851",
+     "abstract": "Sparse matrix-vector multiplication (SpMV) is a fundamental operation across diverse domains, including scientific computing, machine learning, and graph processing.However, its irregular memory access patterns necessitate frequent data retrieval from external memory, leading to significant inefficiencies on conventional processors such as CPUs and GPUs.Processing-in-memory (PIM) presents a promis"
+    },
+    {
+     "title": "MOST: Memory Oversubscription-Aware Scheduling for Tensor Migration on GPU Unified Storage",
+     "year": 2025,
+     "venue": "IEEE Computer Architecture Letters",
+     "cites": 3,
+     "url": "https://doi.org/10.1109/lca.2025.3580264",
+     "openalex": "W4411358963",
+     "abstract": "Deep Neural Network (DNN) training demands large memory capacities that exceed the limits of current GPU onboard memory. Expanding GPU memory with SSDs is a cost-effective approach. However, the low bandwidth of SSDs introduces severe performance bottlenecks in data management, particularly for Unified Virtual Memory (UVM)-based systems. The default on-demand migration mechanism in UVM causes freq"
+    },
+    {
+     "title": "Beyond VABlock: Improving Transformer workloads through aggressive prefetching",
+     "year": 2025,
+     "venue": "Journal of Systems Architecture",
+     "cites": 3,
+     "url": "https://doi.org/10.1016/j.sysarc.2025.103389",
+     "openalex": "W4408147674",
+     "abstract": ""
+    },
+    {
+     "title": "Adaptive Kernel Merge and Fusion for Multi-Tenant Inference in Embedded GPUs",
+     "year": 2024,
+     "venue": "IEEE Embedded Systems Letters",
+     "cites": 2,
+     "url": "https://doi.org/10.1109/les.2024.3351753",
+     "openalex": "W4390771379",
+     "abstract": "This paper proposes a new scheme that improves throughput and reduces queuing delay while running multiple inferences in embedded GPU-based systems. We observe that an embedded system runs inference with a fixed number of deep learning models and that inference requests often use the same model. Unlike prior work that proposed kernel fusion or scheduling techniques, this paper proposes a new softw"
+    }
+   ]
+  },
+  {
+   "name": "김동선",
+   "dept": "컴퓨터학과",
+   "email": "darkrsw@korea.ac.kr",
+   "lab": "PALM (Program Analysis, Learning, and Mining) Group",
+   "lab_url": "https://darkrsw.github.io/",
+   "name_en": "Dongsun Kim",
+   "openalex": [
+    "A5067772621"
+   ],
+   "confidence": "medium",
+   "check": "ORCID 0000-0003-0272-6860, 경북대 이후 고려대. 주제(소프트웨어 공학, 코드 모델) 일관. 같은 ID의 화재 감지, 가짜 뉴스 논문(CMC 학술지)은 주제가 달라 뺌. 연구실 누리집(darkrsw.github.io)이 404라 목록 대조 못 함",
+   "papers": [
+    {
+     "title": "Unveiling Memorization in Code Models",
+     "year": 2024,
+     "venue": "ACM/IEEE International Conference on Software Engineering: Companion Proceedings (ICSE-Companion)",
+     "cites": 95,
+     "url": "https://doi.org/10.1145/3597503.3639074",
+     "openalex": "W4394745382",
+     "abstract": "The availability of large-scale datasets, advanced architectures, and powerful computational resources have led to effective code models that automate diverse software engineering activities. The datasets usually consist of billions of lines of code from both open-source and private repositories. A code model memorizes and produces source code verbatim, which potentially contains vulnerabilities, "
+    },
+    {
+     "title": "Gotcha! This Model Uses My Code! Evaluating Membership Leakage Risks in Code Models",
+     "year": 2024,
+     "venue": "IEEE Transactions on Software Engineering",
+     "cites": 33,
+     "url": "https://doi.org/10.1109/tse.2024.3482719",
+     "openalex": "W4403761251",
+     "abstract": "Leveraging large-scale datasets from open-source projects and advances in large language models, recent progress has led to sophisticated code models for key software engineering tasks, such as program repair and code completion. These models are trained on data from various sources, including public open-source projects like GitHub and private, confidential code from companies, raising significan"
+    },
+    {
+     "title": "DexBERT: Effective, Task-Agnostic and Fine-Grained Representation Learning of Android Bytecode",
+     "year": 2023,
+     "venue": "IEEE Transactions on Software Engineering",
+     "cites": 29,
+     "url": "https://doi.org/10.1109/tse.2023.3310874",
+     "openalex": "W4386362878",
+     "abstract": "The automation of an increasingly large number of software engineering tasks is becoming possible thanks to Machine Learning (ML). One foundational building block in the application of ML to software artifacts is therepresentationof these artifacts (e.g., source code or executable code) into a form that is suitable for learning. Traditionally, researchers and practitioners have relied on manually "
+    },
+    {
+     "title": "Hallucination by Code Generation LLMs: Taxonomy, Benchmarks, Mitigation, and Challenges",
+     "year": 2025,
+     "venue": "arXiv (Cornell University)",
+     "cites": 26,
+     "url": "https://doi.org/10.48550/arxiv.2504.20799",
+     "openalex": "W4417171404",
+     "abstract": "Recent technical breakthroughs in large language models (LLMs) have enabled them to fluently generate source code. Software developers often leverage both general-purpose and code-specialized LLMs to revise existing code or even generate a whole function from scratch. These capabilities are also beneficial in no-code or low-code contexts, in which one can write programs without a technical backgro"
+    },
+    {
+     "title": "Big Code Search: A Bibliography",
+     "year": 2023,
+     "venue": "ACM Computing Surveys",
+     "cites": 20,
+     "url": "https://doi.org/10.1145/3604905",
+     "openalex": "W4381613440",
+     "abstract": "Code search is an essential task in software development. Developers often search the internet and other code databases for necessary source code snippets to ease the development efforts. Code search techniques also help learn programming as novice programmers or students can quickly retrieve (hopefully good) examples already used in actual software projects. Given the recurrence of the code searc"
+    }
+   ]
+  },
+  {
+   "name": "김세연",
+   "dept": "컴퓨터학과",
+   "email": "seyeon625@korea.ac.kr",
+   "lab": "SERA Lab. (Systems for Extended Reality and AI Lab.)",
+   "lab_url": "https://seralab.korea.ac.kr/",
+   "name_en": "Seyeon Kim",
+   "openalex": [],
+   "confidence": "high",
+   "check": "OpenAlex는 다른 김세연(KAIST 영상 생성 학생, SK하이닉스 소재)과 섞여 있어 쓰지 않음. Semantic Scholar 저자 2187383261의 논문이 SERA 연구실 목록과 모두 일치해 그 목록에서 고름(인용 수는 Semantic Scholar 기준)",
+   "papers": [
+    {
+     "title": "LLMem: Estimating GPU Memory Usage for Fine-Tuning Pre-Trained LLMs",
+     "year": 2024,
+     "venue": "International Joint Conference on Artificial Intelligence",
+     "cites": 23,
+     "url": "https://doi.org/10.48550/arXiv.2404.10933",
+     "openalex": "S2:b71753be39d10a4b0ca05d04acfe7a17d21039c4",
+     "abstract": "",
+     "source": "Semantic Scholar"
+    },
+    {
+     "title": "CoActo: CoActive Neural Network Inference Offloading with Fine-grained and Concurrent Execution",
+     "year": 2024,
+     "venue": "ACM SIGMOBILE International Conference on Mobile Systems, Applications, and Services",
+     "cites": 11,
+     "url": "https://doi.org/10.1145/3643832.3661885",
+     "openalex": "W4399323826,S2:fe68ee26f705b1ed346aa2323b51ac279ac550a0",
+     "abstract": "Collaborative inference is the current state-of-the-art solution for mobile-server neural network inference offloading. However, we find that existing collaborative inference solutions only focus on partitioning the DNN computation, which is only a small part of achieving an efficient DNN offloading system. What ultimately determines the performance of DNN offloading is how the execution system ut",
+     "source": "Semantic Scholar"
+    },
+    {
+     "title": "ENTRO: Tackling the Encoding and Networking Trade-off in Offloaded Video Analytics",
+     "year": 2023,
+     "venue": "ACM Multimedia",
+     "cites": 10,
+     "url": "https://doi.org/10.1145/3581783.3613785",
+     "openalex": "W4387969132,S2:fa3766a44410c80d3b251e46da492c2740230ae3",
+     "abstract": "With the rapid advances of deep learning and the commercialization of high-definition cameras in mobile and embedded devices, the demands from latency-critical applications such as AR and XR for high-quality video analytics (HVA) are soaring. By the nature of HVA aiming at enabling detailed analytics even for small objects, its on-device implementation is suffering from thermal and battery issues,",
+     "source": "Semantic Scholar"
+    },
+    {
+     "title": "DeltaStream: 2D-Inferred Delta Encoding for Live Volumetric Video Streaming",
+     "year": 2025,
+     "venue": "ACM SIGMOBILE International Conference on Mobile Systems, Applications, and Services",
+     "cites": 4,
+     "url": "https://doi.org/10.1145/3711875.3729131",
+     "openalex": "W4414760770,S2:f8fa85d608bb5bd7dd9395a3315c18006a4c65ed",
+     "abstract": "Live volumetric video streaming enables immersive user experiences but poses significant challenges due to the high bandwidth requirement that 3D representations entail. Recent research has focused on reducing volumetric video bandwidth, but it struggles to effectively address temporal redundancy under real-time constraints, limiting its applicability for live streaming scenarios. To address these",
+     "source": "Semantic Scholar"
+    },
+    {
+     "title": "QCON: Seamless QoE-Aware 5G Streaming via Multi-Connectivity",
+     "year": 2026,
+     "venue": "Symposium on Networked Systems Design and Implementation",
+     "cites": 3,
+     "url": "https://www.semanticscholar.org/paper/91aabbcf0a4d46daec94500116016da86d07a061",
+     "openalex": "S2:91aabbcf0a4d46daec94500116016da86d07a061",
+     "abstract": "",
+     "source": "Semantic Scholar"
+    }
+   ]
+  },
+  {
+   "name": "김영근",
+   "dept": "컴퓨터학과",
+   "email": "younggeun_kim@korea.ac.kr",
+   "lab": "Intelligent Computer Architecture.& Systems Lab.",
+   "lab_url": "https://casl.korea.ac.kr",
+   "name_en": "Young Geun Kim",
+   "openalex": [
+    "A5101854550"
+   ],
+   "confidence": "high",
+   "check": "ORCID 0000-0003-4713-819X, 고려대 소속. 주제(엣지, 탄소 최적화) 일관. CASL 논문 목록과 대조. 같은 ID의 통계 논문(성균관대)은 뺌 Semantic Scholar 저자 목록과 비교해 OpenAlex에 없던 논문을 보충함(source: Semantic Scholar).",
+   "papers": [
+    {
+     "title": "GreenScale: Carbon Optimization for Edge Computing",
+     "year": 2025,
+     "venue": "IEEE Internet of Things Journal",
+     "cites": 55,
+     "url": "https://doi.org/10.1109/jiot.2025.3555153",
+     "openalex": "W4409102047",
+     "abstract": "Given billions of mobile users, the environmental impact of edge computing is significant. To address this, future applications need to execute computations on a green component which is fueled by renewable energy sources. However, because of the intermittent nature of the renewable energy sources, the carbon intensity of computing components can significantly vary with location and time of use. T"
+    },
+    {
+     "title": "Not All Adapters Matter: Selective Adapter Freezing for Memory-Efficient Fine-Tuning of Language Models",
+     "year": 2024,
+     "venue": "North American Chapter of the Association for Computational Linguistics",
+     "cites": 9,
+     "url": "https://doi.org/10.48550/arXiv.2412.03587",
+     "openalex": "S2:b9c3b144bbc7ff39168b3b756214649cd7b27c3f",
+     "abstract": "",
+     "source": "Semantic Scholar"
+    },
+    {
+     "title": "Energy-Efficient, Delay-Constrained Edge Computing of a Network of DNNs",
+     "year": 2024,
+     "venue": "IEEE Transactions on Computers",
+     "cites": 5,
+     "url": "https://doi.org/10.1109/tc.2024.3500368",
+     "openalex": "W4404487521",
+     "abstract": "This paper presents a novel approach for executing the inference of a network of pre-trained deep neural networks (DNNs) on commercial-off-the-shelf devices that are deployed at the edge. The problem is to partition the computation of the DNNs between an energy-constrained and performance-limited edge device$\\boldsymbol{\\mathcal{E}}$, and an energy-unconstrained, higher performance device$\\boldsym"
+    },
+    {
+     "title": "CLOVER: Carbon Optimization of Federated Learning over Heterogeneous Clients",
+     "year": 2024,
+     "venue": "International Symposium on Low Power Electronics and Design (ISLPED)",
+     "cites": 5,
+     "url": "https://doi.org/10.1145/3665314.3670829",
+     "openalex": "W4402349439",
+     "abstract": "Federated Learning (FL) is a decentralized approach to train a DNN model without sharing the on-device training samples with a cloud server. Although FL is a practical solution to prevent the privacy leakage in DNN training, the environmental impact of FL can be significant given billions of mobile users. However, optimizing carbon emissions of FL is challenging because of its unique features such"
+    },
+    {
+     "title": "Near-Memory Computing With Compressed Embedding Table for Personalized Recommendation",
+     "year": 2023,
+     "venue": "IEEE Transactions on Emerging Topics in Computing",
+     "cites": 5,
+     "url": "https://doi.org/10.1109/tetc.2023.3345870",
+     "openalex": "W4390357618",
+     "abstract": "Deep learning (DL)-based recommendation models play an important role in many real-world applications. However, an embedding layer, which is a key part of the DL-based recommendation models, requires sparse memory accesses to a very large memory space followed by the pooling operations (i.e., reduction operations). It makes the system overprovision memory capacity for model deployment. Moreover, w"
+    }
+   ]
+  },
+  {
+   "name": "김정현",
+   "dept": "컴퓨터학과",
+   "email": "gjkim@korea.ac.kr",
+   "lab": "Digital eXPerience Lab",
+   "lab_url": "http://dxp.korea.ac.kr",
+   "name_en": "Gerard Jounghyun Kim",
+   "openalex": [
+    "A5022834069"
+   ],
+   "confidence": "high",
+   "check": "ORCID 0000-0001-9880-8021, 고려대 소속. 주제(VR, 멀미, 가상 인간) 일관. DXP 연구실 논문 목록과 대조(대부분 일치)",
+   "papers": [
+    {
+     "title": "Engaged and Affective Virtual Agents: Their Impact on Social Presence, Trustworthiness, and Decision-Making in the Group Discussion",
+     "year": 2024,
+     "venue": "CHI Conference on Human Factors in Computing Systems",
+     "cites": 43,
+     "url": "https://doi.org/10.1145/3613904.3642917",
+     "openalex": "W4396832915",
+     "abstract": "This study investigates how different virtual agent (VA) behaviors influence subjects’ perceptions and group decision-making. Participants carried out experimental group discussions with a VA exhibiting varying levels of engagement and affective behavior. Engagement refers to the VA’s focus on the group task, whereas affective behavior reflects the VA’s emotional state. The findings revealed that "
+    },
+    {
+     "title": "The Effects of False but Stable Heart Rate Feedback on Cybersickness and User Experience in Virtual Reality",
+     "year": 2024,
+     "venue": "CHI Conference on Human Factors in Computing Systems",
+     "cites": 16,
+     "url": "https://doi.org/10.1145/3613904.3642072",
+     "openalex": "W4396831898",
+     "abstract": "Virtual reality (VR) offers a compelling and immersive experience; however, cybersickness (or VR sickness) stands as a significant obstacle to its widespread adoption. When a user experiences cybersickness, one’s physical condition deteriorates with various symptoms, often accompanied by an increased and destabilized heart rate and even altered perception of one’s state. In this paper, we propose "
+    },
+    {
+     "title": "Effect of virtual-reality-based education program for managing behavioral and psychological symptoms of dementia: A randomized controlled trial",
+     "year": 2024,
+     "venue": "Geriatric Nursing",
+     "cites": 11,
+     "url": "https://doi.org/10.1016/j.gerinurse.2024.09.020",
+     "openalex": "W4403499466",
+     "abstract": ""
+    },
+    {
+     "title": "The Effect of Directional Airflow toward Vection and Cybersickness",
+     "year": 2024,
+     "venue": "IEEE Conference on Virtual Reality and 3D User Interfaces (VR)",
+     "cites": 10,
+     "url": "https://doi.org/10.1109/vr58804.2024.00103",
+     "openalex": "W4394805612",
+     "abstract": "Employing airflow feedback is an effective means of enriching the virtual reality experience multimodally. Most interestingly, there have been conflicting reports of its effect on cybersickness. For example, some research has found that the airflow can be felt as refreshment and ease cybersickness, while others seen it as promoting the sense of vection and worsening the sickness symptoms. We prese"
+    },
+    {
+     "title": "Reducing VR Sickness by Directing User Gaze to Motion Singularity Point/Region as Effective Rest Frame",
+     "year": 2023,
+     "venue": "IEEE Access",
+     "cites": 10,
+     "url": "https://doi.org/10.1109/access.2023.3263544",
+     "openalex": "W4361986915",
+     "abstract": "Simulation sickness is one major obstacle in proliferation of virtual reality. The sensory mismatch between the visual and vestibular senses about user motion is attributed as the main cause. One effective method has been the use of the rest frame, which refers to the reference object that remains fixed in position with respect to the user. A popular choice of the rest frame is the virtual nose, b"
+    }
+   ]
+  },
+  {
+   "name": "김진규",
+   "dept": "컴퓨터학과",
+   "email": "jinkyukim@korea.ac.kr",
+   "lab": "비전 및 인공지능 연구실(Vision and AI Lab)",
+   "lab_url": "https://visionai.korea.ac.kr",
+   "name_en": "Jinkyu Kim",
+   "openalex": [
+    "A5061842716"
+   ],
+   "confidence": "high",
+   "check": "ORCID 0000-0001-6520-2074, 고려대 소속. 주제(자율주행, 영상 생성) 일관. Vision and AI Lab 논문 목록과 대조(대부분 일치). 일부 논문은 같은 학과 김상필 교수(기존 자료)와 공저 Semantic Scholar 저자 목록과 비교해 OpenAlex에 없던 논문을 보충함(source: Semantic Scholar).",
+   "papers": [
+    {
+     "title": "Higher-order Relational Reasoning for Pedestrian Trajectory Prediction",
+     "year": 2024,
+     "venue": "Computer Vision and Pattern Recognition",
+     "cites": 53,
+     "url": "https://doi.org/10.1109/CVPR52733.2024.01444",
+     "openalex": "W4402754052,S2:94cdce19eb72eb56379b4e87abfe365e082fe385",
+     "abstract": "Social relations have substantial impacts on the potential trajectories of each individual. Modeling these dynamics has been a central solution for more precise and accurate trajectory forecasting. However, previous works ignore the importance of ‘social depth’, meaning the influences flowing from different degrees of social relations. In this work, we propose HighGraph, a graph-based pedestrian r",
+     "source": "Semantic Scholar"
+    },
+    {
+     "title": "VisionTrap: Vision-Augmented Trajectory Prediction Guided by Textual Descriptions",
+     "year": 2024,
+     "venue": "Lecture notes in computer science",
+     "cites": 40,
+     "url": "https://doi.org/10.1007/978-3-031-72658-3_21",
+     "openalex": "W4403081604",
+     "abstract": ""
+    },
+    {
+     "title": "The Power of Sound (TPoS): Audio Reactive Video Generation with Stable Diffusion",
+     "year": 2023,
+     "venue": "IEEE/CVF International Conference on Computer Vision (ICCV)",
+     "cites": 32,
+     "url": "https://doi.org/10.1109/iccv51070.2023.00719",
+     "openalex": "W4390872117",
+     "abstract": "In recent years, video generation has become a prominent generative tool and has drawn significant attention. However, there is little consideration in audio-to-video generation, though audio contains unique qualities like temporal semantics and magnitude. Hence, we propose The Power of Sound (TPoS) model to incorporate audio input that includes both changeable temporal semantics and magnitude. To"
+    },
+    {
+     "title": "MEVG: Multi-event Video Generation with Text-to-Video Models",
+     "year": 2024,
+     "venue": "Lecture notes in computer science",
+     "cites": 24,
+     "url": "https://doi.org/10.1007/978-3-031-72775-7_23",
+     "openalex": "W4402961796",
+     "abstract": ""
+    },
+    {
+     "title": "Soundini: Sound-Guided Diffusion for Natural Video Editing",
+     "year": 2023,
+     "venue": "arXiv (Cornell University)",
+     "cites": 20,
+     "url": "https://doi.org/10.48550/arxiv.2304.06818",
+     "openalex": "W4366196985",
+     "abstract": "We propose a method for adding sound-guided visual effects to specific regions of videos with a zero-shot setting. Animating the appearance of the visual effect is challenging because each frame of the edited video should have visual changes while maintaining temporal consistency. Moreover, existing video editing solutions focus on temporal consistency across frames, ignoring the visual style vari"
+    }
+   ]
+  },
+  {
+   "name": "김현철",
+   "dept": "컴퓨터학과",
+   "email": "harrykim@korea.ac.kr",
+   "lab": "지능인포매틱스 연구실(Intelligence aNd Informatics Lab)",
+   "lab_url": "https://ini.korea.ac.kr",
+   "name_en": "Hyeoncheol Kim",
+   "openalex": [
+    "A5021651278"
+   ],
+   "confidence": "medium",
+   "check": "ORCID 0000-0003-0555-8591 고려대 저자. 주제(AI 교육, 지식 추적) 일관. 같은 ID에 섞인 물리 논문(서울대, 포스텍)은 뺌. 연구실 누리집에 논문 목록이 없어 대조 못 함",
+   "papers": [
+    {
+     "title": "Few-shot is enough: exploring ChatGPT prompt engineering method for automatic question generation in english education",
+     "year": 2023,
+     "venue": "Education and Information Technologies",
+     "cites": 273,
+     "url": "https://doi.org/10.1007/s10639-023-12249-8",
+     "openalex": "W4388046560",
+     "abstract": ""
+    },
+    {
+     "title": "Prompt Aloud!: Incorporating image-generative AI into STEAM class with learning analytics using prompt data",
+     "year": 2023,
+     "venue": "Education and Information Technologies",
+     "cites": 121,
+     "url": "https://doi.org/10.1007/s10639-023-12150-4",
+     "openalex": "W4386836433",
+     "abstract": ""
+    },
+    {
+     "title": "Prediction of Cognitive Load from Electroencephalography Signals Using Long Short-Term Memory Network",
+     "year": 2023,
+     "venue": "Bioengineering",
+     "cites": 75,
+     "url": "https://doi.org/10.3390/bioengineering10030361",
+     "openalex": "W4324360559",
+     "abstract": "In recent years, the development of adaptive models to tailor instructional content to learners by measuring their cognitive load has become a topic of active research. Brain fog, also known as confusion, is a common cause of poor performance, and real-time detection of confusion is a challenging and important task for applications in online education and driver fatigue detection. In this study, w"
+    },
+    {
+     "title": "The impact of a large language model-based programming learning environment on students’ motivation and programming ability",
+     "year": 2024,
+     "venue": "Education and Information Technologies",
+     "cites": 44,
+     "url": "https://doi.org/10.1007/s10639-024-13107-x",
+     "openalex": "W4404223773",
+     "abstract": ""
+    },
+    {
+     "title": "Language Model Can Do Knowledge Tracing: Simple but Effective Method to Integrate Language Model and Knowledge Tracing Task",
+     "year": 2024,
+     "venue": "arXiv (Cornell University)",
+     "cites": 35,
+     "url": "https://doi.org/10.48550/arxiv.2406.02893",
+     "openalex": "W4399447564",
+     "abstract": "Knowledge Tracing (KT) is a critical task in online learning for modeling student knowledge over time. Despite the success of deep learning-based KT models, which rely on sequences of numbers as data, most existing approaches fail to leverage the rich semantic information in the text of questions and concepts. This paper proposes Language model-based Knowledge Tracing (LKT), a novel framework that"
+    }
+   ]
+  },
+  {
+   "name": "김효곤",
+   "dept": "컴퓨터학과",
+   "email": "hyogon@korea.ac.kr",
+   "lab": "무선데이터통신 연구실",
+   "lab_url": "http://widen.korea.ac.kr",
+   "name_en": "Hyogon Kim",
+   "openalex": [
+    "A5051967131"
+   ],
+   "confidence": "medium",
+   "check": "ORCID 0000-0002-9622-8469, 고려대 소속. 주제(V2X, 혼잡 제어) 일관. 연구실 누리집 접속 결과가 비어 목록 대조 못 함",
+   "papers": [
+    {
+     "title": "Causality-Sensitive Scheduling to Reduce Latency in Vehicle-to-Vehicle Interactions",
+     "year": 2024,
+     "venue": "Sensors",
+     "cites": 8,
+     "url": "https://doi.org/10.3390/s24227142",
+     "openalex": "W4404106305",
+     "abstract": "This paper shows through real-life measurement that bi-directional vehicle-to-vehicle (V2V) communication latency can be dominated by sidelink scheduling delay when causality is not taken into account. Moreover, the large delay persists for a few seconds at a time once it occurs. In applications like maneuver coordination between autonomous vehicles or in platoon, such delay can be highly detrimen"
+    },
+    {
+     "title": "Deep reinforcement learning‐based dual‐mode congestion control for cellular V2X environments",
+     "year": 2023,
+     "venue": "Electronics Letters",
+     "cites": 5,
+     "url": "https://doi.org/10.1049/ell2.12984",
+     "openalex": "W4387611409",
+     "abstract": "Abstract The Society of Automotive Engineers (SAE) J2945/1 standard for Dedicated Short Range Communication (DSRC) environmentutilizes transmit (Tx) power control and rate control elements for the periodic BSM transmissions, which are intended to work in a complementary manner. An equivalent standard for the cellular vehicle‐to‐everything (C‐V2X) communication environment is J3161/1, but it elimin"
+    },
+    {
+     "title": "Inferring Human Driver Intent in Partial Deployment of Connected Autonomous Vehicles: the Lane Change Case",
+     "year": 2023,
+     "venue": "IEEE Vehicular Technology Conference",
+     "cites": 5,
+     "url": "https://doi.org/10.1109/vtc2023-spring57618.2023.10200788",
+     "openalex": "W4385801706",
+     "abstract": "Co-existence between autonomous vehicles (AVs) and human-driven vehicles expected in the next few decades poses a problem for AVs to infer human drivers’ intents nearby and cope with them safely and efficiently. To address this issue, we develop a light-weight deep learning model for a connected autonomous vehicle (CAV) to infer intents in a safety-critical case of lane changes made by human-drive"
+    },
+    {
+     "title": "Distributed Joint Congestion Control for V2X Using Multi-Agent Reinforcement Learning",
+     "year": 2024,
+     "venue": "IEEE International Conference on Machine Learning for Communication and Networking (ICMLCN)",
+     "cites": 4,
+     "url": "https://doi.org/10.1109/icmlcn59089.2024.10624776",
+     "openalex": "W4401609026",
+     "abstract": "With the advancements of research on autonomous driving, wireless communication between autonomous vehicles is becoming increasingly important so that they can exchange information about their kinematics. Specifically, each vehicle periodically sends Basic Safety Messages (BSM) or Cooperative Awareness Messages (CAM) containing the vehicle’s position, speed, and acceleration to prevent a car crash"
+    },
+    {
+     "title": "Strategically Positioning On-Board PEPs in LEO-based NTN for TCP Throughput Improvement",
+     "year": 2023,
+     "venue": "IEEE Vehicular Technology Conference",
+     "cites": 4,
+     "url": "https://doi.org/10.1109/vtc2023-fall60731.2023.10333683",
+     "openalex": "W4389544838",
+     "abstract": "Non-terrestrial network (NTN) is a technology that enables mobile devices such as smartphones to directly communicate with Low Earth Orbit (LEO) satellites and access Internet services from anywhere on the globe. Although initial commercial releases offer only limited bandwidth, the technology is expected to rapidly expand its capacity with \"mega-constellations.\" In this paper, we explore novel co"
+    }
+   ]
+  },
+  {
+   "name": "문경식",
+   "dept": "컴퓨터학과",
+   "email": "mks0601@korea.ac.kr",
+   "lab": "Visual Computing and AI (VCAI) Lab",
+   "lab_url": "https://www.vcai.korea.ac.kr/",
+   "name_en": "Gyeongsik Moon",
+   "openalex": [
+    "A5005534094"
+   ],
+   "confidence": "high",
+   "check": "ORCID 0000-0003-0610-7936, Meta, DGIST 이후 고려대. 주제(3D 사람, 손 복원) 일관. VCAI 논문 목록과 대조(일치)",
+   "papers": [
+    {
+     "title": "Expressive Whole-Body 3D Gaussian Avatar",
+     "year": 2024,
+     "venue": "Lecture notes in computer science",
+     "cites": 73,
+     "url": "https://doi.org/10.1007/978-3-031-72940-9_2",
+     "openalex": "W4404439890",
+     "abstract": ""
+    },
+    {
+     "title": "MultiAct: Long-Term 3D Human Motion Generation from Multiple Action Labels",
+     "year": 2023,
+     "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+     "cites": 42,
+     "url": "https://doi.org/10.1609/aaai.v37i1.25206",
+     "openalex": "W4382240674",
+     "abstract": "We tackle the problem of generating long-term 3D human motion from multiple action labels. Two main previous approaches, such as action- and motion-conditioned methods, have limitations to solve this problem. The action-conditioned methods generate a sequence of motion from a single action. Hence, it cannot generate long-term motions composed of multiple actions and transitions between actions. Me"
+    },
+    {
+     "title": "Bringing Inputs to Shared Domains for 3D Interacting Hands Recovery in the Wild",
+     "year": 2023,
+     "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+     "cites": 33,
+     "url": "https://doi.org/10.1109/cvpr52729.2023.01633",
+     "openalex": "W4386072153",
+     "abstract": "Despite recent achievements, existing 3D interacting hands recovery methods have shown results mainly on motion capture (MoCap) environments, not on in-the-wild (ITW) ones. This is because collecting 3D interacting hands data in the wild is extremely challenging, even for the 2D data. We present InterWild, which brings MoCap and ITW samples to shared domains for robust 3D interacting hands recover"
+    },
+    {
+     "title": "Joint Reconstruction of 3D Human and Object via Contact-Based Refinement Transformer",
+     "year": 2024,
+     "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+     "cites": 23,
+     "url": "https://doi.org/10.1109/cvpr52733.2024.00973",
+     "openalex": "W4402727207",
+     "abstract": "Human-object contact serves as a strong cue to understand how humans physically interact with objects. Nev-ertheless, it is not widely explored to utilize human-object contact information for the joint reconstruction of 3D human and object from a single image. In this work, we present a novel joint 3D human-object reconstruction method (CONTHO) that effectively exploits contact information between"
+    },
+    {
+     "title": "URHand: Universal Relightable Hands",
+     "year": 2024,
+     "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+     "cites": 21,
+     "url": "https://doi.org/10.1109/cvpr52733.2024.00020",
+     "openalex": "W4402733580",
+     "abstract": "Existing photorealistic relightable hand models require extensive identity-specific observations in different views, poses, and illuminations, and face challenges in generalizing to natural illuminations and novel identities. To bridge this gap, we present URHand, the first universal relightable hand model that generalizes across viewpoints, poses, illuminations, and identities. Our model allows f"
+    }
+   ]
+  },
+  {
+   "name": "민성기",
+   "dept": "컴퓨터학과",
+   "email": "sgmin@korea.ac.kr",
+   "lab": "고속통신연구실",
+   "lab_url": "http://hcl.korea.ac.kr",
+   "name_en": "Sung-Gi Min",
+   "openalex": [
+    "A5012942201"
+   ],
+   "confidence": "medium",
+   "check": "ORCID 0000-0002-4244-0157, 고려대 소속. 2023년 이후 논문 2편뿐(차량 이동성 관리). 연구실 누리집 접속 불가로 목록 대조 못 함 Semantic Scholar 저자 목록과 비교해 OpenAlex에 없던 논문을 보충함(source: Semantic Scholar). 보충 1편(IEICE, 공유 프리픽스 모델)은 같은 주제라 넣음.",
+   "papers": [
+    {
+     "title": "A SDN-Based Vehicular Mobility Management for a Shared-Prefix Model Over IEEE WAVE IPv6 Networks",
+     "year": 2023,
+     "venue": "IEEE Access",
+     "cites": 2,
+     "url": "https://doi.org/10.1109/access.2023.3347412",
+     "openalex": "W4390204139",
+     "abstract": "IETF IP WAVE Working Group proposes a vehicular mobility management scheme with a shared-prefix model that multiple RSUs share a common prefix. When using a shared-prefix model, a WAVE wireless interface on a vehicle does not need to reconfigure its IPv6 address even if its serving RSU is changed to another RSU in the same prefix domain. We had proposed a vehicular mobility management scheme for a"
+    },
+    {
+     "title": "A Localized Forwarding Scheme for the Shared-Prefix Model-Based Vehicular Mobility Management Over IEEE WAVE IPv6 Networks",
+     "year": 2023,
+     "venue": "IEEE Access",
+     "cites": 2,
+     "url": "https://doi.org/10.1109/access.2023.3298952",
+     "openalex": "W4385267118",
+     "abstract": "IETF IP Wireless Access in Vehicular Environments Working Group proposes a shared-prefix model, where multiple RSUs share a common prefix. In the same prefix domain, a WAVE wireless interface does not need to reconfigure its IPv6 address even if its serving RSU is changed. We had proposed a vehicular mobility management scheme for a shared prefix model over IEEE WAVE IPv6 networks. However, when t"
+    },
+    {
+     "title": "An Identifier Locator Separation Protocol for the Shared Prefix Model over IEEE WAVE IPv6 Networks",
+     "year": 2023,
+     "venue": "IEICE transactions on communications",
+     "cites": 2,
+     "url": "https://doi.org/10.1587/transcom.2022ebp3141",
+     "openalex": "W4312434669,S2:e6a7ac1d315923c2ecfdc057695f9dbba87c880b",
+     "abstract": "As the active safety of vehicles has become essential, vehicular communication has been gaining attention. The IETF IPWAVE working group has proposed the shared prefix model-based vehicular link model. In the shared prefix model, a prefix is shared among RSUs to prevent changes in IPv6 addresses of a vehicle within a shared prefix domain. However, vehicle movement must be tracked to deliver packet",
+     "source": "Semantic Scholar"
+    }
+   ]
+  },
+  {
+   "name": "박성빈",
+   "dept": "컴퓨터학과",
+   "email": "hyperspace@korea.ac.kr",
+   "lab": "하이퍼미디어 연구실",
+   "lab_url": "",
+   "name_en": "Seongbin Park",
+   "openalex": [
+    "A5057645734",
+    "A5109279304"
+   ],
+   "confidence": "low",
+   "check": "OpenAlex의 두 ID가 다른 사람(세종대 패턴 마이닝 학생, UCLA, 충북대 곤충학, 김영근 교수 연구실 학생)과 섞여 있음. 고려대 소속이면서 박성빈이 마지막 저자이고 공저자(Yuri Kim, Seoyeon Oh, Chaerin Noh)가 겹치는 4편만 남김. 주제(시맨틱 웹, 추천, 컴퓨터 교육)는 하이퍼미디어 연구실과 맞지만 연구실 누리집이 없어 목록 대조 못 함",
+   "papers": [
+    {
+     "title": "A Rule-Based Stock Trading Recommendation System Using Sentiment Analysis and Technical Indicators",
+     "year": 2025,
+     "venue": "Electronics",
+     "cites": 13,
+     "url": "https://doi.org/10.3390/electronics14040773",
+     "openalex": "W4407626121",
+     "abstract": "This paper presents a stock trading recommendation system that integrates news sentiment analysis with the relative strength index (RSI) to provide informed buy–sell decisions. The system uses a rule-based natural language processing (NLP) approach to analyze recent news articles and combines the resulting sentiment scores with the RSI, which tracks stock momentum. By evaluating seven days of news"
+    },
+    {
+     "title": "Design of a Serendipity-Incorporated Recommender System",
+     "year": 2025,
+     "venue": "Electronics",
+     "cites": 9,
+     "url": "https://doi.org/10.3390/electronics14040821",
+     "openalex": "W4407740412",
+     "abstract": "Unexpected yet advantageous findings, often referred to as serendipitous discoveries, are becoming increasingly significant in the field of computer science. This research aims to examine the impact of factors that could potentially trigger such serendipity within a recommender system (RS) and consequently proposes a novel, serendipity-incorporated recommender system (SRS). The SRS is developed by"
+    },
+    {
+     "title": "Introducing the hidden subgroup problem in discrete mathematics class",
+     "year": 2025,
+     "venue": "Computer Science Research Notes",
+     "cites": 0,
+     "url": "https://doi.org/10.24132/csrn.2025-a59",
+     "openalex": "W4414847249",
+     "abstract": "Discrete mathematics is a branch of mathematics that deals with discrete structures, where a discrete structure is defined as either a finite nonempty set or a countably infinite set over which various relations, operations are defined.For computer science students, this is a class where fundamental subjects such as logic, number theory, relation, set theory, graph theory, algorithms are introduce"
+    },
+    {
+     "title": "Application of Machine Learning in the Web of Linked Data",
+     "year": 2024,
+     "venue": "International Journal on Advanced Science Engineering and Information Technology",
+     "cites": 0,
+     "url": "https://doi.org/10.18517/ijaseit.14.4.16802",
+     "openalex": "W4401300398",
+     "abstract": "Linked Open Data (LOD) refers to guidelines for publishing and connecting structured data on the internet. Utilizing web technologies like HTTP, RDF, and URIs, Linked Data establishes entities across diverse domains and links them through categorized connections, thus forming a web of data readable by machines rather than humans. The LOD, often dubbed the Web of Linked Data, is an ever-expanding r"
+    }
+   ]
+  },
+  {
+   "name": "박종혁",
+   "dept": "컴퓨터학과",
+   "email": "jonghyeok_park@korea.ac.kr",
+   "lab": "데이터베이스 시스템 연구실 (Database Systems Lab)",
+   "lab_url": "https://dbs.korea.ac.kr/",
+   "name_en": "Jonghyeok Park",
+   "openalex": [
+    "A5101898807"
+   ],
+   "confidence": "high",
+   "check": "OpenAlex ID A5101898807(한국외대 이후 고려대, DB와 저장장치). 같은 이름의 다른 고려대 저자(태양전지 화학)는 제외. DBS 연구실 논문 목록과 대조(일치)",
+   "papers": [
+    {
+     "title": "NV-SQL: Boosting OLTP Performance with Non-Volatile DIMMs",
+     "year": 2023,
+     "venue": "Proceedings of the VLDB Endowment",
+     "cites": 8,
+     "url": "https://doi.org/10.14778/3583140.3583159",
+     "openalex": "W4366660614",
+     "abstract": "When running OLTP workloads, relational DBMSs with flash SSDs still suffer from the durability overhead. Heavy writes to SSD not only limit the performance but also shorten the storage lifespan. To mitigate the durability overhead, this paper proposes a new database architecture, NV-SQL. NV-SQL aims at absorbing a large fraction of writes written from DRAM to SSD by introducing NVDIMM into the mem"
+    },
+    {
+     "title": "FlashAlloc: Dedicating Flash Blocks by Objects",
+     "year": 2023,
+     "venue": "Proceedings of the VLDB Endowment",
+     "cites": 5,
+     "url": "https://doi.org/10.14778/3611479.3611524",
+     "openalex": "W4386123429",
+     "abstract": "For a write request, today's flash storage cannot distinguish the logical object it comes from ( e.g. , SSTables in RocksDB). In such object-oblivious flash devices, concurrent writes from different objects are simply packed in their arrival order to flash memory blocks; hence data pages from multiple objects with different lifetimes are multiplexed onto the same flash blocks. This multiplexing in"
+    },
+    {
+     "title": "Boosting OLTP Performance with Per-Page Logging on NVDIMM",
+     "year": 2025,
+     "venue": "Proceedings of the ACM on Management of Data",
+     "cites": 3,
+     "url": "https://doi.org/10.1145/3709667",
+     "openalex": "W4407357343",
+     "abstract": "When running OLTP workloads on flash SSDs, relational DBMSs still face the write durability overhead, severely limiting their performance. To address this challenge, we propose NV-PPL, a novel database architecture that leverages NVDIMM as a durable log cache. NV-PPL captures per-page redo logs and retains them on NVDIMM to absorb writes from DRAM to SSD. Our NV-PPL prototype, deployed on an actua"
+    },
+    {
+     "title": "ESL: A High-Performance Skiplist with Express Lane",
+     "year": 2023,
+     "venue": "Applied Sciences",
+     "cites": 2,
+     "url": "https://doi.org/10.3390/app13179925",
+     "openalex": "W4386417931",
+     "abstract": "With the increasing capacity and cost-efficiency of DRAM in multi-core environments, in-memory databases have emerged as fundamental solutions for delivering high performance. The index structure is a crucial component of the in-memory database, which, leveraging fast access to DRAM, plays an important role in the performance improvement and scalability of in-memory databases. A skiplist is one of"
+    },
+    {
+     "title": "Converting Concurrent Range Index Structure to Range Index Structure for Disaggregated Memory",
+     "year": 2023,
+     "venue": "Applied Sciences",
+     "cites": 1,
+     "url": "https://doi.org/10.3390/app132011130",
+     "openalex": "W4387497516",
+     "abstract": "In this work, we propose the Spread approach, which tailors a concurrent range index structure to a range index structure for disaggregated memory connected via RDMA (Remote Direct Memory Access). The Spread approach leverages the concept of tolerating transient inconsistencies in a concurrent range index structure to reduce the amount of expensive RDMA operations. Based on the Spread approach, we"
+    }
+   ]
+  },
+  {
+   "name": "박지혁",
+   "dept": "컴퓨터학과",
+   "email": "jihyeok_park@korea.ac.kr",
+   "lab": "프로그래밍 언어 연구실",
+   "lab_url": "https://plrg.korea.ac.kr/",
+   "name_en": "Jihyeok Park",
+   "openalex": [
+    "A5086668734"
+   ],
+   "confidence": "high",
+   "check": "ORCID 0000-0001-8387-1984, 고려대 소속. 주제(프로그래밍 언어, JavaScript) 일관. PLRG 논문 목록과 대조. 목록에 없는 아주대 교통 텍스트 분류 논문은 동명이인으로 뺌",
+   "papers": [
+    {
+     "title": "JavaScript Language Design and Implementation in Tandem",
+     "year": 2024,
+     "venue": "Communications of the ACM",
+     "cites": 8,
+     "url": "https://doi.org/10.1145/3624723",
+     "openalex": "W4394951647",
+     "abstract": "Proposing a new approach to programming language development."
+    },
+    {
+     "title": "Feature-Sensitive Coverage for Conformance Testing of Programming Language Implementations",
+     "year": 2023,
+     "venue": "Proceedings of the ACM on Programming Languages",
+     "cites": 7,
+     "url": "https://doi.org/10.1145/3591240",
+     "openalex": "W4379536137",
+     "abstract": "The conformance testing of programming language implementations is crucial to support correct and consistent execution environments. Because manually maintaining conformance tests for real-world programming languages is cumbersome and labor-intensive, researchers have presented various ways to make conformance tests effective and efficient. One such approach is to use graph coverage, one of the mo"
+    },
+    {
+     "title": "PL4XGL: A Programming Language Approach to Explainable Graph Learning",
+     "year": 2024,
+     "venue": "Proceedings of the ACM on Programming Languages",
+     "cites": 3,
+     "url": "https://doi.org/10.1145/3656464",
+     "openalex": "W4399872430",
+     "abstract": "In this article, we present a new, language-based approach to explainable graph learning. Though graph neural networks (GNNs) have shown impressive performance in various graph learning tasks, they have severe limitations in explainability, hindering their use in decision-critical applications. To address these limitations, several GNN explanation techniques have been proposed using a post-hoc exp"
+    },
+    {
+     "title": "Selective Feature-Sensitive Coverage for Conformance Testing of Programming Languages",
+     "year": 2026,
+     "venue": "ACM Transactions on Software Engineering and Methodology",
+     "cites": 1,
+     "url": "https://doi.org/10.1145/3808231",
+     "openalex": "W7154188081",
+     "abstract": "The conformance testing of programming language implementations is crucial to support correct and consistent execution environments. Researchers often use coverage information in the mechanized language specification to generate or check the quality of conformance tests. Since specifications use inductive definitions to describe the semantics of language features, traditional graph coverage criter"
+    },
+    {
+     "title": "Debun: Detecting Bundled JavaScript Libraries on Web using Property-Order Graphs",
+     "year": 2025,
+     "venue": "IEEE/ACM International Conference on Automated Software Engineering (ASE)",
+     "cites": 1,
+     "url": "https://doi.org/10.1109/ase63991.2025.00015",
+     "openalex": "W7125932354",
+     "abstract": "Detecting front-end JavaScript libraries in web applications is essential for website profiling, vulnerability detection, and dependency management. However, bundlers like Webpack transpile code in various ways, altering the original directory and code structure, which complicates library detection. While state-of-the-art techniques utilize property pattern-based library detection at runtime, they"
+    }
+   ]
+  },
+  {
+   "name": "박채용",
+   "dept": "컴퓨터학과",
+   "email": "chaeyong@korea.ac.kr",
+   "lab": "Augmented Experience and Interactive Systems Laboratory (AXIS Lab.) 증강경험 및 인터랙티브시스템 연구실",
+   "lab_url": "https://axis.korea.ac.kr/",
+   "name_en": "Chaeyong Park",
+   "openalex": [
+    "A5049432290"
+   ],
+   "confidence": "high",
+   "check": "ORCID 0000-0001-7243-8579, 포스텍 이후 고려대. 주제(햅틱, VR) 일관. AXIS 연구실 논문 목록과 대조(일치)",
+   "papers": [
+    {
+     "title": "Interactive Deformable Colored Sound Display Achieved with Electrostrictive Fluoropolymer and Halide Perovskite",
+     "year": 2024,
+     "venue": "Small",
+     "cites": 13,
+     "url": "https://doi.org/10.1002/smll.202402281",
+     "openalex": "W4399900453",
+     "abstract": "The association of color and sound helps human cognition through a synergetic effect like intersensory facilitation. Although soft human-machine interfaces (HMIs) providing unisensory expression have been widely developed, achieving synchronized optic and acoustic expression in one device system has been relatively less explored. It is because their operating principles are different in terms of m"
+    },
+    {
+     "title": "Human Recognition Performance of Simple Spatial Vibrotactile Patterns on the Torso",
+     "year": 2023,
+     "venue": "IEEE World Haptics Conference (WHC)",
+     "cites": 12,
+     "url": "https://doi.org/10.1109/whc56415.2023.10224430",
+     "openalex": "W4386158847",
+     "abstract": "This paper presents an experimental study on the fundamental human recognition performance of spatial tactile patterns applied on the torso. The patterns are made by either activating or deactivating four vibration actuators fastened to the body surface in a rectangular shape. Three body areas are considered for stimulation: the torso’s front (chest and stomach), back, and waist. A perceptual expe"
+    },
+    {
+     "title": "Perceptual Simultaneity Between Vibrotactile and Impact Stimuli",
+     "year": 2023,
+     "venue": "IEEE World Haptics Conference (WHC)",
+     "cites": 12,
+     "url": "https://doi.org/10.1109/whc56415.2023.10224459",
+     "openalex": "W4386159128",
+     "abstract": "Multimodal haptic rendering that simultaneously presents stimuli of multiple haptic modalities, such as vibration, impact, and thermal, has the potential to provide richer and more immersive haptic experiences than unimodal haptic rendering. For that, maintaining the synchrony between distinct haptic stimuli is crucial, as it significantly affects the overall quality of haptic sensations perceived"
+    },
+    {
+     "title": "Visuo-haptic Crossmodal Shape Perception Model for Shape-Changing Handheld Controllers Bridged by Inertial Tensor",
+     "year": 2023,
+     "venue": "CHI Conference on Human Factors in Computing Systems",
+     "cites": 12,
+     "url": "https://doi.org/10.1145/3544548.3580724",
+     "openalex": "W4366547427",
+     "abstract": "We present a visuo-haptic crossmodal model of shape perception designed for shape-changing handheld controllers. The model uses the inertia tensor of an object to bridge the two senses. The model was constructed from the results of three perceptual experiments. In the first two experiments, we validate that the primary moment and product of inertia (MOI and POI) in the inertia tensor have critical"
+    },
+    {
+     "title": "Augmenting Perceived Length of Handheld Controllers: Effects of Object Handle Properties",
+     "year": 2024,
+     "venue": "CHI Conference on Human Factors in Computing Systems",
+     "cites": 6,
+     "url": "https://doi.org/10.1145/3613904.3642251",
+     "openalex": "W4396833010",
+     "abstract": "In the realm of virtual reality (VR), shape-changing controllers have emerged as a means to enhance visuo-haptic congruence during user interactions. The major emphasis has been placed on manipulating the inertia tensor of a shape-changing controller to control the perceived shape. This paper delves deeper by exploring how the material properties of the controller’s handle, distinct from the inert"
+    }
+   ]
+  },
+  {
+   "name": "백승준",
+   "dept": "컴퓨터학과",
+   "email": "sjbaek@korea.ac.kr",
+   "lab": "지능시스템연구실",
+   "lab_url": "http://sing.korea.ac.kr",
+   "name_en": "Seung Jun Baek",
+   "openalex": [
+    "A5009631871"
+   ],
+   "confidence": "high",
+   "check": "ORCID 0000-0002-1226-0147, 고려대 소속. 주제(의료 영상, 그래프, QA) 일관. SING 연구실 논문 목록과 대조(일치). 같은 이름의 다른 고려대 저자(암호 구현)는 제외 Semantic Scholar 저자 목록과 비교해 OpenAlex에 없던 논문을 보충함(source: Semantic Scholar).",
+   "papers": [
+    {
+     "title": "Application of deep learning technology for temporal analysis of videofluoroscopic swallowing studies",
+     "year": 2023,
+     "venue": "Scientific Reports",
+     "cites": 28,
+     "url": "https://doi.org/10.1038/s41598-023-44802-3",
+     "openalex": "W4387668986",
+     "abstract": "Abstract Background: For an objective and quantitative evaluation for videofluosroscopic swallowing study (VFSS), temporal parameters during swallowing are analyzed for both clinical and research purposes. However, because it is time-consuming and is complicated to analyze manually by clinicians, automated analysis using deep learning has been attempted. This study aimed to develop a model for aut"
+    },
+    {
+     "title": "Explain in Your Own Words: Improving Reasoning via Token-Selective Dual Knowledge Distillation",
+     "year": 2026,
+     "venue": "International Conference on Learning Representations",
+     "cites": 22,
+     "url": "https://doi.org/10.48550/arXiv.2603.13260",
+     "openalex": "W7138152349,S2:eaf7f264e6b8e2d683bd076ac642a196b2fde84b",
+     "abstract": "Knowledge Distillation (KD) can transfer the reasoning abilities of large models to smaller ones, which can reduce the costs to generate Chain-of-Thoughts for reasoning tasks. KD methods typically ask the student to mimic the teacher's distribution over the entire output. However, a student with limited capacity can be overwhelmed by such extensive supervision causing a distribution mismatch, espe",
+     "source": "Semantic Scholar"
+    },
+    {
+     "title": "Automatic Assessment of Upper Extremity Function and Mobile Application for Self-Administered Stroke Rehabilitation",
+     "year": 2024,
+     "venue": "IEEE Transactions on Neural Systems and Rehabilitation Engineering",
+     "cites": 20,
+     "url": "https://doi.org/10.1109/tnsre.2024.3358497",
+     "openalex": "W4391216283",
+     "abstract": "Rehabilitation training is essential for a successful recovery of upper extremity function after stroke. Training programs are typically conducted in hospitals or rehabilitation centers, supervised by specialized medical professionals. However, frequent visits to hospitals can be burdensome for stroke patients with limited mobility. We consider a self-administered rehabilitation system based on a "
+    },
+    {
+     "title": "NeBLa: Neural Beer-Lambert for 3D Reconstruction of Oral Structures from Panoramic Radiographs",
+     "year": 2024,
+     "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+     "cites": 12,
+     "url": "https://doi.org/10.1609/aaai.v38i5.28241",
+     "openalex": "W4393149596",
+     "abstract": "Panoramic radiography (Panoramic X-ray, PX) is a widely used imaging modality for dental examination. However, PX only provides a flattened 2D image, lacking in a 3D view of the oral structure. In this paper, we propose NeBLa (Neural Beer-Lambert) to estimate 3D oral structures from real-world PX. NeBLa tackles full 3D reconstruction for varying subjects (patients) where each reconstruction is bas"
+    },
+    {
+     "title": "Dual Domain Diffusion Guidance for 3D CBCT Metal Artifact Reduction",
+     "year": 2024,
+     "venue": "IEEE Winter Conference on Applications of Computer Vision",
+     "cites": 12,
+     "url": "https://doi.org/10.1109/wacv57701.2024.00778",
+     "openalex": "W4394625872",
+     "abstract": "Previous methods to solve the problem of metal artifact reduction (MAR) have mostly focused on 2D MAR, making it challenging to apply to problems with 3-dimensional CT such as CBCT. In this paper, we propose a novel approach for 3D MAR which utilizes two diffusion models to model the metal-free CBCT prior and metal artifact prior. Through dual-domain guidance in the image and projection domains, t"
+    }
+   ]
+  },
+  {
+   "name": "서태원",
+   "dept": "컴퓨터학과",
+   "email": "suhtw@korea.ac.kr",
+   "lab": "임베디드컴퓨팅 연구실",
+   "lab_url": "http://esca.korea.ac.kr",
+   "name_en": "Taeweon Suh",
+   "openalex": [
+    "A5018071173"
+   ],
+   "confidence": "medium",
+   "check": "ORCID 0000-0002-6377-5482, 고려대 소속. 주제(가속기, 하드웨어 보안) 일관. 연구실 누리집이 옛 형식이라 목록 대조 못 함",
+   "papers": [
+    {
+     "title": "SparsePIM: An Efficient HBM-Based PIM Architecture for Sparse Matrix-Vector Multiplications",
+     "year": 2025,
+     "venue": "International Conference on Supercomputing",
+     "cites": 9,
+     "url": "https://doi.org/10.1145/3721145.3735111",
+     "openalex": "W4413411851",
+     "abstract": "Sparse matrix-vector multiplication (SpMV) is a fundamental operation across diverse domains, including scientific computing, machine learning, and graph processing.However, its irregular memory access patterns necessitate frequent data retrieval from external memory, leading to significant inefficiencies on conventional processors such as CPUs and GPUs.Processing-in-memory (PIM) presents a promis"
+    },
+    {
+     "title": "Decentralized Translator of Trust: Supporting Heterogeneous TEE for Critical Infrastructure Protection",
+     "year": 2023,
+     "venue": "ACM International Symposium on Blockchain and Secure Critical Infrastructure (BSCI)",
+     "cites": 9,
+     "url": "https://doi.org/10.1145/3594556.3594626",
+     "openalex": "W4386632324",
+     "abstract": "Trusted execution environment (TEE) technology has found many applications in mitigating various security risks in an efficient manner, which is attractive for critical infrastructure protection. First, the natural of critical infrastructure requires it to be well protected from various cyber attacks. Second, performance is usually important for critical infrastructure and it cannot afford an expe"
+    },
+    {
+     "title": "StarSPA: Stride-Aware Sparsity Compression for Efficient CNN Acceleration",
+     "year": 2024,
+     "venue": "IEEE Access",
+     "cites": 8,
+     "url": "https://doi.org/10.1109/access.2024.3353313",
+     "openalex": "W4390818801",
+     "abstract": "The presence of sparsity in both input features and weights within convolutional neural networks offers a valuable opportunity to significantly reduce the number of computations required during inference. Moreover, the practice of compressing input data serves to diminish storage requirements and lower data transfer costs, ultimately enhancing overall power efficiency. However, the compression of "
+    },
+    {
+     "title": "Optimization of Microarchitecture and Dataflow for Sparse Tensor CNN Acceleration",
+     "year": 2023,
+     "venue": "IEEE Access",
+     "cites": 6,
+     "url": "https://doi.org/10.1109/access.2023.3319727",
+     "openalex": "W4387092396",
+     "abstract": "The inherent sparsity present in convolutional neural networks (CNNs) offers a valuable opportunity to significantly decrease the computational workload during inference. Nevertheless, leveraging unstructured sparsity typically comes with the trade-off of increased complexity or substantial hardware overheads for accelerators. To address these challenges, this research introduces an innovativeinne"
+    },
+    {
+     "title": "Cross-Filter Structured Pruning for Efficient Sparse CNN Acceleration",
+     "year": 2025,
+     "venue": "IEEE Access",
+     "cites": 2,
+     "url": "https://doi.org/10.1109/access.2025.3587027",
+     "openalex": "W4412107013",
+     "abstract": "Convolutional Neural Networks (CNNs) are widely used in vision tasks for resource-constrained environments due to their computational efficiency and strong generalization. However, the dominance of 1×1 convolutions in modern CNN architectures introduces challenges for sparsity-aware hardware accelerators, particularly in processing element (PE) load balancing, which limits speedup in sparse infere"
+    }
+   ]
+  },
+  {
+   "name": "서홍석",
+   "dept": "컴퓨터학과",
+   "email": "phseo@korea.ac.kr",
+   "lab": "Multimodal Interactive Intelligence Laboratory (MIIL)",
+   "lab_url": "https://miil.korea.ac.kr/",
+   "name_en": "Paul Hongsuck Seo",
+   "openalex": [
+    "A5051808590"
+   ],
+   "confidence": "high",
+   "check": "ORCID 0000-0002-6747-1101, Google 이후 고려대. 주제(비전언어, 분할) 일관. MIIL 논문 목록과 대조(일치)",
+   "papers": [
+    {
+     "title": "Vid2Seq: Large-Scale Pretraining of a Visual Language Model for Dense Video Captioning",
+     "year": 2023,
+     "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+     "cites": 301,
+     "url": "https://doi.org/10.1109/cvpr52729.2023.01032",
+     "openalex": "W4386066385",
+     "abstract": "In this work, we introduce Vid2Seq, a multi-modal single-stage dense event captioning model pretrained on narrated videos which are readily-available at scale. The Vid2Seq architecture augments a language model with special time tokens, allowing it to seamlessly predict event boundaries and textual descriptions in the same output sequence. Such a unified model requires large-scale training data, w"
+    },
+    {
+     "title": "CAT-Seg: Cost Aggregation for Open-Vocabulary Semantic Segmentation",
+     "year": 2024,
+     "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+     "cites": 209,
+     "url": "https://doi.org/10.1109/cvpr52733.2024.00394",
+     "openalex": "W4402715795",
+     "abstract": "Open-vocabulary semantic segmentation presents the challenge of labeling each pixel within an image based on a wide range of text descriptions. In this work, we introduce a novel cost-based approach to adapt vision-language foundation models, notably CLIP, for the intricate task of semantic segmentation. Through aggregating the cosine similarity score, i. e., the cost volume between image and text"
+    },
+    {
+     "title": "Zero-shot Referring Image Segmentation with Global-Local Context Features",
+     "year": 2023,
+     "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+     "cites": 69,
+     "url": "https://doi.org/10.1109/cvpr52729.2023.01864",
+     "openalex": "W4386076148",
+     "abstract": "Referring image segmentation (RIS) aims to find a segmentation mask given a referring expression grounded to a region of the input image. Collecting labelled datasets for this task, however, is notoriously costly and labor-intensive. To overcome this issue, we propose a simple yet effective zero-shot referring image segmentation method by leveraging the pre-trained cross-modal knowledge from CLIP."
+    },
+    {
+     "title": "Learning Correlation Structures for Vision Transformers",
+     "year": 2024,
+     "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+     "cites": 36,
+     "url": "https://doi.org/10.1109/cvpr52733.2024.01792",
+     "openalex": "W4402754139",
+     "abstract": "We introduce a new attention mechanism, dubbed structural self-attention (StructSA), that leverages rich correlation patterns naturally emerging in key-query interactions of attention. StructSA generates attention maps by recog-nizing space-time structures of key-query correlations via convolution and uses them to dynamically aggregate lo-cal contexts of value features. This effectively leverages "
+    },
+    {
+     "title": "Seg4Diff: Unveiling Open-Vocabulary Segmentation in Text-to-Image Diffusion Transformers",
+     "year": 2025,
+     "venue": "arXiv (Cornell University)",
+     "cites": 21,
+     "url": "https://doi.org/10.48550/arxiv.2509.18096",
+     "openalex": "W4414750909",
+     "abstract": "Text-to-image diffusion models excel at translating language prompts into photorealistic images by implicitly grounding textual concepts through their cross-modal attention mechanisms. Recent multi-modal diffusion transformers extend this by introducing joint self-attention over concatenated image and text tokens, enabling richer and more scalable cross-modal alignment. However, a detailed underst"
+    }
+   ]
+  },
+  {
+   "name": "안가빈",
+   "dept": "컴퓨터학과",
+   "email": "gabin_an@korea.ac.kr",
+   "lab": "",
+   "lab_url": "https://ku-selene.github.io/",
+   "name_en": "Gabin An",
+   "openalex": [
+    "A5048573106"
+   ],
+   "confidence": "high",
+   "check": "ORCID 0000-0002-6521-8858, KAIST 이후 고려대. 주제(결함 위치 추정, LLM 기반 SE) 일관. SELENE 논문 목록과 대조(일치)",
+   "papers": [
+    {
+     "title": "A Quantitative and Qualitative Evaluation of LLM-Based Explainable Fault Localization",
+     "year": 2024,
+     "venue": "Proceedings of the ACM on software engineering.",
+     "cites": 217,
+     "url": "https://doi.org/10.1145/3660771",
+     "openalex": "W4400582623",
+     "abstract": "Fault Localization (FL), in which a developer seeks to identify which part of the code is malfunctioning and needs to be fixed, is a recurring challenge in debugging. To reduce developer burden, many automated FL techniques have been proposed. However, prior work has noted that existing techniques fail to provide rationales for the suggested locations, hindering developer adoption of these techniq"
+    },
+    {
+     "title": "Fonte: Finding Bug Inducing Commits from Failures",
+     "year": 2023,
+     "venue": "ACM/IEEE International Conference on Software Engineering: Companion Proceedings (ICSE-Companion)",
+     "cites": 25,
+     "url": "https://doi.org/10.1109/icse48619.2023.00059",
+     "openalex": "W4384304763",
+     "abstract": "A Bug Inducing Commit (BIC) is a commit that introduces a software bug into the codebase. Knowing the relevant BIC for a given bug can provide valuable information for debugging as well as bug triaging. However, existing BIC identification techniques are either too expensive (because they require the failing tests to be executed against previous versions for bisection) or inapplicable at the debug"
+    },
+    {
+     "title": "Iterative Refactoring of Real-World Open-Source Programs with Large Language Models",
+     "year": 2024,
+     "venue": "Lecture notes in computer science",
+     "cites": 17,
+     "url": "https://doi.org/10.1007/978-3-031-64573-0_4",
+     "openalex": "W4400185053",
+     "abstract": ""
+    },
+    {
+     "title": "BUGSC++: A Highly Usable Real World Defect Benchmark for C/C++",
+     "year": 2023,
+     "venue": "IEEE/ACM International Conference on Automated Software Engineering (ASE)",
+     "cites": 13,
+     "url": "https://doi.org/10.1109/ase56229.2023.00208",
+     "openalex": "W4388482952",
+     "abstract": "As software systems grow larger and more complex, debugging takes up an increasingly significant portion of developers' time and efforts during software maintenance. To aid software engineers in debugging, many automated debugging and repair techniques have been proposed. Both the development and evaluation of these automated techniques depend on benchmarks of bugs. While many different defect ben"
+    },
+    {
+     "title": "Metamon: Finding Inconsistencies between Program Documentation and Behavior using Metamorphic LLM Queries",
+     "year": 2025,
+     "venue": "International Workshop on Large Language Models for Code (LLM4Code)",
+     "cites": 8,
+     "url": "https://doi.org/10.1109/llm4code66737.2025.00020",
+     "openalex": "W4411233170",
+     "abstract": "Code documentation can, if written precisely, help developers better understand the code they accompany. However, unlike code, code documentation cannot be automatically verified via execution, potentially leading to inconsistencies between documentation and the actual behavior. While such inconsistencies can be harmful for the developer’s understanding of the code, checking and finding them remai"
+    }
+   ]
+  },
+  {
+   "name": "양경식",
+   "dept": "컴퓨터학과",
+   "email": "g_yang@korea.ac.kr",
+   "lab": "System Software Lab.",
+   "lab_url": "https://ss.korea.ac.kr",
+   "name_en": "Gyeongsik Yang",
+   "openalex": [
+    "A5068419888"
+   ],
+   "confidence": "medium",
+   "check": "ORCID 0000-0003-4560-2972, 고려대 소속. 주제(SDN, 클라우드, 분산 학습) 일관. 주제가 다른 ECG 재구성 논문 1편은 확인할 수 없어 뺌. 연구실 누리집이 스크립트로 그려져 목록 대조 못 함 Semantic Scholar 저자 목록과 비교해 OpenAlex에 없던 논문을 보충함(source: Semantic Scholar). 보충한 TeaVisor(SDN 가상화)는 같은 주제라 넣었지만 목록 대조는 못 함.",
+   "papers": [
+    {
+     "title": "Machine Learning-Based Prediction Models for Control Traffic in SDN Systems",
+     "year": 2023,
+     "venue": "IEEE Transactions on Services Computing",
+     "cites": 18,
+     "url": "https://doi.org/10.1109/tsc.2023.3324007",
+     "openalex": "W4387587584",
+     "abstract": "This article presentsElixir, an automated prediction model formulation framework for control traffic using machine learning. Control traffic is vital in software-defined networking (SDN) systems because it determines the reliability and scalability of the entire system. Various studies have sought to design control traffic prediction models for the proper provisioning and planning of SDN systems. "
+    },
+    {
+     "title": "Prediction of permissioned blockchain performance for resource scaling configurations",
+     "year": 2024,
+     "venue": "ICT Express",
+     "cites": 17,
+     "url": "https://doi.org/10.1016/j.icte.2024.09.003",
+     "openalex": "W4402485335",
+     "abstract": "Blockchain is increasingly offered as blockchain-as-a-service (BaaS) by cloud service providers. However, configuring BaaS appropriately for optimal performance and reliability resorts to try-and-error. A key challenge is that BaaS is often perceived as a “black-box,” leading to uncertainties in performance and resource provisioning. Previous studies attempted to address this challenge; however, t"
+    },
+    {
+     "title": "TeaVisor: Network Hypervisor for Bandwidth Isolation in SDN-NV",
+     "year": 2023,
+     "venue": "IEEE Transactions on Cloud Computing",
+     "cites": 8,
+     "url": "https://doi.org/10.1109/TCC.2022.3225915",
+     "openalex": "W4312232602,S2:d23bc61c4d3e55171ce805f63aed514afb2e9129",
+     "abstract": "We introduce TeaVisor that provides bandwidth isolation guarantee for network virtualization (NV) based on software-defined networking (SDN). SDN-based NV (SDN-NV) offers many benefits to clouds, such as topology and address virtualization while allowing flexible resource provisioning, control, and monitoring on virtual networks. In SDN-NV, however, routing is done by tenants independently; thus, ",
+     "source": "Semantic Scholar"
+    },
+    {
+     "title": "Control Channel Isolation in SDN Virtualization: A Machine Learning Approach",
+     "year": 2023,
+     "venue": "IEEE/ACM International Symposium on Cluster, Cloud and Grid Computing (CCGrid)",
+     "cites": 6,
+     "url": "https://doi.org/10.1109/ccgrid57682.2023.00034",
+     "openalex": "W4383749436",
+     "abstract": "Performance isolation is an essential property that network virtualization must provide for clouds. This study addresses the performance isolation of the control plane in virtualized software-defined networking (SDN), which we call control channel isolation. First, we report that the control channel isolation is seriously broken in the existing network hypervisor in that the end-to-end control lat"
+    },
+    {
+     "title": "Intelligent Packet Processing for Performant Containers in IoT",
+     "year": 2024,
+     "venue": "IEEE Internet of Things Journal",
+     "cites": 5,
+     "url": "https://doi.org/10.1109/jiot.2024.3453410",
+     "openalex": "W4402124255",
+     "abstract": "This article explores the computing and communication overhead of network processing in Internet of Things (IoT) devices, focusing on containers, a major building block for the edge computing. Our experiments reveal that containers on IoT devices suffer$\\sim 2.6\\times $higher CPU usage for SoftIRQ processing, ~59% less network throughput, and$2\\times $higher per-packet latency on average than nati"
+    }
+   ]
+  },
+  {
+   "name": "오상은",
+   "dept": "컴퓨터학과",
+   "email": "sangeunoh@korea.ac.kr",
+   "lab": "Mobile Embedded Systems (MES) Lab",
+   "lab_url": "https://mes.korea.ac.kr/",
+   "name_en": "Sangeun Oh",
+   "openalex": [
+    "A5038510569"
+   ],
+   "confidence": "high",
+   "check": "ORCID 0000-0002-2294-6572, 아주대 이후 고려대. 주제(모바일 GUI 에이전트, 실시간 시스템) 일관. MES 연구실 논문 목록과 대조. 같은 ID에 섞인 강원대 그래핀 흡착 논문은 뺌",
+   "papers": [
+    {
+     "title": "MobileGPT: Augmenting LLM with Human-like App Memory for Mobile Task Automation",
+     "year": 2024,
+     "venue": "ACM Annual International Conference on Mobile Computing and Networking (MobiCom)",
+     "cites": 86,
+     "url": "https://doi.org/10.1145/3636534.3690682",
+     "openalex": "W4405014122",
+     "abstract": "The advent of large language models (LLMs) has opened up new opportunities in the field of mobile task automation. Their superior language understanding and reasoning capabilities allow users to automate complex and repetitive tasks. However, due to the inherent unreliability and high operational cost of LLMs, their practical applicability is quite limited. To address these issues, this paper intr"
+    },
+    {
+     "title": "VeriSafe Agent: Safeguarding Mobile GUI Agent via Logic-based Action Verification",
+     "year": 2025,
+     "venue": "ACM Annual International Conference on Mobile Computing and Networking (MobiCom)",
+     "cites": 14,
+     "url": "https://doi.org/10.1145/3680207.3765248",
+     "openalex": "W4416472889",
+     "abstract": "Large Foundation Models (LFMs) have unlocked new possibilities in human-computer interaction, particularly with the rise of mobile Graphical User Interface (GUI) Agents capable of interacting with mobile GUIs. These agents allow users to automate complex mobile tasks through simple natural language instructions. However, the inherent probabilistic nature of LFMs, coupled with the ambiguity and con"
+    },
+    {
+     "title": "RT-Swap: Addressing GPU Memory Bottlenecks for Real-Time Multi-DNN Inference",
+     "year": 2024,
+     "venue": "IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS)",
+     "cites": 11,
+     "url": "https://doi.org/10.1109/rtas61025.2024.00037",
+     "openalex": "W4400036060",
+     "abstract": "The increasing complexity and memory demands of Deep Neural Networks (DNNs) for real-time systems pose new significant challenges, one of which is the GPU memory capacity bottleneck, where the limited physical memory inside GPUs impedes the deployment of sophisticated DNN models. This paper presents, to the best of our knowledge, the first study of addressing the GPU memory bottleneck issues, whil"
+    },
+    {
+     "title": "MobiBench: Multi-Branch, Modular Benchmark for Mobile GUI Agents",
+     "year": 2025,
+     "venue": "arXiv (Cornell University)",
+     "cites": 10,
+     "url": "https://doi.org/10.48550/arxiv.2512.12634",
+     "openalex": "W4417449770",
+     "abstract": "Mobile GUI Agents, AI agents capable of interacting with mobile applications on behalf of users, have the potential to transform human computer interaction. However, current evaluation practices for GUI agents face two fundamental limitations. First, they either rely on single path offline benchmarks or online live benchmarks. Offline benchmarks using static, single path annotated datasets unfairl"
+    },
+    {
+     "title": "Leveraging LLMs for Efficient and Personalized Smart Home Automation",
+     "year": 2026,
+     "venue": "arXiv (Cornell University)",
+     "cites": 7,
+     "url": "https://doi.org/10.48550/arxiv.2601.04680",
+     "openalex": "W7119576147",
+     "abstract": "The proliferation of smart home devices has increased the complexity of controlling and managing them, leading to user fatigue. In this context, large language models (LLMs) offer a promising solution by enabling natural-language interfaces for Internet of Things (IoT) control. However, existing LLM-based approaches suffer from unreliable and inefficient device control due to the non-deterministic"
+    }
+   ]
+  },
+  {
+   "name": "오학주",
+   "dept": "컴퓨터학과",
+   "email": "hakjoo_oh@korea.ac.kr",
+   "lab": "소프트웨어 분석 연구실",
+   "lab_url": "http://prl.korea.ac.kr",
+   "name_en": "Hakjoo Oh",
+   "openalex": [
+    "A5042036026"
+   ],
+   "confidence": "high",
+   "check": "ORCID 0000-0002-1900-7654, 고려대 소속. 주제(프로그램 분석, 퍼징, 양자 프로그램) 일관. SAL 논문 목록과 대조(일치)",
+   "papers": [
+    {
+     "title": "Learning Seed-Adaptive Mutation Strategies for Greybox Fuzzing",
+     "year": 2023,
+     "venue": "ACM/IEEE International Conference on Software Engineering: Companion Proceedings (ICSE-Companion)",
+     "cites": 34,
+     "url": "https://doi.org/10.1109/icse48619.2023.00043",
+     "openalex": "W4384345780",
+     "abstract": "In this paper, we present a technique for learning seed-adaptive mutation strategies for fuzzers. The performance of mutation-based fuzzers highly depends on the mutation strategy that specifies the probability distribution of selecting mutation methods. As a result, developing an effective mutation strategy has received much attention recently, and program-adaptive techniques, which observe the b"
+    },
+    {
+     "title": "SmartFix: Fixing Vulnerable Smart Contracts by Accelerating Generate-and-Verify Repair using Statistical Models",
+     "year": 2023,
+     "venue": "ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE)",
+     "cites": 28,
+     "url": "https://doi.org/10.1145/3611643.3616341",
+     "openalex": "W4389161628",
+     "abstract": "We present SmartFix, a new technique for repairing vulnerable smart contracts. There is an urgent need to develop automatic bug-repair techniques for smart contracts, as smart contracts are safety-critical software and manual debugging is burdensome and error-prone. While several repair approaches have been proposed recently, they are unsatisfactory since no existing techniques can achieve high re"
+    },
+    {
+     "title": "Modular Component-Based Quantum Circuit Synthesis",
+     "year": 2023,
+     "venue": "Proceedings of the ACM on Programming Languages",
+     "cites": 17,
+     "url": "https://doi.org/10.1145/3586039",
+     "openalex": "W4362659552",
+     "abstract": "In this article, we present a novel method for synthesizing quantum circuits from user-supplied components. Given input-output state vectors and component quantum gates, our synthesizer aims to construct a quantum circuit that implements the provided functionality in terms of the supplied component gates. To achieve this, we basically use an enumerative search with pruning. To accelerate the proce"
+    },
+    {
+     "title": "Quantum Probabilistic Model Checking for Time-Bounded Properties",
+     "year": 2024,
+     "venue": "Proceedings of the ACM on Programming Languages",
+     "cites": 10,
+     "url": "https://doi.org/10.1145/3689731",
+     "openalex": "W4403223179",
+     "abstract": "Probabilistic model checking (PMC) is a verification technique for analyzing the properties of probabilistic systems. However, existing techniques face challenges in verifying large systems with high accuracy. PMC struggles with state explosion , where the number of states grows exponentially with the size of the system, making large system verification infeasible. While statistical model checking"
+    },
+    {
+     "title": "Towards Effective Static Type-Error Detection for Python",
+     "year": 2024,
+     "venue": "IEEE/ACM International Conference on Automated Software Engineering (ASE)",
+     "cites": 8,
+     "url": "https://doi.org/10.1145/3691620.3695545",
+     "openalex": "W4403536023",
+     "abstract": "In this experience paper, we design, implement, and evaluate a new static type-error detection tool for Python. To build a practical tool, we first collected and analyzed 68 real-world type errors gathered from 20 open-source projects. This empirical investigation revealed four key static-analysis features that are crucial for the effective detection of Python type errors in practice. Utilizing th"
+    }
+   ]
+  },
+  {
+   "name": "우승훈",
+   "dept": "컴퓨터학과",
+   "email": "seunghoonwoo@korea.ac.kr",
+   "lab": "소프트웨어 보안 연구실 (Software Security and Privacy Laboratory (SSP Lab))",
+   "lab_url": "https://ssp.korea.ac.kr/",
+   "name_en": "Seunghoon Woo",
+   "openalex": [
+    "A5009593110"
+   ],
+   "confidence": "high",
+   "check": "ORCID 0000-0002-5455-0804, 고려대 소속. 주제(오픈소스 보안) 일관. SSP 연구실 논문 목록과 대조(일치) Semantic Scholar 저자 목록과 비교해 OpenAlex에 없던 논문을 보충함(source: Semantic Scholar).",
+   "papers": [
+    {
+     "title": "V1SCAN: Discovering 1-day Vulnerabilities in Reused C/C++ Open-source Software Components Using Code Classification Techniques",
+     "year": 2023,
+     "venue": "USENIX Security Symposium",
+     "cites": 43,
+     "url": "https://www.semanticscholar.org/paper/096d76afc25f32f4dd94faa7a276d645de7d2c64",
+     "openalex": "S2:096d76afc25f32f4dd94faa7a276d645de7d2c64",
+     "abstract": "",
+     "source": "Semantic Scholar"
+    },
+    {
+     "title": "CNEPS: A Precise Approach for Examining Dependencies among Third-Party C/C++ Open-Source Components",
+     "year": 2024,
+     "venue": "ACM/IEEE International Conference on Software Engineering: Companion Proceedings (ICSE-Companion)",
+     "cites": 23,
+     "url": "https://doi.org/10.1145/3597503.3639209",
+     "openalex": "W4394769278",
+     "abstract": "The rise in open-source software (OSS) reuse has led to intricate dependencies among third-party components, increasing the demand for precise dependency analysis. However, owing to the presence of reused files that are difficult to identify the originating components (i.e., indistinguishable files) and duplicated components, precisely identifying component dependencies is becoming challenging."
+    },
+    {
+     "title": "ZMAD: Lightweight Model-Based Anomaly Detection for the Structured Z-Wave Protocol",
+     "year": 2023,
+     "venue": "IEEE Access",
+     "cites": 16,
+     "url": "https://doi.org/10.1109/access.2023.3285476",
+     "openalex": "W4380354694",
+     "abstract": "Smart home automation is part of the Internet of Things that enables house remote control via the use of smart devices, sensors, and actuators. Despite its convenience, vulnerabilities in smart home devices provide attackers with an opportunity to break into the smart home infrastructure without permission. In fact, millions of Z-Wave smart homelegacy devicesare vulnerable to wireless injection at"
+    },
+    {
+     "title": "A large-scale analysis of the effectiveness of publicly reported security patches",
+     "year": 2024,
+     "venue": "Computers & Security",
+     "cites": 14,
+     "url": "https://doi.org/10.1016/j.cose.2024.104181",
+     "openalex": "W4403915041",
+     "abstract": ""
+    },
+    {
+     "title": "Tiver: Identifying Adaptive Versions of C/C++ Third-Party Open-Source Components Using a Code Clustering Technique",
+     "year": 2025,
+     "venue": "ACM/IEEE International Conference on Software Engineering: Companion Proceedings (ICSE-Companion)",
+     "cites": 5,
+     "url": "https://doi.org/10.1109/icse55347.2025.00188",
+     "openalex": "W4411552109",
+     "abstract": "Reusing open-source software (OSS) provides significant benefits but also poses risks from propagated vulnerabilities. While tracking OSS component versions helps mitigate threats, existing approaches typically map a single version to the reused codebase. This coarse-grained approach overlooks the coexistence of multiple versions, leading to ineffective OSS management. Moreover, identifying compon"
+    }
+   ]
+  },
+  {
+   "name": "유헌창",
+   "dept": "컴퓨터학과",
+   "email": "yuhc@korea.ac.kr",
+   "lab": "분산클라우드컴퓨팅 연구실(Distributed and Cloud Computing)",
+   "lab_url": "https://ds.korea.ac.kr",
+   "name_en": "Heonchang Yu",
+   "openalex": [
+    "A5052703193"
+   ],
+   "confidence": "high",
+   "check": "ORCID 0000-0003-2216-595X, 고려대 소속. 주제(클라우드, 서버리스) 일관. 연구실 논문 목록과 대조(일치)",
+   "papers": [
+    {
+     "title": "Improving Memory Utilization by Sharing DNN Models for Serverless Inference",
+     "year": 2023,
+     "venue": "International Conference on Consumer Electronics",
+     "cites": 7,
+     "url": "https://doi.org/10.1109/icce56470.2023.10043587",
+     "openalex": "W4321192592",
+     "abstract": "Serving deep neural network (DNN) models requires a lot of memory and has a relatively long response time. Researchers nowadays try to integrate DNN inference services with the serverless architecture, which workload is suited for the serverless, because of its short-lived and burst characteristics. In addition, the cases of deploying DNN services to edge clouds are also increasing, to reduce the "
+    },
+    {
+     "title": "Addressing Straggler Problem Through Dynamic Partial All-Reduce for Distributed Deep Learning in Heterogeneous GPU Clusters",
+     "year": 2023,
+     "venue": "International Conference on Consumer Electronics",
+     "cites": 4,
+     "url": "https://doi.org/10.1109/icce56470.2023.10043527",
+     "openalex": "W4321192305",
+     "abstract": "Distributed deep learning is an inevitable choice in learning large-scale deep learning models today. Beyond a certain level, training deep learning models can take days or months, which can lead to catastrophic consequences in applications that require rapid trend reflection or decision-making. Distributed deep learning is largely divided into synchronous and asynchronous methods according to the"
+    },
+    {
+     "title": "SADDLE: A runtime feedback control architecture for adaptive distributed deep learning in heterogeneous GPU clusters",
+     "year": 2025,
+     "venue": "Journal of Systems Architecture",
+     "cites": 3,
+     "url": "https://doi.org/10.1016/j.sysarc.2025.103573",
+     "openalex": "W4414445318",
+     "abstract": ""
+    },
+    {
+     "title": "HEART: Heterogeneous-Aware Traffic Allocation in Multi-Replica Deployments on Kubernetes",
+     "year": 2025,
+     "venue": "IEEE ... International Conference on Cloud Computing",
+     "cites": 3,
+     "url": "https://doi.org/10.1109/cloud67622.2025.00048",
+     "openalex": "W4413360905",
+     "abstract": "Traffic scheduling for microservices in emerging edge-cloud environments is challenged by heterogeneous node performance and varying inter-node latencies. Inefficient scheduling among replicas may lead to replica overload and excessive communication overhead, ultimately degrading Quality of Service (QoS) metrics-specifically, the 99th percentile tail latency(P99 latency). To address these challeng"
+    },
+    {
+     "title": "LARE-HPA: Co-optimizing Latency and Resource Efficiency for Horizontal Pod Autoscaling in Kubernetes",
+     "year": 2024,
+     "venue": "Lecture notes in computer science",
+     "cites": 3,
+     "url": "https://doi.org/10.1007/978-981-96-0808-9_2",
+     "openalex": "W4405093948",
+     "abstract": ""
+    }
+   ]
+  },
+  {
+   "name": "육동석",
+   "dept": "컴퓨터학과",
+   "email": "yook@korea.ac.kr",
+   "lab": "인공지능 연구실",
+   "lab_url": "http://ai.korea.ac.kr/~yook/",
+   "name_en": "Dongsuk Yook",
+   "openalex": [
+    "A5039833822"
+   ],
+   "confidence": "medium",
+   "check": "ORCID 0000-0003-2445-2354, 고려대 소속. 주제(음성 변환, 병렬 학습) 일관. 2023년 이후 5편. 연구실 누리집 접속 결과가 비어 목록 대조 못 함",
+   "papers": [
+    {
+     "title": "CycleDiffusion: Voice Conversion Using Cycle-Consistent Diffusion Models",
+     "year": 2024,
+     "venue": "Applied Sciences",
+     "cites": 7,
+     "url": "https://doi.org/10.3390/app14209595",
+     "openalex": "W4403598486",
+     "abstract": "Voice conversion (VC) refers to the technique of modifying one speaker’s voice to mimic another’s while retaining the original linguistic content. This technology finds its applications in fields such as speech synthesis, accent modification, medicine, security, privacy, and entertainment. Among the various deep generative models used for voice conversion, including variational autoencoders (VAEs)"
+    },
+    {
+     "title": "Wav2wav: Wave-to-Wave Voice Conversion",
+     "year": 2024,
+     "venue": "Applied Sciences",
+     "cites": 4,
+     "url": "https://doi.org/10.3390/app14104251",
+     "openalex": "W4397022466",
+     "abstract": "Voice conversion is the task of changing the speaker characteristics of input speech while preserving its linguistic content. It can be used in various areas, such as entertainment, medicine, and education. The quality of the converted speech is crucial for voice conversion algorithms to be useful in these various applications. Deep learning-based voice conversion algorithms, which have been showi"
+    },
+    {
+     "title": "Pipelined Stochastic Gradient Descent with Taylor Expansion",
+     "year": 2023,
+     "venue": "Applied Sciences",
+     "cites": 3,
+     "url": "https://doi.org/10.3390/app132111730",
+     "openalex": "W4388189714",
+     "abstract": "Stochastic gradient descent (SGD) is an optimization method typically used in deep learning to train deep neural network (DNN) models. In recent studies for DNN training, pipeline parallelism, a type of model parallelism, is proposed to accelerate SGD training. However, since SGD is inherently sequential, naively implemented pipeline parallelism introduces the weight inconsistency and the delayed "
+    },
+    {
+     "title": "Pipeline Parallelism With Elastic Averaging",
+     "year": 2024,
+     "venue": "IEEE Access",
+     "cites": 2,
+     "url": "https://doi.org/10.1109/access.2024.3350193",
+     "openalex": "W4390605370",
+     "abstract": "To accelerate the training speed of massive DNN models on large-scale datasets, distributed training techniques, including data parallelism and model parallelism, have been extensively studied. In particular, pipeline parallelism, which is derived from model parallelism, has been attracting attention. It splits the model parameters across multiple computing nodes and executes multiple mini-batches"
+    },
+    {
+     "title": "VQ-CycleDiffusion: Vector Quantized Cycle-Consistent Diffusion Models for Voice Conversion",
+     "year": 2026,
+     "venue": "Applied Sciences",
+     "cites": 0,
+     "url": "https://doi.org/10.3390/app16189314",
+     "openalex": "W7214032296",
+     "abstract": "This paper proposes a novel hybrid voice conversion framework, termed VQ-CycleDiffusion, which integrates vector quantization (VQ) with CycleDiffusion to address the inherent limitations of continuous latent representations in diffusion-based models. While conventional diffusion-based voice conversion (VC) models provide superior speech quality, they often suffer from speaker information leakage d"
+    }
+   ]
+  },
+  {
+   "name": "윤수식",
+   "dept": "컴퓨터학과",
+   "email": "susik@korea.ac.kr",
+   "lab": "Data and Adaptive Intelligence Systems Lab",
+   "lab_url": "http://dais.korea.ac.kr",
+   "name_en": "Susik Yoon",
+   "openalex": [
+    "A5083900503"
+   ],
+   "confidence": "high",
+   "check": "ORCID 0000-0001-5596-4972, KAIST, UIUC 이후 고려대. 주제(데이터 스트림, 이상 탐지, 텍스트 마이닝) 일관. 연구실 누리집에 전체 논문 목록이 없어 대조는 못 했지만 이력과 공저자(UIUC Jiawei Han 그룹)가 맞음",
+   "papers": [
+    {
+     "title": "Breaking the Time-Frequency Granularity Discrepancy in Time-Series Anomaly Detection",
+     "year": 2024,
+     "venue": "International World Wide Web Conference (WWW)",
+     "cites": 84,
+     "url": "https://doi.org/10.1145/3589334.3645556",
+     "openalex": "W4396757586",
+     "abstract": "In light of the remarkable advancements made in time-series anomaly detection(TSAD), recent emphasis has been placed on exploiting the frequency domain as well as the time domain to address the difficulties in precisely detecting pattern-wise anomalies. However, in terms of anomaly scores, the window granularity of the frequency domain is inherently distinct from the data-point granularity of the "
+    },
+    {
+     "title": "MG-TAR: Multi-View Graph Convolutional Networks for Traffic Accident Risk Prediction",
+     "year": 2023,
+     "venue": "IEEE Transactions on Intelligent Transportation Systems",
+     "cites": 84,
+     "url": "https://doi.org/10.1109/tits.2023.3237072",
+     "openalex": "W4320004384",
+     "abstract": "Due to the continuing colossal socio-economic losses caused by traffic accidents, it is of prime importance to precisely forecast the traffic accident risk to reduce future accidents. In this paper, we use dangerous driving statistics from driving log data and multi-graph learning to enhance predictive performance. We first conduct geographical and temporal correlation analyses to quantify the rel"
+    },
+    {
+     "title": "Online Drift Detection with Maximum Concept Discrepancy",
+     "year": 2024,
+     "venue": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)",
+     "cites": 18,
+     "url": "https://doi.org/10.1145/3637528.3672016",
+     "openalex": "W4401862891",
+     "abstract": "Continuous learning from an immense volume of data streams becomes exceptionally critical in the internet era. However, data streams often do not conform to the same distribution over time, leading to a phenomenon called concept drift. Since a fixed static model is unreliable for inferring concept-drifted data streams, establishing an adaptive mechanism for detecting concept drift is crucial. Curr"
+    },
+    {
+     "title": "Unsupervised Story Discovery from Continuous News Streams via Scalable Thematic Embedding",
+     "year": 2023,
+     "venue": "International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR)",
+     "cites": 13,
+     "url": "https://doi.org/10.1145/3539618.3591782",
+     "openalex": "W4384648320",
+     "abstract": "Unsupervised discovery of stories with correlated news articles in real-time helps people digest massive news streams without expensive human annotations. A common approach of the existing studies for unsupervised online story discovery is to represent news articles with symbolic- or graph-based embedding and incrementally cluster them into stories. Recent large language models are expected to imp"
+    },
+    {
+     "title": "PDSum: Prototype-driven Continuous Summarization of Evolving Multi-document Sets Stream",
+     "year": 2023,
+     "venue": "International World Wide Web Conference (WWW)",
+     "cites": 11,
+     "url": "https://doi.org/10.1145/3543507.3583371",
+     "openalex": "W4367047042",
+     "abstract": "Summarizing text-rich documents has been long studied in the literature, but most of the existing efforts have been made to summarize a static and predefined multi-document set. With the rapid development of online platforms for generating and distributing text-rich documents, there arises an urgent need for continuously summarizing dynamically evolving multi-document sets where the composition of"
+    }
+   ]
+  },
+  {
+   "name": "이상민",
+   "dept": "컴퓨터학과",
+   "email": "sangmin-lee@korea.ac.kr",
+   "lab": "Pixel Lab",
+   "lab_url": "https://sites.google.com/view/pixel-lab-ai",
+   "name_en": "Sangmin Lee",
+   "openalex": [],
+   "confidence": "high",
+   "check": "OpenAlex에서는 고려대 이상민이 여러 작은 ID로 쪼개지고 다른 이상민(약학, 소재 등)과 섞여 쓰지 않음. Semantic Scholar 저자 2909533(KAIST 이력) 등에서 Pixel Lab 논문 목록에 있는 제목만 고름(인용 수는 Semantic Scholar 기준)",
+   "papers": [
+    {
+     "title": "Gaze-LLE: Gaze Target Estimation via Large-Scale Learned Encoders",
+     "year": 2024,
+     "venue": "Computer Vision and Pattern Recognition",
+     "cites": 65,
+     "url": "https://doi.org/10.1109/CVPR52734.2025.02689",
+     "openalex": "W4413147571,S2:278dad88e4fd2f1ca46212a9ef8e874cfe431c88",
+     "abstract": "We address the problem of gaze target estimation, which aims to predict where a person is looking in a scene. Predicting a person’s gaze target requires reasoning both about the person’s appearance and the contents of the scene. Prior works have developed increasingly complex, handcrafted pipelines for gaze target estimation that carefully fuse features from separate scene encoders, head encoders,",
+     "source": "Semantic Scholar"
+    },
+    {
+     "title": "Modeling Multimodal Social Interactions: New Challenges and Baselines with Densely Aligned Representations",
+     "year": 2024,
+     "venue": "Computer Vision and Pattern Recognition",
+     "cites": 27,
+     "url": "https://doi.org/10.1109/CVPR52733.2024.01382",
+     "openalex": "W4402727235,S2:39c00d06c132a95347d2211330b9f88448d3dea2",
+     "abstract": "Understanding social interactions involving both verbal and non-verbal cues is essential for effectively interpreting social situations. However, most prior works on multimodal social cues focus predominantly on single-person behav-iors or rely on holistic visual representations that are not aligned to utterances in multi-party environments. Conse-quently, they are limited in modeling the intricat",
+     "source": "Semantic Scholar"
+    },
+    {
+     "title": "Towards Social AI: A Survey on Understanding Social Interactions",
+     "year": 2024,
+     "venue": "arXiv.org",
+     "cites": 26,
+     "url": "https://doi.org/10.48550/arXiv.2409.15316",
+     "openalex": "W4403851182,S2:c6723456245852313cccb1842ebcdd6d4c090145",
+     "abstract": "Social interactions form the foundation of human societies. Artificial intelligence has made significant progress in certain areas, but enabling machines to seamlessly understand social interactions remains an open challenge. It is important to address this gap by endowing machines with social capabilities. We identify three key capabilities needed for effective social understanding: 1) understand",
+     "source": "Semantic Scholar"
+    },
+    {
+     "title": "Question-Aware Gaussian Experts for Audio-Visual Question Answering",
+     "year": 2025,
+     "venue": "Computer Vision and Pattern Recognition",
+     "cites": 21,
+     "url": "https://doi.org/10.1109/CVPR52734.2025.01277",
+     "openalex": "W4413144295,S2:3930a48a0809a1c4fb8b6e5e4c798de0bc9d1e39",
+     "abstract": "Audio-Visual Question Answering (AVQA) requires not only question-based multimodal reasoning but also precise temporal grounding to capture subtle dynamics for accurate prediction. However, existing methods mainly use question information implicitly, limiting focus on question-specific details. Furthermore, most studies rely on uniform frame sampling, which can miss key question-relevant frames. A",
+     "source": "Semantic Scholar"
+    },
+    {
+     "title": "SocialGesture: Delving into Multi-person Gesture Understanding",
+     "year": 2025,
+     "venue": "Computer Vision and Pattern Recognition",
+     "cites": 18,
+     "url": "https://doi.org/10.1109/CVPR52734.2025.01817",
+     "openalex": "W4413157693,S2:bd3079f64540fa1adeef54115488936fefd9eae9",
+     "abstract": "Previous research in human gesture recognition has largely overlooked multi-person interactions, which are crucial for understanding the social context of naturally occurring gestures. This limitation in existing datasets presents a significant challenge in aligning human gestures with other modalities like language and speech. To address this issue, we introduce SocialGesture, the first large-sca",
+     "source": "Semantic Scholar"
+    }
+   ]
+  },
+  {
+   "name": "이재훈",
+   "dept": "컴퓨터학과",
+   "email": "ejhoon@korea.ac.kr",
+   "lab": "Physical computing Lab. (피지컬컴퓨팅 연구실)",
+   "lab_url": "https://sites.google.com/site/mplabku",
+   "name_en": "Jaehoon Lee",
+   "openalex": [],
+   "confidence": "medium",
+   "check": "OpenAlex에서 맞는 저자를 찾지 못함(같은 이름이 많음). Semantic Scholar 저자 2108805525('J. Lee', 여러 사람이 섞인 ID)에서 연구실 논문 목록에 있는 제목만 고름(인용 수는 Semantic Scholar 기준)",
+   "papers": [
+    {
+     "title": "Inter-Brain Synchrony Pattern Investigation on Triadic Board Game Play-Based Social Interaction: An fNIRS Study",
+     "year": 2023,
+     "venue": "IEEE transactions on neural systems and rehabilitation engineering",
+     "cites": 12,
+     "url": "https://doi.org/10.1109/TNSRE.2023.3292844",
+     "openalex": "W4383340138,S2:e9880f96e5f6075351179434ba77e06f9b4c17c4",
+     "abstract": "Recent advances in functional neuroimaging techniques, including methodologies such as fNIRS, have enabled the evaluation of inter-brain synchrony (IBS) induced by interpersonal interactions. However, the social interactions assumed in existing dyadic hyperscanning studies do not sufficiently emulate polyadic social interactions in the real world. Therefore, we devised an experimental paradigm tha",
+     "source": "Semantic Scholar"
+    },
+    {
+     "title": "Memristor-Based CNNs for Detecting Stress Using Brain Imaging Signals",
+     "year": 2024,
+     "venue": "IEEE Transactions on Emerging Topics in Computational Intelligence",
+     "cites": 11,
+     "url": "https://doi.org/10.1109/TETCI.2023.3297841",
+     "openalex": "W4385338801,S2:0045efd9d9c69a49a9edd43bf8a79c04ee051db8",
+     "abstract": "Typical convolutional neural networks (CNNs) are widely used to recognize a user's stress state using the functional near-infrared spectroscopy (fNIRS), which is the latest brain imaging technology. fNIRS signals are usually fed into CNN models in the form of high-dimensional image data. However, this approach is not easy to achieve high classification accuracy because of physiological noises in b",
+     "source": "Semantic Scholar"
+    },
+    {
+     "title": "Robust Anti-Jamming Method for Large-Array Radar Systems Using Deep Learning Based Null-Space Beamforming",
+     "year": 2025,
+     "venue": "IEEE Access",
+     "cites": 3,
+     "url": "https://doi.org/10.1109/ACCESS.2025.3579422",
+     "openalex": "W4411270143,S2:4294207a9995983e998e45ec365f07d8625af053",
+     "abstract": "With the increasing use of AI in radar signal processing, researchers have started combining minimum variance distortionless response (MVDR) with AI technology; however, the use of MVDR results in higher nonlinearity, making the learning process difficult. A combination of null-space beamforming (NSB) and AI technology may be a solution to this issue. However, inferring NSB weights requires inputt",
+     "source": "Semantic Scholar"
+    },
+    {
+     "title": "Charitable crowdfunding donation-intention estimation depending on emotional project images using fNIRS-based functional connectivity",
+     "year": 2024,
+     "venue": "PLoS ONE",
+     "cites": 2,
+     "url": "https://doi.org/10.1371/journal.pone.0303144",
+     "openalex": "W4396731706,S2:da665f77146f6cb478f0b9e2bb0c937597fe780b",
+     "abstract": "Charitable fundraising increasingly relies on online crowdfunding platforms. Project images of charitable crowdfunding use emotional appeals to promote helping behavior. Negative emotions are commonly used to motivate helping behavior because the image of a happy child may not motivate donors to donate as willingly. However, some research has found that happy images can be more beneficial. These c",
+     "source": "Semantic Scholar"
+    },
+    {
+     "title": "Design of a Bandpass Filter with Mixed Electromagnetic Coupling Paths Using Vertical Split-Ring Resonators",
+     "year": 2023,
+     "venue": "International Journal of Antennas and Propagation",
+     "cites": 2,
+     "url": "https://doi.org/10.1155/2023/7943177",
+     "openalex": "W4382311863,S2:ca77ab3699a72c92b9098755141f9ab9144762c7",
+     "abstract": "We propose bandpass filters (BPFs) with mixed electromagnetic coupling paths (MEMCPs) that comprise two coupled vertical split-ring resonators (VSRRs) and present the equivalent circuit models of the coupled VSRRs. We demonstrate that the dominant coupling modes for the top and bottom layers of the VSRRs are magnetic (M) and electric (E), respectively, and that M-dominant coupling is required for ",
+     "source": "Semantic Scholar"
+    }
+   ]
+  },
+  {
+   "name": "이정범",
+   "dept": "컴퓨터학과",
+   "email": "jbeomlee@korea.ac.kr",
+   "lab": "Vision and AI Lab",
+   "lab_url": "https://visionai.korea.ac.kr/",
+   "name_en": "Jungbeom Lee",
+   "openalex": [],
+   "confidence": "high",
+   "check": "OpenAlex ID A5001243382에는 4편만 있어 Semantic Scholar 저자 143758901(서울대, Amazon, NAVER 이력)을 씀. 논문이 Vision and AI Lab 목록과 모두 일치(인용 수는 Semantic Scholar 기준)",
+   "papers": [
+    {
+     "title": "Improving Visual Prompt Tuning for Self-supervised Vision Transformers",
+     "year": 2023,
+     "venue": "International Conference on Machine Learning",
+     "cites": 91,
+     "url": "https://doi.org/10.48550/arXiv.2306.05067",
+     "openalex": "W4380136461,S2:031ea4f14ea232f6f8abc9a05479aeeed1c5a365",
+     "abstract": "Visual Prompt Tuning (VPT) is an effective tuning method for adapting pretrained Vision Transformers (ViTs) to downstream tasks. It leverages extra learnable tokens, known as prompts, which steer the frozen pretrained ViTs. Although VPT has demonstrated its applicability with supervised vision transformers, it often underperforms with self-supervised ones. Through empirical observations, we deduce",
+     "source": "Semantic Scholar"
+    },
+    {
+     "title": "Know “No” Better: A Data-Driven Approach for Enhancing Negation Awareness in CLIP",
+     "year": 2025,
+     "venue": "IEEE International Conference on Computer Vision",
+     "cites": 40,
+     "url": "https://doi.org/10.1109/ICCV51701.2025.00271",
+     "openalex": "W4406733523,S2:2e07bd64973d0a96f1f709ff2936ba7d0cb88e3b",
+     "abstract": "While CLIP has significantly advanced multimodal understanding by bridging vision and language, the inability to grasp negation - such as failing to differentiate concepts like \"parking\" from \"no parking\" - poses substantial challenges. By analyzing the data used in the public CLIP model's pre-training, we posit this limitation stems from a lack of negation-inclusive data. To address this, we intr",
+     "source": "Semantic Scholar"
+    },
+    {
+     "title": "Weakly Supervised Referring Image Segmentation with Intra-Chunk and Inter-Chunk Consistency",
+     "year": 2023,
+     "venue": "IEEE International Conference on Computer Vision",
+     "cites": 31,
+     "url": "https://doi.org/10.1109/ICCV51070.2023.01999",
+     "openalex": "W4390873170,S2:ae00779e5d9afbdb11ed8a9f05bfa4b3ca7e908d",
+     "abstract": "Referring image segmentation aims to localize the object in an image referred by a natural language expression. Most previous studies learn referring image segmentation with a large-scale dataset containing segmentation labels, but they are costly. We present a weakly supervised learning method for referring image segmentation that only uses readily available image-text pairs. We first train a vis",
+     "source": "Semantic Scholar"
+    },
+    {
+     "title": "Toward Interactive Regional Understanding in Vision-Large Language Models",
+     "year": 2024,
+     "venue": "North American Chapter of the Association for Computational Linguistics",
+     "cites": 12,
+     "url": "https://doi.org/10.48550/arXiv.2403.18260",
+     "openalex": "S2:c45e577e7c48bbcd5ba462dddb4a0bfd3eb39d4a",
+     "abstract": "",
+     "source": "Semantic Scholar"
+    },
+    {
+     "title": "Style-Friendly SNR Sampler for Style-Driven Generation",
+     "year": 2024,
+     "venue": "IEEE Workshop/Winter Conference on Applications of Computer Vision",
+     "cites": 8,
+     "url": "https://doi.org/10.1109/WACV61042.2026.00553",
+     "openalex": "W4404987415,S2:9d42fe15b8fc84fa0d2a04349e49445e9f0ccc6c",
+     "abstract": "Recent text-to-image diffusion models generate high-quality images but struggle to learn new styles, which limits the personalized content creation. In response, style-driven generation has become a popular task, wherein users supply reference images capturing the target style, complemented by text prompts that specify stylistic cues. Fine-tuning is a common approach, yet it often blindly utilizes",
+     "source": "Semantic Scholar"
+    }
+   ]
+  },
+  {
+   "name": "이주섭",
+   "dept": "컴퓨터학과",
+   "email": "juseoplee@korea.ac.kr",
+   "lab": "Microwave/Millimeter-Wave Laboratory",
+   "lab_url": "https://sites.google.com/view/juseoplee",
+   "name_en": "Juseop Lee",
+   "openalex": [
+    "A5090330829"
+   ],
+   "confidence": "high",
+   "check": "ORCID 0000-0002-9358-7597, 고려대 소속. 주제(마이크로파 필터) 일관. 연구실 논문 목록과 대조(일치) Semantic Scholar 저자 목록과 비교해 OpenAlex에 없던 논문을 보충함(source: Semantic Scholar).",
+   "papers": [
+    {
+     "title": "Novel Transmission-Line Circuit Configuration of Cross-Coupled Filter With Negative Coupling",
+     "year": 2024,
+     "venue": "IEEE Transactions on Microwave Theory and Techniques",
+     "cites": 17,
+     "url": "https://doi.org/10.1109/tmtt.2024.3357932",
+     "openalex": "W4391582646",
+     "abstract": "This article presents a new quadruplet filter structure with a negative coupling capable of producing a pair of transmission zeros (TZs). More specifically, the presented structure is composed of coupled-lines and standalone lines, whose parameters are fully given in terms of the normalized coupling values, the center frequency, and the bandwidth. Hence, a filter design using our quadruplet filter"
+    },
+    {
+     "title": "Formulation of Transmission-Line Canonical Cross-Coupled Filters Based on Two Standard Building Blocks",
+     "year": 2023,
+     "venue": "IEEE Transactions on Microwave Theory and Techniques",
+     "cites": 13,
+     "url": "https://doi.org/10.1109/tmtt.2023.3298222",
+     "openalex": "W4385656586",
+     "abstract": "This article presents a systematic approach for formulating transmission-line canonical cross-coupled filters. It will be shown that a filter schematic can be formulated from a coupling diagram having an arbitrary sign combination of the coupling coefficients by properly utilizing the two types (N- and P-types) of standard building blocks. Several practical filter schematics and their design formu"
+    },
+    {
+     "title": "Two-Layered Cross-Coupled Post-Loaded SIW Filter With Microstrip Ports",
+     "year": 2023,
+     "venue": "IEEE Transactions on Circuits and Systems - II - Express Briefs",
+     "cites": 13,
+     "url": "https://doi.org/10.1109/TCSII.2022.3227075",
+     "openalex": "W4312364363,S2:bf130a98c67196c4836bf0973b95dca04982300c",
+     "abstract": "In this brief, we propose a new structure for reducing the number of substrates of a post-loaded substrate-integrated waveguide (SIW) resonator filters with microstrip ports. For using fewer substrates, the proposed structure has microstrip ports and each capacitive gap (the dielectric gap between one side of each post and the ground) on one side of the filter structure, which has not been reporte",
+     "source": "Semantic Scholar"
+    },
+    {
+     "title": "Multiband Microwave Photonic Filters With Tunability and Programmability via Optical Frequency Comb Shaping",
+     "year": 2023,
+     "venue": "Journal of Lightwave Technology",
+     "cites": 10,
+     "url": "https://doi.org/10.1109/jlt.2023.3289176",
+     "openalex": "W4382118986",
+     "abstract": "We present the development of tunable programmable multiband microwave photonic filters with an arbitrary number of passbands, which open a new route to integrate several communication function modules into one multifunctional communication terminal. The complex coefficient multi-tap microwave photonic filters providing flexible multiband filter characteristics can be realized by programming the a"
+    },
+    {
+     "title": "Accurate Synthesis of Input-Reflectionless Dual-Passband Filter",
+     "year": 2023,
+     "venue": "IEEE transactions on microwave theory and techniques",
+     "cites": 10,
+     "url": "https://doi.org/10.1109/TMTT.2022.3214510",
+     "openalex": "W4312630798,S2:b82cdb1fe7af6834da17f5b564420f20aca82440",
+     "abstract": "This article presents a rigorous synthesis method for input-reflectionless dual-passband filters. As this work provides closed-form formulas for the normalized coupling values of both the filtering and matching sections for producing zero reflection at all frequencies, they can be obtained instantly without using time-consuming trial-and-error methods. As the formulas are generalized for a case wi",
+     "source": "Semantic Scholar"
+    }
+   ]
+  },
+  {
+   "name": "이희조",
+   "dept": "컴퓨터학과",
+   "email": "heejo@korea.ac.kr",
+   "lab": "컴퓨터보안연구실(Computer & Communication Security Laboratory (CCS Lab))",
+   "lab_url": "https://ccs.korea.ac.kr",
+   "name_en": "Heejo Lee",
+   "openalex": [
+    "A5101630726"
+   ],
+   "confidence": "high",
+   "check": "ORCID 0000-0002-5831-0787, 고려대 소속. 주제(소프트웨어, 네트워크 보안) 일관. CCS 연구실 논문 목록과 대조(대부분 일치)",
+   "papers": [
+    {
+     "title": "CNEPS: A Precise Approach for Examining Dependencies among Third-Party C/C++ Open-Source Components",
+     "year": 2024,
+     "venue": "ACM/IEEE International Conference on Software Engineering: Companion Proceedings (ICSE-Companion)",
+     "cites": 23,
+     "url": "https://doi.org/10.1145/3597503.3639209",
+     "openalex": "W4394769278",
+     "abstract": "The rise in open-source software (OSS) reuse has led to intricate dependencies among third-party components, increasing the demand for precise dependency analysis. However, owing to the presence of reused files that are difficult to identify the originating components (i.e., indistinguishable files) and duplicated components, precisely identifying component dependencies is becoming challenging."
+    },
+    {
+     "title": "ZMAD: Lightweight Model-Based Anomaly Detection for the Structured Z-Wave Protocol",
+     "year": 2023,
+     "venue": "IEEE Access",
+     "cites": 16,
+     "url": "https://doi.org/10.1109/access.2023.3285476",
+     "openalex": "W4380354694",
+     "abstract": "Smart home automation is part of the Internet of Things that enables house remote control via the use of smart devices, sensors, and actuators. Despite its convenience, vulnerabilities in smart home devices provide attackers with an opportunity to break into the smart home infrastructure without permission. In fact, millions of Z-Wave smart homelegacy devicesare vulnerable to wireless injection at"
+    },
+    {
+     "title": "A large-scale analysis of the effectiveness of publicly reported security patches",
+     "year": 2024,
+     "venue": "Computers & Security",
+     "cites": 14,
+     "url": "https://doi.org/10.1016/j.cose.2024.104181",
+     "openalex": "W4403915041",
+     "abstract": ""
+    },
+    {
+     "title": "Scaling SCIERA: A Journey Through the Deployment of a Next-generation Network",
+     "year": 2025,
+     "venue": "ACM SIGCOMM Conference (SIGCOMM)",
+     "cites": 10,
+     "url": "https://doi.org/10.1145/3718958.3750532",
+     "openalex": "W4413756574",
+     "abstract": "The SCION Next-Generation Network (NGN) architecture has expanded steadily since 2017, with today 20+ ISPs offering SCION connectivity. In production, IP-to-SCION-to-IP translation by SCION-IP-Gateways (SIGs) is used, such that applications are unaware of the NGN communication. To accelerate innovation and deployments, our aim is to increase the number of native SCION use cases, where the applicat"
+    },
+    {
+     "title": "BloomFuzz: Unveiling Bluetooth L2CAP Vulnerabilities via State Cluster Fuzzing with Target-Oriented State Machines",
+     "year": 2024,
+     "venue": "Lecture notes in computer science",
+     "cites": 3,
+     "url": "https://doi.org/10.1007/978-3-031-70896-1_6",
+     "openalex": "W4402274129",
+     "abstract": ""
+    }
+   ]
+  },
+  {
+   "name": "인호",
+   "dept": "컴퓨터학과",
+   "email": "hoh_in@korea.ac.kr",
+   "lab": "지능형 블록체인 공학 연구실 (Intelligent Blockchain Engineering Laboratory)",
+   "lab_url": "https://ibel.korea.ac.kr/",
+   "name_en": "Hoh Peter In",
+   "openalex": [
+    "A5056381991",
+    "A5111976379"
+   ],
+   "confidence": "high",
+   "check": "OpenAlex 저자 2개(A5056381991, A5111976379)를 합침. 둘 다 고려대, 블록체인과 소프트웨어 공학. IBEL 논문 목록과 대조(일치)",
+   "papers": [
+    {
+     "title": "SC-CAAC: A Smart-Contract-Based Context-Aware Access Control Scheme for Blockchain-Enabled IoT Systems",
+     "year": 2024,
+     "venue": "IEEE Internet of Things Journal",
+     "cites": 73,
+     "url": "https://doi.org/10.1109/jiot.2024.3371504",
+     "openalex": "W4392309153",
+     "abstract": "Integrating blockchain technology with the Internet of Things (IoT) facilitates seamless interaction between IoT devices and systems to securely share, access, and exchange data. However, ensuring adequate access control within blockchain-enabled IoT (BIoT) systems remains a significant challenge. It is often difficult to adapt existing access control mechanisms to the dynamic and context-dependen"
+    },
+    {
+     "title": "Blockchain-Based Decentralized Storage Systems for Sustainable Data Self-Sovereignty: A Comparative Study",
+     "year": 2024,
+     "venue": "Sustainability",
+     "cites": 53,
+     "url": "https://doi.org/10.3390/su16177671",
+     "openalex": "W4402238371",
+     "abstract": "In the digital age, data sovereignty has emerged as a critical concern due to the increasing demand for privacy, security, and user control. In this context, decentralized storage infrastructure is reshaping how data are stored and managed, leading the transition from traditional centralized models to a more decentralized and user-driven approach to data sovereignty, known as data self-sovereignty"
+    },
+    {
+     "title": "Decentralized Global Copyright System Based on Consortium Blockchain With Proof of Authority",
+     "year": 2023,
+     "venue": "IEEE Access",
+     "cites": 33,
+     "url": "https://doi.org/10.1109/access.2023.3270627",
+     "openalex": "W4367164114",
+     "abstract": "Conventional copyright systems are governed nationally, and there is no global ledger to store copyright data. Because copyright laws differ across countries, it is difficult to provide cross-border copyright protection. The differences in national copyright laws, absence of a global copyright monitoring system with a central cloud that can store copyrighted content worldwide, and lack of transpar"
+    },
+    {
+     "title": "Proof of Random Leader: A Fast and Manipulation-Resistant Proof-of-Authority Consensus Algorithm for Permissioned Blockchains Using Verifiable Random Function",
+     "year": 2025,
+     "venue": "IEEE Transactions on Services Computing",
+     "cites": 29,
+     "url": "https://doi.org/10.1109/tsc.2025.3536315",
+     "openalex": "W4406983026",
+     "abstract": "Proof of Authority (PoA) is a widely adopted consensus algorithm for permissioned blockchain networks, where a group of trusted entities governs the network. PoA is known for achieving rapid consensus with minimal computational and energy requirements. However, existing PoA variants such as Aura and Clique suffer from low transaction throughput in high workload conditions and provide limited rando"
+    },
+    {
+     "title": "Performance evaluation of a quantum-resistant Blockchain: a comparative study with Secp256k1 and Schnorr",
+     "year": 2024,
+     "venue": "Quantum Information Processing",
+     "cites": 29,
+     "url": "https://doi.org/10.1007/s11128-024-04272-6",
+     "openalex": "W4392511153",
+     "abstract": "Abstract Popular Secp256k1 and Schnorr algorithms offer strong security in current Blockchains. However, they are vulnerable to quantum attacks. To solve this problem, several quantum-resistant algorithms have been proposed. However, the performance evaluations and tangible analyses of these algorithms on current Blockchains have not been studied yet. In this context, a performance analysis of qua"
+    }
+   ]
+  },
+  {
+   "name": "전유석",
+   "dept": "컴퓨터학과",
+   "email": "ys_jeon@korea.ac.kr",
+   "lab": "Secure Software Lab (S2 Lab)",
+   "lab_url": "https://s2-lab.github.io/",
+   "name_en": "Yuseok Jeon",
+   "openalex": [
+    "A5033516356"
+   ],
+   "confidence": "high",
+   "check": "ORCID 0000-0002-9461-6652, UNIST 이후 고려대. 주제(메모리 안전, 새니타이저) 일관. S2 Lab 논문 목록과 대조. 목록에 없는 RPI 소속 연합학습 서베이는 동명이인 가능성으로 뺌 Semantic Scholar도 이 서베이를 같은 저자로 묶지만 연구실 목록에 없어 계속 뺌.",
+   "papers": [
+    {
+     "title": "ERASan: Efficient Rust Address Sanitizer",
+     "year": 2024,
+     "venue": "IEEE Symposium on Security and Privacy (S&P)",
+     "cites": 14,
+     "url": "https://doi.org/10.1109/sp54263.2024.00258",
+     "openalex": "W4402263622",
+     "abstract": "Rust is a rapidly growing system programming language that ensures a speed comparable to traditional C/C++ system programming languages, along with the additional benefit of guaranteed memory safety. However, Rust’s strict security rules make implementing and executing some features challenging. To address this, Rust has introduced unsafe Rust, which is less constrained by these strict rules. Neve"
+    },
+    {
+     "title": "On the Robustness of Graph Reduction Against GNN Backdoor",
+     "year": 2024,
+     "venue": "",
+     "cites": 7,
+     "url": "https://doi.org/10.1145/3689932.3694762",
+     "openalex": "W4404644666",
+     "abstract": "Graph Neural Networks (GNNs) are gaining popularity across various domains due to their effectiveness in learning graph-structured data. Nevertheless, they have been shown to be susceptible to backdoor poisoning attacks, which pose serious threats to real-world applications. Meanwhile, graph reduction techniques, including coarsening and sparsification, which have long been employed to improve the"
+    },
+    {
+     "title": "CMASan: Custom Memory Allocator-Aware Address Sanitizer",
+     "year": 2025,
+     "venue": "IEEE Symposium on Security and Privacy (S&P)",
+     "cites": 5,
+     "url": "https://doi.org/10.1109/sp61157.2025.00074",
+     "openalex": "W4411337261",
+     "abstract": "Custom Memory Allocator (CMA) replaces the standard memory allocator for various purposes, such as improving memory efficiency or enhancing security. However, memory objects allocated by CMA are vulnerable to memory bugs similar to those allocated by the standard memory allocator. Unfortunately, existing memory bug detection approaches, including Address Sanitizer (ASan), do not work properly with"
+    },
+    {
+     "title": "type++: Prohibiting Type Confusion with Inline Type Information",
+     "year": 2025,
+     "venue": "Network and Distributed System Security Symposium",
+     "cites": 4,
+     "url": "https://doi.org/10.14722/ndss.2025.230053",
+     "openalex": "W4408750134",
+     "abstract": "Type confusion, or bad casting, is a common C++ attack vector.Such vulnerabilities cause a program to interpret an object as belonging to a different type, enabling powerful attacks, like control-flow hijacking.C++ restricts runtime checks to polymorphic classes because only those have inline type information.The lack of runtime type information throughout an object's lifetime makes it challenging"
+    },
+    {
+     "title": "In-Context Probing for Membership Inference in Fine-Tuned Language Models",
+     "year": 2026,
+     "venue": "Network and Distributed System Security Symposium",
+     "cites": 2,
+     "url": "https://doi.org/10.14722/ndss.2026.240892",
+     "openalex": "W4417529966",
+     "abstract": "membership inference [5], [6].Among these stages, finetuning is particularly susceptible to privacy leaks, due to the typically limited size and sensitive nature of the fine-tuning datasets [7].Membership inference attacks (MIAs) aim to determine whether a particular data sample was part of a model's training dataset, thereby potentially revealing sensitive or personally identifiable information a"
+    }
+   ]
+  },
+  {
+   "name": "정성우",
+   "dept": "컴퓨터학과",
+   "email": "swchung@korea.ac.kr",
+   "lab": "SMRL (SoC and Microprocessor Research Lab.)",
+   "lab_url": "http://smrl.korea.ac.kr",
+   "name_en": "Sung Woo Chung",
+   "openalex": [
+    "A5072430210"
+   ],
+   "confidence": "high",
+   "check": "ORCID 0000-0001-5347-9586, 고려대 소속. 주제(DRAM ECC, 열 관리) 일관. SMRL 논문 목록과 대조(일치)",
+   "papers": [
+    {
+     "title": "Sparrow ECC: A Lightweight ECC Approach for HBM Refresh Reduction towards Energy-efficient DNN Inference",
+     "year": 2024,
+     "venue": "International Symposium on Low Power Electronics and Design (ISLPED)",
+     "cites": 6,
+     "url": "https://doi.org/10.1145/3665314.3670825",
+     "openalex": "W4402349319",
+     "abstract": "Exponential growth in deep neural network (DNN) model size has resulted in significant demands for memory bandwidth, leading to the extensive adoption of high bandwidth memory (HBM) in DNN inference. However, with the shorter retention time due to high operating temperature, HBM requires more frequent refresh operations, suffering larger refresh energy/performance overhead. In this paper, we propo"
+    },
+    {
+     "title": "Near-Memory Computing With Compressed Embedding Table for Personalized Recommendation",
+     "year": 2023,
+     "venue": "IEEE Transactions on Emerging Topics in Computing",
+     "cites": 5,
+     "url": "https://doi.org/10.1109/tetc.2023.3345870",
+     "openalex": "W4390357618",
+     "abstract": "Deep learning (DL)-based recommendation models play an important role in many real-world applications. However, an embedding layer, which is a key part of the DL-based recommendation models, requires sparse memory accesses to a very large memory space followed by the pooling operations (i.e., reduction operations). It makes the system overprovision memory capacity for model deployment. Moreover, w"
+    },
+    {
+     "title": "Twin ECC: A Data Duplication Based ECC for Strong DRAM Error Resilience",
+     "year": 2023,
+     "venue": "Design, Automation, and Test in Europe",
+     "cites": 5,
+     "url": "https://doi.org/10.23919/date56975.2023.10137096",
+     "openalex": "W4379115847",
+     "abstract": "With the continuous scaling of process technology, DRAM reliability has become a critical challenge in modern memory systems. Currently, DRAM memory systems for servers employ ECC DIMMs with a single error correction and double error detection (SECDED) code. However, the SECDED code is insufficient to ensure DRAM reliability since memory systems become more susceptible to errors. Though various st"
+    },
+    {
+     "title": "ComBoost: An Instruction Complexity Aware DTM Technique for Edge Devices",
+     "year": 2024,
+     "venue": "International Symposium on Low Power Electronics and Design (ISLPED)",
+     "cites": 3,
+     "url": "https://doi.org/10.1145/3665314.3670820",
+     "openalex": "W4402349416",
+     "abstract": "Recent edge devices show high power density in CPUs, resulting in excessive heat generation. Since mechanical cooling solutions are impractical in edge devices due to their small form factor, software-controlled dynamic thermal management (DTM) plays a crucial role in resolving thermal problems. In state-of-the-art edge devices, proactive DTM techniques such as ARM intelligent power allocation (IP"
+    },
+    {
+     "title": "ZEC ECC: A Zero-Byte Eliminating Compression-Based ECC Scheme for DRAM Reliability",
+     "year": 2024,
+     "venue": "IEEE Access",
+     "cites": 3,
+     "url": "https://doi.org/10.1109/access.2024.3431209",
+     "openalex": "W4400810474",
+     "abstract": "As DRAM cells continue to shrink, the conventional single error correction and double error detection (SECDED) code is not sufficient to provide DRAM error resilience. To satisfy DRAM reliability demands, various studies have proposed multi-bit error correctable ECC schemes with substantial performance and/or storage overhead compared to the SECDED code. In this paper, we propose ZEC ECC, a zero-b"
+    }
+   ]
+  },
+  {
+   "name": "정순영",
+   "dept": "컴퓨터학과",
+   "email": "jsy@korea.ac.kr",
+   "lab": "Intelligence Engineering Lab",
+   "lab_url": "https://kuielab.github.io/",
+   "name_en": "Soonyoung Jung",
+   "openalex": [
+    "A5043500102",
+    "A5075209855"
+   ],
+   "confidence": "low",
+   "check": "OpenAlex 두 ID 모두 가톨릭대 생명과학 연구자와 섞여 있음. KUIELab 목록에서 확인된 것은 Semantic Scholar의 SDX 2023 기술 보고서 1편. 고려대 소속 OpenAlex 2편(EEG-AdaNet, PMC)은 KUIELab 구성원(Minseok Kim)과 공저라 넣었지만 목록 대조는 못 함",
+   "papers": [
+    {
+     "title": "Sound Demixing Challenge 2023 Music Demixing Track Technical Report: TFC-TDF-UNet v3",
+     "year": 2023,
+     "venue": "arXiv.org",
+     "cites": 21,
+     "url": "https://doi.org/10.48550/arXiv.2306.09382",
+     "openalex": "W4381245617,S2:1add331576e162f38eaaa8e75edb22f1621b303a",
+     "abstract": "In this report, we present our award-winning solutions for the Music Demixing Track of Sound Demixing Challenge 2023. First, we propose TFC-TDF-UNet v3, a time-efficient music source separation model that achieves state-of-the-art results on the MUSDB benchmark. We then give full details regarding our solutions for each Leaderboard, including a loss masking approach for noise-robust training. Code",
+     "source": "Semantic Scholar"
+    },
+    {
+     "title": "PMC: Build-Time Per-Modality Centroid Correction for Cross-Modal Binary-Quantized Retrieval",
+     "year": 2026,
+     "venue": "ACM International Conference on Information and Knowledge Management (CIKM)",
+     "cites": 0,
+     "url": "https://doi.org/10.1145/3799682.3840007",
+     "openalex": "W7225101080",
+     "abstract": "Approximate nearest neighbor search is a core operator in large-scale retrieval, where vector quantization is widely used to reduce memory cost. Binary quantization methods encode each dimension as a single bit, but they assume queries and database vectors share a common centroid. This assumption fails in cross-modal retrieval, where each modality clusters around a different centroid, producing a "
+    },
+    {
+     "title": "Eeg-Adanet: Electrode Placement Adaptive Network for Deep Learning-Based Multi-Channel Eeg Ocular Artifact Removal",
+     "year": 2025,
+     "venue": "SSRN Electronic Journal",
+     "cites": 0,
+     "url": "https://doi.org/10.2139/ssrn.5106100",
+     "openalex": "W4406665123",
+     "abstract": ""
+    }
+   ]
+  },
+  {
+   "name": "정연돈",
+   "dept": "컴퓨터학과",
+   "email": "ydchung@korea.ac.kr",
+   "lab": "DX 연구실(DataX Lab)",
+   "lab_url": "https://dx.korea.ac.kr/",
+   "name_en": "Yon Dohn Chung",
+   "openalex": [
+    "A5060644906",
+    "A5040042166"
+   ],
+   "confidence": "high",
+   "check": "OpenAlex 저자 2개(A5060644906, A5040042166)를 합침. 고려대 교수 소개 페이지와 DX 연구실 논문 목록과 대조(일치)",
+   "papers": [
+    {
+     "title": "LAFD: Local-Differentially Private and Asynchronous Federated Learning With Direct Feedback Alignment",
+     "year": 2023,
+     "venue": "IEEE Access",
+     "cites": 10,
+     "url": "https://doi.org/10.1109/access.2023.3304704",
+     "openalex": "W4385819899",
+     "abstract": "Federated learning is a promising approach for training machine learning models using distributed data from multiple mobile devices. However, privacy concerns arise when sensitive data are used for training. In this paper, we discuss the challenges of applying local differential privacy to federated learning, which is compounded by limited resources of mobile clients and the asynchronicity of fede"
+    },
+    {
+     "title": "CellTrackVis: interactive browser-based visualization for analyzing cell trajectories and lineages",
+     "year": 2023,
+     "venue": "BMC Bioinformatics",
+     "cites": 8,
+     "url": "https://doi.org/10.1186/s12859-023-05218-y",
+     "openalex": "W4361290451",
+     "abstract": "BACKGROUND: Automatic cell tracking methods enable practitioners to analyze cell behaviors efficiently. Notwithstanding the continuous development of relevant software, user-friendly visualization tools have room for further improvements. Typical visualization mostly comes with main cell tracking tools as a simple plug-in, or relies on specific software/platforms. Although some tools are standalon"
+    },
+    {
+     "title": "SleepWatcher: Detecting sleep apnea/hypopnea syndrome from wearable devices using deep learning",
+     "year": 2025,
+     "venue": "Biomedical Signal Processing and Control",
+     "cites": 6,
+     "url": "https://doi.org/10.1016/j.bspc.2024.107460",
+     "openalex": "W4406089689",
+     "abstract": ""
+    },
+    {
+     "title": "Differentially private and explainable boosting machine with enhanced utility",
+     "year": 2024,
+     "venue": "Neurocomputing",
+     "cites": 3,
+     "url": "https://doi.org/10.1016/j.neucom.2024.128424",
+     "openalex": "W4401852537",
+     "abstract": ""
+    },
+    {
+     "title": "QHB+: Accelerated Configuration Optimization for Automated Performance Tuning of Spark SQL Applications",
+     "year": 2024,
+     "venue": "IEEE Access",
+     "cites": 3,
+     "url": "https://doi.org/10.1109/access.2024.3391333",
+     "openalex": "W4394967020",
+     "abstract": "Apache Spark stands out as a well-known solution for big data processing because of its efficiency and rapid processing capabilities. One of its modules, Spark SQL, serves as a prominent big data query engine. However, executing Spark SQL applications with massive data can be time-intensive, and the execution time can vary significantly depending on its configurations. Recent studies try to reduce"
+    }
+   ]
+  },
+  {
+   "name": "정원기",
+   "dept": "컴퓨터학과",
+   "email": "wkjeong@korea.ac.kr",
+   "lab": "High-performance Visual Computing Lab.",
+   "lab_url": "http://hvcl.korea.ac.kr",
+   "name_en": "Won-Ki Jeong",
+   "openalex": [
+    "A5025485089"
+   ],
+   "confidence": "high",
+   "check": "ORCID 0000-0002-9393-6451, 고려대 소속. 주제(병리 영상, 커넥토믹스) 일관. HVCL 논문 목록과 일부 대조(목록이 최근 위주라 일부만 일치)",
+   "papers": [
+    {
+     "title": "DiffMix: Diffusion Model-Based Data Synthesis for Nuclei Segmentation and Classification in Imbalanced Pathology Image Datasets",
+     "year": 2023,
+     "venue": "Lecture notes in computer science",
+     "cites": 48,
+     "url": "https://doi.org/10.1007/978-3-031-43898-1_33",
+     "openalex": "W4387211951",
+     "abstract": ""
+    },
+    {
+     "title": "PAIP 2020: Microsatellite instability prediction in colorectal cancer",
+     "year": 2023,
+     "venue": "Medical Image Analysis",
+     "cites": 32,
+     "url": "https://doi.org/10.1016/j.media.2023.102886",
+     "openalex": "W4383620846",
+     "abstract": "Microsatellite instability (MSI) refers to alterations in the length of simple repetitive genomic sequences. MSI status serves as a prognostic and predictive factor in colorectal cancer. The MSI-high status is a good prognostic factor in stage II/III cancer, and predicts a lack of benefit to adjuvant fluorouracil chemotherapy in stage II cancer but a good response to immunotherapy in stage IV canc"
+    },
+    {
+     "title": "Clinical-Grade Multi-organ Pathology Report Generation for Multi-scale Whole Slide Images via a Semantically Guided Medical Text Foundation Model",
+     "year": 2024,
+     "venue": "Lecture notes in computer science",
+     "cites": 13,
+     "url": "https://doi.org/10.1007/978-3-031-72083-3_3",
+     "openalex": "W4403365661",
+     "abstract": ""
+    },
+    {
+     "title": "Controllable and Efficient Multi-class Pathology Nuclei Data Augmentation Using Text-Conditioned Diffusion Models",
+     "year": 2024,
+     "venue": "Lecture notes in computer science",
+     "cites": 12,
+     "url": "https://doi.org/10.1007/978-3-031-72083-3_4",
+     "openalex": "W4403365658",
+     "abstract": ""
+    },
+    {
+     "title": "Connecto-informatics at the mesoscale: current advances in image processing and analysis for mapping the brain connectivity",
+     "year": 2024,
+     "venue": "Brain Informatics",
+     "cites": 11,
+     "url": "https://doi.org/10.1186/s40708-024-00228-9",
+     "openalex": "W4399326771",
+     "abstract": "Mapping neural connections within the brain has been a fundamental goal in neuroscience to understand better its functions and changes that follow aging and diseases. Developments in imaging technology, such as microscopy and labeling tools, have allowed researchers to visualize this connectivity through high-resolution brain-wide imaging. With this, image processing and analysis have become more "
+    }
+   ]
+  },
+  {
+   "name": "정형진",
+   "dept": "컴퓨터학과",
+   "email": "hj_chung@korea.ac.kr",
+   "lab": "PRISM Lab",
+   "lab_url": "http://prism.korea.ac.kr/",
+   "name_en": "Hyungjin Chung",
+   "openalex": [
+    "A5006604581"
+   ],
+   "confidence": "high",
+   "check": "ORCID 0000-0003-3202-0893, KAIST 이후 고려대. 주제(확산 모델, 역문제) 일관. PRISM 연구실 논문 목록과 대조(대부분 일치)",
+   "papers": [
+    {
+     "title": "A Survey on Diffusion Models for Inverse Problems",
+     "year": 2024,
+     "venue": "arXiv (Cornell University)",
+     "cites": 236,
+     "url": "https://doi.org/10.48550/arxiv.2410.00083",
+     "openalex": "W4403818631",
+     "abstract": "Diffusion models have become increasingly popular for generative modeling due to their ability to generate high-quality samples. This has unlocked exciting new possibilities for solving inverse problems, especially in image restoration and reconstruction, by treating diffusion models as unsupervised priors. This survey provides a comprehensive overview of methods that utilize pre-trained diffusion"
+    },
+    {
+     "title": "Solving 3D Inverse Problems Using Pre-Trained 2D Diffusion Models",
+     "year": 2023,
+     "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+     "cites": 179,
+     "url": "https://doi.org/10.1109/cvpr52729.2023.02159",
+     "openalex": "W4386075565",
+     "abstract": "Diffusion models have emerged as the new state-of-the-art generative model with high quality samples, with intriguing properties such as mode coverage and high flexibility. They have also been shown to be effective inverse problem solvers, acting as the prior of the distribution, while the information of the forward model can be granted at the sampling stage. Nonetheless, as the generative process"
+    },
+    {
+     "title": "Generative AI for Medical Imaging: extending the MONAI Framework",
+     "year": 2023,
+     "venue": "arXiv (Cornell University)",
+     "cites": 167,
+     "url": "https://doi.org/10.48550/arxiv.2307.15208",
+     "openalex": "W4385436554",
+     "abstract": "Recent advances in generative AI have brought incredible breakthroughs in several areas, including medical imaging. These generative models have tremendous potential not only to help safely share medical data via synthetic datasets but also to perform an array of diverse applications, such as anomaly detection, image-to-image translation, denoising, and MRI reconstruction. However, due to the comp"
+    },
+    {
+     "title": "Parallel Diffusion Models of Operator and Image for Blind Inverse Problems",
+     "year": 2023,
+     "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+     "cites": 112,
+     "url": "https://doi.org/10.1109/cvpr52729.2023.00587",
+     "openalex": "W4386066264",
+     "abstract": "Diffusion model-based inverse problem solvers have demonstrated state-of-the-art performance in cases where the forward operator is known (i.e. non-blind). However, the applicability of the method to blind inverse problems has yet to be explored. In this work, we show that we can indeed solve a family of blind inverse problems by constructing another diffusion prior for the forward operator. Speci"
+    },
+    {
+     "title": "CFG++: Manifold-constrained Classifier Free Guidance for Diffusion Models",
+     "year": 2024,
+     "venue": "arXiv (Cornell University)",
+     "cites": 99,
+     "url": "https://doi.org/10.48550/arxiv.2406.08070",
+     "openalex": "W4399657474",
+     "abstract": "Classifier-free guidance (CFG) is a fundamental tool in modern diffusion models for text-guided generation. Although effective, CFG has notable drawbacks. For instance, DDIM with CFG lacks invertibility, complicating image editing; furthermore, high guidance scales, essential for high-quality outputs, frequently result in issues like mode collapse. Contrary to the widespread belief that these are "
+    }
+   ]
+  },
+  {
+   "name": "주창희",
+   "dept": "컴퓨터학과",
+   "email": "changhee@korea.ac.kr",
+   "lab": "RAIN Lab",
+   "lab_url": "http://rain.korea.ac.kr",
+   "name_en": "Changhee Joo",
+   "openalex": [
+    "A5035314009"
+   ],
+   "confidence": "high",
+   "check": "ORCID 0000-0003-1690-2298, 고려대 소속. 주제(무선망, 위성망) 일관. RAIN 연구실 논문 목록과 대조(일치) Semantic Scholar 저자 목록과 비교해 OpenAlex에 없던 논문을 보충함(source: Semantic Scholar).",
+   "papers": [
+    {
+     "title": "Dynamic Downlink Interference Management in LEO Satellite Networks Without Direct Communications",
+     "year": 2023,
+     "venue": "IEEE Access",
+     "cites": 21,
+     "url": "https://doi.org/10.1109/access.2023.3253870",
+     "openalex": "W4323644335",
+     "abstract": "We investigate effective interference management for Low Earth Orbit (LEO) satellite networks that provide downlink services to ground users and share the same frequency spectrum range. Since there are multi-group LEO satellites with different constellation orbits, the ground users will experience time-varying interference due to the overlapping of main/side lobes of the satellite beams, which bec"
+    },
+    {
+     "title": "B-hop: Time-Domain Adjustment of BLE Frequency Hopping Against Wi-Fi Beacon Interference",
+     "year": 2023,
+     "venue": "IEEE Internet of Things Journal",
+     "cites": 13,
+     "url": "https://doi.org/10.1109/jiot.2023.3337252",
+     "openalex": "W4389961029",
+     "abstract": "As Wi-Fi access points (APs) are deployed more densely, the cross-technology interference (CTI) from Wi-Fi is becoming a real threat to co-existing low-power IoT protocols such as BLE. In this work, we pay attention to Wi-Fi beacons that take a substantial amount of airtime in the 2.4 GHz Industrial Scientific Medical (ISM) band. We develop B-hop, a standard-compliant framework that adjusts BLE fr"
+    },
+    {
+     "title": "AutoGAN-DSP: Stabilizing GAN architecture search with deterministic score predictors",
+     "year": 2024,
+     "venue": "Neurocomputing",
+     "cites": 12,
+     "url": "https://doi.org/10.1016/j.neucom.2023.127187",
+     "openalex": "W4390661508",
+     "abstract": ""
+    },
+    {
+     "title": "Remote Estimation for Dynamic IoT Sources Under Sublinear Communication Costs",
+     "year": 2023,
+     "venue": "IEEE/ACM Transactions on Networking",
+     "cites": 7,
+     "url": "https://doi.org/10.1109/tnet.2023.3314506",
+     "openalex": "W4386869846",
+     "abstract": "We investigate a remote estimation system with communication cost for multiple Internet-of-Things sensors, in which the state of each sensor changes according to a Wiener process. Under sublinear communication cost structure, in which the per-transmission cost decreases with the number of simultaneous transmissions, we address an interesting unexplored trade-off under source dynamics between frequ"
+    },
+    {
+     "title": "CycleGANAS: Differentiable Neural Architecture Search for CycleGAN",
+     "year": 2023,
+     "venue": "2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)",
+     "cites": 7,
+     "url": "https://doi.org/10.1109/CVPRW63382.2024.00172",
+     "openalex": "W4402916110,S2:c03d59603fbf93e37203a30f90b9dd15fa677a4e",
+     "abstract": "We develop a Neural Architecture Search (NAS) framework for CycleGAN that carries out unpaired image-to-image translation task. Extending previous NAS techniques for Generative Adversarial Networks (GANs) to CycleGAN is not straightforward due to the task difference and greater search space. We design architectures that consist of a stack of simple ResNet-based cells and develop a search method th",
+     "source": "Semantic Scholar"
+    }
+   ]
+  },
+  {
+   "name": "한정현",
+   "dept": "컴퓨터학과",
+   "email": "jhan@korea.ac.kr",
+   "lab": "미디어 연구실",
+   "lab_url": "http://media.korea.ac.kr",
+   "name_en": "JungHyun Han",
+   "openalex": [
+    "A5069240871"
+   ],
+   "confidence": "high",
+   "check": "ORCID 0000-0001-6438-2974, 고려대 소속. 주제(그래픽스, 포즈 추정) 일관. 미디어 연구실 논문 목록과 대조. 위성 간 링크 논문은 다른 사람이라 뺌 Semantic Scholar 저자 목록과 비교해 OpenAlex에 없던 논문을 보충함(source: Semantic Scholar).",
+   "papers": [
+    {
+     "title": "ConvNeXtPose: A Fast Accurate Method for 3D Human Pose Estimation and Its AR Fitness Application in Mobile Devices",
+     "year": 2023,
+     "venue": "IEEE Access",
+     "cites": 14,
+     "url": "https://doi.org/10.1109/access.2023.3326343",
+     "openalex": "W4387831732",
+     "abstract": "In general, 3D human-pose estimation requires high-performance computing resources. Existing methods working on mobile devices trade off accuracy in return for increased efficiency, often making the estimation accuracy far from sufficient for developing serious applications. In this paper, we present a mobile 3D human-pose estimation model, achieving real-time performances with a well-designed bal"
+    },
+    {
+     "title": "Real‐time reconstruction of pipes using RGB‐D cameras",
+     "year": 2023,
+     "venue": "Computer Animation and Virtual Worlds",
+     "cites": 10,
+     "url": "https://doi.org/10.1002/cav.2197",
+     "openalex": "W4385407407",
+     "abstract": "Abstract This paper presents a novel method that automatically reconstructs pipes in real time using an RGB‐D camera. The input image is decomposed into superpixels, and a pipe element, which is a 3D circle lying on the pipe surface, is generated for each superpixel. Over frames, the pipe elements are grouped into sequences and are finally modeled in parametric equations. The method is tested in d"
+    },
+    {
+     "title": "Interaction With Virtual Objects Using Human Pose and Shape Estimation",
+     "year": 2025,
+     "venue": "Comput. Animat. Virtual Worlds",
+     "cites": 8,
+     "url": "https://doi.org/10.1002/cav.70046",
+     "openalex": "W4411076962,S2:ba4b36b92b68e5c0ce52413f4fc64e292d9de007",
+     "abstract": "ABSTRACT In this article, we propose an AR system that facilitates a user's natural interaction with virtual objects in an augmented reality environment. The system consists of three modules: human pose and shape estimation, camera‐space calibration, and physics simulation. The first module estimates a user's 3D pose and shape from a single RGB video stream, thereby reducing the system setup cost ",
+     "source": "Semantic Scholar"
+    },
+    {
+     "title": "An Optimization‐based SPH Solver for Simulation of Hyperelastic Solids",
+     "year": 2023,
+     "venue": "Computer Graphics Forum",
+     "cites": 7,
+     "url": "https://doi.org/10.1111/cgf.14756",
+     "openalex": "W4377832110",
+     "abstract": "Abstract This paper proposes a novel method for simulating hyperelastic solids with Smoothed Particle Hydrodynamics (SPH). The proposed method extends the coverage of the state‐of‐the‐art elastic SPH solid method to include different types of hyperelastic materials, such as the Neo‐Hookean and the St. Venant‐Kirchoff models. To this end, we reformulate an implicit integration scheme for SPH elasti"
+    },
+    {
+     "title": "Screen‐space Streamline Seeding Method for Visualizing Unsteady Flow in Augmented Reality",
+     "year": 2024,
+     "venue": "Computer Animation and Virtual Worlds",
+     "cites": 4,
+     "url": "https://doi.org/10.1002/cav.2250",
+     "openalex": "W4399246035",
+     "abstract": "Abstract Streamlines are a popular method of choice in many flow visualization techniques due to their simplicity and intuitiveness. This paper presents a novel streamline seeding method, which is tailored for visualizing unsteady flow in augmented reality (AR). Our method prioritizes visualizing the visible part of the flow field to enhance the flow representation's quality and reduce the computa"
+    }
+   ]
+  },
+  {
+   "name": "허준범",
+   "dept": "컴퓨터학과",
+   "email": "jbhur@korea.ac.kr",
+   "lab": "정보시스템보안연구실 (Information System Security Lab.)",
+   "lab_url": "https://issl.korea.ac.kr/",
+   "name_en": "Junbeom Hur",
+   "openalex": [
+    "A5059902523"
+   ],
+   "confidence": "high",
+   "check": "ORCID 0000-0002-4823-4194, 고려대 소속. 주제(보안, 암호) 일관. 고려대 교수 소개 페이지와 ISSL 논문 목록과 대조(일치)",
+   "papers": [
+    {
+     "title": "Cybersecurity threats in FinTech: A systematic review",
+     "year": 2023,
+     "venue": "Expert Systems with Applications",
+     "cites": 144,
+     "url": "https://doi.org/10.1016/j.eswa.2023.122697",
+     "openalex": "W4388923893",
+     "abstract": ""
+    },
+    {
+     "title": "Deep Learning-Based Detection for Multiple Cache Side-Channel Attacks",
+     "year": 2023,
+     "venue": "IEEE Transactions on Information Forensics and Security",
+     "cites": 22,
+     "url": "https://doi.org/10.1109/tifs.2023.3340088",
+     "openalex": "W4389332300",
+     "abstract": "A cache side-channel attack retrieves victim’s sensitive information from a system by exploiting shared cache of CPUs. Since conventional cache side-channel attacks such as FLUSH+RELOAD and PRIME+PROBE are likely to incur numerous cache events, such as cache hits and misses, many previous strategies have focused on monitoring cache events for attack detection. However, as recently proposed attacks"
+    },
+    {
+     "title": "Multi-Key Similar Data Search on Encrypted Storage With Secure Pay-Per-Query",
+     "year": 2023,
+     "venue": "IEEE Transactions on Information Forensics and Security",
+     "cites": 18,
+     "url": "https://doi.org/10.1109/tifs.2023.3236178",
+     "openalex": "W4315630921",
+     "abstract": "Many commercial cloud service providers (CSPs) adopt pay-per-query pricing models, in which data owners are charged based on the amount of data scanned by each query. In such a data sharing model, not only the privacy preservation for the data and queries but also the trustworthiness of the underlying billing system is of the utmost importance. In this paper, we revisit multi-key searchable encryp"
+    },
+    {
+     "title": "A deeply supervised adaptable neural network for diagnosis and classification of Alzheimer’s severity using multitask feature extraction",
+     "year": 2024,
+     "venue": "PLoS ONE",
+     "cites": 14,
+     "url": "https://doi.org/10.1371/journal.pone.0297996",
+     "openalex": "W4393201906",
+     "abstract": "Alzheimer's disease is the most prevalent form of dementia, which is a gradual condition that begins with mild memory loss and progresses to difficulties communicating and responding to the environment. Recent advancements in neuroimaging techniques have resulted in large-scale multimodal neuroimaging data, leading to an increased interest in using deep learning for the early diagnosis and automat"
+    },
+    {
+     "title": "Beneath the Phishing Scripts: A Script-Level Analysis of Phishing Kits and Their Impact on Real-World Phishing Websites",
+     "year": 2024,
+     "venue": "ACM Asia Conference on Computer and Communications Security (ASIA CCS)",
+     "cites": 11,
+     "url": "https://doi.org/10.1145/3634737.3657013",
+     "openalex": "W4400120884",
+     "abstract": "Phishing kits have become increasingly popular among cybercriminals because they offer an easy-to-use and efficient way for phishing attackers to build phishing websites. Prior work on phishing kits has focused on analyzing specific behavioral features (e.g., evasion techniques), and measuring their effectiveness on the anti-phishing mechanisms. Unfortunately, such prior studies provide a limited "
+    }
+   ]
+  }
+ ]
+}

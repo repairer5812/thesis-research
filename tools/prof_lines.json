@@ -69,9 +69,9 @@
    "title": "HapMotion: motion-to-tactile framework with wearable haptic devices for immersiv"
   },
   "W4403081604": {
-   "line": "mm",
-   "near": "clip",
-   "why": "글 설명을 곁들인 궤적 예측",
+   "line": "vision",
+   "near": "",
+   "why": "영상과 글 설명으로 궤적 예측",
    "title": "VisionTrap: Vision-Augmented Trajectory Prediction Guided by Textual Description"
   },
   "W4402754052": {
@@ -95,7 +95,7 @@
   "W4402961796": {
    "line": "gen",
    "near": "ldm",
-   "why": "글에서 여러 사건 영상 생성",
+   "why": "글로 여러 사건이 이어지는 영상 생성",
    "title": "MEVG: Multi-event Video Generation with Text-to-Video Models"
   },
   "W4402684005,W4406074039": {
@@ -711,9 +711,9 @@
    "title": "Towards Reliable and Fluent Large Language Models: Incorporating Feedback Learni"
   },
   "W4412377003": {
-   "line": "align",
-   "near": "cot",
-   "why": "언어 모델 추론으로 추천",
+   "line": "retr",
+   "near": "",
+   "why": "리뷰로 LLM이 추천 선호를 추론",
    "title": "Review-driven Personalized Preference Reasoning with Large Language Models for R"
   },
   "W4390873143": {
@@ -763,6 +763,1428 @@
    "near": "score-sde",
    "why": "확산 모델로 기하 동역학 모델링",
    "title": "Neural Hamiltonian Diffusions for Modeling Structured Geometric Dynamics"
+  },
+  "W4390873170,S2:ae00779e5d9afbdb11ed8a9f05bfa4b3ca7e908d": {
+   "line": "mm",
+   "near": "clip",
+   "why": "약한 지도로 지시 표현 분할",
+   "title": "Weakly Supervised Referring Image Segmentation with Intra-Chunk and Inter-Chunk "
+  },
+  "W4406125958": {
+   "line": "other",
+   "near": "",
+   "why": "군 훈련 마음챙김 스트레스 연구",
+   "title": "Investigating the effect of mindfulness training for stress management in milita"
+  },
+  "W4411358963": {
+   "line": "eff",
+   "near": "",
+   "why": "GPU 메모리 초과 때 텐서 이동 스케줄링",
+   "title": "MOST: Memory Oversubscription-Aware Scheduling for Tensor Migration on GPU Unifi"
+  },
+  "W4402754139": {
+   "line": "vision",
+   "near": "vit",
+   "why": "비전 트랜스포머의 상관 구조 학습",
+   "title": "Learning Correlation Structures for Vision Transformers"
+  },
+  "W4402811232": {
+   "line": "eff",
+   "near": "",
+   "why": "모바일 AI의 DNN 분할 추론과 자원 조절",
+   "title": "Cutting-Edge Inference: Dynamic DNN Model Partitioning and Resource Scaling for "
+  },
+  "W4399657474": {
+   "line": "gen",
+   "near": "cfg",
+   "why": "분류기 없는 안내(CFG) 개선",
+   "title": "CFG++: Manifold-constrained Classifier Free Guidance for Diffusion Models"
+  },
+  "W4403851182,S2:c6723456245852313cccb1842ebcdd6d4c090145": {
+   "line": "mm",
+   "near": "",
+   "why": "사회적 상호작용 이해 서베이",
+   "title": "Towards Social AI: A Survey on Understanding Social Interactions"
+  },
+  "W4394848736": {
+   "line": "other",
+   "near": "",
+   "why": "fMRI 하지 운동 피질 위치 연구",
+   "title": "Use of functional magnetic resonance imaging to identify cortical loci for lower"
+  },
+  "W4411270143,S2:4294207a9995983e998e45ec365f07d8625af053": {
+   "line": "other",
+   "near": "",
+   "why": "레이더 빔포밍",
+   "title": "Robust Anti-Jamming Method for Large-Array Radar Systems Using Deep Learning Bas"
+  },
+  "W7214032296": {
+   "line": "speech",
+   "near": "",
+   "why": "벡터 양자화 확산 모델 음성 변환",
+   "title": "VQ-CycleDiffusion: Vector Quantized Cycle-Consistent Diffusion Models for Voice "
+  },
+  "W4406733523,S2:2e07bd64973d0a96f1f709ff2936ba7d0cb88e3b": {
+   "line": "mm",
+   "near": "clip",
+   "why": "CLIP의 부정 표현 이해 높이기",
+   "title": "Know “No” Better: A Data-Driven Approach for Enhancing Negation Awareness in CLI"
+  },
+  "W4386836433": {
+   "line": "gen",
+   "near": "",
+   "why": "이미지 생성 AI를 수업에 쓰고 프롬프트 분석",
+   "title": "Prompt Aloud!: Incorporating image-generative AI into STEAM class with learning "
+  },
+  "W4388482952": {
+   "line": "other",
+   "near": "",
+   "why": "C/C++ 결함 벤치마크",
+   "title": "BUGSC++: A Highly Usable Real World Defect Benchmark for C/C++"
+  },
+  "W7225101080": {
+   "line": "mm",
+   "near": "clip",
+   "why": "이진 양자화 교차 모달 검색 보정",
+   "title": "PMC: Build-Time Per-Modality Centroid Correction for Cross-Modal Binary-Quantize"
+  },
+  "W4389544838": {
+   "line": "other",
+   "near": "",
+   "why": "저궤도 위성망 TCP 성능",
+   "title": "Strategically Positioning On-Board PEPs in LEO-based NTN for TCP Throughput Impr"
+  },
+  "W4385656586": {
+   "line": "other",
+   "near": "",
+   "why": "마이크로파 필터",
+   "title": "Formulation of Transmission-Line Canonical Cross-Coupled Filters Based on Two St"
+  },
+  "W4393149596": {
+   "line": "med",
+   "near": "",
+   "why": "파노라마 X선으로 구강 3D 복원",
+   "title": "NeBLa: Neural Beer-Lambert for 3D Reconstruction of Oral Structures from Panoram"
+  },
+  "W4384470566": {
+   "line": "cl",
+   "near": "dann",
+   "why": "fMRI 과제 분류에 전이 학습",
+   "title": "Autoencoder and restricted Boltzmann machine for transfer learning in functional"
+  },
+  "W4379115847": {
+   "line": "other",
+   "near": "",
+   "why": "DRAM 오류 정정",
+   "title": "Twin ECC: A Data Duplication Based ECC for Strong DRAM Error Resilience"
+  },
+  "W4385436554": {
+   "line": "med",
+   "near": "",
+   "why": "의료 영상 생성 AI 도구(MONAI)",
+   "title": "Generative AI for Medical Imaging: extending the MONAI Framework"
+  },
+  "W4399900453": {
+   "line": "other",
+   "near": "",
+   "why": "촉각과 소리 표시 장치",
+   "title": "Interactive Deformable Colored Sound Display Achieved with Electrostrictive Fluo"
+  },
+  "W4390357618": {
+   "line": "eff",
+   "near": "",
+   "why": "추천 모델 임베딩 표를 메모리 가까이에서 처리",
+   "title": "Near-Memory Computing With Compressed Embedding Table for Personalized Recommend"
+  },
+  "W4411233170": {
+   "line": "lm",
+   "near": "",
+   "why": "LLM 질의로 문서와 동작 불일치 찾기",
+   "title": "Metamon: Finding Inconsistencies between Program Documentation and Behavior usin"
+  },
+  "W4383484015": {
+   "line": "other",
+   "near": "",
+   "why": "명상 훈련 뇌 가소성 연구",
+   "title": "Functional and microstructural plasticity following social and interoceptive men"
+  },
+  "W4380354694": {
+   "line": "other",
+   "near": "",
+   "why": "무선 프로토콜 이상 탐지",
+   "title": "ZMAD: Lightweight Model-Based Anomaly Detection for the Structured Z-Wave Protoc"
+  },
+  "W4415554352,S2:f65d5783ecfde49d9d37b4b1fcfa73d75a0a1147": {
+   "line": "vision",
+   "near": "",
+   "why": "감시 영상의 이상 행동 탐지",
+   "title": "Where and What: Contextual Dynamics-Aware Anomaly Detection in Surveillance Vide"
+  },
+  "W4402727235,S2:39c00d06c132a95347d2211330b9f88448d3dea2": {
+   "line": "mm",
+   "near": "",
+   "why": "여러 사람 사회적 상호작용의 멀티모달 표현",
+   "title": "Modeling Multimodal Social Interactions: New Challenges and Baselines with Dense"
+  },
+  "W4411337261": {
+   "line": "other",
+   "near": "",
+   "why": "메모리 안전 검사",
+   "title": "CMASan: Custom Memory Allocator-Aware Address Sanitizer"
+  },
+  "W4390872117": {
+   "line": "gen",
+   "near": "ldm",
+   "why": "Stable Diffusion으로 소리에 맞춘 영상 생성",
+   "title": "The Power of Sound (TPoS): Audio Reactive Video Generation with Stable Diffusion"
+  },
+  "W4386066264": {
+   "line": "gen",
+   "near": "score-sde",
+   "why": "연산자와 영상을 함께 푸는 확산 모델 역문제",
+   "title": "Parallel Diffusion Models of Operator and Image for Blind Inverse Problems"
+  },
+  "W4405032458": {
+   "line": "gen",
+   "near": "",
+   "why": "글로 사람 동작 생성",
+   "title": "BiPO: Bidirectional Partial Occlusion Network for Text-to-Motion Synthesis"
+  },
+  "W4405093948": {
+   "line": "other",
+   "near": "",
+   "why": "쿠버네티스 자동 확장",
+   "title": "LARE-HPA: Co-optimizing Latency and Resource Efficiency for Horizontal Pod Autos"
+  },
+  "W4312232602,S2:d23bc61c4d3e55171ce805f63aed514afb2e9129": {
+   "line": "other",
+   "near": "",
+   "why": "네트워크 가상화",
+   "title": "TeaVisor: Network Hypervisor for Bandwidth Isolation in SDN-NV"
+  },
+  "W4366602404": {
+   "line": "other",
+   "near": "",
+   "why": "뇌전증 뇌 미세구조 연구",
+   "title": "Cortical microstructural gradients capture memory network reorganization in temp"
+  },
+  "W4386869846": {
+   "line": "other",
+   "near": "",
+   "why": "사물인터넷 원격 추정",
+   "title": "Remote Estimation for Dynamic IoT Sources Under Sublinear Communication Costs"
+  },
+  "W4393201906": {
+   "line": "med",
+   "near": "",
+   "why": "다중 자료 신경망으로 알츠하이머 진단",
+   "title": "A deeply supervised adaptable neural network for diagnosis and classification of"
+  },
+  "W4409363289": {
+   "line": "agent",
+   "near": "generative-agents",
+   "why": "협력하는 언어 에이전트의 계획과 검증",
+   "title": "REVECA: Adaptive Planning and Trajectory-Based Validation in Cooperative Languag"
+  },
+  "W4324116424": {
+   "line": "robot",
+   "near": "",
+   "why": "가상현실 손 조작 동작 생성",
+   "title": "VR-HandNet: A Visually and Physically Plausible Hand Manipulation System in Virt"
+  },
+  "W4318457268": {
+   "line": "other",
+   "near": "",
+   "why": "뇌심부 자극과 도파민 신경과학",
+   "title": "High frequency deep brain stimulation can mitigate the acute effects of cocaine "
+  },
+  "W4413147571,S2:278dad88e4fd2f1ca46212a9ef8e874cfe431c88": {
+   "line": "mm",
+   "near": "dino",
+   "why": "대형 학습 인코더로 시선 대상 추정",
+   "title": "Gaze-LLE: Gaze Target Estimation via Large-Scale Learned Encoders"
+  },
+  "W4414445318": {
+   "line": "eff",
+   "near": "",
+   "why": "이기종 GPU 클러스터 분산 학습 조정",
+   "title": "SADDLE: A runtime feedback control architecture for adaptive distributed deep le"
+  },
+  "W4408954746": {
+   "line": "other",
+   "near": "",
+   "why": "가상현실 손 상호작용 정리",
+   "title": "Shaping the Future of VR Hand Interactions: Lessons Learned from Modern Methods"
+  },
+  "W4386362878": {
+   "line": "lm",
+   "near": "bert",
+   "why": "BERT 방식 안드로이드 바이트코드 표현 학습",
+   "title": "DexBERT: Effective, Task-Agnostic and Fine-Grained Representation Learning of An"
+  },
+  "W4399872430": {
+   "line": "graph",
+   "near": "gcn",
+   "why": "프로그래밍 언어로 그래프 학습을 설명",
+   "title": "PL4XGL: A Programming Language Approach to Explainable Graph Learning"
+  },
+  "S2:096d76afc25f32f4dd94faa7a276d645de7d2c64": {
+   "line": "other",
+   "near": "",
+   "why": "오픈소스 취약점 탐지",
+   "title": "V1SCAN: Discovering 1-day Vulnerabilities in Reused C/C++ Open-source Software C"
+  },
+  "W4387587584": {
+   "line": "other",
+   "near": "",
+   "why": "SDN 제어 트래픽 예측",
+   "title": "Machine Learning-Based Prediction Models for Control Traffic in SDN Systems"
+  },
+  "W4396757586": {
+   "line": "signal",
+   "near": "anomaly-transformer",
+   "why": "시계열 이상 탐지의 시간 주파수 해상도",
+   "title": "Breaking the Time-Frequency Granularity Discrepancy in Time-Series Anomaly Detec"
+  },
+  "W4402263622": {
+   "line": "other",
+   "near": "",
+   "why": "러스트 메모리 안전",
+   "title": "ERASan: Efficient Rust Address Sanitizer"
+  },
+  "W4386075565": {
+   "line": "gen",
+   "near": "score-sde",
+   "why": "2D 확산 모델로 3D 역문제 풀기",
+   "title": "Solving 3D Inverse Problems Using Pre-Trained 2D Diffusion Models"
+  },
+  "W4390668402": {
+   "line": "med",
+   "near": "",
+   "why": "외상성 뇌손상 중환자 치료의 AI 개관",
+   "title": "Artificial Intelligence-Enhanced Neurocritical Care for Traumatic Brain Injury :"
+  },
+  "W4393936110": {
+   "line": "other",
+   "near": "",
+   "why": "신경화학 전극 측정",
+   "title": "Understanding the different effects of fouling mechanisms on working and referen"
+  },
+  "W4399046236": {
+   "line": "signal",
+   "near": "eegnet",
+   "why": "뇌파로 인구학적 특성 분류",
+   "title": "EEG‐based efficient demographic classification with selective data approach and "
+  },
+  "W4399500307": {
+   "line": "other",
+   "near": "",
+   "why": "뇌 기능 조직 신경과학",
+   "title": "A shifting role of thalamocortical connectivity in the emergence of cortical fun"
+  },
+  "W4402733580": {
+   "line": "robot",
+   "near": "nerf",
+   "why": "조명을 바꿀 수 있는 손 모델",
+   "title": "URHand: Universal Relightable Hands"
+  },
+  "W4379536137": {
+   "line": "other",
+   "near": "",
+   "why": "프로그래밍 언어 시험",
+   "title": "Feature-Sensitive Coverage for Conformance Testing of Programming Language Imple"
+  },
+  "W4402532475": {
+   "line": "signal",
+   "near": "eegnet",
+   "why": "뇌파 채널 중요도를 설명하는 대리 모델",
+   "title": "NeuroXAI: Adaptive, robust, explainable surrogate framework for determination of"
+  },
+  "W4417529966": {
+   "line": "lm",
+   "near": "",
+   "why": "미세조정 언어 모델의 학습 자료 추론 공격",
+   "title": "In-Context Probing for Membership Inference in Fine-Tuned Language Models"
+  },
+  "W4402754052,S2:94cdce19eb72eb56379b4e87abfe365e082fe385": {
+   "line": "vision",
+   "near": "",
+   "why": "보행자 궤적 예측의 관계 추론",
+   "title": "Higher-order Relational Reasoning for Pedestrian Trajectory Prediction"
+  },
+  "W4394625872": {
+   "line": "med",
+   "near": "",
+   "why": "확산 모델로 CBCT 금속 잡음 줄이기",
+   "title": "Dual Domain Diffusion Guidance for 3D CBCT Metal Artifact Reduction"
+  },
+  "W4404223773": {
+   "line": "lm",
+   "near": "",
+   "why": "LLM 기반 프로그래밍 학습 환경의 효과",
+   "title": "The impact of a large language model-based programming learning environment on s"
+  },
+  "W4315630921": {
+   "line": "other",
+   "near": "",
+   "why": "암호화 저장소 검색",
+   "title": "Multi-Key Similar Data Search on Encrypted Storage With Secure Pay-Per-Query"
+  },
+  "W4383749436": {
+   "line": "other",
+   "near": "",
+   "why": "네트워크 가상화 격리",
+   "title": "Control Channel Isolation in SDN Virtualization: A Machine Learning Approach"
+  },
+  "W4402916110,S2:c03d59603fbf93e37203a30f90b9dd15fa677a4e": {
+   "line": "gen",
+   "near": "gan",
+   "why": "CycleGAN 구조 탐색",
+   "title": "CycleGANAS: Differentiable Neural Architecture Search for CycleGAN"
+  },
+  "W4402238371": {
+   "line": "other",
+   "near": "",
+   "why": "블록체인 저장",
+   "title": "Blockchain-Based Decentralized Storage Systems for Sustainable Data Self-Soverei"
+  },
+  "W4397022466": {
+   "line": "speech",
+   "near": "",
+   "why": "파형에서 파형으로 음성 변환",
+   "title": "Wav2wav: Wave-to-Wave Voice Conversion"
+  },
+  "W4387497516": {
+   "line": "other",
+   "near": "",
+   "why": "분산 메모리 색인",
+   "title": "Converting Concurrent Range Index Structure to Range Index Structure for Disaggr"
+  },
+  "W4361290451": {
+   "line": "other",
+   "near": "",
+   "why": "세포 궤적 시각화",
+   "title": "CellTrackVis: interactive browser-based visualization for analyzing cell traject"
+  },
+  "W4389161628": {
+   "line": "other",
+   "near": "",
+   "why": "스마트 계약 자동 수정",
+   "title": "SmartFix: Fixing Vulnerable Smart Contracts by Accelerating Generate-and-Verify "
+  },
+  "W4404439890": {
+   "line": "robot",
+   "near": "3dgs",
+   "why": "3D Gaussian으로 전신 아바타",
+   "title": "Expressive Whole-Body 3D Gaussian Avatar"
+  },
+  "W7160491070": {
+   "line": "other",
+   "near": "",
+   "why": "가상현실 억제 훈련 심리 연구",
+   "title": "Virtual reality-based inhibition training influences food-related responses: no "
+  },
+  "W4385267118": {
+   "line": "other",
+   "near": "",
+   "why": "차량 네트워크 이동성 관리",
+   "title": "A Localized Forwarding Scheme for the Shared-Prefix Model-Based Vehicular Mobili"
+  },
+  "W4377832110": {
+   "line": "other",
+   "near": "",
+   "why": "물리 시뮬레이션",
+   "title": "An Optimization‐based SPH Solver for Simulation of Hyperelastic Solids"
+  },
+  "W4401852537": {
+   "line": "other",
+   "near": "",
+   "why": "차등 프라이버시 부스팅",
+   "title": "Differentially private and explainable boosting machine with enhanced utility"
+  },
+  "W4403365661": {
+   "line": "med",
+   "near": "",
+   "why": "병리 슬라이드 판독문 생성",
+   "title": "Clinical-Grade Multi-organ Pathology Report Generation for Multi-scale Whole Sli"
+  },
+  "W4386066385": {
+   "line": "mm",
+   "near": "flamingo",
+   "why": "시각 언어 모델로 영상 구간 설명 생성",
+   "title": "Vid2Seq: Large-Scale Pretraining of a Visual Language Model for Dense Video Capt"
+  },
+  "W4396605090": {
+   "line": "other",
+   "near": "",
+   "why": "뇌전증 수술과 뇌 연결망 연구",
+   "title": "Connectome reorganization associated with temporal lobe pathology and its surgic"
+  },
+  "W4320004384": {
+   "line": "graph",
+   "near": "gcn",
+   "why": "그래프 합성곱으로 교통사고 위험 예측",
+   "title": "MG-TAR: Multi-View Graph Convolutional Networks for Traffic Accident Risk Predic"
+  },
+  "W4402349439": {
+   "line": "eff",
+   "near": "",
+   "why": "연합학습의 탄소 최적화",
+   "title": "CLOVER: Carbon Optimization of Federated Learning over Heterogeneous Clients"
+  },
+  "W4403761251": {
+   "line": "lm",
+   "near": "",
+   "why": "코드 모델의 학습 자료 유출 위험",
+   "title": "Gotcha! This Model Uses My Code! Evaluating Membership Leakage Risks in Code Mod"
+  },
+  "W4402670896": {
+   "line": "retr",
+   "near": "",
+   "why": "리뷰와 인물 지식 기반 대화형 추천 데이터셋",
+   "title": "Pearl: A Review-driven Persona-Knowledge Grounded Conversational Recommendation "
+  },
+  "W4384345780": {
+   "line": "other",
+   "near": "",
+   "why": "퍼징 변이 전략 학습",
+   "title": "Learning Seed-Adaptive Mutation Strategies for Greybox Fuzzing"
+  },
+  "W4362659552": {
+   "line": "other",
+   "near": "",
+   "why": "양자 회로 합성",
+   "title": "Modular Component-Based Quantum Circuit Synthesis"
+  },
+  "W4407740412": {
+   "line": "other",
+   "near": "",
+   "why": "추천 시스템 설계",
+   "title": "Design of a Serendipity-Incorporated Recommender System"
+  },
+  "W4402715795": {
+   "line": "mm",
+   "near": "clip",
+   "why": "CLIP 비용 집계로 열린 어휘 분할",
+   "title": "CAT-Seg: Cost Aggregation for Open-Vocabulary Semantic Segmentation"
+  },
+  "W4402349416": {
+   "line": "other",
+   "near": "",
+   "why": "엣지 기기 열 관리",
+   "title": "ComBoost: An Instruction Complexity Aware DTM Technique for Edge Devices"
+  },
+  "W4417065331": {
+   "line": "retr",
+   "near": "search-r1",
+   "why": "강화학습으로 LLM 검색어 생성",
+   "title": "DeepRetrieval: Hacking Real Search Engines and Retrievers with Large Language Mo"
+  },
+  "W4389332300": {
+   "line": "other",
+   "near": "",
+   "why": "캐시 부채널 공격 탐지",
+   "title": "Deep Learning-Based Detection for Multiple Cache Side-Channel Attacks"
+  },
+  "W4366660614": {
+   "line": "other",
+   "near": "",
+   "why": "데이터베이스 시스템",
+   "title": "NV-SQL: Boosting OLTP Performance with Non-Volatile DIMMs"
+  },
+  "W4383620846": {
+   "line": "med",
+   "near": "",
+   "why": "대장암 병리 영상 미세위성 불안정성 예측",
+   "title": "PAIP 2020: Microsatellite instability prediction in colorectal cancer"
+  },
+  "W4396833010": {
+   "line": "other",
+   "near": "",
+   "why": "촉각 컨트롤러 HCI",
+   "title": "Augmenting Perceived Length of Handheld Controllers: Effects of Object Handle Pr"
+  },
+  "W7119576147": {
+   "line": "agent",
+   "near": "",
+   "why": "LLM으로 스마트홈 자동화",
+   "title": "Leveraging LLMs for Efficient and Personalized Smart Home Automation"
+  },
+  "W4401416092": {
+   "line": "other",
+   "near": "",
+   "why": "위성 통신 보안",
+   "title": "An Integration of Cryptography and Physical Layer Security for Multibeam Satelli"
+  },
+  "W4417449770": {
+   "line": "agent",
+   "near": "osworld",
+   "why": "모바일 GUI 에이전트 벤치마크",
+   "title": "MobiBench: Multi-Branch, Modular Benchmark for Mobile GUI Agents"
+  },
+  "W4366547427": {
+   "line": "other",
+   "near": "",
+   "why": "촉각 컨트롤러 HCI",
+   "title": "Visuo-haptic Crossmodal Shape Perception Model for Shape-Changing Handheld Contr"
+  },
+  "W4402349319": {
+   "line": "eff",
+   "near": "",
+   "why": "DNN 추론을 위한 HBM 오류 정정",
+   "title": "Sparrow ECC: A Lightweight ECC Approach for HBM Refresh Reduction towards Energy"
+  },
+  "W4394745382": {
+   "line": "lm",
+   "near": "",
+   "why": "코드 모델의 학습 자료 암기",
+   "title": "Unveiling Memorization in Code Models"
+  },
+  "W4387664631": {
+   "line": "vision",
+   "near": "",
+   "why": "변환에 강한 인식과 신경망 표현",
+   "title": "Robustness to Transformations Across Categories: Is Robustness Driven by Invaria"
+  },
+  "W4387211951": {
+   "line": "med",
+   "near": "",
+   "why": "확산 모델로 병리 세포핵 자료 합성",
+   "title": "DiffMix: Diffusion Model-Based Data Synthesis for Nuclei Segmentation and Classi"
+  },
+  "W4401863648": {
+   "line": "cl",
+   "near": "ewc",
+   "why": "추천 시스템의 이어 배우기 증류",
+   "title": "Continual Collaborative Distillation for Recommender System"
+  },
+  "W4406983026": {
+   "line": "other",
+   "near": "",
+   "why": "블록체인 합의",
+   "title": "Proof of Random Leader: A Fast and Manipulation-Resistant Proof-of-Authority Con"
+  },
+  "W4386417931": {
+   "line": "other",
+   "near": "",
+   "why": "자료 구조",
+   "title": "ESL: A High-Performance Skiplist with Express Lane"
+  },
+  "W4406665123": {
+   "line": "signal",
+   "near": "eegnet",
+   "why": "다채널 뇌파 눈 잡음 제거",
+   "title": "Eeg-Adanet: Electrode Placement Adaptive Network for Deep Learning-Based Multi-C"
+  },
+  "W4384304763": {
+   "line": "other",
+   "near": "",
+   "why": "버그 원인 커밋 찾기",
+   "title": "Fonte: Finding Bug Inducing Commits from Failures"
+  },
+  "W4409102047": {
+   "line": "other",
+   "near": "",
+   "why": "엣지 컴퓨팅 탄소 최적화",
+   "title": "GreenScale: Carbon Optimization for Edge Computing"
+  },
+  "W4367164114": {
+   "line": "other",
+   "near": "",
+   "why": "블록체인 저작권",
+   "title": "Decentralized Global Copyright System Based on Consortium Blockchain With Proof "
+  },
+  "W4394805612": {
+   "line": "other",
+   "near": "",
+   "why": "가상현실 멀미 연구",
+   "title": "The Effect of Directional Airflow toward Vection and Cybersickness"
+  },
+  "W4399447564": {
+   "line": "lm",
+   "near": "bert",
+   "why": "언어 모델로 지식 추적",
+   "title": "Language Model Can Do Knowledge Tracing: Simple but Effective Method to Integrat"
+  },
+  "W4381613440": {
+   "line": "other",
+   "near": "",
+   "why": "코드 검색 문헌 목록",
+   "title": "Big Code Search: A Bibliography"
+  },
+  "W4388046560": {
+   "line": "lm",
+   "near": "gpt3",
+   "why": "ChatGPT 프롬프트로 영어 문제 자동 생성",
+   "title": "Few-shot is enough: exploring ChatGPT prompt engineering method for automatic qu"
+  },
+  "W4413157693,S2:bd3079f64540fa1adeef54115488936fefd9eae9": {
+   "line": "vision",
+   "near": "",
+   "why": "여러 사람 몸짓 이해",
+   "title": "SocialGesture: Delving into Multi-person Gesture Understanding"
+  },
+  "W4312364363,S2:bf130a98c67196c4836bf0973b95dca04982300c": {
+   "line": "other",
+   "near": "",
+   "why": "마이크로파 필터",
+   "title": "Two-Layered Cross-Coupled Post-Loaded SIW Filter With Microstrip Ports"
+  },
+  "S2:b9c3b144bbc7ff39168b3b756214649cd7b27c3f": {
+   "line": "eff",
+   "near": "lora",
+   "why": "어댑터 일부만 학습해 언어 모델 미세조정 메모리 절약",
+   "title": "Not All Adapters Matter: Selective Adapter Freezing for Memory-Efficient Fine-Tu"
+  },
+  "W4312434669,S2:e6a7ac1d315923c2ecfdc057695f9dbba87c880b": {
+   "line": "other",
+   "near": "",
+   "why": "차량 네트워크 프로토콜",
+   "title": "An Identifier Locator Separation Protocol for the Shared Prefix Model over IEEE "
+  },
+  "W4389961029": {
+   "line": "other",
+   "near": "",
+   "why": "블루투스 주파수 도약",
+   "title": "B-hop: Time-Domain Adjustment of BLE Frequency Hopping Against Wi-Fi Beacon Inte"
+  },
+  "W4378009689": {
+   "line": "other",
+   "near": "",
+   "why": "마음챙김 척도와 작업 기억 연구",
+   "title": "Reliability of self-reported dispositional mindfulness scales and their associat"
+  },
+  "W4399246035": {
+   "line": "other",
+   "near": "",
+   "why": "증강현실 유동 시각화",
+   "title": "Screen‐space Streamline Seeding Method for Visualizing Unsteady Flow in Augmente"
+  },
+  "W4385801706": {
+   "line": "other",
+   "near": "",
+   "why": "자율주행차 운전자 의도 추론(통신)",
+   "title": "Inferring Human Driver Intent in Partial Deployment of Connected Autonomous Vehi"
+  },
+  "W4400120884": {
+   "line": "other",
+   "near": "",
+   "why": "피싱 분석",
+   "title": "Beneath the Phishing Scripts: A Script-Level Analysis of Phishing Kits and Their"
+  },
+  "W4405014122": {
+   "line": "agent",
+   "near": "osworld",
+   "why": "앱 기억을 더한 LLM 모바일 작업 자동화",
+   "title": "MobileGPT: Augmenting LLM with Human-like App Memory for Mobile Task Automation"
+  },
+  "W4396832915": {
+   "line": "other",
+   "near": "",
+   "why": "가상 에이전트와 사용자 경험(HCI)",
+   "title": "Engaged and Affective Virtual Agents: Their Impact on Social Presence, Trustwort"
+  },
+  "W4386158847": {
+   "line": "other",
+   "near": "",
+   "why": "촉각 인지 연구",
+   "title": "Human Recognition Performance of Simple Spatial Vibrotactile Patterns on the Tor"
+  },
+  "W4390661508": {
+   "line": "gen",
+   "near": "gan",
+   "why": "GAN 구조 탐색 안정화",
+   "title": "AutoGAN-DSP: Stabilizing GAN architecture search with deterministic score predic"
+  },
+  "W4385338801,S2:0045efd9d9c69a49a9edd43bf8a79c04ee051db8": {
+   "line": "signal",
+   "near": "",
+   "why": "멤리스터 CNN으로 뇌 신호 스트레스 탐지",
+   "title": "Memristor-Based CNNs for Detecting Stress Using Brain Imaging Signals"
+  },
+  "W4399326771": {
+   "line": "other",
+   "near": "",
+   "why": "뇌 연결 지도 영상 처리 개관",
+   "title": "Connecto-informatics at the mesoscale: current advances in image processing and "
+  },
+  "W4394951647": {
+   "line": "other",
+   "near": "",
+   "why": "프로그래밍 언어 설계",
+   "title": "JavaScript Language Design and Implementation in Tandem"
+  },
+  "W4403365658": {
+   "line": "med",
+   "near": "",
+   "why": "글 조건 확산 모델로 병리 세포핵 자료 늘리기",
+   "title": "Controllable and Efficient Multi-class Pathology Nuclei Data Augmentation Using "
+  },
+  "W4410905445": {
+   "line": "other",
+   "near": "",
+   "why": "공감 개입 심리 연구",
+   "title": "Implicit intervention approach for empathy: exploring the combined effects of em"
+  },
+  "W4412107013": {
+   "line": "eff",
+   "near": "",
+   "why": "가지치기로 희소 CNN 가속",
+   "title": "Cross-Filter Structured Pruning for Efficient Sparse CNN Acceleration"
+  },
+  "W4400036060": {
+   "line": "eff",
+   "near": "",
+   "why": "실시간 다중 DNN 추론 GPU 메모리",
+   "title": "RT-Swap: Addressing GPU Memory Bottlenecks for Real-Time Multi-DNN Inference"
+  },
+  "W4321192592": {
+   "line": "eff",
+   "near": "",
+   "why": "서버리스 추론에서 DNN 모델 공유",
+   "title": "Improving Memory Utilization by Sharing DNN Models for Serverless Inference"
+  },
+  "W4396731706,S2:da665f77146f6cb478f0b9e2bb0c937597fe780b": {
+   "line": "other",
+   "near": "",
+   "why": "fNIRS 기부 의도 연구",
+   "title": "Charitable crowdfunding donation-intention estimation depending on emotional pro"
+  },
+  "W4408230219,W4401201121": {
+   "line": "vision",
+   "near": "",
+   "why": "신경망의 형태 처리와 강건한 물체 인식",
+   "title": "Configural processing as an optimized strategy for robust object recognition in "
+  },
+  "W4382240674": {
+   "line": "gen",
+   "near": "",
+   "why": "여러 동작 이름으로 긴 3D 사람 동작 생성",
+   "title": "MultiAct: Long-Term 3D Human Motion Generation from Multiple Action Labels"
+  },
+  "W4321192305": {
+   "line": "eff",
+   "near": "",
+   "why": "이기종 GPU 분산 학습 지연 문제",
+   "title": "Addressing Straggler Problem Through Dynamic Partial All-Reduce for Distributed "
+  },
+  "W4404534756": {
+   "line": "med",
+   "near": "unet",
+   "why": "하지 방사선 사진에서 각도 자동 측정",
+   "title": "HKA-Net: clinically-adapted deep learning for automated measurement of hip-knee-"
+  },
+  "W4382311863,S2:ca77ab3699a72c92b9098755141f9ab9144762c7": {
+   "line": "other",
+   "near": "",
+   "why": "전자파 필터 설계",
+   "title": "Design of a Bandpass Filter with Mixed Electromagnetic Coupling Paths Using Vert"
+  },
+  "W4390534062": {
+   "line": "eff",
+   "near": "",
+   "why": "모바일 영상 앱의 딥러닝 모델과 자원 조절",
+   "title": "VisionScaling: Dynamic Deep Learning Model and Resource Scaling in Mobile Vision"
+  },
+  "W4382118986": {
+   "line": "other",
+   "near": "",
+   "why": "광 마이크로파 필터",
+   "title": "Multiband Microwave Photonic Filters With Tunability and Programmability via Opt"
+  },
+  "W4414404893": {
+   "line": "vision",
+   "near": "",
+   "why": "뇌 활성으로 시각 학습을 돕는 방법",
+   "title": "BRACTIVE: A Brain Activation Approach to Human Visual Brain Learning"
+  },
+  "W4401862891": {
+   "line": "cl",
+   "near": "",
+   "why": "자료 분포 변화 온라인 탐지",
+   "title": "Online Drift Detection with Maximum Concept Discrepancy"
+  },
+  "W4392362094": {
+   "line": "signal",
+   "near": "eegnet",
+   "why": "뇌파로 알츠하이머 단계 분류",
+   "title": "Electroencephalography-based classification of Alzheimer’s disease spectrum duri"
+  },
+  "W4406089689": {
+   "line": "signal",
+   "near": "",
+   "why": "웨어러블 기기로 수면 무호흡 탐지",
+   "title": "SleepWatcher: Detecting sleep apnea/hypopnea syndrome from wearable devices usin"
+  },
+  "W4387611409": {
+   "line": "rl",
+   "near": "",
+   "why": "심층 강화학습으로 차량 통신 혼잡 제어",
+   "title": "Deep reinforcement learning‐based dual‐mode congestion control for cellular V2X "
+  },
+  "W4403223179": {
+   "line": "other",
+   "near": "",
+   "why": "양자 모델 검사",
+   "title": "Quantum Probabilistic Model Checking for Time-Bounded Properties"
+  },
+  "W4403915041": {
+   "line": "other",
+   "near": "",
+   "why": "보안 패치 분석",
+   "title": "A large-scale analysis of the effectiveness of publicly reported security patche"
+  },
+  "W4401609026": {
+   "line": "rl",
+   "near": "",
+   "why": "다중 에이전트 강화학습으로 차량 통신 혼잡 제어",
+   "title": "Distributed Joint Congestion Control for V2X Using Multi-Agent Reinforcement Lea"
+  },
+  "W4392309153": {
+   "line": "other",
+   "near": "",
+   "why": "블록체인 접근 제어",
+   "title": "SC-CAAC: A Smart-Contract-Based Context-Aware Access Control Scheme for Blockcha"
+  },
+  "W4403536023": {
+   "line": "other",
+   "near": "",
+   "why": "파이썬 타입 오류 검출",
+   "title": "Towards Effective Static Type-Error Detection for Python"
+  },
+  "W4408147674": {
+   "line": "eff",
+   "near": "",
+   "why": "트랜스포머 작업의 GPU 메모리 미리 읽기",
+   "title": "Beyond VABlock: Improving Transformer workloads through aggressive prefetching"
+  },
+  "W4393171381": {
+   "line": "eff",
+   "near": "",
+   "why": "행렬 연산 가속기 구조",
+   "title": "SAVector: Vectored Systolic Arrays"
+  },
+  "W4387668986": {
+   "line": "med",
+   "near": "",
+   "why": "삼킴 검사 영상의 딥러닝 분석",
+   "title": "Application of deep learning technology for temporal analysis of videofluoroscop"
+  },
+  "W7171358736": {
+   "line": "other",
+   "near": "",
+   "why": "스마트 기기 자극 조건화 심리 연구",
+   "title": "Affective and neural modulation of smart device-related stimuli following a sing"
+  },
+  "W4367046606": {
+   "line": "basics",
+   "near": "distill",
+   "why": "여러 추천 모델에서 지식 증류",
+   "title": "Distillation from Heterogeneous Models for Top-K Recommendation"
+  },
+  "S2:91aabbcf0a4d46daec94500116016da86d07a061": {
+   "line": "other",
+   "near": "",
+   "why": "5G 영상 전송",
+   "title": "QCON: Seamless QoE-Aware 5G Streaming via Multi-Connectivity"
+  },
+  "W4404487521": {
+   "line": "eff",
+   "near": "",
+   "why": "엣지에서 여러 DNN을 에너지 효율적으로 실행",
+   "title": "Energy-Efficient, Delay-Constrained Edge Computing of a Network of DNNs"
+  },
+  "W4391216283": {
+   "line": "med",
+   "near": "",
+   "why": "뇌졸중 재활 팔 기능 자동 평가",
+   "title": "Automatic Assessment of Upper Extremity Function and Mobile Application for Self"
+  },
+  "W4400850193": {
+   "line": "med",
+   "near": "",
+   "why": "뇌 기능 연결로 의식 소실 원인 구분",
+   "title": "Differentiating loss of consciousness causes through artificial intelligence-ena"
+  },
+  "W4387831732": {
+   "line": "vision",
+   "near": "",
+   "why": "모바일 3D 사람 자세 추정",
+   "title": "ConvNeXtPose: A Fast Accurate Method for 3D Human Pose Estimation and Its AR Fit"
+  },
+  "W4404987415,S2:9d42fe15b8fc84fa0d2a04349e49445e9f0ccc6c": {
+   "line": "gen",
+   "near": "sd3",
+   "why": "화풍 생성을 위한 잡음 수준 표집",
+   "title": "Style-Friendly SNR Sampler for Style-Driven Generation"
+  },
+  "W4408750134": {
+   "line": "other",
+   "near": "",
+   "why": "타입 혼동 방지",
+   "title": "type++: Prohibiting Type Confusion with Inline Type Information"
+  },
+  "W4383340138,S2:e9880f96e5f6075351179434ba77e06f9b4c17c4": {
+   "line": "other",
+   "near": "",
+   "why": "fNIRS 뇌 동기화 연구",
+   "title": "Inter-Brain Synchrony Pattern Investigation on Triadic Board Game Play-Based Soc"
+  },
+  "W4399323826,S2:fe68ee26f705b1ed346aa2323b51ac279ac550a0": {
+   "line": "eff",
+   "near": "",
+   "why": "신경망 추론을 기기와 서버에 나눠 실행",
+   "title": "CoActo: CoActive Neural Network Inference Offloading with Fine-grained and Concu"
+  },
+  "W4396818493": {
+   "line": "signal",
+   "near": "eegnet",
+   "why": "단일 채널 뇌파 자기지도 학습으로 수면 단계 분류",
+   "title": "NeuroNet: A Novel Hybrid Self-Supervised Learning Framework for Sleep Stage Clas"
+  },
+  "W4400582623": {
+   "line": "agent",
+   "near": "swe-bench",
+   "why": "LLM으로 결함 위치를 찾고 설명",
+   "title": "A Quantitative and Qualitative Evaluation of LLM-Based Explainable Fault Localiz"
+  },
+  "W4392845583": {
+   "line": "signal",
+   "near": "eegnet",
+   "why": "부위별 뇌파 트랜스포머로 게임 행동 분류",
+   "title": "Bimodal Transformer with Regional EEG Data for Accurate Gameplay Regularity Clas"
+  },
+  "W7154188081": {
+   "line": "other",
+   "near": "",
+   "why": "프로그래밍 언어 시험",
+   "title": "Selective Feature-Sensitive Coverage for Conformance Testing of Programming Lang"
+  },
+  "W4361986915": {
+   "line": "other",
+   "near": "",
+   "why": "가상현실 멀미 연구",
+   "title": "Reducing VR Sickness by Directing User Gaze to Motion Singularity Point/Region a"
+  },
+  "W4411076962,S2:ba4b36b92b68e5c0ce52413f4fc64e292d9de007": {
+   "line": "vision",
+   "near": "",
+   "why": "사람 자세와 체형 추정으로 가상 물체 조작",
+   "title": "Interaction With Virtual Objects Using Human Pose and Shape Estimation"
+  },
+  "W4414847249": {
+   "line": "other",
+   "near": "",
+   "why": "이산수학 교육",
+   "title": "Introducing the hidden subgroup problem in discrete mathematics class"
+  },
+  "W4386123429": {
+   "line": "other",
+   "near": "",
+   "why": "플래시 저장 장치",
+   "title": "FlashAlloc: Dedicating Flash Blocks by Objects"
+  },
+  "W4407626121": {
+   "line": "other",
+   "near": "",
+   "why": "감성 분석과 지표 규칙 주식 추천",
+   "title": "A Rule-Based Stock Trading Recommendation System Using Sentiment Analysis and Te"
+  },
+  "W4368352593": {
+   "line": "other",
+   "near": "",
+   "why": "뇌심부 자극과 도파민 신경과학",
+   "title": "Deep brain stimulation alleviates tics in Tourette syndrome via striatal dopamin"
+  },
+  "W4403918323": {
+   "line": "rl",
+   "near": "",
+   "why": "위성망 가상망 배치에 심층 강화학습",
+   "title": "Satellite Network Slice Planning With Handover Trigger and DRL-Based Virtual Net"
+  },
+  "W4400810474": {
+   "line": "other",
+   "near": "",
+   "why": "DRAM 오류 정정",
+   "title": "ZEC ECC: A Zero-Byte Eliminating Compression-Based ECC Scheme for DRAM Reliabili"
+  },
+  "W4390204139": {
+   "line": "other",
+   "near": "",
+   "why": "차량 네트워크 이동성 관리",
+   "title": "A SDN-Based Vehicular Mobility Management for a Shared-Prefix Model Over IEEE WA"
+  },
+  "W4385819899": {
+   "line": "other",
+   "near": "",
+   "why": "차등 프라이버시 연합학습",
+   "title": "LAFD: Local-Differentially Private and Asynchronous Federated Learning With Dire"
+  },
+  "W4417171404": {
+   "line": "lm",
+   "near": "",
+   "why": "코드 생성 LLM의 환각 정리",
+   "title": "Hallucination by Code Generation LLMs: Taxonomy, Benchmarks, Mitigation, and Cha"
+  },
+  "W4402727207": {
+   "line": "robot",
+   "near": "",
+   "why": "사람과 물체 3D 동시 복원",
+   "title": "Joint Reconstruction of 3D Human and Object via Contact-Based Refinement Transfo"
+  },
+  "W4381245617,S2:1add331576e162f38eaaa8e75edb22f1621b303a": {
+   "line": "speech",
+   "near": "",
+   "why": "음악 음원 분리",
+   "title": "Sound Demixing Challenge 2023 Music Demixing Track Technical Report: TFC-TDF-UNe"
+  },
+  "W4312630798,S2:b82cdb1fe7af6834da17f5b564420f20aca82440": {
+   "line": "other",
+   "near": "",
+   "why": "마이크로파 필터",
+   "title": "Accurate Synthesis of Input-Reflectionless Dual-Passband Filter"
+  },
+  "W4387969132,S2:fa3766a44410c80d3b251e46da492c2740230ae3": {
+   "line": "eff",
+   "near": "",
+   "why": "영상 분석 추론을 서버로 넘길 때 부호화와 전송",
+   "title": "ENTRO: Tackling the Encoding and Networking Trade-off in Offloaded Video Analyti"
+  },
+  "W4366196985": {
+   "line": "gen",
+   "near": "ldm",
+   "why": "소리로 이끄는 확산 모델 영상 편집",
+   "title": "Soundini: Sound-Guided Diffusion for Natural Video Editing"
+  },
+  "W4392460428,W7111701489": {
+   "line": "vision",
+   "near": "",
+   "why": "흐림에 강한 CNN으로 사람 시각을 모형화",
+   "title": "Improved modeling of human vision by incorporating robustness to blur in convolu"
+  },
+  "W4386076148": {
+   "line": "mm",
+   "near": "clip",
+   "why": "CLIP으로 학습 없이 지시 표현 분할",
+   "title": "Zero-shot Referring Image Segmentation with Global-Local Context Features"
+  },
+  "W4403818631": {
+   "line": "gen",
+   "near": "score-sde",
+   "why": "역문제용 확산 모델 서베이",
+   "title": "A Survey on Diffusion Models for Inverse Problems"
+  },
+  "W7125932354": {
+   "line": "other",
+   "near": "",
+   "why": "웹 자바스크립트 분석",
+   "title": "Debun: Detecting Bundled JavaScript Libraries on Web using Property-Order Graphs"
+  },
+  "W4388923893": {
+   "line": "other",
+   "near": "",
+   "why": "핀테크 보안 개관",
+   "title": "Cybersecurity threats in FinTech: A systematic review"
+  },
+  "W4394967020": {
+   "line": "other",
+   "near": "",
+   "why": "Spark SQL 성능 조정",
+   "title": "QHB+: Accelerated Configuration Optimization for Automated Performance Tuning of"
+  },
+  "W4399562588": {
+   "line": "other",
+   "near": "",
+   "why": "알츠하이머 뇌 조직 신경과학",
+   "title": "Tau follows principal axes of functional and structural brain organization in Al"
+  },
+  "W4404644666": {
+   "line": "graph",
+   "near": "gcn",
+   "why": "그래프 축소가 GNN 백도어에 강한지",
+   "title": "On the Robustness of Graph Reduction Against GNN Backdoor"
+  },
+  "W4414084603": {
+   "line": "signal",
+   "near": "chronos",
+   "why": "수면 생체신호용 기초 모델",
+   "title": "Toward Foundational Model for Sleep Analysis Using a Multimodal Hybrid-Self-Supe"
+  },
+  "W4404106305": {
+   "line": "other",
+   "near": "",
+   "why": "차량 간 통신 스케줄링",
+   "title": "Causality-Sensitive Scheduling to Reduce Latency in Vehicle-to-Vehicle Interacti"
+  },
+  "W4400185053": {
+   "line": "agent",
+   "near": "swe-agent",
+   "why": "LLM으로 실제 프로그램 반복 리팩터링",
+   "title": "Iterative Refactoring of Real-World Open-Source Programs with Large Language Mod"
+  },
+  "W4414431768": {
+   "line": "vision",
+   "near": "",
+   "why": "심층 신경망으로 강건한 물체 인식 학습 모형화",
+   "title": "Category-specific perceptual learning of robust object recognition modelled usin"
+  },
+  "W4402485335": {
+   "line": "other",
+   "near": "",
+   "why": "블록체인 성능 예측",
+   "title": "Prediction of permissioned blockchain performance for resource scaling configura"
+  },
+  "S2:b71753be39d10a4b0ca05d04acfe7a17d21039c4": {
+   "line": "eff",
+   "near": "lora",
+   "why": "LLM 미세조정 GPU 메모리 추정",
+   "title": "LLMem: Estimating GPU Memory Usage for Fine-Tuning Pre-Trained LLMs"
+  },
+  "W4387092396": {
+   "line": "eff",
+   "near": "",
+   "why": "희소 CNN 가속기 구조",
+   "title": "Optimization of Microarchitecture and Dataflow for Sparse Tensor CNN Acceleratio"
+  },
+  "W4416472889": {
+   "line": "agent",
+   "near": "osworld",
+   "why": "모바일 GUI 에이전트 행동을 논리로 검증",
+   "title": "VeriSafe Agent: Safeguarding Mobile GUI Agent via Logic-based Action Verificatio"
+  },
+  "W4411552109": {
+   "line": "other",
+   "near": "",
+   "why": "오픈소스 버전 식별",
+   "title": "Tiver: Identifying Adaptive Versions of C/C++ Third-Party Open-Source Components"
+  },
+  "W4386632324": {
+   "line": "other",
+   "near": "",
+   "why": "신뢰 실행 환경 보안",
+   "title": "Decentralized Translator of Trust: Supporting Heterogeneous TEE for Critical Inf"
+  },
+  "W4390818801": {
+   "line": "eff",
+   "near": "",
+   "why": "CNN 가속기의 희소성 압축",
+   "title": "StarSPA: Stride-Aware Sparsity Compression for Efficient CNN Acceleration"
+  },
+  "W4409783379": {
+   "line": "other",
+   "near": "",
+   "why": "가상 수술 계획 메타분석",
+   "title": "Virtual surgical planning in craniomaxillofacial surgery: A systematic review an"
+  },
+  "W4402124255": {
+   "line": "other",
+   "near": "",
+   "why": "컨테이너 패킷 처리",
+   "title": "Intelligent Packet Processing for Performant Containers in IoT"
+  },
+  "W4384648320": {
+   "line": "lm",
+   "near": "",
+   "why": "뉴스 흐름에서 주제 묶기",
+   "title": "Unsupervised Story Discovery from Continuous News Streams via Scalable Thematic "
+  },
+  "W4388189714": {
+   "line": "eff",
+   "near": "",
+   "why": "파이프라인 확률적 경사 하강",
+   "title": "Pipelined Stochastic Gradient Descent with Taylor Expansion"
+  },
+  "W4404134884": {
+   "line": "other",
+   "near": "",
+   "why": "정서 인지 심리 실험",
+   "title": "Inducing sad recognition bias: A novel emotional probabilistic reward task and i"
+  },
+  "W4391582646": {
+   "line": "other",
+   "near": "",
+   "why": "마이크로파 필터",
+   "title": "Novel Transmission-Line Circuit Configuration of Cross-Coupled Filter With Negat"
+  },
+  "W4392511153": {
+   "line": "other",
+   "near": "",
+   "why": "양자 내성 블록체인",
+   "title": "Performance evaluation of a quantum-resistant Blockchain: a comparative study wi"
+  },
+  "W4414760770,S2:f8fa85d608bb5bd7dd9395a3315c18006a4c65ed": {
+   "line": "other",
+   "near": "",
+   "why": "입체 영상 실시간 전송",
+   "title": "DeltaStream: 2D-Inferred Delta Encoding for Live Volumetric Video Streaming"
+  },
+  "W4403598486": {
+   "line": "speech",
+   "near": "",
+   "why": "확산 모델 음성 변환",
+   "title": "CycleDiffusion: Voice Conversion Using Cycle-Consistent Diffusion Models"
+  },
+  "W4403499466": {
+   "line": "other",
+   "near": "",
+   "why": "가상현실 치매 교육",
+   "title": "Effect of virtual-reality-based education program for managing behavioral and ps"
+  },
+  "W4386159128": {
+   "line": "other",
+   "near": "",
+   "why": "촉각 인지 연구",
+   "title": "Perceptual Simultaneity Between Vibrotactile and Impact Stimuli"
+  },
+  "W4390605370": {
+   "line": "eff",
+   "near": "",
+   "why": "파이프라인 병렬 학습",
+   "title": "Pipeline Parallelism With Elastic Averaging"
+  },
+  "S2:c45e577e7c48bbcd5ba462dddb4a0bfd3eb39d4a": {
+   "line": "mm",
+   "near": "llava",
+   "why": "시각 언어 모델의 영역 이해",
+   "title": "Toward Interactive Regional Understanding in Vision-Large Language Models"
+  },
+  "W4385407407": {
+   "line": "robot",
+   "near": "",
+   "why": "RGB-D 카메라로 배관 3D 복원",
+   "title": "Real‐time reconstruction of pipes using RGB‐D cameras"
+  },
+  "W4323644335": {
+   "line": "other",
+   "near": "",
+   "why": "저궤도 위성 간섭 관리",
+   "title": "Dynamic Downlink Interference Management in LEO Satellite Networks Without Direc"
+  },
+  "W4389719329": {
+   "line": "med",
+   "near": "",
+   "why": "심층 신경망으로 휴지기 뇌 연결 개인 식별",
+   "title": "Discovering individual fingerprints in resting‐state functional connectivity usi"
+  },
+  "W4413756574": {
+   "line": "other",
+   "near": "",
+   "why": "차세대 네트워크 구축",
+   "title": "Scaling SCIERA: A Journey Through the Deployment of a Next-generation Network"
+  },
+  "W4413360905": {
+   "line": "other",
+   "near": "",
+   "why": "쿠버네티스 트래픽 배분",
+   "title": "HEART: Heterogeneous-Aware Traffic Allocation in Multi-Replica Deployments on Ku"
+  },
+  "W4380136461,S2:031ea4f14ea232f6f8abc9a05479aeeed1c5a365": {
+   "line": "vision",
+   "near": "vit",
+   "why": "자기지도 비전 트랜스포머 프롬프트 튜닝",
+   "title": "Improving Visual Prompt Tuning for Self-supervised Vision Transformers"
+  },
+  "W4401300398": {
+   "line": "other",
+   "near": "",
+   "why": "링크드 데이터와 기계학습 응용",
+   "title": "Application of Machine Learning in the Web of Linked Data"
+  },
+  "W4407357343": {
+   "line": "other",
+   "near": "",
+   "why": "데이터베이스 시스템",
+   "title": "Boosting OLTP Performance with Per-Page Logging on NVDIMM"
+  },
+  "W4394769278": {
+   "line": "other",
+   "near": "",
+   "why": "오픈소스 의존성 분석",
+   "title": "CNEPS: A Precise Approach for Examining Dependencies among Third-Party C/C++ Ope"
+  },
+  "W4321780247": {
+   "line": "other",
+   "near": "",
+   "why": "위성 네트워크 슬라이스",
+   "title": "Satellite Network Slice Planning: Architecture, Performance Analysis, and Open I"
+  },
+  "W4315928597": {
+   "line": "vision",
+   "near": "",
+   "why": "CNN과 뇌의 숫자, 물체 인식 표현 비교",
+   "title": "Neural representations of the perception of handwritten digits and visual object"
+  },
+  "W7138152349,S2:eaf7f264e6b8e2d683bd076ac642a196b2fde84b": {
+   "line": "align",
+   "near": "cot",
+   "why": "추론 과정을 토큰 단위로 지식 증류",
+   "title": "Explain in Your Own Words: Improving Reasoning via Token-Selective Dual Knowledg"
+  },
+  "W4390771379": {
+   "line": "eff",
+   "near": "",
+   "why": "임베디드 GPU 다중 추론 커널 합치기",
+   "title": "Adaptive Kernel Merge and Fusion for Multi-Tenant Inference in Embedded GPUs"
+  },
+  "W4386072153": {
+   "line": "robot",
+   "near": "",
+   "why": "실제 사진에서 두 손 3D 복원",
+   "title": "Bringing Inputs to Shared Domains for 3D Interacting Hands Recovery in the Wild"
+  },
+  "W4389135033": {
+   "line": "other",
+   "near": "",
+   "why": "세로토닌 측정 기술",
+   "title": "Techniques for Measurement of Serotonin: Implications in Neuropsychiatric Disord"
+  },
+  "W4402274129": {
+   "line": "other",
+   "near": "",
+   "why": "블루투스 취약점 퍼징",
+   "title": "BloomFuzz: Unveiling Bluetooth L2CAP Vulnerabilities via State Cluster Fuzzing w"
+  },
+  "W4413411851": {
+   "line": "eff",
+   "near": "",
+   "why": "희소 행렬 연산용 메모리 내 처리 구조",
+   "title": "SparsePIM: An Efficient HBM-Based PIM Architecture for Sparse Matrix-Vector Mult"
+  },
+  "W4404195261": {
+   "line": "gen",
+   "near": "",
+   "why": "홀로그램 생성 모델",
+   "title": "P‐Hologen: An End‐to‐End Generative Framework for Phase‐Only Holograms"
+  },
+  "W4413144295,S2:3930a48a0809a1c4fb8b6e5e4c798de0bc9d1e39": {
+   "line": "mm",
+   "near": "",
+   "why": "소리와 영상 질의응답",
+   "title": "Question-Aware Gaussian Experts for Audio-Visual Question Answering"
+  },
+  "W4396831898": {
+   "line": "other",
+   "near": "",
+   "why": "가상현실 멀미 연구",
+   "title": "The Effects of False but Stable Heart Rate Feedback on Cybersickness and User Ex"
+  },
+  "W4324360559": {
+   "line": "signal",
+   "near": "eegnet",
+   "why": "뇌파로 인지 부하 예측",
+   "title": "Prediction of Cognitive Load from Electroencephalography Signals Using Long Shor"
+  },
+  "W4367047042": {
+   "line": "lm",
+   "near": "",
+   "why": "바뀌는 문서 묶음 연속 요약",
+   "title": "PDSum: Prototype-driven Continuous Summarization of Evolving Multi-document Sets"
+  },
+  "W4414750909": {
+   "line": "gen",
+   "near": "dit",
+   "why": "확산 트랜스포머 안의 분할 능력",
+   "title": "Seg4Diff: Unveiling Open-Vocabulary Segmentation in Text-to-Image Diffusion Tran"
   }
  }
 }

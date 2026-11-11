@@ -32,10 +32,19 @@
   LINES.forEach((l, i) => LINE_ORDER[l.id] = i);
   LINE_ORDER.other = 99;
 
-  // 역마다 가까운 교수님 논문: { slug: [{p, w}] }
+  // 학과 고르기와 이름 찾기. 노선도의 원, 노선을 고를 때 나오는 이름표, 오른쪽 목록이 모두 이 범위를 따른다
+  const DEPTS = ['인공지능학과', '컴퓨터학과', '뇌공학과'].filter(d => PROFS.some(p => p.dept === d))
+    .concat([...new Set(PROFS.map(p => p.dept))].filter(d => !['인공지능학과', '컴퓨터학과', '뇌공학과'].includes(d)));
+  const flt = { dept: null, q: '' };
+  const norm = t => String(t || '').toLowerCase().replace(/[\s().,-]/g, '');
+  const inDept = p => !flt.dept || p.dept === flt.dept;
+  const inQuery = p => !flt.q || [p.name, p.en, p.lab].some(t => norm(t).includes(norm(flt.q)));
+  const shown = p => inDept(p) && inQuery(p);
+  const onMap = p => p.papers.filter(w => w.line !== 'other').length;
+  // 역마다 가까운 교수님 논문: { slug: [{p, w}] }. 학과를 고르면 그 학과 교수님만 센다
   function nearBy(filter) {
     const m = {};
-    PROFS.forEach(p => p.papers.forEach(w => { if (w.near && filter(p, w)) (m[w.near] = m[w.near] || []).push({ p, w }); }));
+    PROFS.forEach(p => inDept(p) && p.papers.forEach(w => { if (w.near && filter(p, w)) (m[w.near] = m[w.near] || []).push({ p, w }); }));
     return m;
   }
   const haloR = n => 12 + 6.5 * Math.sqrt(n);
@@ -45,7 +54,7 @@
   const RECENT = Object.keys(BY).filter(isRecent);
   const RECENT_NAME = '최근 3년(' + RECENT_FROM + '~)';
 
-  const MAPW = 1880, PAD = 28, SIDE = 292, GAP = 36, W = MAPW + GAP + SIDE + PAD;
+  const MAPW = 1880, PAD = 28, W = MAPW + PAD;
   let geo = null;           // 바탕을 그릴 때 정한 자리
   let mode = null;          // null, {line}, {prof}, {recent}
 
@@ -144,14 +153,8 @@
         + '<circle cx="' + (c.x + 14) + '" cy="' + (c.y + 13) + '" r="5" fill="' + c.l.color + '"/>'
         + '<text x="' + (c.x + 26) + '" y="' + (c.y + 17.5) + '">' + esc(c.l.name) + '</text></g>';
     });
-    // 원(전체)
-    const all = nearBy(() => true);
-    g += '<g class="halos">';
-    Object.entries(all).forEach(([slug, arr]) => {
-      const s = ST[slug];
-      g += '<circle class="halo" data-st="' + slug + '" data-lines="' + STATION_LINES[slug].join(' ') + '" cx="' + s.x.toFixed(1) + '" cy="' + s.y.toFixed(1) + '" r="' + haloR(arr.length).toFixed(1) + '"/>';
-    });
-    g += '</g>';
+    g += '<text x="' + MAPW + '" y="44" class="t2 fl" id="pmFlt" text-anchor="end"></text>';
+    g += '<g class="halos" id="pmHalos"></g>';   // 원은 학과를 고를 때마다 다시 그린다(halos())
     M.xls.forEach(x => {
       const c = x.c.map(p => p[0].toFixed(1) + ',' + T(p[1]));
       g += '<path class="xl" data-a="' + x.a + '" data-b="' + x.b + '" d="M' + c[0] + ' C' + c[1] + ' ' + c[2] + ' ' + c[3] + '"/>';
@@ -189,38 +192,90 @@
     M.stations.forEach(s => boxes.push([s.x - RX - 2, s.y + dy - s.hh - 2, s.x + RX + 2, s.y + dy + s.hh + 2]));
     g += '<g id="ov"></g>';
 
-    // 오른쪽: 교수님 줄(이름과 논문 다섯 칸 띠)
-    const sx = MAPW + GAP;
-    let sy = TOP - 6;
-    g += '<text x="' + sx + '" y="' + (sy + 6) + '" class="h2">교수님</text>';
-    g += '<text x="' + sx + '" y="' + (sy + 26) + '" class="t3">칸 하나가 논문 한 편, 색은 노선입니다</text>';
-    sy += 44;
-    [...new Set(PROFS.map(p => p.dept))].forEach(d => {
-      g += '<text x="' + sx + '" y="' + (sy + 14) + '" class="dept">' + esc(d) + '</text>';
-      sy += 24;
-      PROFS.filter(p => p.dept === d).forEach(p => {
-        const ws = p.papers.slice().sort((a, b) => LINE_ORDER[a.line] - LINE_ORDER[b.line]);
-        let bar = '';
-        for (let k = 0; k < 5; k++) {
-          const w = ws[k], bx = sx + 150 + k * 27;
-          bar += '<rect x="' + bx + '" y="' + (sy + 8) + '" width="24" height="14" rx="3" ' + (w ? 'fill="' + LINE(w.line).color + '"' : 'class="empty"') + '/>';
-        }
-        g += '<g class="pr" data-p="' + p.i + '" tabindex="0" role="button" aria-label="' + esc(p.name + ' 교수님, 논문 ' + p.papers.length + '편') + '">'
-          + '<rect class="hit" x="' + (sx - 8) + '" y="' + sy + '" width="' + (SIDE + 8) + '" height="30" rx="7"/>'
-          + '<text x="' + sx + '" y="' + (sy + 20) + '" class="pn">' + esc(p.name) + '</text>' + bar
-          + (p.papers.length ? '' : '<text x="' + (sx + 150 + 140) + '" y="' + (sy + 20) + '" class="t3" text-anchor="end">찾는 중</text>') + '</g>';
-        sy += 31;
-      });
-      sy += 10;
-    });
-
-    const H = Math.ceil(Math.max(mapBottom, sy) + 40);
-    g += '<text x="' + PAD + '" y="' + (H - 18) + '" class="t3">역과 인용: Semantic Scholar(' + esc(PM.s2_made) + '), 교수님 논문: OpenAlex와 Semantic Scholar(' + esc(PM.made) + '), 2023년 이후 인용 상위 5편. repairer5812.github.io/thesis-research/profmap.html</text>';
+    const H = Math.ceil(mapBottom + 40);
+    g += '<text id="pmFoot" x="' + PAD + '" y="' + (H - 18) + '" class="t3">역과 인용: Semantic Scholar(' + esc(PM.s2_made) + '), 교수님 논문: OpenAlex와 Semantic Scholar(' + esc(PM.made) + '), 2023년 이후 인용 상위 5편. repairer5812.github.io/thesis-research/profmap.html</text>';
     const svg = $('#pmSvg');
     svg.setAttribute('viewBox', '0 0 ' + W + ' ' + H);
     svg.setAttribute('width', W); svg.setAttribute('height', H);
     svg.innerHTML = '<rect class="bg" x="0" y="0" width="' + W + '" height="' + H + '"/>' + g;
     geo = { ST, boxes, H };
+    halos();
+  }
+
+  function halos() {
+    const all = nearBy(() => true);
+    $('#pmHalos').innerHTML = Object.entries(all).map(([slug, arr]) => {
+      const s = geo.ST[slug];
+      return '<circle class="halo" data-st="' + slug + '" data-lines="' + STATION_LINES[slug].join(' ') + '" cx="' + s.x.toFixed(1) + '" cy="' + s.y.toFixed(1) + '" r="' + haloR(arr.length).toFixed(1) + '"/>';
+    }).join('');
+    const n = PROFS.filter(inDept).length;
+    $('#pmFlt').textContent = '교수님: ' + (flt.dept || '전체') + ' ' + n + '명, 원 안의 논문 ' + Object.values(all).reduce((a, v) => a + v.length, 0) + '편';
+  }
+
+  // 오른쪽 교수님 목록(HTML). 학과 단추, 이름 찾기, 학과별 이름과 다섯 칸 띠
+  const bar = (p, cls) => {
+    const ws = p.papers.slice().sort((a, b) => LINE_ORDER[a.line] - LINE_ORDER[b.line]);
+    let h = '<span class="' + cls + '" aria-hidden="true">';
+    for (let k = 0; k < 5; k++) h += ws[k] ? '<i style="background:' + LINE(ws[k].line).color + '"></i>' : '<i class="e"></i>';
+    return h + '</span>';
+  };
+  function side() {
+    const box = $('#pmSide');
+    box.innerHTML = '<div class="pm-sh"><h2>교수님 <small>' + PROFS.length + '명</small></h2><p>논문지도를 맡을 수 있는 정보대학 전임교원입니다. 칸 하나가 논문 한 편, 색은 노선, 회색은 노선 밖입니다.</p></div>'
+      + '<div class="pm-tabs" role="group" aria-label="학과 고르기">' + [null].concat(DEPTS).map(d =>
+        '<button type="button" data-dept="' + esc(d || '') + '" aria-pressed="' + (flt.dept === d) + '">' + esc(d ? d.replace(/학과$/, '') : '전체') + ' <b>' + PROFS.filter(p => !d || p.dept === d).length + '</b></button>').join('') + '</div>'
+      + '<label class="pm-q"><span class="sr">교수님 이름이나 연구실로 찾기</span><input type="search" id="pmQ" placeholder="이름, 연구실로 찾기" autocomplete="off" value="' + esc(flt.q) + '"></label>'
+      + '<div class="pm-list" id="pmList"></div>';
+    box.querySelectorAll('.pm-tabs button').forEach(b => b.addEventListener('click', () => {
+      flt.dept = b.dataset.dept || null;
+      box.querySelectorAll('.pm-tabs button').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
+      if (mode && mode.prof != null && !inDept(PROFS[mode.prof])) mode = null;
+      halos(); list(); apply();
+    }));
+    const q = $('#pmQ');
+    q.addEventListener('input', () => { flt.q = q.value.trim(); list(); paint(); });
+    q.addEventListener('keydown', e => {
+      if (e.key === 'Enter') { const f = PROFS.find(shown); if (f) setMode({ prof: f.i }); }
+      if (e.key === 'Escape') { q.value = ''; flt.q = ''; list(); paint(); }
+    });
+    list();
+  }
+  function list() {
+    const L = $('#pmList');
+    const ds = DEPTS.filter(d => !flt.dept || d === flt.dept);
+    let h = '';
+    ds.forEach(d => {
+      const ps = PROFS.filter(p => p.dept === d && shown(p));
+      if (!ps.length) return;
+      h += '<h3>' + esc(d) + ' <small>' + ps.length + '</small></h3><ul>';
+      ps.forEach(p => {
+        const n = onMap(p);
+        h += '<li><button type="button" class="pm-pr" data-p="' + p.i + '" aria-label="' + esc(p.name + ' 교수님, 논문 ' + p.papers.length + '편, 노선 안 ' + n + '편') + '">'
+          + '<span class="nm">' + esc(p.name) + '</span>' + bar(p, 'br') + '</button></li>';
+      });
+      h += '</ul>';
+    });
+    L.innerHTML = h || '<p class="pm-none">찾는 교수님이 없습니다.</p>';
+    L.querySelectorAll('.pm-pr').forEach(b => b.addEventListener('click', () => setMode({ prof: +b.dataset.p })));
+    paint();
+  }
+  function paint() {
+    document.querySelectorAll('.pm-pr').forEach(e => {
+      const p = PROFS[+e.dataset.p];
+      e.classList.toggle('me', !!(mode && mode.prof === p.i));
+      e.classList.toggle('hi', !!(mode && mode.line && p.papers.some(w => w.line === mode.line)));
+      e.classList.toggle('dim', !!(mode && ((mode.line && !p.papers.some(w => w.line === mode.line)) || (mode.prof != null && mode.prof !== p.i))));
+      e.setAttribute('aria-pressed', String(!!(mode && mode.prof === p.i)));
+    });
+    // 고른 교수님 바로 아래에 논문 제목을 펼친다(자세한 내용은 노선도 아래)
+    document.querySelectorAll('.pm-mini').forEach(e => e.remove());
+    const me = mode && mode.prof != null && document.querySelector('.pm-pr[data-p="' + mode.prof + '"]');
+    if (me) {
+      const p = PROFS[mode.prof];
+      me.parentNode.insertAdjacentHTML('beforeend', '<ol class="pm-mini">' + (p.papers.length ? p.papers.map(w => '<li><i style="background:' + LINE(w.line).color + '"></i><span>'
+        + (w.u ? '<a href="' + esc(w.u) + '" target="_blank" rel="noopener">' + esc(w.t) + '</a>' : esc(w.t)) + '<small>' + esc(LINE(w.line).name + (w.near && BY[w.near] ? ', ' + BY[w.near].l : '') + ', ' + w.y) + '</small></span></li>').join('') : '<li>찾은 논문이 없습니다.</li>')
+        + '</ol>');
+    }
   }
 
   // 덧그림: 고른 노선이나 교수님의 원과 이름표
@@ -290,11 +345,7 @@
       e.classList.toggle('lit', !!onSt && onSt.has(e.dataset.st) && !!(mode && mode.prof != null));
     });
     svg.querySelectorAll('.xl').forEach(e => e.classList.toggle('hi', !!onSt && onSt.has(e.dataset.a) && onSt.has(e.dataset.b)));
-    svg.querySelectorAll('.pr').forEach(e => {
-      const p = PROFS[+e.dataset.p];
-      e.classList.toggle('me', !!(mode && mode.prof === p.i));
-      e.classList.toggle('hi', !!(mode && mode.line && p.papers.some(w => w.line === mode.line)));
-    });
+    paint();
     overlay();
     detail();
   }
@@ -317,7 +368,7 @@
   function detail() {
     const box = $('#pmDetail');
     if (!mode) {
-      box.innerHTML = '<p class="pm-hint">위의 노선 이름이나 오른쪽 교수님 이름을 눌러 보세요. 맨 앞 \'' + RECENT_NAME + '\'를 누르면 최근 논문만 남습니다. 노선을 누르면 그 분야 교수님이 역 옆에 나타나고, 교수님을 누르면 그 교수님 논문이 닿은 역과 노선만 남습니다. 한 번 더 누르면 풀립니다.</p>';
+      box.innerHTML = '<p class="pm-hint">위의 노선 이름이나 교수님 이름을 눌러 보세요. 교수님 목록 위의 학과 단추로 한 학과만 볼 수 있습니다. 맨 앞 \'' + RECENT_NAME + '\'를 누르면 최근 논문만 남습니다. 노선을 누르면 그 분야 교수님이 역 옆에 나타나고, 교수님을 누르면 그 교수님 논문이 닿은 역과 노선만 남습니다. 한 번 더 누르면 풀립니다.</p>';
       return;
     }
     let h;
@@ -328,8 +379,8 @@
         + rows.map(r => '<h4><span class="pm-line" style="--c:' + r.l.color + '">' + esc(r.l.name) + '</span></h4><ol class="pm-papers">' + r.ss.map(s => { const p = BY[s];
           return '<li><a href="' + esc(p.u) + '" target="_blank" rel="noopener">' + (p.t.toLowerCase().startsWith(p.l.toLowerCase()) ? '' : esc(p.l) + ': ') + esc(p.t) + '</a><small>' + esc([p.d || p.y, p.v, '인용 ' + p.c.toLocaleString('ko-KR')].filter(Boolean).join(', ')) + '</small></li>'; }).join('') + '</ol>').join('');
     } else if (mode.line) {
-      const l = LBY[mode.line], rows = PROFS.map(p => ({ p, ws: p.papers.filter(w => w.line === mode.line) })).filter(r => r.ws.length).sort((a, b) => b.ws.length - a.ws.length);
-      h = '<div class="pm-dh"><h3><i style="background:' + l.color + '"></i>' + esc(l.name) + '</h3><span>' + esc(l.desc) + '. 교수님 ' + rows.length + '명, 논문 ' + rows.reduce((a, r) => a + r.ws.length, 0) + '편</span><button type="button" class="pm-clear">선택 풀기</button></div>'
+      const l = LBY[mode.line], rows = PROFS.filter(inDept).map(p => ({ p, ws: p.papers.filter(w => w.line === mode.line) })).filter(r => r.ws.length).sort((a, b) => b.ws.length - a.ws.length);
+      h = '<div class="pm-dh"><h3><i style="background:' + l.color + '"></i>' + esc(l.name) + '</h3><span>' + esc(l.desc) + '. ' + (flt.dept ? esc(flt.dept) + ' ' : '') + '교수님 ' + rows.length + '명, 논문 ' + rows.reduce((a, r) => a + r.ws.length, 0) + '편</span><button type="button" class="pm-clear">선택 풀기</button></div>'
         + (rows.length ? rows.map(r => '<h4>' + esc(r.p.name) + ' <small>' + esc(r.p.dept) + '</small></h4><ol class="pm-papers">' + r.ws.map(paperLi).join('') + '</ol>').join('') : '<p class="pm-hint">이 노선에 든 교수님 논문이 없습니다.</p>');
     } else {
       const p = PROFS[mode.prof];
@@ -340,11 +391,45 @@
     box.querySelector('.pm-clear').addEventListener('click', () => setMode(null));
   }
 
+  // PNG에는 화면 오른쪽 교수님 목록 대신 노선도 아래에 목록을 붙인다(고른 학과만)
+  function exportList(svg) {
+    const foot = svg.querySelector('#pmFoot');
+    const CW = 300, cols = Math.floor((MAPW - PAD) / CW), RH = 28;
+    let y = geo.H - 30, g = '<g class="xlist"><line x1="' + PAD + '" x2="' + MAPW + '" y1="' + y + '" y2="' + y + '" class="sep"/>';
+    y += 34;
+    g += '<text x="' + PAD + '" y="' + y + '" class="h2">교수님' + (flt.dept ? ': ' + esc(flt.dept) : '') + '</text><text x="' + (PAD + 150) + '" y="' + y + '" class="t3">칸 하나가 논문 한 편, 색은 노선, 회색은 노선 밖</text>';
+    y += 14;
+    DEPTS.filter(d => !flt.dept || d === flt.dept).forEach(d => {
+      const ps = PROFS.filter(p => p.dept === d);
+      y += 26;
+      g += '<text x="' + PAD + '" y="' + y + '" class="dept">' + esc(d) + ' ' + ps.length + '명</text>';
+      y += 8;
+      ps.forEach((p, k) => {
+        const x = PAD + (k % cols) * CW, yy = y + Math.floor(k / cols) * RH;
+        const me = mode && mode.prof === p.i, dim = mode && ((mode.line && !p.papers.some(w => w.line === mode.line)) || (mode.prof != null && !me));
+        const ws = p.papers.slice().sort((a, b) => LINE_ORDER[a.line] - LINE_ORDER[b.line]);
+        g += '<g class="xr' + (me ? ' me' : '') + (dim ? ' dim' : '') + '">' + (me ? '<rect x="' + (x - 6) + '" y="' + yy + '" width="' + (CW - 8) + '" height="' + (RH - 2) + '" rx="6" class="mebg"/>' : '')
+          + '<text x="' + x + '" y="' + (yy + 18) + '" class="pn">' + esc(p.name) + '</text>';
+        for (let i = 0; i < 5; i++) g += '<rect x="' + (x + 152 + i * 22) + '" y="' + (yy + 7) + '" width="19" height="13" rx="3" ' + (ws[i] ? 'fill="' + LINE(ws[i].line).color + '"' : 'fill="#eeece7"') + '/>';
+        g += '</g>';
+      });
+      y += Math.ceil(ps.length / cols) * RH;
+    });
+    g += '</g>';
+    const H = Math.ceil(y + 46);
+    foot.setAttribute('y', H - 18);
+    foot.insertAdjacentHTML('beforebegin', g);
+    svg.querySelector('.bg').setAttribute('height', H);
+    svg.setAttribute('height', H);
+    svg.setAttribute('viewBox', '0 0 ' + W + ' ' + H);
+  }
+
   async function savePng(btn) {
     btn.disabled = true; const old = btn.textContent; btn.textContent = '만드는 중';
     try {
       const svg = $('#pmSvg').cloneNode(true);
       svg.classList.add('still');  // 저장 그림에는 움직임을 넣지 않는다
+      exportList(svg);
       const css = await (await fetch('assets/profmap.css')).text();
       const svgCss = css.split('/* svg 시작 */')[1].split('/* svg 끝 */')[0];
       let face = '';
@@ -368,7 +453,7 @@
       const blob = await new Promise(r => c.toBlob(r, 'image/png'));
       const a = document.createElement('a');
       a.href = URL.createObjectURL(blob);
-      const tag = !mode ? '' : mode.recent ? '_최근3년' : mode.line ? '_' + LBY[mode.line].name.replace(/\s+/g, '') : '_' + PROFS[mode.prof].name;
+      const tag = (flt.dept ? '_' + flt.dept : '') + (!mode ? '' : mode.recent ? '_최근3년' : mode.line ? '_' + LBY[mode.line].name.replace(/\s+/g, '') : '_' + PROFS[mode.prof].name);
       a.download = 'AI분야노선도_교수님' + tag + '.png';
       document.body.appendChild(a); a.click(); a.remove();
       setTimeout(() => URL.revokeObjectURL(a.href), 4000);
@@ -382,11 +467,10 @@
   async function start() {
     await loadFont();
     drawBase();
+    side();
     apply();
     const svg = $('#pmSvg');
     const act = t => {
-      const pr = t.closest('.pr');
-      if (pr) return setMode({ prof: +pr.dataset.p }), true;
       const ln = t.closest('.lchip, .ltag');
       if (ln && ln.dataset.recent) return setMode({ recent: true }), true;
       if (ln) return setMode({ line: ln.dataset.line }), true;

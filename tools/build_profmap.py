@@ -4,7 +4,7 @@
 입력
 - tools/landmarks.json: 노선과 역(분야별 대표 논문)
 - tools/landmarks_s2.json: Semantic Scholar에서 받은 발표일, 인용 수, 역 논문끼리의 인용(fetch_landmarks.py)
-- tools/prof_papers.json: 교수님 논문(2023년 이후 인용 상위 5편)
+- tools/prof_papers.json, tools/prof_papers_more.json: 교수님 논문(2023년 이후 인용 상위 5편). 교수님은 논문지도를 맡을 수 있는 정보대학 전임교원
 - tools/prof_lines.json: 교수님 논문마다 노선(line)과 가장 가까운 역(near)
 
 노선 그리기 규칙(사람 판단 없이 인용 관계로 정한다)
@@ -28,6 +28,7 @@ ROOT = os.path.dirname(HERE)
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--papers', default=os.path.join(HERE, 'prof_papers.json'))
+    ap.add_argument('--more', default=os.path.join(HERE, 'prof_papers_more.json'), help='뒤에 더 모은 교수님(같은 형식)')
     ap.add_argument('--lines', default=os.path.join(HERE, 'prof_lines.json'))
     ap.add_argument('--out', default=os.path.join(ROOT, 'assets', 'profmap.js'))
     a = ap.parse_args()
@@ -110,6 +111,8 @@ def main():
                   'https://www.semanticscholar.org/paper/' + S[s]['paperId']} for s in meta}
 
     pp = json.load(open(a.papers, encoding='utf-8'))
+    if os.path.exists(a.more):
+        pp['profs'] = pp['profs'] + json.load(open(a.more, encoding='utf-8'))['profs']
     cls = json.load(open(a.lines, encoding='utf-8'))['papers'] if os.path.exists(a.lines) else {}
     line_ids = {l['id'] for l in lines}
     profs, missing, bad = [], [], []
@@ -125,7 +128,7 @@ def main():
                 continue
             rows.append({'t': w['title'], 'y': w.get('year'), 'v': w.get('venue') or '', 'c': w.get('cites') or 0,
                          'u': w.get('url') or '', 'line': c['line'], 'near': c.get('near') or '', 'why': c.get('why', '')})
-        profs.append({'name': p['name'], 'dept': p['dept'], 'lab': p.get('lab') or '', 'url': p.get('lab_url') or '', 'papers': rows})
+        profs.append({'name': p['name'], 'dept': p['dept'], 'en': p.get('name_en') or '', 'lab': p.get('lab') or '', 'url': p.get('lab_url') or '', 'papers': rows})
     if missing or bad:
         sys.exit('분류가 없는 논문 %d편, 노선과 역이 안 맞는 논문 %d편\n  ' % (len(missing), len(bad)) + '\n  '.join(missing + bad))
 
