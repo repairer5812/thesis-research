@@ -60,7 +60,7 @@
 
   function drawBase() {
     const M = metroLayout(MAPW);
-    const labels = M.stations.slice().sort((a, b) => a.layer - b.layer || a.y - b.y).map(s => {
+    const labels = M.stations.toSorted((a, b) => a.layer - b.layer || a.y - b.y).map(s => {
       const p = BY[s.slug];
       const wn = tw(p.l, 13, 600), wy = tw(String(p.y), 11.5, 500);
       const w = Math.ceil(6 + wn + 4 + wy + 6), h = 24, x = s.x, yy = s.y, hh = s.hh, m = 5;
@@ -214,7 +214,7 @@
 
   // 오른쪽 교수님 목록(HTML). 학과 단추, 이름 찾기, 학과별 이름과 다섯 칸 띠
   const bar = (p, cls) => {
-    const ws = p.papers.slice().sort((a, b) => LINE_ORDER[a.line] - LINE_ORDER[b.line]);
+    const ws = p.papers.toSorted((a, b) => LINE_ORDER[a.line] - LINE_ORDER[b.line]);
     let h = '<span class="' + cls + '" aria-hidden="true">';
     for (let k = 0; k < 5; k++) h += ws[k] ? '<i style="background:' + LINE(ws[k].line).color + '"></i>' : '<i class="e"></i>';
     return h + '</span>';
@@ -249,7 +249,7 @@
     const q = $('#pmQ');
     q.addEventListener('input', () => { flt.q = q.value.trim(); list(); paint(); });
     q.addEventListener('keydown', e => {
-      if (e.key === 'Enter') { const f = PROFS.find(shown); if (f) setMode({ prof: f.i }); }
+      if (e.key === 'Enter') { if (e.isComposing || e.keyCode === 229) return; const f = PROFS.find(shown); if (f) setMode({ prof: f.i }); }
       if (e.key === 'Escape') { q.value = ''; flt.q = ''; list(); paint(); }
     });
     list();
@@ -312,7 +312,7 @@
   function overlay() {
     const ov = $('#ov');
     let g = '';
-    if (!mode || mode.recent) { ov.innerHTML = ''; return; }
+    if (!mode || mode.recent) { ov.replaceChildren(); return; }
     const pick = mode.line ? nearBy((p, w) => w.line === mode.line) : nearBy(p => p.i === mode.prof);
     const color = mode.line ? LBY[mode.line].color : '#8b1538';
     const used = [];
@@ -421,7 +421,7 @@
       ps.forEach((p, k) => {
         const x = PAD + (k % cols) * CW, yy = y + Math.floor(k / cols) * RH;
         const me = mode && mode.prof === p.i, dim = mode && ((mode.line && !p.papers.some(w => w.line === mode.line)) || (mode.prof != null && !me));
-        const ws = p.papers.slice().sort((a, b) => LINE_ORDER[a.line] - LINE_ORDER[b.line]);
+        const ws = p.papers.toSorted((a, b) => LINE_ORDER[a.line] - LINE_ORDER[b.line]);
         g += '<g class="xr' + (me ? ' me' : '') + (dim ? ' dim' : '') + '">' + (me ? '<rect x="' + (x - 6) + '" y="' + yy + '" width="' + (CW - 8) + '" height="' + (RH - 2) + '" rx="6" class="mebg"/>' : '')
           + '<text x="' + x + '" y="' + (yy + 18) + '" class="pn">' + esc(p.name) + '</text>';
         for (let i = 0; i < 5; i++) g += '<rect x="' + (x + 152 + i * 22) + '" y="' + (yy + 7) + '" width="19" height="13" rx="3" ' + (ws[i] ? 'fill="' + LINE(ws[i].line).color + '"' : 'fill="#eeece7"') + '/>';

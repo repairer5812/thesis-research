@@ -45,7 +45,7 @@
     };
     const depth = Math.max(0, ...Object.values(relax(Object.fromEntries(ids.map(s => [s, 0])))));
     const dkey = s => (BY[s] && BY[s].d) || String(BY[s] ? BY[s].y : 0);
-    const byDate = ids.slice().sort((a, b) => dkey(a) < dkey(b) ? -1 : dkey(a) > dkey(b) ? 1 : 0);
+    const byDate = ids.toSorted((a, b) => dkey(a) < dkey(b) ? -1 : dkey(a) > dkey(b) ? 1 : 0);
     const floorL = {};
     byDate.forEach((s, i) => floorL[s] = Math.floor(i * (depth + 2) / ids.length));
     const layer = relax(Object.assign({}, floorL));
@@ -211,7 +211,7 @@
         const ns = n.up.concat(n.dn).filter(x => x[2] === l).map(x => y[x[0]]);
         key[l] = ns.length ? ns.reduce((a, b) => a + b, 0) / ns.length : y[s];
       });
-      const ord = n.lines.slice().sort((a, b) => key[a] - key[b] || LBY[a].ix - LBY[b].ix);
+      const ord = n.lines.toSorted((a, b) => key[a] - key[b] || LBY[a].ix - LBY[b].ix);
       slot[s] = {};
       ord.forEach((l, i) => slot[s][l] = (i - (ord.length - 1) / 2) * G);
     });
