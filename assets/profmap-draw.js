@@ -249,7 +249,7 @@
     const q = $('#pmQ');
     q.addEventListener('input', () => { flt.q = q.value.trim(); list(); paint(); });
     q.addEventListener('keydown', e => {
-      if (e.key === 'Enter') { if (e.isComposing || e.keyCode === 229) return; const f = PROFS.find(shown); if (f) setMode({ prof: f.i }); }
+      if (e.key === 'Enter') { const f = PROFS.find(shown); if (f) setMode({ prof: f.i }); }
       if (e.key === 'Escape') { q.value = ''; flt.q = ''; list(); paint(); }
     });
     list();
