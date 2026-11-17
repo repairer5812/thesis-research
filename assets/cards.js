@@ -83,7 +83,8 @@ function renderRecCard(r, opts = {}) {
     </div>
 
     <div class="rec-title">${r.title}</div>
-    <div class="rec-author">${r.author}${r.authorKr ? ' · '+r.authorKr : ''}${r.year ? ' · '+r.year : ''}${r.advisor ? ' · 지도: '+r.advisor : ''}</div>
+    ${r.titleKr && r.titleKr !== r.title ? `<div class="rec-title-kr">${r.titleKr}</div>` : ''}
+    <div class="rec-author">${[r.author ? r.author + (r.authorKr ? ' · '+r.authorKr : '') : '', r.year || '', r.department || '', r.advisor ? '지도: '+r.advisor : ''].filter(Boolean).join(' · ')}</div>
 
     ${metricsRow.length ? `<div class="rec-metrics-row">${metricsRow.join('')}</div>` : '<div class="rec-metrics-empty">검증된 외부 지표 없음 (학위논문만 존재)</div>'}
 

@@ -581,6 +581,13 @@ img { max-width: 100%; display: block; }
   letter-spacing: -0.005em;
 }
 
+.rec-title-kr {
+  font-size: 0.9rem;
+  line-height: 1.45;
+  color: var(--color-text);
+  margin-top: -0.15rem;
+}
+
 .rec-author {
   font-size: 0.85rem;
   color: var(--color-text-muted);

@@ -112,7 +112,7 @@ function getFiltered() {
     const matchCat = currentCat === 'all' || (r.category || []).includes(currentCat);
     const matchDept = currentDept === 'all' || r.deptType === currentDept;
     const matchTier = currentTier === 'all' || (r.metrics?.venueTier || '') === currentTier;
-    const hay = [r.title, r.author, r.school, r.notes || '', (r.metrics?.venue || '')].join(' ').toLowerCase();
+    const hay = [r.title, r.titleKr || '', r.author || '', r.advisor || '', r.department || '', r.school, r.notes || '', (r.metrics?.venue || '')].join(' ').toLowerCase();
     const matchSearch = !search || hay.includes(search);
     return matchCat && matchDept && matchTier && matchSearch;
   });
